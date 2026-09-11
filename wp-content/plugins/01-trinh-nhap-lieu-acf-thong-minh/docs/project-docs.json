@@ -1,0 +1,20 @@
+{
+    "overview": {
+        "name": "",
+        "url": "",
+        "git_repo": "",
+        "lead_dev": "",
+        "description": ""
+    },
+    "worklogs": [
+        {
+            "title": "Xử lý giao diện \"Bài viết cùng chủ đề\" trong trang \"Chi tiết bài viết\"",
+            "date": "2026-06-25",
+            "developer": "Phạm Văn Vũ",
+            "files": "",
+            "description": ""
+        }
+    ],
+    "components": [],
+    "notes": ""
+}

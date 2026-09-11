@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Ưu Tiên #2] Báo Cáo Tài Liệu Tổng — Trình Cài Đặt Bộ Plugin Nhanh (v1.1.0)</title>
+<script>
+  (function () {
+    const saved = localStorage.getItem('theme');
+    const dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.classList.toggle('dark', dark);
+  })();
+</script>
+<style>
+  :root {
+    --bg: #FAF9F5; --surface: #FFFFFF; --surface2: #F0EEE6;
+    --ink: #141413; --body: #3D3D3A; --muted: #87867F;
+    --line: #D1CFC5; --line-soft: #E6E3DA;
+    --clay: #D97757; --clay-soft: rgba(217,119,87,0.10);
+    --olive: #788C5D; --olive-soft: rgba(120,140,93,0.12);
+    --gold: #C9A45C; --blue: #5B7E96;
+    --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  html.dark {
+    --bg: #141413; --surface: #1F1F1D; --surface2: #2A2A28;
+    --ink: #FAF9F5; --body: #D1CFC5; --muted: #87867F;
+    --line: #3D3D3A; --line-soft: #2A2A28;
+    --clay: #E48A6E; --clay-soft: rgba(228,138,110,0.14);
+    --olive: #9DB07C; --olive-soft: rgba(157,176,124,0.16);
+    --gold: #D4B36F; --blue: #7FA3BC;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg); color: var(--body); font-family: var(--sans);
+    -webkit-font-smoothing: antialiased; display: flex; flex-direction: column;
+  }
+
+  .bar {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    padding: 12px 24px; border-bottom: 1px solid var(--line-soft);
+    background: var(--surface); backdrop-filter: blur(8px);
+  }
+  .bar h1 { font-size: 18px; font-weight: 600; color: var(--ink); }
+  .prio-tag {
+    font-family: var(--mono); font-size: 11px; font-weight: 700;
+    padding: 3px 8px; border-radius: 6px; background: var(--olive-soft); color: var(--olive);
+    border: 1px solid var(--olive);
+  }
+  .ver-badge {
+    font-family: var(--mono); font-size: 11px; font-weight: 700;
+    padding: 3px 8px; border-radius: 6px; background: var(--clay-soft); color: var(--clay);
+    border: 1px solid var(--clay);
+  }
+  .spacer { flex: 1; }
+  .btn-ver {
+    font-family: var(--mono); font-size: 11px; padding: 6px 12px;
+    border: 1px solid var(--line); border-radius: 6px; background: var(--surface2);
+    color: var(--ink); cursor: pointer; font-weight: 600;
+  }
+  #themeToggle {
+    font-family: var(--mono); font-size: 11px; text-transform: uppercase;
+    padding: 6px 12px; border: 1px solid var(--line); border-radius: 6px;
+    background: transparent; color: var(--muted); cursor: pointer;
+  }
+
+  .layout { display: flex; flex: 1; max-width: 1440px; margin: 0 auto; width: 100%; }
+  
+  .sidebar {
+    width: 290px; flex: none; position: sticky; top: 57px; height: calc(100vh - 57px);
+    overflow-y: auto; padding: 24px 16px; border-right: 1px solid var(--line-soft);
+  }
+  .sidebar h3 { font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 12px; }
+  .toc-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .toc-item a {
+    display: block; font-size: 13px; color: var(--body); text-decoration: none;
+    padding: 8px 12px; border-radius: 8px; transition: all .15s ease;
+  }
+  .toc-item a:hover { background: var(--surface2); color: var(--ink); }
+  .toc-item a.active { background: var(--clay-soft); color: var(--clay); font-weight: 600; }
+
+  .content { flex: 1; padding: 32px 48px; max-width: 980px; overflow-y: auto; }
+  
+  .sec { margin-bottom: 48px; scroll-margin-top: 80px; border-bottom: 1px solid var(--line-soft); padding-bottom: 32px; }
+  .sec-tag { font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--clay); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+  .sec h2 { font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 16px; }
+  .sec h3 { font-size: 16px; font-weight: 600; color: var(--ink); margin: 20px 0 10px; }
+  .sec p { font-size: 14.5px; line-height: 1.65; color: var(--body); margin-bottom: 16px; }
+  
+  .callout {
+    background: var(--surface2); border-left: 4px solid var(--clay);
+    padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 13.5px; line-height: 1.6;
+  }
+
+  .ui-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 16px 0; }
+  .ui-card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px; transition: all .15s ease;
+  }
+  .ui-card:hover { border-color: var(--clay); transform: translateY(-2px); }
+  .ui-card h4 { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+  .ui-card p { font-size: 12px; color: var(--muted); margin-bottom: 0; line-height: 1.4; }
+  
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13.5px; }
+  th, td { text-align: left; padding: 10px 14px; border: 1px solid var(--line); }
+  th { background: var(--surface2); font-family: var(--mono); font-size: 12px; color: var(--ink); }
+  
+  code { font-family: var(--mono); font-size: 12px; background: var(--surface2); padding: 2px 6px; border-radius: 4px; color: var(--clay); }
+  pre { background: var(--surface2); padding: 16px; border-radius: 8px; border: 1px solid var(--line); overflow-x: auto; font-family: var(--mono); font-size: 12.5px; line-height: 1.5; margin: 16px 0; }
+
+  .modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
+    display: none; align-items: center; justify-content: center; z-index: 999;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal-box {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    width: 540px; max-width: 90%; max-height: 80vh; overflow-y: auto; padding: 24px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+  }
+  .modal-box h2 { font-size: 18px; font-weight: 600; color: var(--ink); margin-bottom: 12px; display: flex; justify-content: space-between; }
+  .modal-box .close-btn { cursor: pointer; font-size: 16px; color: var(--muted); border: none; background: transparent; }
+  .ver-item { padding: 12px 0; border-bottom: 1px solid var(--line-soft); }
+  .ver-item:last-child { border-bottom: none; }
+  .ver-tag { font-family: var(--mono); font-size: 12px; font-weight: 700; color: var(--clay); }
+  .ver-date { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-left: 8px; }
+  .ver-desc { font-size: 13px; line-height: 1.55; margin-top: 6px; color: var(--body); }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="bar-title">
+    <span class="prio-tag">ƯU TIÊN #2</span>
+    <h1>Trình Cài Đặt Bộ Plugin Nhanh — Master Docs</h1>
+    <span class="ver-badge">v1.1.0</span>
+  </div>
+  <div class="spacer"></div>
+  <button class="btn-ver" id="verHistoryBtn">📜 Lịch sử Phiên bản</button>
+  <button id="themeToggle">Chế độ Tối/Sáng</button>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h3>MỤC LỤC BÁO CÁO 7 BƯỚC</h3>
+    <ul class="toc-list">
+      <li class="toc-item"><a href="#step1" class="active">1. Khảo sát & Yêu cầu</a></li>
+      <li class="toc-item"><a href="#step2">2. Phân tích & Kế hoạch</a></li>
+      <li class="toc-item"><a href="#step3">3. Thiết kế cấu trúc</a></li>
+      <li class="toc-item"><a href="#step4">4. Thiết kế giao diện</a></li>
+      <li class="toc-item"><a href="#step5">5. Phát triển Core Code</a></li>
+      <li class="toc-item"><a href="#step6">6. Kiểm thử & Bảng Lỗi</a></li>
+      <li class="toc-item"><a href="#step7">7. Bàn giao & Vận hành</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+
+    <!-- BƯỚC 1 -->
+    <section class="sec" id="step1">
+      <div class="sec-tag">SOP BƯỚC 1</div>
+      <h2>1. Khảo Sát & Tiếp Nhận Yêu Cầu (Discovery & Requirement Analysis)</h2>
+      <p>Plugin giúp cài đặt 1-click bộ combo các plugin chuẩn quen thuộc (Classic Editor, ACF, CF7, RankMath...) trực tiếp từ WordPress.org qua hàng đợi Client Queue mà không gây nghẽn RAM server.</p>
+      
+      <div class="callout">
+        <strong>💡 WOW Factor:</strong> Khởi tạo trang web mới siêu tốc, chọn combo sẵn (Stack Presets) và tự động tải phiên bản mới nhất từ WordPress.org API.
+      </div>
+    </section>
+
+    <!-- BƯỚC 2 -->
+    <section class="sec" id="step2">
+      <div class="sec-tag">SOP BƯỚC 2</div>
+      <h2>2. Phân Tích & Lập Kế Hoạch (Planning, CSDL & API)</h2>
+      <p>Cấu hình Option Array `wdm_quick_installer_presets` lưu danh sách các plugin theo chủ đề (SEO, E-commerce, Performance, Security).</p>
+
+      <pre><code>// AJAX Action Endpoints
+wp_ajax_wdm_quick_install_plugin  - Tải & giải nén 1 plugin từ WP.org ZIP
+wp_ajax_wdm_quick_activate_plugin - Kích hoạt plugin đã cài vào hệ thống</code></pre>
+    </section>
+
+    <!-- BƯỚC 3 -->
+    <section class="sec" id="step3">
+      <div class="sec-tag">SOP BƯỚC 3</div>
+      <h2>3. Thiết Kế Cấu Trúc (Information Architecture)</h2>
+      <p>Sử dụng Lớp `Plugin_Upgrader` và API `plugins_api()` của WordPress Core để kết nối kho dữ liệu chính thức.</p>
+    </section>
+
+    <!-- BƯỚC 4 -->
+    <section class="sec" id="step4">
+      <div class="sec-tag">SOP BƯỚC 4</div>
+      <h2>4. Thiết Kế Giao Diện (UI/UX & Admin Dashboard)</h2>
+      <p>Giao diện danh sách bộ plugin với các nút Checkbox chọn nhanh, thanh ProgressBar tiến trình cài đặt và bảng log trạng thái trực quan.</p>
+
+      <h3>🎨 Bộ Mẫu Giao Diện Tham Chiếu</h3>
+      <div class="ui-grid">
+        <div class="ui-card">
+          <h4>🗂️ Pattern 1: Stack Presets Cards</h4>
+          <p>Hiển thị các bộ combo plugin sẵn (Bộ chuẩn SEO, Bộ bán hàng WooCommerce, Bộ tối ưu tốc độ).</p>
+        </div>
+        <div class="ui-card">
+          <h4>📊 Pattern 2: Client Progress Queue</h4>
+          <p>Thanh phần trăm tiến trình tải & kích hoạt plugin chạy bất đồng bộ realtime.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BƯỚC 5 -->
+    <section class="sec" id="step5">
+      <div class="sec-tag">SOP BƯỚC 5</div>
+      <h2>5. Phát Triển Core Code (Development & Implementation)</h2>
+      <p>Lớp `WDM_Quick_Installer_Admin` xử lý enqueue assets và render giao diện. AJAX handler nhận `slug`, gọi `plugins_api('plugin_information')` lấy link nén `.zip` mới nhất.</p>
+    </section>
+
+    <!-- BƯỚC 6 -->
+    <section class="sec" id="step6">
+      <div class="sec-tag">SOP BƯỚC 6</div>
+      <h2>6. Kiểm Thử & Bảng Tra Cứu Lỗi Thường Gặp (Testing & Troubleshooting Matrix)</h2>
+      
+      <h3>🛑 Bảng Danh Sách Vấn Đề / Lỗi Hay Gặp & Cách Khắc Phục</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Tên Lỗi / Sự Cố</th>
+            <th>Dấu Hiệu Nhận Biết</th>
+            <th>Nguyên Nhân Cốt Lõi</th>
+            <th>Giải Pháp Khắc Phục Chuẩn</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Lỗi Reinstall Plugin Phiên Bản Cũ</strong></td>
+            <td>Cài lại plugin bị dính phiên bản cũ đã lưu cache</td>
+            <td>Dùng link download tĩnh thay vì gọi API động</td>
+            <td>Dùng <code>plugins_api('plugin_information')</code> để lấy link <code>download_link</code> mới nhất từ WP.org</td>
+          </tr>
+          <tr>
+            <td><strong>Lỗi Memory Limit khi cài nhiều plugin</strong></td>
+            <td>Báo 500 Internal Server Error khi bấm 'Cài tất cả'</td>
+            <td>Tải & giải nén đồng thời nhiều file nén làm cạn bộ nhớ PHP</td>
+            <td>Chuyển sang hàng đợi Client-side Queue (JS gọi AJAX từng plugin nối tiếp)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- BƯỚC 7 -->
+    <section class="sec" id="step7">
+      <div class="sec-tag">SOP BƯỚC 7</div>
+      <h2>7. Bàn Giao & Vòng Đời Tiến Hóa Lặp (Handover & Iterative Cycle)</h2>
+      <p>Đóng gói plugin, cập nhật Lịch sử Phiên bản mốc `v1.1.0` và bàn giao file tài liệu tổng HTML cho kỹ thuật viên setup web.</p>
+    </section>
+
+  </main>
+</div>
+
+<!-- Modal Version History -->
+<div class="modal-overlay" id="verModal">
+  <div class="modal-box">
+    <h2>
+      <span>📜 Lịch Sử Phiên Bản Plugin</span>
+      <button class="close-btn" id="closeModalBtn">✖</button>
+    </h2>
+    <div class="ver-item">
+      <span class="ver-tag">v1.1.0 (Hiện tại)</span>
+      <span class="ver-date">2026-07-28</span>
+      <div class="ver-desc">
+        - Tự động lấy link download phiên bản mới nhất từ API WordPress.org qua `plugins_api()`.<br>
+        - Đóng gói file Báo Cáo Tài Liệu Tổng Chi Tiết HTML `interactive_master_docs.html` chuẩn 7 Bước SOP.
+      </div>
+    </div>
+    <div class="ver-item">
+      <span class="ver-tag">v1.0.0</span>
+      <span class="ver-date">2026-06-15</span>
+      <div class="ver-desc">
+        - Khởi tạo plugin cài đặt bộ plugin nhanh 1-click qua Client Queue.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('themeToggle').addEventListener('click', () => {
+  const dark = !document.documentElement.classList.contains('dark');
+  document.documentElement.classList.toggle('dark', dark);
+  localStorage.setItem('theme', dark ? 'dark' : 'light');
+});
+
+const modal = document.getElementById('verModal');
+document.getElementById('verHistoryBtn').addEventListener('click', () => modal.classList.add('open'));
+document.getElementById('closeModalBtn').addEventListener('click', () => modal.classList.remove('open'));
+modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('open'); });
+
+const sections = document.querySelectorAll('.sec');
+const navLinks = document.querySelectorAll('.toc-item a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (pageYOffset >= sectionTop) { current = section.getAttribute('id'); }
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) { link.classList.add('active'); }
+  });
+});
+</script>
+</body>
+</html>

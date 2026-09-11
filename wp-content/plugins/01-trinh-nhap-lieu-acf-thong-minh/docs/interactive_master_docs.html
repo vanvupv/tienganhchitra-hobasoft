@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Master Interactive Documentation — Trình Nhập Liệu ACF & AI (v1.5.0)</title>
+<script>
+  (function () {
+    const saved = localStorage.getItem('theme');
+    const dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.classList.toggle('dark', dark);
+  })();
+</script>
+<style>
+  :root {
+    --bg: #FAF9F5; --surface: #FFFFFF; --surface2: #F0EEE6;
+    --ink: #141413; --body: #3D3D3A; --muted: #87867F;
+    --line: #D1CFC5; --line-soft: #E6E3DA;
+    --clay: #D97757; --clay-soft: rgba(217,119,87,0.10);
+    --olive: #788C5D; --olive-soft: rgba(120,140,93,0.12);
+    --gold: #C9A45C; --blue: #5B7E96;
+    --zone: rgba(20,20,19,0.025); --zone-line: #D1CFC5;
+    --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  html.dark {
+    --bg: #141413; --surface: #1F1F1D; --surface2: #2A2A28;
+    --ink: #FAF9F5; --body: #D1CFC5; --muted: #87867F;
+    --line: #3D3D3A; --line-soft: #2A2A28;
+    --clay: #E48A6E; --clay-soft: rgba(228,138,110,0.14);
+    --olive: #9DB07C; --olive-soft: rgba(157,176,124,0.16);
+    --gold: #D4B36F; --blue: #7FA3BC;
+    --zone: rgba(250,249,245,0.03); --zone-line: #3D3D3A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg); color: var(--body); font-family: var(--sans);
+    -webkit-font-smoothing: antialiased; display: flex; flex-direction: column; overflow-x: hidden;
+  }
+
+  .bar {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    padding: 12px 24px; border-bottom: 1px solid var(--line-soft);
+    background: var(--surface); backdrop-filter: blur(8px);
+  }
+  .bar h1 { font-size: 18px; font-weight: 600; color: var(--ink); }
+  .ver-badge {
+    font-family: var(--mono); font-size: 11px; font-weight: 700;
+    padding: 3px 8px; border-radius: 6px; background: var(--clay-soft); color: var(--clay);
+    border: 1px solid var(--clay);
+  }
+  .spacer { flex: 1; }
+  
+  .btn-ver {
+    font-family: var(--mono); font-size: 11px; padding: 6px 12px;
+    border: 1px solid var(--line); border-radius: 6px; background: var(--surface2);
+    color: var(--ink); cursor: pointer; font-weight: 600;
+  }
+  #themeToggle {
+    font-family: var(--mono); font-size: 11px; text-transform: uppercase;
+    padding: 6px 12px; border: 1px solid var(--line); border-radius: 6px;
+    background: transparent; color: var(--muted); cursor: pointer;
+  }
+
+  .layout { display: flex; flex: 1; max-width: 1440px; margin: 0 auto; width: 100%; }
+  
+  .sidebar {
+    width: 320px; flex: none; position: sticky; top: 57px; height: calc(100vh - 57px);
+    overflow-y: auto; padding: 24px 16px; border-right: 1px solid var(--line-soft);
+  }
+  .sidebar h3 { font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 12px; }
+  .toc-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .toc-item a {
+    display: block; font-size: 13px; color: var(--body); text-decoration: none;
+    padding: 8px 12px; border-radius: 8px; transition: all .15s ease;
+  }
+  .toc-item a:hover { background: var(--surface2); color: var(--ink); }
+  .toc-item a.active { background: var(--clay-soft); color: var(--clay); font-weight: 600; }
+
+  .content { flex: 1; padding: 32px 48px; max-width: 1000px; overflow-y: auto; }
+  
+  .sec { margin-bottom: 48px; scroll-margin-top: 80px; border-bottom: 1px solid var(--line-soft); padding-bottom: 32px; }
+  .sec-tag { font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--clay); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+  .sec h2 { font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 16px; }
+  .sec h3 { font-size: 16px; font-weight: 600; color: var(--ink); margin: 20px 0 10px; }
+  .sec p { font-size: 14.5px; line-height: 1.65; color: var(--body); margin-bottom: 16px; }
+  .sec ul { margin-left: 20px; margin-bottom: 16px; font-size: 14px; line-height: 1.6; }
+  .sec li { margin-bottom: 6px; }
+
+  .callout {
+    background: var(--surface2); border-left: 4px solid var(--clay);
+    padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 13.5px; line-height: 1.6;
+  }
+
+  .ui-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 16px 0; }
+  .ui-card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px; transition: all .15s ease;
+  }
+  .ui-card:hover { border-color: var(--clay); transform: translateY(-2px); }
+  .ui-card h4 { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+  .ui-card p { font-size: 12px; color: var(--muted); margin-bottom: 0; line-height: 1.4; }
+  
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13.5px; }
+  th, td { text-align: left; padding: 10px 14px; border: 1px solid var(--line); }
+  th { background: var(--surface2); font-family: var(--mono); font-size: 12px; color: var(--ink); }
+  
+  code { font-family: var(--mono); font-size: 12px; background: var(--surface2); padding: 2px 6px; border-radius: 4px; color: var(--clay); }
+  pre { background: var(--surface2); padding: 16px; border-radius: 8px; border: 1px solid var(--line); overflow-x: auto; font-family: var(--mono); font-size: 12.5px; line-height: 1.5; margin: 16px 0; }
+
+  .modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
+    display: none; align-items: center; justify-content: center; z-index: 999;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal-box {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    width: 580px; max-width: 90%; max-height: 80vh; overflow-y: auto; padding: 24px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+  }
+  .modal-box h2 { font-size: 18px; font-weight: 600; color: var(--ink); margin-bottom: 12px; display: flex; justify-content: space-between; }
+  .modal-box .close-btn { cursor: pointer; font-size: 16px; color: var(--muted); border: none; background: transparent; }
+  .ver-item { padding: 12px 0; border-bottom: 1px solid var(--line-soft); }
+  .ver-item:last-child { border-bottom: none; }
+  .ver-tag { font-family: var(--mono); font-size: 12px; font-weight: 700; color: var(--clay); }
+  .ver-date { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-left: 8px; }
+  .ver-desc { font-size: 13px; line-height: 1.55; margin-top: 6px; color: var(--body); }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="bar-title">
+    <h1>Trình Nhập Liệu ACF & AI — Master Interactive Documentation</h1>
+    <span class="ver-badge">v1.5.0 Master</span>
+  </div>
+  <div class="spacer"></div>
+  <button class="btn-ver" id="verHistoryBtn">📜 Lịch sử Phiên bản</button>
+  <button id="themeToggle">Chế độ Tối/Sáng</button>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h3>MỤC LỤC CHI TIẾT 7 BƯỚC SOP</h3>
+    <ul class="toc-list">
+      <li class="toc-item"><a href="#step1" class="active">1. Khảo sát & Tiếp nhận yêu cầu</a></li>
+      <li class="toc-item"><a href="#step2">2. Phân tích & Lập kế hoạch</a></li>
+      <li class="toc-item"><a href="#step3">3. Thiết kế cấu trúc</a></li>
+      <li class="toc-item"><a href="#step4">4. Thiết kế giao diện & Submenus</a></li>
+      <li class="toc-item"><a href="#step5">5. Phân tích Chi Tiết 11 Chức Năng</a></li>
+      <li class="toc-item"><a href="#step6">6. Kiểm thử, Bảo mật & Bảng Lỗi</a></li>
+      <li class="toc-item"><a href="#step7">7. Bàn giao & Vận hành Maintenance</a></li>
+      <li class="toc-item"><a href="#subdocs">📂 Thư Mục Tài Liệu Chức Năng</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+
+    <!-- BƯỚC 1 -->
+    <section class="sec" id="step1">
+      <div class="sec-tag">SOP BƯỚC 1</div>
+      <h2>1. Khảo Sát & Tiếp Nhận Yêu Cầu (Discovery & Requirement Analysis)</h2>
+      <p><strong>Mục tiêu:</strong> Làm rõ bài toán thực tế, các vấn đề nhức nhối (Pain Points) và danh sách đầy đủ <strong>11 Chức năng giải quyết triệt để</strong> mà plugin <code>01-trinh-nhap-lieu-acf-thong-minh</code> cung cấp cho website WordPress.</p>
+
+      <!-- VẤN ĐỀ THỰC TẾ -->
+      <h3>🛑 Các Vấn Đề Thực Tế Plugin Cần Giải Quyết (Pain Points)</h3>
+      <ul>
+        <li><strong>Vấn đề 1 - Nhập liệu ACF tốn thời gian:</strong> Việc điền thủ công từng bài viết có hàng chục trường ACF (Advanced Custom Fields) và sản phẩm WooCommerce ngốn hàng trăm giờ làm việc của nhân viên Content.</li>
+        <li><strong>Vấn đề 2 - Lệch cột dữ liệu Excel:</strong> Tệp Excel từ phòng kế toán/kinh doanh gửi sang không khớp tên Meta Key của ACF, dẫn đến khi dùng các plugin import mặc định thì bị mất trường hoặc sai lệch giá trị.</li>
+        <li><strong>Vấn đề 3 - Gán ảnh đại diện phức tạp:</strong> Quản trị viên phải tải từng bức ảnh về máy tính rồi mới nhấp Upload lên WordPress Media Library cho từng bài viết.</li>
+        <li><strong>Vấn đề 4 - Thiếu bài viết dữ liệu mẫu (Mock Data):</strong> Khi lập trình Theme/Giao diện mới, việc không có sẵn bài viết chứa đủ dữ liệu trường ACF thực tế khiến việc thử nghiệm UI vô cùng khó khăn.</li>
+        <li><strong>Vấn đề 5 - Cào dữ liệu từ URL ngoài:</strong> Khi muốn lấy bài viết từ báo chí hoặc website đối thủ, việc sao chép thủ công từng đoạn văn và ảnh rất mất thời gian. Các công cụ cào cũ hay bị timeout Server.</li>
+        <li><strong>Vấn đề 6 - Thao tác xa rời trình duyệt:</strong> Khi lướt web thấy bài viết hay trên Chrome, người dùng phải mở lại Admin WordPress, tạo bài mới và dán từng ô từ đầu.</li>
+      </ul>
+
+      <!-- DANH SÁCH CHỨC NĂNG LÀM ĐƯỢC -->
+      <h3>⚡ Danh Sách 11 Chức Năng Cốt Lõi Plugin Làm ĐƯỢC (Feature & Capability Matrix)</h3>
+      <p>Dưới đây là mảng 11 chức năng hoàn chỉnh mà plugin giải quyết triệt để cho người dùng:</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 8%;">STT</th>
+            <th style="width: 25%;">Tên Chức Năng</th>
+            <th style="width: 45%;">Giải Pháp & Khả Năng Thực Thực Hiện</th>
+            <th style="width: 22%;">Tài Liệu Chi Tiết</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>01</strong></td>
+            <td><strong>Bảng Điều Khiển Nhập Liệu 4 Bước</strong></td>
+            <td>Tự động quét toàn bộ trường CSDL & ACF của bài viết mẫu, cho phép sửa trực tiếp và tự động xuất file Excel mẫu `.xlsx` khớp 100% tên cột.</td>
+            <td><a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/01-bang-dieu-khien-nhap-lieu-acf-ai.md">01-bang-dieu-khien...md</a></td>
+          </tr>
+          <tr>
+            <td><strong>02</strong></td>
+            <td><strong>Thêm Ảnh Hàng Loạt</strong></td>
+            <td>Kéo thả hàng loạt ảnh hoặc dán danh sách URL ảnh từ xa, dùng `media_sideload_image` tự động gán làm Featured Image cho nhiều bài viết cùng lúc.</td>
+            <td><a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/02-them-anh-hang-loat.md">02-them-anh-hang-loat.md</a></td>
+          </tr>
+          <tr>
+            <td><strong>03</strong></td>
+            <td><strong>Nhập Excel Hàng Loạt (SheetJS)</strong></td>
+            <td>Đọc file Excel/CSV dung lượng lớn tại phía trình duyệt Client (Client-side Parser), hiển thị xem trước và chạy hàng đợi Batch Import chống timeout PHP.</td>
+            <td><a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/03-nhap-excel-hang-loat.md">03-nhap-excel-hang-loat.md</a></td>
+          </tr>
+          <tr>
+            <td><strong>04</strong></td>
+            <td><strong>Gán Phân Loại Hàng Loạt</strong></td>
+            <td>Gán Chuyên mục (Category), Thẻ (Tag) cho hàng loạt bài viết cùng lúc, hỗ trợ cú pháp phân cấp nhiều tầng dạng <code>Cha > Con > Cháu</code>.</td>
+            <td><a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/04-gan-phan-loai-hang-loat.md">04-gan-phan-loai...md</a></td>
+          </tr>
+          <tr>
+            <td><strong>05</strong></td>
+            <td><strong>Xuất Dữ Liệu Bài Viết & ACF</strong></td>
+            <td>Trích xuất toàn bộ bài viết chuẩn và trường ACF ra file Excel (.xlsx), CSV, hoặc JSON để làm bản sao lưu hoặc chuyển giao dữ liệu.</td>
+            <td><a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/05-xuat-du-lieu.md">05-xuat-du-lieu.md</a></td>
+          </tr>
+          <tr>
+            <td><strong>06</strong></td>
+            <td><strong>Lấy Tiêu Đề Bài Viết</strong></td>
+            <td>Trích xuất nhanh danh sách Tiêu đề, Slug, URL theo Post Type để phục vụ việc kiểm tra SEO, nghiên cứu từ khóa hoặc đưa sang dịch thuật AI.</td>
+            <td><a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/06-lay-tieu-de-bai-viet.md">06-lay-tieu-de-bai-viet.md</a></td>
+          </tr>
+          <tr>
+            <td><strong>07</strong></td>
+            <td><strong>Nhân Bản Hàng Loạt</strong></td>
+            <td>Nhân bản 1 bài viết mẫu thành $N$ bản sao giữ nguyên 100% cấu trúc trường ACF, Taxonomy và Featured Image kèm quy tắc đánh số thứ tự.</td>
+            <td><a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/07-nhan-ban-hang-loat.md">07-nhan-ban-hang-loat.md</a></td>
+          </tr>
+          <tr>
+            <td><strong>08</strong></td>
+            <td><strong>Tạo Nội Dung AI Gemini</strong></td>
+            <td>Kết nối API Gemini 1.5 Flash tự động viết bài chuẩn SEO, tạo bản tóm tắt và tự điền các trường tùy chỉnh ACF theo từ khóa đầu vào.</td>
+            <td><a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/08-tao-noi-dung-ai.md">08-tao-noi-dung-ai.md</a></td>
+          </tr>
+          <tr>
+            <td><strong>09</strong></td>
+            <td><strong>Cào Bài Viết Web Scraper (URL)</strong></td>
+            <td>Bóc tách Tiêu đề, Nội dung, Ảnh đại diện từ bất kỳ đường dẫn URL ngoài nào bằng CSS Selector / XPath có khung xem trước kết quả trực tiếp.</td>
+            <td><a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/09-cao-bai-viet-web-scraper.md">09-cao-bai-viet...md</a></td>
+          </tr>
+          <tr>
+            <td><strong>10</strong></td>
+            <td><strong>Cào SingleFile HTML & Package JSON</strong></td>
+            <td>Phân tích bóc tách các file SingleFile `.html` được lưu offline hoặc nhập nạp gói Package dữ liệu `.json` kèm media 1-click.</td>
+            <td><a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/10-cao-html-package-json-import.md">10-cao-html-package...md</a></td>
+          </tr>
+          <tr>
+            <td><strong>11</strong></td>
+            <td><strong>Kết Nối API & Chrome Extension</strong></td>
+            <td>Cung cấp API Token Bridge kết nối trực tiếp với Chrome Extension trên trình duyệt, cho phép bấm nút "Auto-Post to WP" khi đang lướt web.</td>
+            <td><a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/11-ket-noi-api-chrome-extension.md">11-ket-noi-api...md</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- MA TRẬN CÔNG VIỆC THỰC THI -->
+      <h3>🛠️ Ma Trận Các Công Việc Thực Thi Nghiệp Vụ (Execution Workflow Tasks)</h3>
+      <ul>
+        <li><strong>Công việc 1 (Quét & Chuẩn hóa):</strong> Quét schema bài viết đại diện $\rightarrow$ Tạo file Excel mẫu `.xlsx` đúng 100% cột meta key.</li>
+        <li><strong>Công việc 2 (Import An Toàn):</strong> Nạp file Excel $\rightarrow$ Xem trước dữ liệu từng dòng $\rightarrow$ Chạy hàng đợi đệ quy AJAX Client-side (delay 150ms) để không bị ngắt Server HTTP 504.</li>
+        <li><strong>Công việc 3 (Sideload Media):</strong> Tự động tải ảnh từ xa từ danh sách URL $\rightarrow$ Lưu vào thư mục `wp-content/uploads/` $\rightarrow$ Gán `_thumbnail_id` và ACF Image ID.</li>
+        <li><strong>Công việc 4 (Đồng Bộ Extension):</strong> Cấu hình Token Bridge $\rightarrow$ Trình duyệt Chrome gửi dữ liệu đến `/wp-json/wpsai/v1/import` $\rightarrow$ Đăng bài tức thì trên WordPress.</li>
+      </ul>
+
+      <div class="callout">
+        <strong>💡 Kết quả đầu ra (Deliverables):</strong> Bộ tài liệu hoàn chỉnh gồm <code>README.md</code>, <code>specification.md</code>, <code>workflow.md</code>, file <code>interactive_master_docs.html</code> và 11 tệp Markdown chi tiết trong thư mục <code>docs/chuc-nang/</code>.
+      </div>
+    </section>
+
+    <!-- BƯỚC 2 -->
+    <section class="sec" id="step2">
+      <div class="sec-tag">SOP BƯỚC 2</div>
+      <h2>2. Phân Tích & Lập Kế Hoạch (Planning & Strategy)</h2>
+      <p><strong>Mục tiêu:</strong> Lập thiết kế kiến trúc kỹ thuật, REST API Endpoints và cấu trúc thư mục plugin.</p>
+
+      <h3>📋 Các Hoạt Động Chi Tiết</h3>
+      <ul>
+        <li><strong>Lựa chọn công nghệ:</strong> Sử dụng PHP 7.4/8.x Vanilla, SheetJS `xlsx.full.min.js`, Google Gemini 1.5 Flash API, jQuery, và Dashicons.</li>
+        <li><strong>Thiết kế CSDL & Meta Schema:</strong> Không tạo bảng MySQL phụ, lưu trữ trực tiếp vào `wp_posts`, `wp_postmeta` và các bảng Taxonomy chuẩn.</li>
+        <li><strong>Thiết kế REST API Endpoints:</strong>
+          <pre><code>POST /wp-json/wpsai/v1/import         - Nạp bài viết mới từ Chrome Extension
+POST /api/ext/activate                 - Bridge endpoint xác thực Extension
+POST /api/ext/auth-token               - Lấy token kết nối Extension</code></pre>
+        </li>
+      </ul>
+    </section>
+
+    <!-- BƯỚC 3 -->
+    <section class="sec" id="step3">
+      <div class="sec-tag">SOP BƯỚC 3</div>
+      <h2>3. Thiết Kế Cấu Trúc (Information Architecture & User Flow)</h2>
+      <p><strong>Mục tiêu:</strong> Xây dựng sơ đồ cây thư mục mã nguồn chuẩn hóa, bộ máy phát hiện cấu trúc trường Schema Discovery và luồng di chuyển dữ liệu 4 bước thông minh.</p>
+
+      <h3>📂 Cây Cấu Trúc Thư Mục Plugin & Mô Tả Chi Tiết Mục Đích Từng File/Folder</h3>
+      <pre><code>01-trinh-nhap-lieu-acf-thong-minh/
+├── assets/                                      # 📦 Tài nguyên tĩnh giao diện phía Client
+│   ├── css/
+│   │   └── admin-style.css                     # 🎨 CSS tùy chỉnh Admin Dashboard, UI cards, bảng preview & console log
+│   └── js/
+│       └── admin-script.js                     # ⚡ JavaScript phía Client xử lý AJAX, SheetJS Excel parser, UI tabs & Batch queue
+├── docs/                                        # 📚 Tài liệu kỹ thuật & quy trình xây dựng
+│   ├── chuc-nang/                              # 📂 11 File Markdown hướng dẫn chi tiết từng chức năng con (01 -> 11)
+│   ├── 7 Bước Quy trình -- plugin-01-trinh-nhap-lieu-acf-thong-minh.md # 📜 Báo cáo chi tiết quy trình 7 bước phát triển
+│   ├── interactive_master_docs.html            # 🌐 Báo cáo HTML tương tác trực quan với sơ đồ SVG & modal version history
+│   ├── README.md                               # 📄 Giới thiệu tổng quan & hướng dẫn cài đặt nhanh
+│   ├── specification.md                        # 📐 Quy định thông số kỹ thuật & phạm vi chức năng
+│   ├── workflow.md                             # 🔄 Sơ đồ Sequence Diagram luồng di chuyển dữ liệu
+│   └── architecture-and-flows.md               # 🏛️ Tài liệu kiến trúc hệ thống & quy trình xử lý dữ liệu sâu
+├── includes/                                    # ⚙️ Toàn bộ Lớp mã nguồn PHP Backend
+│   ├── class-wp-acf-smart-importer-admin.php   # 🖥️ Lớp quản lý Menu, Render giao diện HTML Dashboard 6 tab & Submenus trang riêng
+│   ├── class-wp-acf-smart-importer-ajax.php    # 🔄 Lớp tiếp nhận & xử lý 25+ hành động AJAX endpoint phía Server
+│   ├── class-wp-acf-smart-importer-engine.php  # 🚀 Lớp thực thi ghi CSDL (wp_insert_post), gán taxonomy & media sideloading
+│   ├── class-wp-acf-smart-importer-generator.php # 🤖 Lớp kết nối Google Gemini AI API & thuật toán Rule-based sinh dữ liệu ảo
+│   ├── class-wp-acf-smart-importer-rest.php    # 🌐 Lớp đăng ký REST API endpoints (/wp-json/wpsai/v1/import) cho Chrome Extension
+│   ├── class-wp-acf-smart-importer-scraper.php # 🕷️ Lớp bóc tách HTML theo CSS Selectors / XPath cho module cào bài viết
+│   └── class-wp-acf-smart-importer-tree.php    # 🌳 Lớp xử lý cây phân cấp Chuyên mục/Thẻ (Cha > Con > Cháu) qua wp_insert_term()
+└── trinh-nhap-lieu-acf-thong-minh.php          # 🚀 File khởi chạy chính: Khai báo Header Plugin, hằng số PATH/URL và nạp các Lớp</code></pre>
+
+      <h3>📋 Các Thành Phần Kiến Trúc Cốt Lõi</h3>
+      <ul>
+        <li><strong>Schema Discovery Engine:</strong> Quét tự động danh sách các trường của bài viết mẫu bao gồm Core Fields (`post_title`, `post_content`, `post_excerpt`, `featured_image`) và ACF/Postmeta fields.</li>
+        <li><strong>Cấu trúc Submenus Trang Riêng:</strong>
+          - `Nhập Liệu ACF & AI` (`admin.php?page=wp-acf-smart-importer`)
+          - `Cào Bài Viết & Scraper` (`admin.php?page=wpsai-smart-scraper`)
+          - `Package JSON Import` (`admin.php?page=wpsai-package-import`)
+          - `Kết Nối API` (`admin.php?page=wpsai-api-settings`)
+        </li>
+      </ul>
+    </section>
+
+    <!-- BƯỚC 4 -->
+    <section class="sec" id="step4">
+      <div class="sec-tag">SOP BƯỚC 4</div>
+      <h2>4. Thiết Kế Giao Diện (UI/UX Design & Submenus)</h2>
+      <p><strong>Mục tiêu:</strong> Thiết kế Admin Dashboard chuyên nghiệp hỗ trợ responsive, tabs điều hướng và console log hiển thị tiến trình.</p>
+    </section>
+
+    <!-- BƯỚC 5 -->
+    <section class="sec" id="step5">
+      <div class="sec-tag">SOP BƯỚC 5</div>
+      <h2>5. Phân Tích Chi Tiết 11 Chức Năng Code (Development & Implementation)</h2>
+      <p><strong>Mục tiêu:</strong> Phân tích mã nguồn chuyên sâu cho từng chức năng trong 11 chức năng cốt lõi của plugin, bao gồm: Mô tả chức năng, Các file lưu source code, Luồng xử lý kỹ thuật và sơ đồ Sequence Diagram.</p>
+
+      <h3>💡 Phân Tích Đánh Giá UX: Lợi Ích Của Việc Tách Riêng Tab Quét Cấu Trúc & Tab Nhập Dữ Liệu</h3>
+      <p>Góc nhìn về mặt Trải nghiệm người dùng (UX) và Kiến trúc sản phẩm của bạn là <strong>CỰC KỲ CHÍNH XÁC VÀ SẮC BÉN</strong>:</p>
+      <ul>
+        <li><strong>Thiết kế Wizard khép kín ban đầu:</strong> Đặt 4 Bước vào 1 Tab giúp lập trình viên thao tác thử nghiệm liền mạch từ lúc quét trường đến lúc import 1 bài viết mẫu ngay trên cùng 1 trang.</li>
+        <li><strong>Ưu điểm khi TÁCH THÀNH 2 TAB ĐỘC LẬP:</strong>
+          <ul>
+            <li><strong>Tab 1 (🔍 Quét Cấu Trúc & Tải File Excel Mẫu):</strong> Đội Dev/Kỹ thuật chọn Post Type & Bài viết mẫu $\rightarrow$ Quét trường $\rightarrow$ Tải file `.xlsx` mẫu chuẩn 100% cột giao cho phòng Content.</li>
+            <li><strong>Tab 2 (📥 Nhập Dữ Liệu Hàng Loạt):</strong> Nhân viên Content/SEO sau khi điền file Excel xong chỉ cần vào Tab này nạp file & bấm <i>"Import Hàng Loạt"</i> mà không cần đi lại các bước quét bài viết mẫu.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>💡 Lý Do Kiến Trúc Mã Nguồn Được Tách Thành Nhiều File (Architectural Rationale)</h3>
+      <p>Trong thiết kế phần mềm và kiến trúc plugin WordPress chuẩn chuyên nghiệp (<strong>Separation of Concerns / MVC Pattern</strong>):</p>
+      <ul>
+        <li><strong>Nếu gộp tất cả vào 1 file:</strong> Mã nguồn sẽ dài hàng chục nghìn dòng. HTML giao diện, JavaScript phía Client, xử lý AJAX Server và câu lệnh SQL/DB trộn lẫn vào nhau khiến mã nguồn cực kỳ hỗn loạn, không thể nâng cấp và rất dễ lộ hổng bảo mật.</li>
+        <li><strong>Khi tách thành nhiều lớp chuyên biệt:</strong>
+          <ul>
+            <li><strong>Lớp Frontend Client (<code>admin-script.js</code>, <code>admin-style.css</code>):</strong> Chạy trên trình duyệt người dùng, bắt sự kiện click, đọc file Excel và gửi request đệ quy mà <strong>không làm reload hay đơ trang</strong>.</li>
+            <li><strong>Lớp Admin View (<code>class-wp-acf-smart-importer-admin.php</code>):</strong> Chỉ làm nhiệm vụ dựng bố cục HTML và các thẻ điều hướng Tabs.</li>
+            <li><strong>Lớp Cổng Bảo Mật AJAX (<code>class-wp-acf-smart-importer-ajax.php</code>):</strong> Tiếp nhận request từ JS, kiểm tra khóa bảo mật <code>Nonce</code> và quyền Admin (<code>manage_options</code>) trước khi cho đụng vào CSDL.</li>
+            <li><strong>Lớp Engine Thực Thi (<code>class-wp-acf-smart-importer-engine.php</code>):</strong> Chứa các hàm nghiệp vụ độc lập tương tác với WordPress Core (<code>wp_insert_post()</code>, <code>update_field()</code>, <code>media_handle_sideload()</code>).</li>
+            <li><strong>Lớp AI Generator (<code>class-wp-acf-smart-importer-generator.php</code>):</strong> Chuyên kết nối API bên thứ 3 (Google Gemini).</li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- CHỨC NĂNG 01 -->
+      <h3>🔹 Chức Năng 01: Quét Cấu Trúc & Xuất File Excel Mẫu (Schema Discovery & Template Builder - Tab `#dashboard`)</h3>
+
+      <h4>1. Mô Tả Chi Tiết Về Chức Năng:</h4>
+      <ul>
+        <li><strong>Chọn Bài Viết Mẫu:</strong> Chọn <code>Post Type</code> (<code>post</code>, <code>product</code>, <code>du-an</code>...) và chọn <code>Bài viết mẫu</code> (hoặc nhấp <i>Tạo bài viết rỗng mới</i>). Bấm <i>"Quét Các Trường Bài Viết"</i>, hệ thống tự động thu thập tất cả trường mặc định WordPress (<code>post_title</code>, <code>post_content</code>, <code>post_excerpt</code>, <code>post_status</code>, <code>featured_image</code>) và toàn bộ các trường tùy chỉnh <strong>ACF (Advanced Custom Fields)</strong> và <strong>Custom Postmeta</strong>.</li>
+        <li><strong>Cấu Trúc & Tải File Excel Mẫu:</strong> Hiển thị bảng cấu trúc trường (<code>Label</code>, <code>Key/Name</code>, <code>Loại trường</code>, <code>Giá trị hiện tại</code>). Người dùng có thể sửa trực tiếp trên bảng và bấm <i>"Lưu/Cập nhật trực tiếp bài viết"</i>, hoặc bấm <i>"Tải File Excel Mẫu"</i> để tự động xuất tệp <code>.xlsx</code> chuẩn với hàng Header khớp 100% tên các cột dữ liệu vừa quét được + 1 dòng dữ liệu mẫu.</li>
+      </ul>
+
+      <!-- CHỨC NĂNG 02 -->
+      <h3>🔹 Chức Năng 02: Nhập Dữ Liệu Hàng Loạt (Bulk Data Importer & Execution Engine - Tab `#import-runner`)</h3>
+
+      <h4>1. Mô Tả Chi Tiết Về Chức Năng:</h4>
+      <ul>
+        <li><strong>Chọn Cách Nạp Dữ Liệu & Xem Trước:</strong> Nạp dữ liệu từ 2 nguồn: <strong>Cách A</strong> (Tự sinh dữ liệu ngẫu nhiên bằng Gemini AI hoặc thuật toán Rule-based) hoặc <strong>Cách B</strong> (Kéo thả file Excel <code>.xlsx</code>, <code>.csv</code>, Google Sheet URL, JSON, Notepad). Cung cấp bộ chuyển dòng (<i>Dòng trước / Dòng sau</i>) để kiểm tra xem trước dữ liệu sẽ được khớp vào bài viết như thế nào trước khi đăng chính thức.</li>
+        <li><strong>Thực Thi Lưu / Import Hàng Loạt:</strong> Chọn chế độ <i>Chỉ cập nhật bài viết đang chọn</i> hoặc <i>Nhập hàng loạt thành N bài viết mới hoàn chỉnh</i>. Bấm thực thi để chạy thanh tiến trình Progress Bar và hiển thị nhật ký Log thời gian thực.</li>
+      </ul>
+
+      <h4>2. Danh Sách Tệp Lưu Source Code Của Hai Chức Năng:</h4>
+      <ul>
+        <li>🖥️ <strong>Render HTML Admin Tabs:</strong> <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/includes/class-wp-acf-smart-importer-admin.php#L158-L430">includes/class-wp-acf-smart-importer-admin.php</a> (Tab `#dashboard` & Tab `#import-runner`).</li>
+        <li>🔄 <strong>AJAX Gateway Handler Backend:</strong> <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/includes/class-wp-acf-smart-importer-ajax.php">includes/class-wp-acf-smart-importer-ajax.php</a> (<code>wpsai_get_post_types</code>, <code>wpsai_get_posts_by_type</code>, <code>wpsai_scan_post_fields</code>, <code>wpsai_update_post_fields</code>, <code>wpsai_import_row</code>).</li>
+        <li>🚀 <strong>Engine Ghi CSDL & Sideload Media:</strong> <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/includes/class-wp-acf-smart-importer-engine.php">includes/class-wp-acf-smart-importer-engine.php</a> (<code>import_single_row()</code>, <code>wp_insert_post()</code>, <code>update_field()</code>, <code>media_handle_sideload()</code>).</li>
+        <li>🤖 <strong>Sinh Dữ Liệu AI Gemini & Rule Mocking:</strong> <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/includes/class-wp-acf-smart-importer-generator.php">includes/class-wp-acf-smart-importer-generator.php</a> (Kết nối Google Gemini 1.5 Flash API).</li>
+        <li>⚡ <strong>Client JavaScript & Batch Queue:</strong> <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/assets/js/admin-script.js">assets/js/admin-script.js</a> (Thư viện SheetJS, Dropzone drag-drop, Row preview navigator và đệ quy AJAX Queue).</li>
+        <li>🎨 <strong>Style CSS Admin Dashboard:</strong> <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/assets/css/admin-style.css">assets/css/admin-style.css</a>.</li>
+      </ul>
+
+      <h4>3. Chi Tiết Chuỗi Gọi Hàm & Cách Các Hàm Hoạt Động (Function Execution Call Stack):</h4>
+      <h5>⚡ Pha 1: Quét cấu trúc trường & Xuất tệp Excel mẫu</h5>
+      <ol>
+        <li><code>admin-script.js</code> $\rightarrow$ Lắng nghe nút <code>#wpsai-scan-btn</code> bấm click $\rightarrow$ Gọi <code>jQuery.ajax()</code> gửi <code>{action: 'wpsai_scan_post_fields', post_id, post_type, nonce}</code>.</li>
+        <li><code>class-wp-acf-smart-importer-ajax.php</code> $\rightarrow$ Hàm <code>wpsai_scan_post_fields()</code> chạy <code>check_ajax_referer('wpsai_nonce')</code> & <code>current_user_can('manage_options')</code> $\rightarrow$ Chuyển tham số sang Engine <code>WP_ACF_Smart_Importer_Engine::scan_post_fields($post_id)</code>.</li>
+        <li><code>class-wp-acf-smart-importer-engine.php</code> $\rightarrow$ Hàm <code>scan_post_fields($post_id)</code> gọi:
+          <ul>
+            <li><code>get_post($post_id)</code> để lấy thông tin các trường chuẩn (<code>post_title</code>, <code>post_content</code>, <code>post_excerpt</code>, <code>post_status</code>).</li>
+            <li><code>get_field_objects($post_id)</code> để lấy mảng trường ACF tùy chỉnh (<code>label</code>, <code>name</code>, <code>type</code>, <code>value</code>).</li>
+            <li><code>get_post_meta($post_id)</code> để lấy meta custom.</li>
+            <li>Trả mảng Schema về AJAX Gateway $\rightarrow$ AJAX phản hồi JSON success <code>wp_send_json_success($schema)</code>.</li>
+          </ul>
+        </li>
+        <li><code>admin-script.js</code> $\rightarrow$ Nhận JSON Schema, render bảng <code>&lt;tr&gt;</code> ở Bước 2. Khi người dùng nhấp <i>"Tải File Excel Mẫu"</i>, JS gọi hàm SheetJS <code>XLSX.utils.json_to_sheet([headers])</code> & <code>XLSX.writeFile(wb, 'mau-nhap-lieu.xlsx')</code> xuất file tại phía Client.</li>
+      </ol>
+
+      <h5>⚡ Pha 2: Thực thi Import hàng loạt (Client Batch Queue)</h5>
+      <ol>
+        <li><code>admin-script.js</code> $\rightarrow$ Khi bấm <i>"Bắt Đầu Import"</i>, hàm <code>processImportQueue(index)</code> khởi chạy đệ quy từ <code>index = 0</code>.</li>
+        <li><code>admin-script.js</code> $\rightarrow$ Gửi AJAX request chứa dữ liệu dòng <code>i</code> <code>{action: 'wpsai_import_row', row_data, import_mode, nonce}</code> sang Server.</li>
+        <li><code>class-wp-acf-smart-importer-ajax.php</code> $\rightarrow$ Hàm <code>wpsai_import_row()</code> nhận payload $\rightarrow$ Chuyển sang Engine <code>WP_ACF_Smart_Importer_Engine::import_single_row($row_data)</code>.</li>
+        <li><code>class-wp-acf-smart-importer-engine.php</code> $\rightarrow$ Hàm <code>import_single_row()</code> lần lượt thực thi:
+          <ul>
+            <li><code>wp_insert_post($post_data)</code> $\rightarrow$ Tạo bài viết mới trong CSDL bảng <code>wp_posts</code>, nhận <code>$new_post_id</code>.</li>
+            <li><code>update_field($field_key, $field_value, $new_post_id)</code> $\rightarrow$ Ghi các trường ACF tùy chỉnh vào <code>wp_postmeta</code>.</li>
+            <li><code>media_handle_sideload($file_array, $new_post_id)</code> $\rightarrow$ Tải ảnh từ URL ngoài (nếu có) và gán làm Ảnh đại diện <code>_thumbnail_id</code>.</li>
+            <li><code>wp_set_object_terms($new_post_id, $terms, $taxonomy)</code> $\rightarrow$ Gán Chuyên mục/Thẻ.</li>
+            <li>Trả về <code>wp_send_json_success(['post_id' => $new_post_id])</code>.</li>
+          </ul>
+        </li>
+        <li><code>admin-script.js</code> $\rightarrow$ Cập nhật thanh Progress Bar <code>((i + 1) / N) * 100%</code>, in dòng log xanh và gọi đệ quy <code>processImportQueue(i + 1)</code> sau <code>150ms</code>.</li>
+      </ol>
+
+      <h4>4. Luồng Xử Lý Kỹ Thuật (Processing Workflow):</h4>
+      <pre><code>[BƯỚC 1 & 2: QUÉT SCHEMA BÀI VIẾT & XUẤT FILE EXCEL MẪU]
+1. Admin chọn Post Type & Bài viết mẫu -> Bấm 'Quét Các Trường'
+2. Client JS gọi AJAX Action: wpsai_scan_post_fields
+5. Client JS render Bảng Cấu Trúc Trường ở Bước 2
+6. Admin nhấp 'Tải File Excel Mẫu' -> SheetJS tạo .xlsx chuẩn 100% cột
+
+[BƯỚC 3 & 4: NẠP DỮ LIỆU & THỰC THI BATCH IMPORT HÀNG LOẠT]
+7. Nạp dữ liệu:
+   - Cách A: Chọn AI -> Gọi Action wpsai_generate_mock_data -> Gemini AI sinh N bài viết ảo & ảnh LoremFlickr
+   - Cách B: Kéo thả file Excel -> SheetJS đọc file tại Client & map cột với tên trường
+8. Admin xem trước dòng -> Chọn 'Nhập hàng loạt bài viết mới' -> Bấm 'Bắt Đầu Import'
+9. Đệ quy Client-side Batch Queue (mỗi dòng delay 150ms):
+   - Client JS gọi AJAX Action: wpsai_import_row (Dòng index i)
+   - Engine ghi DB wp_insert_post + ACF meta + đệ quy gán Taxonomy + sideload ảnh
+   - WP DB trả về OK -> Client JS cập nhật Progress Bar % & Console Log</code></pre>
+    </section>
+
+    <!-- BƯỚC 6 -->
+    <section class="sec" id="step6">
+      <div class="sec-tag">SOP BƯỚC 6</div>
+      <h2>6. Kiểm Thử, Bảo Mật & Bảng Tra Cứu Lỗi Thường Gặp (Testing & Troubleshooting)</h2>
+      <p><strong>Mục tiêu:</strong> Đảm bảo hệ thống nhập liệu vận hành mượt mà, không bị timeout khi import số lượng lớn.</p>
+
+      <h3>🛑 Bảng Danh Sách Vấn Đề / Lỗi Hay Gặp & Cách Khắc Phục Chuẩn</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Tên Lỗi / Sự Cố</th>
+            <th>Dấu Hiệu Nhận Biết</th>
+            <th>Nguyên Nhân Cốt Lõi</th>
+            <th>Giải Pháp Khắc Phục Chuẩn</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Lỗi `wpsai_data is not defined`</strong></td>
+            <td>Console JS báo error `Uncaught ReferenceError: wpsai_data is not defined`</td>
+            <td>Script JS gọi biến `wpsai_data` nhưng PHP chỉ localize `wpsai_params`</td>
+            <td>Bổ sung <code>wp_localize_script('wpsai-admin-script', 'wpsai_data', $js_data)</code></td>
+          </tr>
+          <tr>
+            <td><strong>Click Submenu không chuyển Tab</strong></td>
+            <td>Nhấp Submenu bên trái URL đổi <code>#scraper</code> nhưng giao diện giữ nguyên</td>
+            <td>Trình duyệt không reload trang và JS thiếu listener <code>hashchange</code></td>
+            <td>Cập nhật Submenus sang trang riêng <code>wpsai-smart-scraper</code> và bổ sung <code>on('hashchange')</code></td>
+          </tr>
+          <tr>
+            <td><strong>Lỗi 404 `/api/ext/activate`</strong></td>
+            <td>Chrome Extension báo 404 khi gửi request kết nối</td>
+            <td>Trình duyệt Extension gửi về root <code>http://localhost/api/ext/</code> thiếu htaccess handler</td>
+            <td>Tạo Bridge file <code>d:/xampp/htdocs/api/ext/index.php</code> và `.htaccess` rewrite catch-all</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- BƯỚC 7 -->
+    <section class="sec" id="step7">
+      <div class="sec-tag">SOP BƯỚC 7</div>
+      <h2>7. Bàn Giao & Vận Hành Maintenance (Deployment & Handover)</h2>
+      <p><strong>Mục tiêu:</strong> Đóng gói plugin và bàn giao bộ 11 tài liệu chức năng chi tiết cho đội ngũ SEO/Content.</p>
+    </section>
+
+    <!-- HƯỚNG DẪN TRUY CẬP THƯ MỤC DOCS -->
+    <section class="sec" id="subdocs">
+      <div class="sec-tag">THƯ MỤC TÀI LIỆU CHỨC NĂNG</div>
+      <h2>📂 Chi Tiết 11 Tệp Tài Liệu Chức Năng (docs/chuc-nang/)</h2>
+      <ul>
+        <li>📄 <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/01-bang-dieu-khien-nhap-lieu-acf-ai.md">01-bang-dieu-khien-nhap-lieu-acf-ai.md</a></li>
+        <li>📄 <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/02-them-anh-hang-loat.md">02-them-anh-hang-loat.md</a></li>
+        <li>📄 <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/03-nhap-excel-hang-loat.md">03-nhap-excel-hang-loat.md</a></li>
+        <li>📄 <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/04-gan-phan-loai-hang-loat.md">04-gan-phan-loai-hang-loat.md</a></li>
+        <li>📄 <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/05-xuat-du-lieu.md">05-xuat-du-lieu.md</a></li>
+        <li>📄 <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/06-lay-tieu-de-bai-viet.md">06-lay-tieu-de-bai-viet.md</a></li>
+        <li>📄 <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/07-nhan-ban-hang-loat.md">07-nhan-ban-hang-loat.md</a></li>
+        <li>📄 <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/08-tao-noi-dung-ai.md">08-tao-noi-dung-ai.md</a></li>
+        <li>📄 <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/09-cao-bai-viet-web-scraper.md">09-cao-bai-viet-web-scraper.md</a></li>
+        <li>📄 <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/10-cao-html-package-json-import.md">10-cao-html-package-json-import.md</a></li>
+        <li>📄 <a href="file:///d:/xampp/htdocs/11.%20BASE%20TEST%20CASE/wp-content/plugins/01-trinh-nhap-lieu-acf-thong-minh/docs/chuc-nang/11-ket-noi-api-chrome-extension.md">11-ket-noi-api-chrome-extension.md</a></li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<!-- Modal Version History -->
+<div class="modal-overlay" id="verModal">
+  <div class="modal-box">
+    <h2>
+      <span>📜 Lịch Sử Phiên Bản Plugin 01</span>
+      <button class="close-btn" id="closeModalBtn">✖</button>
+    </h2>
+    <div class="ver-item">
+      <span class="ver-tag">v1.5.0 (Hiện tại)</span>
+      <span class="ver-date">2026-08-09</span>
+      <div class="ver-desc">
+        - Cập nhật Step 1 bổ sung chi tiết 6 Vấn đề thực tế (Pain Points) và Bảng 11 Chức năng cốt lõi plugin làm ĐƯỢC.<br>
+        - Bổ sung Ma trận công việc thực thi nghiệp vụ (Execution Workflow Tasks).
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Theme toggle
+document.getElementById('themeToggle').addEventListener('click', () => {
+  const dark = !document.documentElement.classList.contains('dark');
+  document.documentElement.classList.toggle('dark', dark);
+  localStorage.setItem('theme', dark ? 'dark' : 'light');
+});
+
+// Modal Version
+const modal = document.getElementById('verModal');
+document.getElementById('verHistoryBtn').addEventListener('click', () => modal.classList.add('open'));
+document.getElementById('closeModalBtn').addEventListener('click', () => modal.classList.remove('open'));
+modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('open'); });
+
+// Active TOC link on scroll
+const sections = document.querySelectorAll('.sec');
+const navLinks = document.querySelectorAll('.toc-item a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (pageYOffset >= sectionTop) { current = section.getAttribute('id'); }
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) { link.classList.add('active'); }
+  });
+});
+</script>
+</body>
+</html>

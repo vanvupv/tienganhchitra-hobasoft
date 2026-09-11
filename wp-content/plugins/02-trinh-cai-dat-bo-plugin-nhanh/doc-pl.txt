@@ -1,0 +1,2 @@
+===================> Document
+-- Với những plugin đã cài đặt -> Không thể thêm vào danh sách
