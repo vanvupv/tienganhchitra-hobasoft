@@ -5,7 +5,7 @@
   "page_settings": [],
   "content": [
     {
-      "id": "e135a1eb",
+      "id": "4ea09815",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -24,7 +24,7 @@
       },
       "elements": [
         {
-          "id": "da8b5b72",
+          "id": "7117c998",
           "elType": "widget",
           "widgetType": "image",
           "isInner": false,
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": "0b9ce471",
+      "id": "6f298471",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -62,7 +62,7 @@
       },
       "elements": [
         {
-          "id": "9a50ce45",
+          "id": "94f81aab",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -86,7 +86,7 @@
           "elements": []
         },
         {
-          "id": "2de123cd",
+          "id": "68e7c886",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -109,7 +109,7 @@
           "elements": []
         },
         {
-          "id": "f7292c75",
+          "id": "a4ef55f4",
           "elType": "widget",
           "widgetType": "text-editor",
           "isInner": false,
@@ -131,7 +131,7 @@
           "elements": []
         },
         {
-          "id": "57e2c9b8",
+          "id": "2ca09d67",
           "elType": "widget",
           "widgetType": "loop-carousel",
           "isInner": false,
@@ -164,7 +164,7 @@
       ]
     },
     {
-      "id": "81f2c4ae",
+      "id": "ef74868f",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -185,7 +185,7 @@
       },
       "elements": [
         {
-          "id": "c7a17d07",
+          "id": "39de3d25",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -209,7 +209,7 @@
           "elements": []
         },
         {
-          "id": "60e40df7",
+          "id": "39da0241",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -232,7 +232,7 @@
           "elements": []
         },
         {
-          "id": "ba726744",
+          "id": "bc8d1d67",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -260,7 +260,7 @@
           },
           "elements": [
             {
-              "id": "eed907d9",
+              "id": "85e89150",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -300,7 +300,7 @@
               },
               "elements": [
                 {
-                  "id": "1eed1471",
+                  "id": "09826a99",
                   "elType": "widget",
                   "widgetType": "image",
                   "isInner": false,
@@ -332,7 +332,7 @@
                   "elements": []
                 },
                 {
-                  "id": "04d35b2e",
+                  "id": "69345320",
                   "elType": "container",
                   "isInner": true,
                   "settings": {
@@ -344,11 +344,11 @@
                     "background_color": "#CD2828",
                     "border_radius": {
                       "unit": "px",
-                      "top": "35",
-                      "right": "35",
-                      "bottom": "35",
-                      "left": "35",
-                      "isLinked": true
+                      "top": "80",
+                      "right": "80",
+                      "bottom": "45",
+                      "left": "45",
+                      "isLinked": false
                     },
                     "padding": {
                       "unit": "px",
@@ -366,19 +366,12 @@
                       "left": "20",
                       "isLinked": false
                     },
-                    "_mask_switch": "yes",
-                    "_mask_shape": "custom",
-                    "_mask_image": {
-                      "url": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/bg_dark.png",
-                      "id": 0
-                    },
-                    "_mask_size": "fill",
-                    "_mask_position": "center center",
-                    "_mask_repeat": "no-repeat"
+                    "_css_classes": "sla-card-mask",
+                    "custom_css": "selector {\n  -webkit-mask-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 360 420' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M180 0 C280 0, 360 40, 360 120 L360 360 C360 400, 310 420, 180 420 C50 420, 0 400, 0 360 L0 120 C0 40, 80 0, 180 0 Z' fill='black'/%3E%3C/svg%3E\");\n  mask-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 360 420' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M180 0 C280 0, 360 40, 360 120 L360 360 C360 400, 310 420, 180 420 C50 420, 0 400, 0 360 L0 120 C0 40, 80 0, 180 0 Z' fill='black'/%3E%3C/svg%3E\");\n  -webkit-mask-size: 100% 100%;\n  mask-size: 100% 100%;\n  -webkit-mask-repeat: no-repeat;\n  mask-repeat: no-repeat;\n  -webkit-mask-position: center;\n  mask-position: center;\n}"
                   },
                   "elements": [
                     {
-                      "id": "d0c5c448",
+                      "id": "a3f32dfe",
                       "elType": "widget",
                       "widgetType": "heading",
                       "isInner": false,
@@ -414,7 +407,7 @@
                       "elements": []
                     },
                     {
-                      "id": "c65ebdcb",
+                      "id": "536063ff",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "isInner": false,
@@ -444,7 +437,7 @@
                       "elements": []
                     },
                     {
-                      "id": "7c84f13a",
+                      "id": "a172c979",
                       "elType": "widget",
                       "widgetType": "button",
                       "isInner": false,
@@ -489,7 +482,7 @@
               ]
             },
             {
-              "id": "bcf0a3d9",
+              "id": "b13bf3de",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -529,7 +522,7 @@
               },
               "elements": [
                 {
-                  "id": "cfff3040",
+                  "id": "7fe6b76e",
                   "elType": "widget",
                   "widgetType": "image",
                   "isInner": false,
@@ -561,7 +554,7 @@
                   "elements": []
                 },
                 {
-                  "id": "46abe4ef",
+                  "id": "882bdadb",
                   "elType": "container",
                   "isInner": true,
                   "settings": {
@@ -573,11 +566,11 @@
                     "background_color": "#CD2828",
                     "border_radius": {
                       "unit": "px",
-                      "top": "35",
-                      "right": "35",
-                      "bottom": "35",
-                      "left": "35",
-                      "isLinked": true
+                      "top": "80",
+                      "right": "80",
+                      "bottom": "45",
+                      "left": "45",
+                      "isLinked": false
                     },
                     "padding": {
                       "unit": "px",
@@ -595,19 +588,12 @@
                       "left": "20",
                       "isLinked": false
                     },
-                    "_mask_switch": "yes",
-                    "_mask_shape": "custom",
-                    "_mask_image": {
-                      "url": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/bg_dark.png",
-                      "id": 0
-                    },
-                    "_mask_size": "fill",
-                    "_mask_position": "center center",
-                    "_mask_repeat": "no-repeat"
+                    "_css_classes": "sla-card-mask",
+                    "custom_css": "selector {\n  -webkit-mask-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 360 420' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M180 0 C280 0, 360 40, 360 120 L360 360 C360 400, 310 420, 180 420 C50 420, 0 400, 0 360 L0 120 C0 40, 80 0, 180 0 Z' fill='black'/%3E%3C/svg%3E\");\n  mask-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 360 420' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M180 0 C280 0, 360 40, 360 120 L360 360 C360 400, 310 420, 180 420 C50 420, 0 400, 0 360 L0 120 C0 40, 80 0, 180 0 Z' fill='black'/%3E%3C/svg%3E\");\n  -webkit-mask-size: 100% 100%;\n  mask-size: 100% 100%;\n  -webkit-mask-repeat: no-repeat;\n  mask-repeat: no-repeat;\n  -webkit-mask-position: center;\n  mask-position: center;\n}"
                   },
                   "elements": [
                     {
-                      "id": "db8f6fbd",
+                      "id": "1bc291d0",
                       "elType": "widget",
                       "widgetType": "heading",
                       "isInner": false,
@@ -643,7 +629,7 @@
                       "elements": []
                     },
                     {
-                      "id": "4efc494b",
+                      "id": "967a9035",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "isInner": false,
@@ -673,7 +659,7 @@
                       "elements": []
                     },
                     {
-                      "id": "0dc452be",
+                      "id": "dba78a4e",
                       "elType": "widget",
                       "widgetType": "button",
                       "isInner": false,
@@ -718,7 +704,7 @@
               ]
             },
             {
-              "id": "9d1f883c",
+              "id": "c8ba7c99",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -758,7 +744,7 @@
               },
               "elements": [
                 {
-                  "id": "c228855a",
+                  "id": "853f0a1c",
                   "elType": "widget",
                   "widgetType": "image",
                   "isInner": false,
@@ -790,7 +776,7 @@
                   "elements": []
                 },
                 {
-                  "id": "71640321",
+                  "id": "a0a22c82",
                   "elType": "container",
                   "isInner": true,
                   "settings": {
@@ -802,11 +788,11 @@
                     "background_color": "#CD2828",
                     "border_radius": {
                       "unit": "px",
-                      "top": "35",
-                      "right": "35",
-                      "bottom": "35",
-                      "left": "35",
-                      "isLinked": true
+                      "top": "80",
+                      "right": "80",
+                      "bottom": "45",
+                      "left": "45",
+                      "isLinked": false
                     },
                     "padding": {
                       "unit": "px",
@@ -824,19 +810,12 @@
                       "left": "20",
                       "isLinked": false
                     },
-                    "_mask_switch": "yes",
-                    "_mask_shape": "custom",
-                    "_mask_image": {
-                      "url": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/bg_dark.png",
-                      "id": 0
-                    },
-                    "_mask_size": "fill",
-                    "_mask_position": "center center",
-                    "_mask_repeat": "no-repeat"
+                    "_css_classes": "sla-card-mask",
+                    "custom_css": "selector {\n  -webkit-mask-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 360 420' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M180 0 C280 0, 360 40, 360 120 L360 360 C360 400, 310 420, 180 420 C50 420, 0 400, 0 360 L0 120 C0 40, 80 0, 180 0 Z' fill='black'/%3E%3C/svg%3E\");\n  mask-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 360 420' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M180 0 C280 0, 360 40, 360 120 L360 360 C360 400, 310 420, 180 420 C50 420, 0 400, 0 360 L0 120 C0 40, 80 0, 180 0 Z' fill='black'/%3E%3C/svg%3E\");\n  -webkit-mask-size: 100% 100%;\n  mask-size: 100% 100%;\n  -webkit-mask-repeat: no-repeat;\n  mask-repeat: no-repeat;\n  -webkit-mask-position: center;\n  mask-position: center;\n}"
                   },
                   "elements": [
                     {
-                      "id": "8e42265c",
+                      "id": "62d1d4d5",
                       "elType": "widget",
                       "widgetType": "heading",
                       "isInner": false,
@@ -872,7 +851,7 @@
                       "elements": []
                     },
                     {
-                      "id": "ac7bd1a6",
+                      "id": "74d9a884",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "isInner": false,
@@ -902,7 +881,7 @@
                       "elements": []
                     },
                     {
-                      "id": "c2394100",
+                      "id": "8568ba11",
                       "elType": "widget",
                       "widgetType": "button",
                       "isInner": false,
@@ -951,7 +930,7 @@
       ]
     },
     {
-      "id": "5031c114",
+      "id": "7392ab5a",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -972,7 +951,7 @@
       },
       "elements": [
         {
-          "id": "2f06a455",
+          "id": "c262307a",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -996,7 +975,7 @@
           "elements": []
         },
         {
-          "id": "b5550eba",
+          "id": "247a252b",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -1019,7 +998,7 @@
           "elements": []
         },
         {
-          "id": "b6f48bdf",
+          "id": "9aea3bf5",
           "elType": "widget",
           "widgetType": "reviews",
           "isInner": false,
@@ -1078,7 +1057,7 @@
       ]
     },
     {
-      "id": "53a4317e",
+      "id": "9defeaac",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -1099,7 +1078,7 @@
       },
       "elements": [
         {
-          "id": "c27702b8",
+          "id": "0d0ecb3a",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -1123,7 +1102,7 @@
           "elements": []
         },
         {
-          "id": "db19801f",
+          "id": "9d0edfd9",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -1146,7 +1125,7 @@
           "elements": []
         },
         {
-          "id": "86873900",
+          "id": "d40d36c6",
           "elType": "widget",
           "widgetType": "text-editor",
           "isInner": false,
@@ -1168,7 +1147,7 @@
           "elements": []
         },
         {
-          "id": "6ad0c035",
+          "id": "2b0e3f95",
           "elType": "widget",
           "widgetType": "loop-carousel",
           "isInner": false,
@@ -1201,7 +1180,7 @@
       ]
     },
     {
-      "id": "5ba9d491",
+      "id": "0d591a83",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -1222,7 +1201,7 @@
       },
       "elements": [
         {
-          "id": "b0a6ef96",
+          "id": "839a9272",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -1246,7 +1225,7 @@
           "elements": []
         },
         {
-          "id": "34b24b43",
+          "id": "21719c00",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -1269,7 +1248,7 @@
           "elements": []
         },
         {
-          "id": "26a1b0f3",
+          "id": "39ea1996",
           "elType": "widget",
           "widgetType": "loop-carousel",
           "isInner": false,

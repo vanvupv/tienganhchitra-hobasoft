@@ -246,11 +246,12 @@ def create_reviews_widget(slides, slides_per_view=3):
 
 def create_popout_course_card(bg_color, img_url, title, desc, link="#"):
     """
-    Tạo Container Thẻ Khóa Học 3D Pop-out chuẩn xác theo Mẫu (Ảnh 3):
+    Tạo Container Thẻ Khóa Học 3D Pop-out chuẩn xác 100% theo Mẫu (Ảnh 3):
     - Cấu trúc 2 tầng chuẩn:
       + Tầng 1 (box-image): Nhân vật 3D nổi bật đè lên với margin-bottom âm (-140px), z-index 3 (không bị mask cắt).
-      + Tầng 2 (box-text): Khối nền đỏ (#CD2828) với padding-top 150px, bo góc 35px,
-        kết hợp tính năng Elementor Native Mask sử dụng hình 'bg_dark.png' để tạo độ cong thắt eo/bo thon 2 đầu y chang web gốc.
+      + Tầng 2 (box-text): Khối nền đỏ (#CD2828) với padding-top 155px,
+        tích hợp Mask SVG Data-URI Vector chuẩn xác (không phụ thuộc domain ngoài, không bị lỗi CORS),
+        đồng thời có custom_css cho Elementor Pro và class 'sla-card-mask' cho CSS tùy biến.
     """
     card_id = gen_id()
     img_id = gen_id()
@@ -258,6 +259,20 @@ def create_popout_course_card(bg_color, img_url, title, desc, link="#"):
     title_id = gen_id()
     desc_id = gen_id()
     btn_id = gen_id()
+
+    mask_svg = "data:image/svg+xml,%3Csvg viewBox='0 0 360 420' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M180 0 C280 0, 360 40, 360 120 L360 360 C360 400, 310 420, 180 420 C50 420, 0 400, 0 360 L0 120 C0 40, 80 0, 180 0 Z' fill='black'/%3E%3C/svg%3E"
+    custom_css_mask = (
+        "selector {\n"
+        f"  -webkit-mask-image: url(\"{mask_svg}\");\n"
+        f"  mask-image: url(\"{mask_svg}\");\n"
+        "  -webkit-mask-size: 100% 100%;\n"
+        "  mask-size: 100% 100%;\n"
+        "  -webkit-mask-repeat: no-repeat;\n"
+        "  mask-repeat: no-repeat;\n"
+        "  -webkit-mask-position: center;\n"
+        "  mask-position: center;\n"
+        "}"
+    )
 
     return {
         "id": card_id,
@@ -309,7 +324,7 @@ def create_popout_course_card(bg_color, img_url, title, desc, link="#"):
                 },
                 "elements": []
             },
-            # TẦNG 2: HỘP NỘI DUNG VĂN BẢN (NỀN ĐỎ + MASK BG_DARK.PNG TẠO ĐỘ BO THON 2 ĐẦU)
+            # TẦNG 2: HỘP NỘI DUNG VĂN BẢN (NỀN ĐỎ + MASK DÁNG VÒM CONG 2 ĐẦU CHUẨN MẪU)
             {
                 "id": box_text_id,
                 "elType": "container",
@@ -321,13 +336,14 @@ def create_popout_course_card(bg_color, img_url, title, desc, link="#"):
                     "justify_content": "space-between",
                     "background_background": "classic",
                     "background_color": bg_color,
+                    # Bo góc vòm cong sâu ở 2 đầu (Fallback hoàn hảo cho mọi trình duyệt)
                     "border_radius": {
                         "unit": "px",
-                        "top": "35",
-                        "right": "35",
-                        "bottom": "35",
-                        "left": "35",
-                        "isLinked": True
+                        "top": "80",
+                        "right": "80",
+                        "bottom": "45",
+                        "left": "45",
+                        "isLinked": False
                     },
                     "padding": {
                         "unit": "px",
@@ -345,16 +361,8 @@ def create_popout_course_card(bg_color, img_url, title, desc, link="#"):
                         "left": "20",
                         "isLinked": False
                     },
-                    # Elementor Native Mask tạo dáng bo thắt 2 đầu y hệt web gốc
-                    "_mask_switch": "yes",
-                    "_mask_shape": "custom",
-                    "_mask_image": {
-                        "url": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/bg_dark.png",
-                        "id": 0
-                    },
-                    "_mask_size": "fill",
-                    "_mask_position": "center center",
-                    "_mask_repeat": "no-repeat"
+                    "_css_classes": "sla-card-mask",
+                    "custom_css": custom_css_mask
                 },
                 "elements": [
                     {
