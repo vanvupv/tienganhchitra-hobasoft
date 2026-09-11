@@ -246,16 +246,15 @@ def create_reviews_widget(slides, slides_per_view=3):
 
 def create_popout_course_card(bg_color, img_url, title, desc, link="#"):
     """
-    Tạo Container Thẻ Khóa Học 3D Pop-out thuần 100% Elementor Native:
-    - Bo góc lớn 35px
-    - Màu nền đặc trưng (Đỏ #CD2828, Xanh dương #007BFF, Xanh lá #28A745)
-    - Hình ảnh nhân vật nhô lên khỏi mép thẻ bằng margin âm (-105px)
-    - Tiêu đề Trắng H3 + Mô tả trắng
-    - Nút tròn mũi tên trắng bo tròn 99px ở đáy thẻ
-    - Hoàn toàn KHÔNG dùng CSS Mask, KHÔNG Box Shadow
+    Tạo Container Thẻ Khóa Học 3D Pop-out chuẩn xác theo Mẫu (Ảnh 3):
+    - Cấu trúc 2 tầng chuẩn:
+      + Tầng 1 (box-image): Nhân vật 3D nổi bật đè lên với margin-bottom âm (-140px), z-index 3 (không bị mask cắt).
+      + Tầng 2 (box-text): Khối nền đỏ (#CD2828) với padding-top 150px, bo góc 35px,
+        kết hợp tính năng Elementor Native Mask sử dụng hình 'bg_dark.png' để tạo độ cong thắt eo/bo thon 2 đầu y chang web gốc.
     """
     card_id = gen_id()
     img_id = gen_id()
+    box_text_id = gen_id()
     title_id = gen_id()
     desc_id = gen_id()
     btn_id = gen_id()
@@ -271,44 +270,13 @@ def create_popout_course_card(bg_color, img_url, title, desc, link="#"):
             "width_mobile": {"unit": "%", "size": 100},
             "flex_direction": "column",
             "align_items": "center",
-            "justify_content": "space-between",
-            "background_background": "classic",
-            "background_color": bg_color,
-            "border_radius": {
-                "unit": "px",
-                "top": "35",
-                "right": "35",
-                "bottom": "35",
-                "left": "35",
-                "isLinked": True
-            },
-            "padding": {
-                "unit": "px",
-                "top": "0",
-                "right": "24",
-                "bottom": "35",
-                "left": "24",
-                "isLinked": False
-            },
-            "margin": {
-                "unit": "px",
-                "top": "110",
-                "right": "0",
-                "bottom": "0",
-                "left": "0",
-                "isLinked": False
-            },
-            "margin_mobile": {
-                "unit": "px",
-                "top": "90",
-                "right": "0",
-                "bottom": "0",
-                "left": "0",
-                "isLinked": False
-            },
+            "justify_content": "flex-start",
+            "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": True},
+            "margin": {"unit": "px", "top": "20", "right": "0", "bottom": "0", "left": "0", "isLinked": False},
             "overflow": "visible"
         },
         "elements": [
+            # TẦNG 1: ẢNH NHÂN VẬT 3D ĐÈ LÊN TRÊN (KHÔNG BỊ CẮT XÉN)
             {
                 "id": img_id,
                 "elType": "widget",
@@ -323,108 +291,158 @@ def create_popout_course_card(bg_color, img_url, title, desc, link="#"):
                     "align": "center",
                     "_margin": {
                         "unit": "px",
-                        "top": "-105",
+                        "top": "0",
                         "right": "0",
-                        "bottom": "15",
+                        "bottom": "-140",
                         "left": "0",
                         "isLinked": False
                     },
                     "_margin_mobile": {
                         "unit": "px",
-                        "top": "-85",
+                        "top": "0",
                         "right": "0",
-                        "bottom": "15",
+                        "bottom": "-120",
                         "left": "0",
                         "isLinked": False
                     },
-                    "_z_index": 2
+                    "_z_index": 3
                 },
                 "elements": []
             },
+            # TẦNG 2: HỘP NỘI DUNG VĂN BẢN (NỀN ĐỎ + MASK BG_DARK.PNG TẠO ĐỘ BO THON 2 ĐẦU)
             {
-                "id": title_id,
-                "elType": "widget",
-                "widgetType": "heading",
-                "isInner": False,
+                "id": box_text_id,
+                "elType": "container",
+                "isInner": True,
                 "settings": {
-                    "title": title,
-                    "header_size": "h3",
-                    "align": "center",
-                    "title_color": COLOR_TEXT_WHITE,
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {"unit": "px", "size": 22},
-                    "typography_font_size_mobile": {"unit": "px", "size": 20},
-                    "typography_font_weight": "800",
-                    "typography_line_height": {"unit": "em", "size": 1.3},
-                    "_margin": {
-                        "unit": "px",
-                        "top": "0",
-                        "right": "0",
-                        "bottom": "12",
-                        "left": "0",
-                        "isLinked": False
-                    }
-                },
-                "elements": []
-            },
-            {
-                "id": desc_id,
-                "elType": "widget",
-                "widgetType": "text-editor",
-                "isInner": False,
-                "settings": {
-                    "editor": f"<p>{desc}</p>",
-                    "align": "center",
-                    "text_color": "rgba(255, 255, 255, 0.95)",
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {"unit": "px", "size": 14},
-                    "typography_line_height": {"unit": "em", "size": 1.6},
-                    "_margin": {
-                        "unit": "px",
-                        "top": "0",
-                        "right": "0",
-                        "bottom": "25",
-                        "left": "0",
-                        "isLinked": False
-                    }
-                },
-                "elements": []
-            },
-            {
-                "id": btn_id,
-                "elType": "widget",
-                "widgetType": "button",
-                "isInner": False,
-                "settings": {
-                    "text": "→",
-                    "link": {"url": link, "is_external": "", "nofollow": ""},
-                    "align": "center",
-                    "button_text_color": "#222222",
-                    "background_color": "#FFFFFF",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "align_items": "center",
+                    "justify_content": "space-between",
+                    "background_background": "classic",
+                    "background_color": bg_color,
                     "border_radius": {
                         "unit": "px",
-                        "top": "99",
-                        "right": "99",
-                        "bottom": "99",
-                        "left": "99",
+                        "top": "35",
+                        "right": "35",
+                        "bottom": "35",
+                        "left": "35",
                         "isLinked": True
                     },
                     "padding": {
                         "unit": "px",
-                        "top": "10",
-                        "right": "18",
-                        "bottom": "10",
-                        "left": "18",
+                        "top": "155",
+                        "right": "24",
+                        "bottom": "35",
+                        "left": "24",
                         "isLinked": False
                     },
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {"unit": "px", "size": 22},
-                    "typography_font_weight": "900"
+                    "padding_mobile": {
+                        "unit": "px",
+                        "top": "135",
+                        "right": "20",
+                        "bottom": "30",
+                        "left": "20",
+                        "isLinked": False
+                    },
+                    # Elementor Native Mask tạo dáng bo thắt 2 đầu y hệt web gốc
+                    "_mask_switch": "yes",
+                    "_mask_shape": "custom",
+                    "_mask_image": {
+                        "url": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/bg_dark.png",
+                        "id": 0
+                    },
+                    "_mask_size": "fill",
+                    "_mask_position": "center center",
+                    "_mask_repeat": "no-repeat"
                 },
-                "elements": []
+                "elements": [
+                    {
+                        "id": title_id,
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "isInner": False,
+                        "settings": {
+                            "title": title,
+                            "header_size": "h3",
+                            "align": "center",
+                            "title_color": COLOR_TEXT_WHITE,
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 22},
+                            "typography_font_size_mobile": {"unit": "px", "size": 20},
+                            "typography_font_weight": "800",
+                            "typography_line_height": {"unit": "em", "size": 1.3},
+                            "_margin": {
+                                "unit": "px",
+                                "top": "0",
+                                "right": "0",
+                                "bottom": "12",
+                                "left": "0",
+                                "isLinked": False
+                            }
+                        },
+                        "elements": []
+                    },
+                    {
+                        "id": desc_id,
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "isInner": False,
+                        "settings": {
+                            "editor": f"<p>{desc}</p>",
+                            "align": "center",
+                            "text_color": "rgba(255, 255, 255, 0.95)",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 14},
+                            "typography_line_height": {"unit": "em", "size": 1.6},
+                            "_margin": {
+                                "unit": "px",
+                                "top": "0",
+                                "right": "0",
+                                "bottom": "25",
+                                "left": "0",
+                                "isLinked": False
+                            }
+                        },
+                        "elements": []
+                    },
+                    {
+                        "id": btn_id,
+                        "elType": "widget",
+                        "widgetType": "button",
+                        "isInner": False,
+                        "settings": {
+                            "text": "→",
+                            "link": {"url": link, "is_external": "", "nofollow": ""},
+                            "align": "center",
+                            "button_text_color": "#222222",
+                            "background_color": "#FFFFFF",
+                            "border_radius": {
+                                "unit": "px",
+                                "top": "99",
+                                "right": "99",
+                                "bottom": "99",
+                                "left": "99",
+                                "isLinked": True
+                            },
+                            "padding": {
+                                "unit": "px",
+                                "top": "10",
+                                "right": "18",
+                                "bottom": "10",
+                                "left": "18",
+                                "isLinked": False
+                            },
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 22},
+                            "typography_font_weight": "900"
+                        },
+                        "elements": []
+                    }
+                ]
             }
         ]
     }
@@ -481,7 +499,7 @@ def build_homepage_json():
     ))
 
     # -------------------------------------------------------------
-    # SECTION 3: CHƯƠNG TRÌNH ĐÀO TẠO TIẾNG ANH (Thẻ nhân vật 3D Pop-out đa sắc màu)
+    # SECTION 3: CHƯƠNG TRÌNH ĐÀO TẠO TIẾNG ANH (Chuẩn 100% theo Mẫu Ảnh 3 - Đỏ Đồng Bộ + Dáng Bo 2 Đầu)
     # -------------------------------------------------------------
     sec3 = create_container(
         direction="column",
@@ -512,29 +530,29 @@ def build_homepage_json():
             "padding": {"unit": "px", "top": "15", "right": "0", "bottom": "15", "left": "0", "isLinked": False}
         },
         "elements": [
-            # Thẻ 1: Đỏ (#CD2828) - Bé gái cầm ống nhòm (GET READY 5-7 tuổi)
+            # Thẻ 1: KINDY (4–6 tuổi) - Bé gái đọc sách + số 1 (Đỏ #CD2828)
             create_popout_course_card(
                 bg_color="#CD2828",
                 img_url="https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/image-program-5-1.png",
+                title="KINDY (4–6 tuổi)",
+                desc="Chương trình KINDY giúp trẻ mẫu giáo làm quen tiếng Anh qua vui chơi và tương tác. Khóa 21 tháng, học song ngữ với giáo viên Việt Nam và nước ngoài, trẻ nắm được từ vựng cơ bản và chỉ dẫn đơn giản.",
+                link="#kindy-4-6-tuoi"
+            ),
+            # Thẻ 2: GET READY (5–7 tuổi) - Bé gái cầm ống nhòm, bảng vẽ, mặt trời (Đỏ #CD2828)
+            create_popout_course_card(
+                bg_color="#CD2828",
+                img_url="https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/image-program-1-1.png",
                 title="GET READY (5–7 tuổi)",
-                desc="Chương trình tiếng Anh mầm non giúp trẻ làm quen với phát âm chuẩn bản xứ, phát triển ngôn ngữ tự nhiên qua các trò chơi và hoạt động sáng tạo vui nhộn.",
-                link="#khoa-hoc-5-7-tuoi"
+                desc="Chương trình GET READY giúp học sinh làm quen tiếng Anh trước Cambridge Pre A1. Học song ngữ 50% cùng giáo viên Việt Nam, 50% cùng giáo viên nước ngoài. Sau khóa học, học sinh nắm 120–140 từ vựng, sử dụng giáo trình Academy Star Starter + Alphabet và đạt trình độ tương đương lớp 2, sẵn sàng học STARTERS.",
+                link="#get-ready-5-7-tuoi"
             ),
-            # Thẻ 2: Xanh dương (#007BFF) - Bé trai năng động (KIDS LEADERS 7-11 tuổi)
+            # Thẻ 3: STARTERS (6–8 tuổi) - Bé trai cầm robot + huy hiệu code (Đỏ #CD2828)
             create_popout_course_card(
-                bg_color="#007BFF",
-                img_url="https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/image-program-2-1.png",
-                title="KIDS LEADERS (7–11 tuổi)",
-                desc="Phát triển toàn diện 4 kỹ năng Nghe - Nói - Đọc - Viết, tự tin giao tiếp, xây dựng tư duy logic và đạt thành tích cao trong các kỳ thi Cambridge quốc tế.",
-                link="#khoa-hoc-7-11-tuoi"
-            ),
-            # Thẻ 3: Xanh lá (#28A745) - Học sinh thiếu niên vươn tầm (TEENS & IELTS 12-18 tuổi)
-            create_popout_course_card(
-                bg_color="#28A745",
-                img_url="https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/image-program-3-1.png",
-                title="TEENS & IELTS (12–18 tuổi)",
-                desc="Lộ trình đào tạo học thuật chuyên sâu, bứt phá band điểm IELTS từ 6.5 - 8.0+, rèn luyện tư duy phản biện và kỹ năng thuyết trình chuẩn quốc tế.",
-                link="#khoa-hoc-12-18-tuoi"
+                bg_color="#CD2828",
+                img_url="https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/image-program-6-1.png",
+                title="STARTERS (6–8 tuổi)",
+                desc="Khóa STARTERS giúp học sinh phát triển giao tiếp cơ bản và làm quen cấu trúc bài thi Cambridge Starters. Học 18 tháng, 50% cùng giáo viên Việt Nam, 50% cùng giáo viên nước ngoài, sử dụng giáo trình Academy Star 1, 2 kết hợp Jolly Phonics, xây dựng nền tảng để học MOVERS.",
+                link="#starters-6-8-tuoi"
             )
         ]
     }
