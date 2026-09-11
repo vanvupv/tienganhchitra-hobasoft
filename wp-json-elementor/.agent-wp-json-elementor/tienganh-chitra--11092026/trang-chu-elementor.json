@@ -5,7 +5,7 @@
   "page_settings": [],
   "content": [
     {
-      "id": "c786f72f",
+      "id": "7fd35e77",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -24,7 +24,7 @@
       },
       "elements": [
         {
-          "id": "01b8df01",
+          "id": "34f665c3",
           "elType": "widget",
           "widgetType": "image",
           "isInner": false,
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": "d269388c",
+      "id": "531e9658",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -70,7 +70,7 @@
       },
       "elements": [
         {
-          "id": "ecb3d7e1",
+          "id": "07624c97",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -94,7 +94,7 @@
           "elements": []
         },
         {
-          "id": "08dd1f96",
+          "id": "166682e7",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -117,7 +117,7 @@
           "elements": []
         },
         {
-          "id": "ed0898fb",
+          "id": "eacf9561",
           "elType": "widget",
           "widgetType": "text-editor",
           "isInner": false,
@@ -139,7 +139,7 @@
           "elements": []
         },
         {
-          "id": "c587d1b9",
+          "id": "49f1306b",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -153,18 +153,46 @@
             "classic_show_image": "yes",
             "classic_image_size": "medium_large",
             "classic_show_title": "yes",
+            "classic_title_color": "#FFFFFF",
             "classic_show_excerpt": "yes",
+            "classic_excerpt_color": "#ED9717",
             "classic_show_read_more": "no",
-            "read_more_text": "Xem thêm »",
+            "classic_read_more_text": "Xem thêm »",
+            "classic_read_more_color": "#ED9717",
             "classic_meta_data": [],
-            "custom_css": "\n    selector .elementor-post {\n        background: rgba(255, 255, 255, 0.12) !important;\n        border: 1.5px solid rgba(255, 255, 255, 0.35) !important;\n        border-radius: 8px !important;\n        padding: 10px 10px 15px 10px !important;\n        box-shadow: none !important;\n        transition: transform 0.25s ease, border-color 0.25s ease !important;\n    }\n    selector .elementor-post:hover {\n        transform: translateY(-4px) !important;\n        border-color: #ED9717 !important;\n        box-shadow: none !important;\n    }\n    selector .elementor-post__thumbnail img {\n        border-radius: 6px !important;\n    }\n    selector .elementor-post__title a {\n        color: #FFFFFF !important;\n        font-size: 17px !important;\n        font-weight: 700 !important;\n        text-align: center !important;\n        display: block !important;\n    }\n    selector .elementor-post__excerpt p {\n        color: #ED9717 !important;\n        font-size: 13px !important;\n        text-align: center !important;\n        font-weight: 600 !important;\n    }\n    "
+            "classic_content_padding": {
+              "unit": "px",
+              "top": "12",
+              "right": "12",
+              "bottom": "12",
+              "left": "12",
+              "isLinked": true
+            },
+            "classic_box_bg_color": "rgba(255, 255, 255, 0.12)",
+            "classic_box_border_color": "rgba(255, 255, 255, 0.3)",
+            "classic_box_border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "classic_box_border_radius": {
+              "unit": "px",
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8",
+              "isLinked": true
+            }
           },
           "elements": []
         }
       ]
     },
     {
-      "id": "742e2d38",
+      "id": "480f3904",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -187,7 +215,7 @@
       },
       "elements": [
         {
-          "id": "9b7629d6",
+          "id": "af31c5b7",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -211,7 +239,7 @@
           "elements": []
         },
         {
-          "id": "1546331b",
+          "id": "39ada52c",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -234,7 +262,7 @@
           "elements": []
         },
         {
-          "id": "419a88e1",
+          "id": "cefdc5cb",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -248,18 +276,46 @@
             "classic_show_image": "yes",
             "classic_image_size": "medium_large",
             "classic_show_title": "yes",
+            "classic_title_color": "#000000",
             "classic_show_excerpt": "yes",
+            "classic_excerpt_color": "#000000",
             "classic_show_read_more": "yes",
-            "read_more_text": "TÌM HIỂU KHÓA HỌC »",
+            "classic_read_more_text": "TÌM HIỂU KHÓA HỌC »",
+            "classic_read_more_color": "#ED9717",
             "classic_meta_data": [],
-            "custom_css": "\n    selector .elementor-post {\n        background: #FFFFFF !important;\n        border: 1.5px solid #D1D5DB !important;\n        border-radius: 8px !important;\n        overflow: hidden !important;\n        box-shadow: none !important;\n        transition: transform 0.25s ease, border-color 0.25s ease !important;\n    }\n    selector .elementor-post:hover {\n        transform: translateY(-4px) !important;\n        border-color: #ED9717 !important;\n        box-shadow: none !important;\n    }\n    selector .elementor-post__title {\n        background: #0056B3 !important;\n        margin: 0 !important;\n        padding: 10px 15px !important;\n        text-align: center !important;\n    }\n    selector .elementor-post__title a {\n        color: #FFFFFF !important;\n        font-size: 15px !important;\n        font-weight: 800 !important;\n        text-transform: uppercase !important;\n    }\n    selector .elementor-post__text {\n        padding: 15px 18px 20px 18px !important;\n    }\n    selector .elementor-post__excerpt p {\n        color: #000000 !important;\n        font-size: 13px !important;\n        line-height: 1.6 !important;\n    }\n    selector .elementor-post__read-more {\n        display: inline-block !important;\n        background: #ED9717 !important;\n        color: #FFFFFF !important;\n        padding: 9px 20px !important;\n        border-radius: 6px !important;\n        font-size: 13px !important;\n        font-weight: 700 !important;\n        margin-top: 10px !important;\n        box-shadow: none !important;\n        transition: background 0.2s ease !important;\n    }\n    selector .elementor-post__read-more:hover {\n        background: #D4830F !important;\n        box-shadow: none !important;\n    }\n    "
+            "classic_content_padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "classic_box_bg_color": "#FFFFFF",
+            "classic_box_border_color": "#E2E8F0",
+            "classic_box_border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "classic_box_border_radius": {
+              "unit": "px",
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8",
+              "isLinked": true
+            }
           },
           "elements": []
         }
       ]
     },
     {
-      "id": "e1918934",
+      "id": "e587851e",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -282,7 +338,7 @@
       },
       "elements": [
         {
-          "id": "89433dfd",
+          "id": "178f7857",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -306,7 +362,7 @@
           "elements": []
         },
         {
-          "id": "be12c474",
+          "id": "f0858860",
           "elType": "widget",
           "widgetType": "reviews",
           "isInner": false,
@@ -354,14 +410,18 @@
             "autoplay_speed": 4000,
             "loop": "yes",
             "pause_on_hover": "yes",
-            "custom_css": "\n    selector .elementor-testimonial {\n        background: #FFFFFF !important;\n        border: 2.5px solid #007BFF !important;\n        border-radius: 20px 12px 20px 12px !important;\n        padding: 30px 22px 25px 22px !important;\n        box-shadow: none !important;\n        transition: transform 0.25s ease, border-color 0.25s ease !important;\n    }\n    selector .elementor-testimonial:hover {\n        transform: translateY(-4px) !important;\n        border-color: #ED9717 !important;\n        box-shadow: none !important;\n    }\n    selector .elementor-testimonial__image img {\n        border-radius: 50% !important;\n        border: 2px solid #007BFF !important;\n    }\n    selector .elementor-testimonial__name {\n        color: #000000 !important;\n        font-size: 18px !important;\n        font-weight: 700 !important;\n    }\n    selector .elementor-testimonial__title {\n        color: #64748B !important;\n        font-size: 13px !important;\n    }\n    selector .elementor-star-rating {\n        color: #ED9717 !important;\n    }\n    selector .elementor-testimonial__text {\n        color: #000000 !important;\n        font-size: 14px !important;\n        line-height: 1.6 !important;\n        font-style: italic !important;\n    }\n    selector .elementor-swiper-button {\n        color: #ED9717 !important;\n    }\n    "
+            "name_color": "#000000",
+            "title_color": "#64748B",
+            "content_color": "#000000",
+            "star_color": "#ED9717",
+            "arrows_color": "#ED9717"
           },
           "elements": []
         }
       ]
     },
     {
-      "id": "8dc258f8",
+      "id": "43380100",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -390,7 +450,7 @@
       },
       "elements": [
         {
-          "id": "b4728d7e",
+          "id": "b56f7974",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -414,7 +474,7 @@
           "elements": []
         },
         {
-          "id": "c118abb0",
+          "id": "04220c31",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -437,7 +497,7 @@
           "elements": []
         },
         {
-          "id": "1577125c",
+          "id": "a5a64744",
           "elType": "widget",
           "widgetType": "text-editor",
           "isInner": false,
@@ -459,7 +519,7 @@
           "elements": []
         },
         {
-          "id": "4e67661a",
+          "id": "dfe3dc14",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -473,18 +533,46 @@
             "classic_show_image": "yes",
             "classic_image_size": "medium_large",
             "classic_show_title": "yes",
+            "classic_title_color": "#FFFFFF",
             "classic_show_excerpt": "yes",
+            "classic_excerpt_color": "#ED9717",
             "classic_show_read_more": "no",
-            "read_more_text": "Xem thêm »",
+            "classic_read_more_text": "Xem thêm »",
+            "classic_read_more_color": "#ED9717",
             "classic_meta_data": [],
-            "custom_css": "\n    selector .elementor-post {\n        background: rgba(255, 255, 255, 0.12) !important;\n        border: 1.5px solid rgba(255, 255, 255, 0.35) !important;\n        border-radius: 8px !important;\n        padding: 8px 8px 15px 8px !important;\n        box-shadow: none !important;\n        transition: transform 0.25s ease, border-color 0.25s ease !important;\n        cursor: pointer !important;\n    }\n    selector .elementor-post:hover {\n        transform: translateY(-4px) !important;\n        border-color: #ED9717 !important;\n        box-shadow: none !important;\n    }\n    selector .elementor-post__thumbnail img {\n        border-radius: 6px !important;\n    }\n    selector .elementor-post__title a {\n        color: #FFFFFF !important;\n        font-size: 16px !important;\n        font-weight: 800 !important;\n        text-align: center !important;\n        display: block !important;\n        text-transform: uppercase !important;\n        margin-top: 10px !important;\n    }\n    selector .elementor-post__excerpt p {\n        color: #ED9717 !important;\n        font-size: 13px !important;\n        text-align: center !important;\n        margin: 5px 0 10px 0 !important;\n        font-weight: 700 !important;\n    }\n    "
+            "classic_content_padding": {
+              "unit": "px",
+              "top": "12",
+              "right": "12",
+              "bottom": "12",
+              "left": "12",
+              "isLinked": true
+            },
+            "classic_box_bg_color": "rgba(255, 255, 255, 0.12)",
+            "classic_box_border_color": "rgba(255, 255, 255, 0.3)",
+            "classic_box_border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "classic_box_border_radius": {
+              "unit": "px",
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8",
+              "isLinked": true
+            }
           },
           "elements": []
         }
       ]
     },
     {
-      "id": "be5b1292",
+      "id": "0113ed26",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -507,7 +595,7 @@
       },
       "elements": [
         {
-          "id": "7da0dc8f",
+          "id": "342b1f21",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -531,7 +619,7 @@
           "elements": []
         },
         {
-          "id": "c2e06ae7",
+          "id": "edbd4ac9",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -554,7 +642,7 @@
           "elements": []
         },
         {
-          "id": "c3a87692",
+          "id": "7cc34b6d",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -568,13 +656,41 @@
             "classic_show_image": "yes",
             "classic_image_size": "medium_large",
             "classic_show_title": "yes",
+            "classic_title_color": "#000000",
             "classic_show_excerpt": "yes",
+            "classic_excerpt_color": "#000000",
             "classic_show_read_more": "yes",
-            "read_more_text": "ĐỌC TIẾP →",
+            "classic_read_more_text": "ĐỌC TIẾP →",
+            "classic_read_more_color": "#ED9717",
             "classic_meta_data": [
               "date"
             ],
-            "custom_css": "\n    selector .elementor-post {\n        background: #F8F9FA !important;\n        border: 1px solid #DEE2E6 !important;\n        border-radius: 8px !important;\n        overflow: hidden !important;\n        box-shadow: none !important;\n        transition: transform 0.25s ease, border-color 0.25s ease !important;\n        padding-bottom: 20px !important;\n    }\n    selector .elementor-post:hover {\n        transform: translateY(-4px) !important;\n        border-color: #007BFF !important;\n        box-shadow: none !important;\n    }\n    selector .elementor-post__text {\n        padding: 15px 18px 10px 18px !important;\n    }\n    selector .elementor-post__title a {\n        color: #000000 !important;\n        font-size: 16px !important;\n        font-weight: 700 !important;\n    }\n    selector .elementor-post__excerpt p {\n        color: #000000 !important;\n        font-size: 13px !important;\n    }\n    selector .elementor-post__meta-data span {\n        color: #007BFF !important;\n        font-weight: 600 !important;\n        font-size: 12px !important;\n    }\n    selector .elementor-post__read-more {\n        display: inline-block !important;\n        background: #ED9717 !important;\n        color: #FFFFFF !important;\n        padding: 7px 16px !important;\n        border-radius: 6px !important;\n        font-size: 13px !important;\n        font-weight: 700 !important;\n        margin-top: 8px !important;\n        box-shadow: none !important;\n        transition: background 0.2s ease !important;\n    }\n    selector .elementor-post__read-more:hover {\n        background: #D4830F !important;\n        box-shadow: none !important;\n    }\n    "
+            "classic_content_padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "classic_box_bg_color": "#F8F9FA",
+            "classic_box_border_color": "#DEE2E6",
+            "classic_box_border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "classic_box_border_radius": {
+              "unit": "px",
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8",
+              "isLinked": true
+            }
           },
           "elements": []
         }

@@ -7,16 +7,17 @@ def gen_id():
     return uuid.uuid4().hex[:8]
 
 # ==============================================================================
-# BẢNG MÃ MÀU CHUẨN DỰ ÁN TIẾNG ANH CHỊ TRÀ (BRAND COLOR TOKENS)
+# BẢNG MÃ MÀU CHUẨN DỰ ÁN TIẾNG ANH CHỊ TRÀ
 # ==============================================================================
 COLOR_PRIMARY_BLUE  = "#007BFF"  # Màu chủ đạo - Xanh dương
 COLOR_PRIMARY_GREEN = "#28A745"  # Màu chủ đạo - Xanh lá
-COLOR_TEXT_MAIN     = "#000000"  # Màu văn bản
-COLOR_TEXT_WHITE    = "#FFFFFF"  # Màu chữ trên nền tối
-COLOR_BTN_ACCENT    = "#ED9717"  # Màu nút nổi bật - Màu cam
-COLOR_BORDER_LIGHT  = "#E2E8F0"  # Viền phân cách nhẹ (thay thế box-shadow)
+COLOR_TEXT_BLACK    = "#000000"  # Màu văn bản chuẩn
+COLOR_TEXT_WHITE    = "#FFFFFF"  # Màu chữ trên nền màu
+COLOR_BTN_ORANGE    = "#ED9717"  # Màu nút nổi bật - Màu cam
+COLOR_BORDER_GRAY   = "#DEE2E6"  # Màu viền phẳng tinh tế
 
-def create_container(direction="column", content_width="boxed", width=1200, padding_top="30", padding_bottom="30", padding_left="40", padding_right="40", bg_color="", bg_gradient=None, custom_css=""):
+def create_container(direction="column", content_width="boxed", width=1200, padding_top="30", padding_bottom="30", padding_left="40", padding_right="40", bg_color="", bg_gradient=None):
+    """Tạo Flexbox Container chuẩn Elementor 3.x - HOÀN TOÀN KHÔNG DÙNG CUSTOM CSS"""
     settings = {
         "flex_direction": direction,
         "content_width": content_width,
@@ -40,8 +41,6 @@ def create_container(direction="column", content_width="boxed", width=1200, padd
         settings["background_color_b"] = bg_gradient.get("color_b", "#1E7E34")
         settings["background_gradient_type"] = bg_gradient.get("type", "linear")
         settings["background_gradient_angle"] = {"unit": "deg", "size": bg_gradient.get("angle", 135)}
-    if custom_css:
-        settings["custom_css"] = custom_css
 
     return {
         "id": gen_id(),
@@ -51,7 +50,8 @@ def create_container(direction="column", content_width="boxed", width=1200, padd
         "elements": []
     }
 
-def create_heading(title, size="h2", align="center", color=COLOR_TEXT_MAIN, font_size=32, font_weight="800"):
+def create_heading(title, size="h2", align="center", color=COLOR_TEXT_BLACK, font_size=28, font_weight="800"):
+    """Tạo Heading thuần Elementor Native Settings"""
     return {
         "id": gen_id(),
         "elType": "widget",
@@ -71,7 +71,8 @@ def create_heading(title, size="h2", align="center", color=COLOR_TEXT_MAIN, font
         "elements": []
     }
 
-def create_text_editor(text, align="center", color=COLOR_TEXT_MAIN, font_size=16):
+def create_text_editor(text, align="center", color=COLOR_TEXT_BLACK, font_size=15):
+    """Tạo Text Editor thuần Elementor Native Settings"""
     return {
         "id": gen_id(),
         "elType": "widget",
@@ -89,7 +90,8 @@ def create_text_editor(text, align="center", color=COLOR_TEXT_MAIN, font_size=16
         "elements": []
     }
 
-def create_divider(color=COLOR_BTN_ACCENT, width=80):
+def create_divider(color=COLOR_BTN_ORANGE, width=80):
+    """Tạo Divider thuần Elementor Native Settings"""
     return {
         "id": gen_id(),
         "elType": "widget",
@@ -105,36 +107,47 @@ def create_divider(color=COLOR_BTN_ACCENT, width=80):
         "elements": []
     }
 
-def create_posts_widget(post_type="post", columns="3", posts_per_page="3", skin="classic", show_excerpt="yes", show_read_more="yes", read_more_text="Xem thêm »", custom_css=""):
+def create_posts_widget(post_type="post", columns="3", posts_per_page="3", show_image="yes", show_title="yes", title_color=COLOR_TEXT_BLACK, show_excerpt="yes", excerpt_color=COLOR_TEXT_BLACK, show_read_more="yes", read_more_text="Xem thêm »", read_more_color=COLOR_BTN_ORANGE, bg_box_color="", border_box_color="", border_radius=8, content_padding=15):
     """
-    Sinh Elementor Pro Posts Widget chuẩn:
-    - Query động dữ liệu theo post_type: giang_vien, khoa_hoc, hoc_vien, post.
-    - TUYỆT ĐỐI KHÔNG DÙNG BOX-SHADOW.
+    Sinh Widget Posts thuần 100% Cài đặt gốc Elementor Pro:
+    - Query tự động theo Post Type (giang_vien, khoa_hoc, hoc_vien, post)
+    - Tự động lấy Featured Image (Ảnh đại diện), Tiêu đề, Trích dẫn và Link chi tiết
+    - 100% KHÔNG DÙNG CUSTOM CSS, KHÔNG DÙNG BOX-SHADOW
     """
-    prefix = f"{skin}_" if skin in ["classic", "cards"] else "classic_"
-    
     settings = {
-        "_skin": skin,
+        "_skin": "classic",
         "posts_post_type": post_type,
-        f"{prefix}columns": str(columns),
-        f"{prefix}columns_tablet": "2",
-        f"{prefix}columns_mobile": "1",
-        f"{prefix}posts_per_page": str(posts_per_page),
-        f"{prefix}show_image": "yes",
-        f"{prefix}image_size": "medium_large",
-        f"{prefix}show_title": "yes",
-        f"{prefix}show_excerpt": show_excerpt,
-        f"{prefix}show_read_more": show_read_more,
-        "read_more_text": read_more_text,
-        f"{prefix}meta_data": ["date"] if post_type == "post" else []
+        "classic_columns": str(columns),
+        "classic_columns_tablet": "2",
+        "classic_columns_mobile": "1",
+        "classic_posts_per_page": str(posts_per_page),
+        "classic_show_image": show_image,
+        "classic_image_size": "medium_large",
+        "classic_show_title": show_title,
+        "classic_title_color": title_color,
+        "classic_show_excerpt": show_excerpt,
+        "classic_excerpt_color": excerpt_color,
+        "classic_show_read_more": show_read_more,
+        "classic_read_more_text": read_more_text,
+        "classic_read_more_color": read_more_color,
+        "classic_meta_data": ["date"] if post_type == "post" else [],
+        "classic_content_padding": {
+            "unit": "px",
+            "top": str(content_padding),
+            "right": str(content_padding),
+            "bottom": str(content_padding),
+            "left": str(content_padding),
+            "isLinked": True
+        }
     }
 
-    if skin == "cards":
-        settings[f"{prefix}show_badge"] = "none"
-        settings[f"{prefix}show_avatar"] = "none"
-
-    if custom_css:
-        settings["custom_css"] = custom_css
+    if bg_box_color:
+        settings["classic_box_bg_color"] = bg_box_color
+    if border_box_color:
+        settings["classic_box_border_color"] = border_box_color
+        settings["classic_box_border_width"] = {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True}
+    if border_radius:
+        settings["classic_box_border_radius"] = {"unit": "px", "top": str(border_radius), "right": str(border_radius), "bottom": str(border_radius), "left": str(border_radius), "isLinked": True}
 
     return {
         "id": gen_id(),
@@ -145,12 +158,10 @@ def create_posts_widget(post_type="post", columns="3", posts_per_page="3", skin=
         "elements": []
     }
 
-def create_reviews_widget(slides, slides_per_view=3, custom_css=""):
+def create_reviews_widget(slides, slides_per_view=3):
     """
-    Sinh Elementor Pro Reviews Widget chuẩn:
-    - widgetType: 'reviews'
-    - slides repeater với các trường: image, name, title, rating, content.
-    - TUYỆT ĐỐI KHÔNG DÙNG BOX-SHADOW.
+    Sinh Widget Reviews chính thức của Elementor Pro:
+    - 100% Cài đặt gốc, KHÔNG DÙNG CUSTOM CSS, KHÔNG DÙNG BOX-SHADOW
     """
     slides_data = []
     for idx, s in enumerate(slides):
@@ -175,10 +186,13 @@ def create_reviews_widget(slides, slides_per_view=3, custom_css=""):
         "autoplay": "yes",
         "autoplay_speed": 4000,
         "loop": "yes",
-        "pause_on_hover": "yes"
+        "pause_on_hover": "yes",
+        "name_color": COLOR_TEXT_BLACK,
+        "title_color": "#64748B",
+        "content_color": COLOR_TEXT_BLACK,
+        "star_color": COLOR_BTN_ORANGE,
+        "arrows_color": COLOR_BTN_ORANGE
     }
-    if custom_css:
-        settings["custom_css"] = custom_css
 
     return {
         "id": gen_id(),
@@ -226,7 +240,7 @@ def build_homepage_json():
         bg_gradient={"color": COLOR_PRIMARY_GREEN, "color_b": "#1E7E34", "type": "linear", "angle": 135}
     )
     sec2["elements"].append(create_heading("ĐỘI NGŨ GIẢNG VIÊN TẠI TIẾNG ANH CHỊ TRÀ", size="h2", align="center", color=COLOR_TEXT_WHITE, font_size=28, font_weight="800"))
-    sec2["elements"].append(create_divider(color=COLOR_BTN_ACCENT, width=90))
+    sec2["elements"].append(create_divider(color=COLOR_BTN_ORANGE, width=90))
     sec2["elements"].append(create_text_editor(
         "<p>Chặng đường phía trước còn nhiều gian nan, nhưng với tâm huyết và say mê ngành giáo dục tri thức của mình, đội ngũ giảng viên luôn tràn đầy năng lượng đồng hành cùng học viên tiến về phía trước.</p>",
         align="center",
@@ -234,46 +248,21 @@ def build_homepage_json():
         font_size=15
     ))
 
-    # Widget Posts query Post Type giang_vien (4 Cột) - KHÔNG BOX-SHADOW
-    css_teachers = f"""
-    selector .elementor-post {{
-        background: rgba(255, 255, 255, 0.12) !important;
-        border: 1.5px solid rgba(255, 255, 255, 0.35) !important;
-        border-radius: 8px !important;
-        padding: 10px 10px 15px 10px !important;
-        box-shadow: none !important;
-        transition: transform 0.25s ease, border-color 0.25s ease !important;
-    }}
-    selector .elementor-post:hover {{
-        transform: translateY(-4px) !important;
-        border-color: {COLOR_BTN_ACCENT} !important;
-        box-shadow: none !important;
-    }}
-    selector .elementor-post__thumbnail img {{
-        border-radius: 6px !important;
-    }}
-    selector .elementor-post__title a {{
-        color: {COLOR_TEXT_WHITE} !important;
-        font-size: 17px !important;
-        font-weight: 700 !important;
-        text-align: center !important;
-        display: block !important;
-    }}
-    selector .elementor-post__excerpt p {{
-        color: {COLOR_BTN_ACCENT} !important;
-        font-size: 13px !important;
-        text-align: center !important;
-        font-weight: 600 !important;
-    }}
-    """
+    # Widget Posts query Post Type giang_vien (4 Cột) - NATIVE SETTINGS
     sec2["elements"].append(create_posts_widget(
         post_type="giang_vien",
         columns="4",
         posts_per_page="4",
-        skin="classic",
+        show_image="yes",
+        show_title="yes",
+        title_color=COLOR_TEXT_WHITE,
         show_excerpt="yes",
+        excerpt_color=COLOR_BTN_ORANGE,
         show_read_more="no",
-        custom_css=css_teachers
+        bg_box_color="rgba(255, 255, 255, 0.12)",
+        border_box_color="rgba(255, 255, 255, 0.3)",
+        border_radius=8,
+        content_padding=12
     ))
 
     # -------------------------------------------------------------
@@ -290,73 +279,29 @@ def build_homepage_json():
         bg_color=COLOR_PRIMARY_BLUE
     )
     sec3["elements"].append(create_heading("CHƯƠNG TRÌNH ĐÀO TẠO TIẾNG ANH", size="h2", align="center", color=COLOR_TEXT_WHITE, font_size=28, font_weight="800"))
-    sec3["elements"].append(create_divider(color=COLOR_BTN_ACCENT, width=80))
+    sec3["elements"].append(create_divider(color=COLOR_BTN_ORANGE, width=80))
 
-    # Card khóa học: Viền sắc nét, KHÔNG box-shadow, nút cam #ED9717
-    css_courses = f"""
-    selector .elementor-post {{
-        background: #FFFFFF !important;
-        border: 1.5px solid #D1D5DB !important;
-        border-radius: 8px !important;
-        overflow: hidden !important;
-        box-shadow: none !important;
-        transition: transform 0.25s ease, border-color 0.25s ease !important;
-    }}
-    selector .elementor-post:hover {{
-        transform: translateY(-4px) !important;
-        border-color: {COLOR_BTN_ACCENT} !important;
-        box-shadow: none !important;
-    }}
-    selector .elementor-post__title {{
-        background: #0056B3 !important;
-        margin: 0 !important;
-        padding: 10px 15px !important;
-        text-align: center !important;
-    }}
-    selector .elementor-post__title a {{
-        color: {COLOR_TEXT_WHITE} !important;
-        font-size: 15px !important;
-        font-weight: 800 !important;
-        text-transform: uppercase !important;
-    }}
-    selector .elementor-post__text {{
-        padding: 15px 18px 20px 18px !important;
-    }}
-    selector .elementor-post__excerpt p {{
-        color: {COLOR_TEXT_MAIN} !important;
-        font-size: 13px !important;
-        line-height: 1.6 !important;
-    }}
-    selector .elementor-post__read-more {{
-        display: inline-block !important;
-        background: {COLOR_BTN_ACCENT} !important;
-        color: {COLOR_TEXT_WHITE} !important;
-        padding: 9px 20px !important;
-        border-radius: 6px !important;
-        font-size: 13px !important;
-        font-weight: 700 !important;
-        margin-top: 10px !important;
-        box-shadow: none !important;
-        transition: background 0.2s ease !important;
-    }}
-    selector .elementor-post__read-more:hover {{
-        background: #D4830F !important;
-        box-shadow: none !important;
-    }}
-    """
+    # Widget Posts query Post Type khoa_hoc (3 Cột) - NATIVE SETTINGS
     sec3["elements"].append(create_posts_widget(
         post_type="khoa_hoc",
         columns="3",
         posts_per_page="3",
-        skin="classic",
+        show_image="yes",
+        show_title="yes",
+        title_color=COLOR_TEXT_BLACK,
         show_excerpt="yes",
+        excerpt_color=COLOR_TEXT_BLACK,
         show_read_more="yes",
         read_more_text="TÌM HIỂU KHÓA HỌC »",
-        custom_css=css_courses
+        read_more_color=COLOR_BTN_ORANGE,
+        bg_box_color="#FFFFFF",
+        border_box_color="#E2E8F0",
+        border_radius=8,
+        content_padding=16
     ))
 
     # -------------------------------------------------------------
-    # SECTION 4: PHỤ HUYNH & HỌC VIÊN NÓI GÌ - WIDGET REVIEWS
+    # SECTION 4: PHỤ HUYNH & HỌC VIÊN NÓI GÌ - WIDGET REVIEWS CHÍNH THỨC
     # -------------------------------------------------------------
     sec4 = create_container(
         direction="column",
@@ -368,7 +313,7 @@ def build_homepage_json():
         padding_right="40",
         bg_color="#F0F7FF"
     )
-    sec4["elements"].append(create_heading("Phụ huynh & Học viên nói gì", size="h2", align="center", color=COLOR_TEXT_MAIN, font_size=32, font_weight="800"))
+    sec4["elements"].append(create_heading("Phụ huynh & Học viên nói gì", size="h2", align="center", color=COLOR_TEXT_BLACK, font_size=32, font_weight="800"))
 
     reviews_slides = [
         {
@@ -394,51 +339,9 @@ def build_homepage_json():
         }
     ]
 
-    # Review Card: Viền xanh dương chuẩn #007BFF, sao cam #ED9717, KHÔNG box-shadow
-    css_reviews = f"""
-    selector .elementor-testimonial {{
-        background: #FFFFFF !important;
-        border: 2.5px solid {COLOR_PRIMARY_BLUE} !important;
-        border-radius: 20px 12px 20px 12px !important;
-        padding: 30px 22px 25px 22px !important;
-        box-shadow: none !important;
-        transition: transform 0.25s ease, border-color 0.25s ease !important;
-    }}
-    selector .elementor-testimonial:hover {{
-        transform: translateY(-4px) !important;
-        border-color: {COLOR_BTN_ACCENT} !important;
-        box-shadow: none !important;
-    }}
-    selector .elementor-testimonial__image img {{
-        border-radius: 50% !important;
-        border: 2px solid {COLOR_PRIMARY_BLUE} !important;
-    }}
-    selector .elementor-testimonial__name {{
-        color: {COLOR_TEXT_MAIN} !important;
-        font-size: 18px !important;
-        font-weight: 700 !important;
-    }}
-    selector .elementor-testimonial__title {{
-        color: #64748B !important;
-        font-size: 13px !important;
-    }}
-    selector .elementor-star-rating {{
-        color: {COLOR_BTN_ACCENT} !important;
-    }}
-    selector .elementor-testimonial__text {{
-        color: {COLOR_TEXT_MAIN} !important;
-        font-size: 14px !important;
-        line-height: 1.6 !important;
-        font-style: italic !important;
-    }}
-    selector .elementor-swiper-button {{
-        color: {COLOR_BTN_ACCENT} !important;
-    }}
-    """
     sec4["elements"].append(create_reviews_widget(
         slides=reviews_slides,
-        slides_per_view=3,
-        custom_css=css_reviews
+        slides_per_view=3
     ))
 
     # -------------------------------------------------------------
@@ -455,7 +358,7 @@ def build_homepage_json():
         bg_gradient={"color": COLOR_PRIMARY_GREEN, "color_b": "#1E7E34", "type": "linear", "angle": 135}
     )
     sec5["elements"].append(create_heading("BẢNG VÀNG HỌC VIÊN XUẤT SẮC", size="h2", align="center", color=COLOR_TEXT_WHITE, font_size=28, font_weight="800"))
-    sec5["elements"].append(create_divider(color=COLOR_BTN_ACCENT, width=90))
+    sec5["elements"].append(create_divider(color=COLOR_BTN_ORANGE, width=90))
     sec5["elements"].append(create_text_editor(
         "<p>Vinh danh những gương mặt xuất sắc đạt thành tích cao trong các kỳ thi quốc tế và tiến bộ vượt bậc sau khóa học tại Tiếng Anh Chị Trà. Click vào ảnh để xem chi tiết câu chuyện học viên.</p>",
         align="center",
@@ -463,49 +366,21 @@ def build_homepage_json():
         font_size=15
     ))
 
-    css_students = f"""
-    selector .elementor-post {{
-        background: rgba(255, 255, 255, 0.12) !important;
-        border: 1.5px solid rgba(255, 255, 255, 0.35) !important;
-        border-radius: 8px !important;
-        padding: 8px 8px 15px 8px !important;
-        box-shadow: none !important;
-        transition: transform 0.25s ease, border-color 0.25s ease !important;
-        cursor: pointer !important;
-    }}
-    selector .elementor-post:hover {{
-        transform: translateY(-4px) !important;
-        border-color: {COLOR_BTN_ACCENT} !important;
-        box-shadow: none !important;
-    }}
-    selector .elementor-post__thumbnail img {{
-        border-radius: 6px !important;
-    }}
-    selector .elementor-post__title a {{
-        color: {COLOR_TEXT_WHITE} !important;
-        font-size: 16px !important;
-        font-weight: 800 !important;
-        text-align: center !important;
-        display: block !important;
-        text-transform: uppercase !important;
-        margin-top: 10px !important;
-    }}
-    selector .elementor-post__excerpt p {{
-        color: {COLOR_BTN_ACCENT} !important;
-        font-size: 13px !important;
-        text-align: center !important;
-        margin: 5px 0 10px 0 !important;
-        font-weight: 700 !important;
-    }}
-    """
+    # Widget Posts query Post Type hoc_vien (4 Cột) - Tự động link tới bài viết chi tiết
     sec5["elements"].append(create_posts_widget(
         post_type="hoc_vien",
         columns="4",
         posts_per_page="4",
-        skin="classic",
+        show_image="yes",
+        show_title="yes",
+        title_color=COLOR_TEXT_WHITE,
         show_excerpt="yes",
+        excerpt_color=COLOR_BTN_ORANGE,
         show_read_more="no",
-        custom_css=css_students
+        bg_box_color="rgba(255, 255, 255, 0.12)",
+        border_box_color="rgba(255, 255, 255, 0.3)",
+        border_radius=8,
+        content_padding=12
     ))
 
     # -------------------------------------------------------------
@@ -521,67 +396,26 @@ def build_homepage_json():
         padding_right="40",
         bg_color="#FFFFFF"
     )
-    sec6["elements"].append(create_heading("BÀI VIẾT MỚI NHẤT & KINH NGHIỆM HỌC", size="h2", align="center", color=COLOR_TEXT_MAIN, font_size=28, font_weight="800"))
+    sec6["elements"].append(create_heading("BÀI VIẾT MỚI NHẤT & KINH NGHIỆM HỌC", size="h2", align="center", color=COLOR_TEXT_BLACK, font_size=28, font_weight="800"))
     sec6["elements"].append(create_divider(color=COLOR_PRIMARY_BLUE, width=80))
 
-    css_blogs = f"""
-    selector .elementor-post {{
-        background: #F8F9FA !important;
-        border: 1px solid #DEE2E6 !important;
-        border-radius: 8px !important;
-        overflow: hidden !important;
-        box-shadow: none !important;
-        transition: transform 0.25s ease, border-color 0.25s ease !important;
-        padding-bottom: 20px !important;
-    }}
-    selector .elementor-post:hover {{
-        transform: translateY(-4px) !important;
-        border-color: {COLOR_PRIMARY_BLUE} !important;
-        box-shadow: none !important;
-    }}
-    selector .elementor-post__text {{
-        padding: 15px 18px 10px 18px !important;
-    }}
-    selector .elementor-post__title a {{
-        color: {COLOR_TEXT_MAIN} !important;
-        font-size: 16px !important;
-        font-weight: 700 !important;
-    }}
-    selector .elementor-post__excerpt p {{
-        color: {COLOR_TEXT_MAIN} !important;
-        font-size: 13px !important;
-    }}
-    selector .elementor-post__meta-data span {{
-        color: {COLOR_PRIMARY_BLUE} !important;
-        font-weight: 600 !important;
-        font-size: 12px !important;
-    }}
-    selector .elementor-post__read-more {{
-        display: inline-block !important;
-        background: {COLOR_BTN_ACCENT} !important;
-        color: {COLOR_TEXT_WHITE} !important;
-        padding: 7px 16px !important;
-        border-radius: 6px !important;
-        font-size: 13px !important;
-        font-weight: 700 !important;
-        margin-top: 8px !important;
-        box-shadow: none !important;
-        transition: background 0.2s ease !important;
-    }}
-    selector .elementor-post__read-more:hover {{
-        background: #D4830F !important;
-        box-shadow: none !important;
-    }}
-    """
+    # Widget Posts query Post Type post (3 Cột) - NATIVE SETTINGS
     sec6["elements"].append(create_posts_widget(
         post_type="post",
         columns="3",
         posts_per_page="3",
-        skin="classic",
+        show_image="yes",
+        show_title="yes",
+        title_color=COLOR_TEXT_BLACK,
         show_excerpt="yes",
+        excerpt_color=COLOR_TEXT_BLACK,
         show_read_more="yes",
         read_more_text="ĐỌC TIẾP →",
-        custom_css=css_blogs
+        read_more_color=COLOR_BTN_ORANGE,
+        bg_box_color="#F8F9FA",
+        border_box_color=COLOR_BORDER_GRAY,
+        border_radius=8,
+        content_padding=16
     ))
 
     # -------------------------------------------------------------
@@ -610,5 +444,5 @@ if __name__ == "__main__":
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
         zf.write(json_path, "trang-chu-elementor.json")
 
-    print(f"[SUCCESS] Da sinh thanh cong file JSON chuan ma mau va khong box-shadow: {json_path}")
+    print(f"[SUCCESS] Da sinh thanh cong file JSON thuan Native 100% khong custom css: {json_path}")
     print(f"[SUCCESS] Da dong goi ZIP thanh cong: {zip_path}")
