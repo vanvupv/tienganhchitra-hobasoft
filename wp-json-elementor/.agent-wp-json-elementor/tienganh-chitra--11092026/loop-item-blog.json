@@ -1,11 +1,11 @@
 {
   "version": "0.4",
-  "title": "Loop Item Card - Tiếng Anh Chị Trà",
+  "title": "Loop Item - Blog Tin Tức",
   "type": "loop-item",
   "page_settings": [],
   "content": [
     {
-      "id": "541c0e6a",
+      "id": "88d2b554",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -15,7 +15,7 @@
           "unit": "px",
           "top": "0",
           "right": "0",
-          "bottom": "15",
+          "bottom": "18",
           "left": "0",
           "isLinked": false
         },
@@ -28,7 +28,7 @@
           "left": "1",
           "isLinked": true
         },
-        "border_color": "#28A745",
+        "border_color": "#DEE2E6",
         "border_radius": {
           "unit": "px",
           "top": "8",
@@ -43,7 +43,7 @@
       },
       "elements": [
         {
-          "id": "aa028408",
+          "id": "9c5d05d2",
           "elType": "widget",
           "widgetType": "theme-post-featured-image",
           "isInner": false,
@@ -52,39 +52,64 @@
             "link_to": "post",
             "height": {
               "unit": "px",
-              "size": 200
+              "size": 185
             },
             "height_mobile": {
               "unit": "px",
-              "size": 180
+              "size": 160
             },
             "object_fit": "cover"
           },
           "elements": []
         },
         {
-          "id": "c6ec0dc5",
+          "id": "6ad6fdf1",
           "elType": "container",
           "isInner": true,
           "settings": {
+            "flex_direction": "column",
+            "align_items": "flex-start",
             "padding": {
               "unit": "px",
-              "top": "12",
-              "right": "15",
+              "top": "14",
+              "right": "16",
               "bottom": "0",
-              "left": "15",
+              "left": "16",
               "isLinked": false
             }
           },
           "elements": [
             {
-              "id": "a97cddd7",
+              "id": "f90d6c8b",
+              "elType": "widget",
+              "widgetType": "post-info",
+              "isInner": false,
+              "settings": {
+                "icon_list": [
+                  {
+                    "_id": "meta_date",
+                    "type": "date"
+                  }
+                ],
+                "icon_color": "#64748B",
+                "text_color": "#64748B",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "0a2d750f",
               "elType": "widget",
               "widgetType": "theme-post-title",
               "isInner": false,
               "settings": {
                 "header_size": "h3",
-                "align": "center",
+                "align": "left",
                 "title_color": "#000000",
                 "typography_typography": "custom",
                 "typography_font_family": "Plus Jakarta Sans",
@@ -98,12 +123,12 @@
               "elements": []
             },
             {
-              "id": "ff107dc2",
+              "id": "8eb0a19d",
               "elType": "widget",
               "widgetType": "theme-post-excerpt",
               "isInner": false,
               "settings": {
-                "align": "center",
+                "align": "left",
                 "text_color": "#4A5568",
                 "typography_typography": "custom",
                 "typography_font_family": "Plus Jakarta Sans",
@@ -111,7 +136,35 @@
                   "unit": "px",
                   "size": 14
                 },
-                "excerpt_length": 15
+                "excerpt_length": 16
+              },
+              "elements": []
+            },
+            {
+              "id": "d2649317",
+              "elType": "widget",
+              "widgetType": "button",
+              "isInner": false,
+              "settings": {
+                "text": "ĐỌC TIẾP →",
+                "align": "left",
+                "button_text_color": "#ED9717",
+                "background_color": "rgba(0, 0, 0, 0)",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "typography_font_weight": "700",
+                "padding": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
               },
               "elements": []
             }

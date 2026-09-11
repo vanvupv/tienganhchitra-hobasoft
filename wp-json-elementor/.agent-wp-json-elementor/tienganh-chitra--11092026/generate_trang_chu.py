@@ -436,34 +436,25 @@ def build_homepage_json():
 
     return template
 
-def build_loop_item_json(border_color=COLOR_PRIMARY_GREEN):
+def build_loop_item_giang_vien():
     """
-    Sinh Template Loop Item chuẩn Native Elementor Pro:
-    - Type: loop-item
-    - Khung Card bo tròn 8px, viền phẳng 1px solid
-    - Featured Image: tỷ lệ ảnh chuẩn, object-fit cover, height 200px (KHÔNG BAO GIỜ BỊ PHÓNG TO TRÊN MOBILE)
-    - Post Title: Font Plus Jakarta Sans, link_to post
-    - Post Excerpt: 15 từ, căn giữa, font 14px
+    1. Template Loop Item: ĐỘI NGŨ GIẢNG VIÊN
+    - Ảnh chân dung giảng viên thanh lịch: height 240px, object-fit cover
+    - Tên giảng viên trang trọng, căn giữa, màu đen
+    - Bằng cấp / Chuyên môn giảng dạy nổi bật màu xanh lá thương hiệu
     """
-    card_container = {
+    card = {
         "id": gen_id(),
         "elType": "container",
         "isInner": False,
         "settings": {
             "flex_direction": "column",
             "content_width": "full",
-            "padding": {
-                "unit": "px",
-                "top": "0",
-                "right": "0",
-                "bottom": "15",
-                "left": "0",
-                "isLinked": False
-            },
+            "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "18", "left": "0", "isLinked": False},
             "border_border": "solid",
             "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True},
-            "border_color": border_color,
-            "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": True},
+            "border_color": COLOR_PRIMARY_GREEN,
+            "border_radius": {"unit": "px", "top": "10", "right": "10", "bottom": "10", "left": "10", "isLinked": True},
             "background_background": "classic",
             "background_color": "#FFFFFF",
             "overflow": "hidden"
@@ -477,7 +468,100 @@ def build_loop_item_json(border_color=COLOR_PRIMARY_GREEN):
                 "settings": {
                     "image_size": "medium_large",
                     "link_to": "post",
-                    "height": {"unit": "px", "size": 200},
+                    "height": {"unit": "px", "size": 240},
+                    "height_mobile": {"unit": "px", "size": 200},
+                    "object_fit": "cover"
+                },
+                "elements": []
+            },
+            {
+                "id": gen_id(),
+                "elType": "container",
+                "isInner": True,
+                "settings": {
+                    "flex_direction": "column",
+                    "align_items": "center",
+                    "padding": {"unit": "px", "top": "14", "right": "15", "bottom": "0", "left": "15", "isLinked": False}
+                },
+                "elements": [
+                    {
+                        "id": gen_id(),
+                        "elType": "widget",
+                        "widgetType": "theme-post-title",
+                        "isInner": False,
+                        "settings": {
+                            "header_size": "h3",
+                            "align": "center",
+                            "title_color": COLOR_TEXT_BLACK,
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 18},
+                            "typography_font_weight": "700",
+                            "link_to": "post"
+                        },
+                        "elements": []
+                    },
+                    {
+                        "id": gen_id(),
+                        "elType": "widget",
+                        "widgetType": "theme-post-excerpt",
+                        "isInner": False,
+                        "settings": {
+                            "align": "center",
+                            "text_color": COLOR_PRIMARY_GREEN,
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 14},
+                            "typography_font_weight": "600",
+                            "excerpt_length": 14
+                        },
+                        "elements": []
+                    }
+                ]
+            }
+        ]
+    }
+    return {
+        "version": "0.4",
+        "title": "Loop Item - Đội Ngũ Giảng Viên",
+        "type": "loop-item",
+        "page_settings": [],
+        "content": [card]
+    }
+
+def build_loop_item_hoc_vien():
+    """
+    2. Template Loop Item: BẢNG VÀNG HỌC VIÊN XUẤT SẮC
+    - Ảnh chân dung học viên rạng rỡ: height 210px, object-fit cover
+    - Tên học viên H3 căn giữa
+    - Điểm số IELTS / Thành tích nổi bật màu Cam #ED9717 thu hút
+    """
+    card = {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": False,
+        "settings": {
+            "flex_direction": "column",
+            "content_width": "full",
+            "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "18", "left": "0", "isLinked": False},
+            "border_border": "solid",
+            "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True},
+            "border_color": COLOR_PRIMARY_GREEN,
+            "border_radius": {"unit": "px", "top": "10", "right": "10", "bottom": "10", "left": "10", "isLinked": True},
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "overflow": "hidden"
+        },
+        "elements": [
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "theme-post-featured-image",
+                "isInner": False,
+                "settings": {
+                    "image_size": "medium_large",
+                    "link_to": "post",
+                    "height": {"unit": "px", "size": 210},
                     "height_mobile": {"unit": "px", "size": 180},
                     "object_fit": "cover"
                 },
@@ -488,7 +572,9 @@ def build_loop_item_json(border_color=COLOR_PRIMARY_GREEN):
                 "elType": "container",
                 "isInner": True,
                 "settings": {
-                    "padding": {"unit": "px", "top": "12", "right": "15", "bottom": "0", "left": "15", "isLinked": False}
+                    "flex_direction": "column",
+                    "align_items": "center",
+                    "padding": {"unit": "px", "top": "14", "right": "15", "bottom": "0", "left": "15", "isLinked": False}
                 },
                 "elements": [
                     {
@@ -515,11 +601,12 @@ def build_loop_item_json(border_color=COLOR_PRIMARY_GREEN):
                         "isInner": False,
                         "settings": {
                             "align": "center",
-                            "text_color": "#4A5568",
+                            "text_color": COLOR_BTN_ORANGE,
                             "typography_typography": "custom",
                             "typography_font_family": "Plus Jakarta Sans",
                             "typography_font_size": {"unit": "px", "size": 14},
-                            "excerpt_length": 15
+                            "typography_font_weight": "700",
+                            "excerpt_length": 14
                         },
                         "elements": []
                     }
@@ -527,44 +614,169 @@ def build_loop_item_json(border_color=COLOR_PRIMARY_GREEN):
             }
         ]
     }
-
     return {
         "version": "0.4",
-        "title": "Loop Item Card - Tiếng Anh Chị Trà",
+        "title": "Loop Item - Bảng Vàng Học Viên",
         "type": "loop-item",
         "page_settings": [],
-        "content": [card_container]
+        "content": [card]
     }
+
+def build_loop_item_blog():
+    """
+    3. Template Loop Item: BÀI VIẾT TIN TỨC & KINH NGHIỆM HỌC
+    - Ảnh bài viết tỷ lệ 16:9 chuẩn báo chí: height 185px, object-fit cover
+    - Căn lề trái toàn bộ: Ngày đăng bài nhỏ -> Tiêu đề bài viết -> Tóm tắt -> Nút ĐỌC TIẾP
+    """
+    card = {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": False,
+        "settings": {
+            "flex_direction": "column",
+            "content_width": "full",
+            "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "18", "left": "0", "isLinked": False},
+            "border_border": "solid",
+            "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True},
+            "border_color": COLOR_BORDER_GRAY,
+            "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": True},
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "overflow": "hidden"
+        },
+        "elements": [
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "theme-post-featured-image",
+                "isInner": False,
+                "settings": {
+                    "image_size": "medium_large",
+                    "link_to": "post",
+                    "height": {"unit": "px", "size": 185},
+                    "height_mobile": {"unit": "px", "size": 160},
+                    "object_fit": "cover"
+                },
+                "elements": []
+            },
+            {
+                "id": gen_id(),
+                "elType": "container",
+                "isInner": True,
+                "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "padding": {"unit": "px", "top": "14", "right": "16", "bottom": "0", "left": "16", "isLinked": False}
+                },
+                "elements": [
+                    {
+                        "id": gen_id(),
+                        "elType": "widget",
+                        "widgetType": "post-info",
+                        "isInner": False,
+                        "settings": {
+                            "icon_list": [
+                                {
+                                    "_id": "meta_date",
+                                    "type": "date"
+                                }
+                            ],
+                            "icon_color": "#64748B",
+                            "text_color": "#64748B",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 12}
+                        },
+                        "elements": []
+                    },
+                    {
+                        "id": gen_id(),
+                        "elType": "widget",
+                        "widgetType": "theme-post-title",
+                        "isInner": False,
+                        "settings": {
+                            "header_size": "h3",
+                            "align": "left",
+                            "title_color": COLOR_TEXT_BLACK,
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 17},
+                            "typography_font_weight": "700",
+                            "link_to": "post"
+                        },
+                        "elements": []
+                    },
+                    {
+                        "id": gen_id(),
+                        "elType": "widget",
+                        "widgetType": "theme-post-excerpt",
+                        "isInner": False,
+                        "settings": {
+                            "align": "left",
+                            "text_color": "#4A5568",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 14},
+                            "excerpt_length": 16
+                        },
+                        "elements": []
+                    },
+                    {
+                        "id": gen_id(),
+                        "elType": "widget",
+                        "widgetType": "button",
+                        "isInner": False,
+                        "settings": {
+                            "text": "ĐỌC TIẾP →",
+                            "align": "left",
+                            "button_text_color": COLOR_BTN_ORANGE,
+                            "background_color": "rgba(0, 0, 0, 0)",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 13},
+                            "typography_font_weight": "700",
+                            "padding": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0", "isLinked": False}
+                        },
+                        "elements": []
+                    }
+                ]
+            }
+        ]
+    }
+    return {
+        "version": "0.4",
+        "title": "Loop Item - Blog Tin Tức",
+        "type": "loop-item",
+        "page_settings": [],
+        "content": [card]
+    }
+
+def save_and_zip(data, base_name, out_dir):
+    json_p = os.path.join(out_dir, f"{base_name}.json")
+    zip_p = os.path.join(out_dir, f"{base_name}.zip")
+    with open(json_p, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    with zipfile.ZipFile(zip_p, "w", zipfile.ZIP_DEFLATED) as zf:
+        zf.write(json_p, f"{base_name}.json")
+    print(f"[SUCCESS] Exported {base_name}.zip")
 
 if __name__ == "__main__":
     out_dir = r"wp-json-elementor\.agent-wp-json-elementor\tienganh-chitra--11092026"
-    
-    # 1. Sinh file Trang Chu Elementor
-    json_path = os.path.join(out_dir, "trang-chu-elementor.json")
-    zip_path = os.path.join(out_dir, "trang-chu-elementor.zip")
 
-    template = build_homepage_json()
+    # 1. Trang Chủ Elementor
+    homepage_tpl = build_homepage_json()
+    save_and_zip(homepage_tpl, "trang-chu-elementor", out_dir)
 
-    with open(json_path, "w", encoding="utf-8") as f:
-        json.dump(template, f, ensure_ascii=False, indent=2)
+    # 2. Loop Item 1: Giảng viên
+    giang_vien_tpl = build_loop_item_giang_vien()
+    save_and_zip(giang_vien_tpl, "loop-item-giang-vien", out_dir)
 
-    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
-        zf.write(json_path, "trang-chu-elementor.json")
+    # 3. Loop Item 2: Bảng vàng học viên
+    hoc_vien_tpl = build_loop_item_hoc_vien()
+    save_and_zip(hoc_vien_tpl, "loop-item-hoc-vien", out_dir)
 
-    print(f"[SUCCESS] Da sinh thanh cong file JSON Trang Chu: {json_path}")
-    print(f"[SUCCESS] Da dong goi ZIP Trang Chu: {zip_path}")
+    # 4. Loop Item 3: Blog tin tức
+    blog_tpl = build_loop_item_blog()
+    save_and_zip(blog_tpl, "loop-item-blog", out_dir)
 
-    # 2. Sinh file Loop Item Template (Chuan Swiper, Height 200px cover, khong lo vo anh mobile)
-    loop_item_json_path = os.path.join(out_dir, "loop-item-card.json")
-    loop_item_zip_path = os.path.join(out_dir, "loop-item-card.zip")
-
-    loop_template = build_loop_item_json()
-
-    with open(loop_item_json_path, "w", encoding="utf-8") as f:
-        json.dump(loop_template, f, ensure_ascii=False, indent=2)
-
-    with zipfile.ZipFile(loop_item_zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
-        zf.write(loop_item_json_path, "loop-item-card.json")
-
-    print(f"[SUCCESS] Da sinh thanh cong Loop Item Template: {loop_item_json_path}")
-    print(f"[SUCCESS] Da dong goi Loop Item ZIP: {loop_item_zip_path}")
+    print("\n[ALL DONE] Hoan thanh tao 1 Trang chu + 3 Loop Item Templates rieng biet!")
