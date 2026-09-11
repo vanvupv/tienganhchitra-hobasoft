@@ -5,7 +5,7 @@
   "page_settings": [],
   "content": [
     {
-      "id": "7fd35e77",
+      "id": "f738b932",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -24,7 +24,7 @@
       },
       "elements": [
         {
-          "id": "34f665c3",
+          "id": "16bd520b",
           "elType": "widget",
           "widgetType": "image",
           "isInner": false,
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": "531e9658",
+      "id": "ec646984",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -49,28 +49,20 @@
         "content_width": "boxed",
         "padding": {
           "unit": "px",
-          "top": "30",
-          "right": "40",
-          "bottom": "30",
-          "left": "40",
+          "top": "45",
+          "right": "20",
+          "bottom": "45",
+          "left": "20",
           "isLinked": false
         },
         "width": {
           "unit": "px",
           "size": 1200
-        },
-        "background_background": "gradient",
-        "background_color": "#28A745",
-        "background_color_b": "#1E7E34",
-        "background_gradient_type": "linear",
-        "background_gradient_angle": {
-          "unit": "deg",
-          "size": 135
         }
       },
       "elements": [
         {
-          "id": "07624c97",
+          "id": "d5666d6a",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -78,7 +70,7 @@
             "title": "ĐỘI NGŨ GIẢNG VIÊN TẠI TIẾNG ANH CHỊ TRÀ",
             "header_size": "h2",
             "align": "center",
-            "title_color": "#FFFFFF",
+            "title_color": "#28A745",
             "typography_typography": "custom",
             "typography_font_family": "Plus Jakarta Sans",
             "typography_font_size": {
@@ -94,7 +86,7 @@
           "elements": []
         },
         {
-          "id": "166682e7",
+          "id": "8a052433",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -117,14 +109,14 @@
           "elements": []
         },
         {
-          "id": "eacf9561",
+          "id": "b729fb38",
           "elType": "widget",
           "widgetType": "text-editor",
           "isInner": false,
           "settings": {
             "editor": "<p>Chặng đường phía trước còn nhiều gian nan, nhưng với tâm huyết và say mê ngành giáo dục tri thức của mình, đội ngũ giảng viên luôn tràn đầy năng lượng đồng hành cùng học viên tiến về phía trước.</p>",
             "align": "center",
-            "text_color": "#F8FAFC",
+            "text_color": "#4A5568",
             "typography_typography": "custom",
             "typography_font_family": "Plus Jakarta Sans",
             "typography_font_size": {
@@ -139,7 +131,7 @@
           "elements": []
         },
         {
-          "id": "49f1306b",
+          "id": "fe21b68b",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -153,23 +145,23 @@
             "classic_show_image": "yes",
             "classic_image_size": "medium_large",
             "classic_show_title": "yes",
-            "classic_title_color": "#FFFFFF",
+            "classic_title_color": "#000000",
             "classic_show_excerpt": "yes",
-            "classic_excerpt_color": "#ED9717",
+            "classic_excerpt_color": "#4A5568",
             "classic_show_read_more": "no",
             "classic_read_more_text": "Xem thêm »",
             "classic_read_more_color": "#ED9717",
             "classic_meta_data": [],
             "classic_content_padding": {
               "unit": "px",
-              "top": "12",
-              "right": "12",
-              "bottom": "12",
-              "left": "12",
+              "top": "14",
+              "right": "14",
+              "bottom": "14",
+              "left": "14",
               "isLinked": true
             },
-            "classic_box_bg_color": "rgba(255, 255, 255, 0.12)",
-            "classic_box_border_color": "rgba(255, 255, 255, 0.3)",
+            "classic_box_bg_color": "#FFFFFF",
+            "classic_box_border_color": "#28A745",
             "classic_box_border_width": {
               "unit": "px",
               "top": "1",
@@ -192,7 +184,7 @@
       ]
     },
     {
-      "id": "480f3904",
+      "id": "0ffc2cf6",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -200,22 +192,20 @@
         "content_width": "boxed",
         "padding": {
           "unit": "px",
-          "top": "30",
-          "right": "40",
-          "bottom": "30",
-          "left": "40",
+          "top": "45",
+          "right": "20",
+          "bottom": "45",
+          "left": "20",
           "isLinked": false
         },
         "width": {
           "unit": "px",
           "size": 1200
-        },
-        "background_background": "classic",
-        "background_color": "#007BFF"
+        }
       },
       "elements": [
         {
-          "id": "af31c5b7",
+          "id": "8ef8d6f4",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -223,7 +213,7 @@
             "title": "CHƯƠNG TRÌNH ĐÀO TẠO TIẾNG ANH",
             "header_size": "h2",
             "align": "center",
-            "title_color": "#FFFFFF",
+            "title_color": "#007BFF",
             "typography_typography": "custom",
             "typography_font_family": "Plus Jakarta Sans",
             "typography_font_size": {
@@ -239,7 +229,7 @@
           "elements": []
         },
         {
-          "id": "39ada52c",
+          "id": "d065ef8f",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -262,7 +252,7 @@
           "elements": []
         },
         {
-          "id": "cefdc5cb",
+          "id": "3556b24c",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -278,7 +268,7 @@
             "classic_show_title": "yes",
             "classic_title_color": "#000000",
             "classic_show_excerpt": "yes",
-            "classic_excerpt_color": "#000000",
+            "classic_excerpt_color": "#4A5568",
             "classic_show_read_more": "yes",
             "classic_read_more_text": "TÌM HIỂU KHÓA HỌC »",
             "classic_read_more_color": "#ED9717",
@@ -292,7 +282,7 @@
               "isLinked": true
             },
             "classic_box_bg_color": "#FFFFFF",
-            "classic_box_border_color": "#E2E8F0",
+            "classic_box_border_color": "#007BFF",
             "classic_box_border_width": {
               "unit": "px",
               "top": "1",
@@ -315,7 +305,7 @@
       ]
     },
     {
-      "id": "e587851e",
+      "id": "06bb142c",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -323,22 +313,20 @@
         "content_width": "boxed",
         "padding": {
           "unit": "px",
-          "top": "30",
-          "right": "40",
-          "bottom": "30",
-          "left": "40",
+          "top": "45",
+          "right": "20",
+          "bottom": "45",
+          "left": "20",
           "isLinked": false
         },
         "width": {
           "unit": "px",
           "size": 1200
-        },
-        "background_background": "classic",
-        "background_color": "#F0F7FF"
+        }
       },
       "elements": [
         {
-          "id": "178f7857",
+          "id": "f7ef38d6",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -351,7 +339,7 @@
             "typography_font_family": "Plus Jakarta Sans",
             "typography_font_size": {
               "unit": "px",
-              "size": 32
+              "size": 30
             },
             "typography_font_weight": "800",
             "typography_line_height": {
@@ -362,7 +350,30 @@
           "elements": []
         },
         {
-          "id": "f0858860",
+          "id": "89c2cf68",
+          "elType": "widget",
+          "widgetType": "divider",
+          "isInner": false,
+          "settings": {
+            "color": "#ED9717",
+            "weight": {
+              "unit": "px",
+              "size": 3
+            },
+            "width": {
+              "unit": "px",
+              "size": 70
+            },
+            "align": "center",
+            "gap": {
+              "unit": "px",
+              "size": 15
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "b2e4e1c3",
           "elType": "widget",
           "widgetType": "reviews",
           "isInner": false,
@@ -421,7 +432,7 @@
       ]
     },
     {
-      "id": "43380100",
+      "id": "a845e7bc",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -429,28 +440,20 @@
         "content_width": "boxed",
         "padding": {
           "unit": "px",
-          "top": "30",
-          "right": "40",
-          "bottom": "30",
-          "left": "40",
+          "top": "45",
+          "right": "20",
+          "bottom": "45",
+          "left": "20",
           "isLinked": false
         },
         "width": {
           "unit": "px",
           "size": 1200
-        },
-        "background_background": "gradient",
-        "background_color": "#28A745",
-        "background_color_b": "#1E7E34",
-        "background_gradient_type": "linear",
-        "background_gradient_angle": {
-          "unit": "deg",
-          "size": 135
         }
       },
       "elements": [
         {
-          "id": "b56f7974",
+          "id": "43acf410",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -458,7 +461,7 @@
             "title": "BẢNG VÀNG HỌC VIÊN XUẤT SẮC",
             "header_size": "h2",
             "align": "center",
-            "title_color": "#FFFFFF",
+            "title_color": "#28A745",
             "typography_typography": "custom",
             "typography_font_family": "Plus Jakarta Sans",
             "typography_font_size": {
@@ -474,7 +477,7 @@
           "elements": []
         },
         {
-          "id": "04220c31",
+          "id": "3f9e7649",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -497,14 +500,14 @@
           "elements": []
         },
         {
-          "id": "a5a64744",
+          "id": "fbce8c90",
           "elType": "widget",
           "widgetType": "text-editor",
           "isInner": false,
           "settings": {
             "editor": "<p>Vinh danh những gương mặt xuất sắc đạt thành tích cao trong các kỳ thi quốc tế và tiến bộ vượt bậc sau khóa học tại Tiếng Anh Chị Trà. Click vào ảnh để xem chi tiết câu chuyện học viên.</p>",
             "align": "center",
-            "text_color": "#F8FAFC",
+            "text_color": "#4A5568",
             "typography_typography": "custom",
             "typography_font_family": "Plus Jakarta Sans",
             "typography_font_size": {
@@ -519,7 +522,7 @@
           "elements": []
         },
         {
-          "id": "dfe3dc14",
+          "id": "4f8f7160",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -533,9 +536,9 @@
             "classic_show_image": "yes",
             "classic_image_size": "medium_large",
             "classic_show_title": "yes",
-            "classic_title_color": "#FFFFFF",
+            "classic_title_color": "#000000",
             "classic_show_excerpt": "yes",
-            "classic_excerpt_color": "#ED9717",
+            "classic_excerpt_color": "#4A5568",
             "classic_show_read_more": "no",
             "classic_read_more_text": "Xem thêm »",
             "classic_read_more_color": "#ED9717",
@@ -548,8 +551,8 @@
               "left": "12",
               "isLinked": true
             },
-            "classic_box_bg_color": "rgba(255, 255, 255, 0.12)",
-            "classic_box_border_color": "rgba(255, 255, 255, 0.3)",
+            "classic_box_bg_color": "#FFFFFF",
+            "classic_box_border_color": "#28A745",
             "classic_box_border_width": {
               "unit": "px",
               "top": "1",
@@ -572,7 +575,7 @@
       ]
     },
     {
-      "id": "0113ed26",
+      "id": "335c0f6e",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -580,22 +583,20 @@
         "content_width": "boxed",
         "padding": {
           "unit": "px",
-          "top": "30",
-          "right": "40",
-          "bottom": "30",
-          "left": "40",
+          "top": "45",
+          "right": "20",
+          "bottom": "45",
+          "left": "20",
           "isLinked": false
         },
         "width": {
           "unit": "px",
           "size": 1200
-        },
-        "background_background": "classic",
-        "background_color": "#FFFFFF"
+        }
       },
       "elements": [
         {
-          "id": "342b1f21",
+          "id": "144fe22d",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -619,7 +620,7 @@
           "elements": []
         },
         {
-          "id": "edbd4ac9",
+          "id": "3577540e",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -642,7 +643,7 @@
           "elements": []
         },
         {
-          "id": "7cc34b6d",
+          "id": "9ab287ba",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -658,7 +659,7 @@
             "classic_show_title": "yes",
             "classic_title_color": "#000000",
             "classic_show_excerpt": "yes",
-            "classic_excerpt_color": "#000000",
+            "classic_excerpt_color": "#4A5568",
             "classic_show_read_more": "yes",
             "classic_read_more_text": "ĐỌC TIẾP →",
             "classic_read_more_color": "#ED9717",
@@ -673,7 +674,7 @@
               "left": "16",
               "isLinked": true
             },
-            "classic_box_bg_color": "#F8F9FA",
+            "classic_box_bg_color": "#FFFFFF",
             "classic_box_border_color": "#DEE2E6",
             "classic_box_border_width": {
               "unit": "px",

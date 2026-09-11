@@ -227,61 +227,59 @@ def build_homepage_json():
     })
 
     # -------------------------------------------------------------
-    # SECTION 2: ĐỘI NGŨ GIẢNG VIÊN (Post Type: giang_vien) - MÀU XANH LÁ #28A745
+    # SECTION 2: ĐỘI NGŨ GIẢNG VIÊN (Post Type: giang_vien) - KHÔNG MÀU NỀN
     # -------------------------------------------------------------
     sec2 = create_container(
         direction="column",
         content_width="boxed",
         width=1200,
-        padding_top="30",
-        padding_bottom="30",
-        padding_left="40",
-        padding_right="40",
-        bg_gradient={"color": COLOR_PRIMARY_GREEN, "color_b": "#1E7E34", "type": "linear", "angle": 135}
+        padding_top="45",
+        padding_bottom="45",
+        padding_left="20",
+        padding_right="20"
     )
-    sec2["elements"].append(create_heading("ĐỘI NGŨ GIẢNG VIÊN TẠI TIẾNG ANH CHỊ TRÀ", size="h2", align="center", color=COLOR_TEXT_WHITE, font_size=28, font_weight="800"))
+    sec2["elements"].append(create_heading("ĐỘI NGŨ GIẢNG VIÊN TẠI TIẾNG ANH CHỊ TRÀ", size="h2", align="center", color=COLOR_PRIMARY_GREEN, font_size=28, font_weight="800"))
     sec2["elements"].append(create_divider(color=COLOR_BTN_ORANGE, width=90))
     sec2["elements"].append(create_text_editor(
         "<p>Chặng đường phía trước còn nhiều gian nan, nhưng với tâm huyết và say mê ngành giáo dục tri thức của mình, đội ngũ giảng viên luôn tràn đầy năng lượng đồng hành cùng học viên tiến về phía trước.</p>",
         align="center",
-        color="#F8FAFC",
+        color="#4A5568",
         font_size=15
     ))
 
-    # Widget Posts query Post Type giang_vien (4 Cột) - NATIVE SETTINGS
+    # Widget Posts query Post Type giang_vien (4 Cột) - Nền thẻ trắng, viền xanh lá tinh tế
     sec2["elements"].append(create_posts_widget(
         post_type="giang_vien",
         columns="4",
         posts_per_page="4",
         show_image="yes",
         show_title="yes",
-        title_color=COLOR_TEXT_WHITE,
+        title_color=COLOR_TEXT_BLACK,
         show_excerpt="yes",
-        excerpt_color=COLOR_BTN_ORANGE,
+        excerpt_color="#4A5568",
         show_read_more="no",
-        bg_box_color="rgba(255, 255, 255, 0.12)",
-        border_box_color="rgba(255, 255, 255, 0.3)",
+        bg_box_color="#FFFFFF",
+        border_box_color=COLOR_PRIMARY_GREEN,
         border_radius=8,
-        content_padding=12
+        content_padding=14
     ))
 
     # -------------------------------------------------------------
-    # SECTION 3: CHƯƠNG TRÌNH ĐÀO TẠO (Post Type: khoa_hoc) - MÀU XANH DƯƠNG #007BFF
+    # SECTION 3: CHƯƠNG TRÌNH ĐÀO TẠO (Post Type: khoa_hoc) - KHÔNG MÀU NỀN
     # -------------------------------------------------------------
     sec3 = create_container(
         direction="column",
         content_width="boxed",
         width=1200,
-        padding_top="30",
-        padding_bottom="30",
-        padding_left="40",
-        padding_right="40",
-        bg_color=COLOR_PRIMARY_BLUE
+        padding_top="45",
+        padding_bottom="45",
+        padding_left="20",
+        padding_right="20"
     )
-    sec3["elements"].append(create_heading("CHƯƠNG TRÌNH ĐÀO TẠO TIẾNG ANH", size="h2", align="center", color=COLOR_TEXT_WHITE, font_size=28, font_weight="800"))
+    sec3["elements"].append(create_heading("CHƯƠNG TRÌNH ĐÀO TẠO TIẾNG ANH", size="h2", align="center", color=COLOR_PRIMARY_BLUE, font_size=28, font_weight="800"))
     sec3["elements"].append(create_divider(color=COLOR_BTN_ORANGE, width=80))
 
-    # Widget Posts query Post Type khoa_hoc (3 Cột) - NATIVE SETTINGS
+    # Widget Posts query Post Type khoa_hoc (3 Cột) - Nền thẻ trắng, viền xanh dương tinh tế
     sec3["elements"].append(create_posts_widget(
         post_type="khoa_hoc",
         columns="3",
@@ -290,30 +288,30 @@ def build_homepage_json():
         show_title="yes",
         title_color=COLOR_TEXT_BLACK,
         show_excerpt="yes",
-        excerpt_color=COLOR_TEXT_BLACK,
+        excerpt_color="#4A5568",
         show_read_more="yes",
         read_more_text="TÌM HIỂU KHÓA HỌC »",
         read_more_color=COLOR_BTN_ORANGE,
         bg_box_color="#FFFFFF",
-        border_box_color="#E2E8F0",
+        border_box_color=COLOR_PRIMARY_BLUE,
         border_radius=8,
         content_padding=16
     ))
 
     # -------------------------------------------------------------
-    # SECTION 4: PHỤ HUYNH & HỌC VIÊN NÓI GÌ - WIDGET REVIEWS CHÍNH THỨC
+    # SECTION 4: PHỤ HUYNH & HỌC VIÊN NÓI GÌ - KHÔNG MÀU NỀN
     # -------------------------------------------------------------
     sec4 = create_container(
         direction="column",
         content_width="boxed",
         width=1200,
-        padding_top="30",
-        padding_bottom="30",
-        padding_left="40",
-        padding_right="40",
-        bg_color="#F0F7FF"
+        padding_top="45",
+        padding_bottom="45",
+        padding_left="20",
+        padding_right="20"
     )
-    sec4["elements"].append(create_heading("Phụ huynh & Học viên nói gì", size="h2", align="center", color=COLOR_TEXT_BLACK, font_size=32, font_weight="800"))
+    sec4["elements"].append(create_heading("Phụ huynh & Học viên nói gì", size="h2", align="center", color=COLOR_TEXT_BLACK, font_size=30, font_weight="800"))
+    sec4["elements"].append(create_divider(color=COLOR_BTN_ORANGE, width=70))
 
     reviews_slides = [
         {
@@ -345,61 +343,59 @@ def build_homepage_json():
     ))
 
     # -------------------------------------------------------------
-    # SECTION 5: HỌC VIÊN XUẤT SẮC (Post Type: hoc_vien) - MÀU XANH LÁ #28A745
+    # SECTION 5: HỌC VIÊN XUẤT SẮC (Post Type: hoc_vien) - KHÔNG MÀU NỀN
     # -------------------------------------------------------------
     sec5 = create_container(
         direction="column",
         content_width="boxed",
         width=1200,
-        padding_top="30",
-        padding_bottom="30",
-        padding_left="40",
-        padding_right="40",
-        bg_gradient={"color": COLOR_PRIMARY_GREEN, "color_b": "#1E7E34", "type": "linear", "angle": 135}
+        padding_top="45",
+        padding_bottom="45",
+        padding_left="20",
+        padding_right="20"
     )
-    sec5["elements"].append(create_heading("BẢNG VÀNG HỌC VIÊN XUẤT SẮC", size="h2", align="center", color=COLOR_TEXT_WHITE, font_size=28, font_weight="800"))
+    sec5["elements"].append(create_heading("BẢNG VÀNG HỌC VIÊN XUẤT SẮC", size="h2", align="center", color=COLOR_PRIMARY_GREEN, font_size=28, font_weight="800"))
     sec5["elements"].append(create_divider(color=COLOR_BTN_ORANGE, width=90))
     sec5["elements"].append(create_text_editor(
         "<p>Vinh danh những gương mặt xuất sắc đạt thành tích cao trong các kỳ thi quốc tế và tiến bộ vượt bậc sau khóa học tại Tiếng Anh Chị Trà. Click vào ảnh để xem chi tiết câu chuyện học viên.</p>",
         align="center",
-        color="#F8FAFC",
+        color="#4A5568",
         font_size=15
     ))
 
-    # Widget Posts query Post Type hoc_vien (4 Cột) - Tự động link tới bài viết chi tiết
+    # Widget Posts query Post Type hoc_vien (4 Cột) - Nền thẻ trắng, viền xanh lá tinh tế
     sec5["elements"].append(create_posts_widget(
         post_type="hoc_vien",
         columns="4",
         posts_per_page="4",
         show_image="yes",
         show_title="yes",
-        title_color=COLOR_TEXT_WHITE,
+        title_color=COLOR_TEXT_BLACK,
         show_excerpt="yes",
-        excerpt_color=COLOR_BTN_ORANGE,
+        excerpt_color="#4A5568",
         show_read_more="no",
-        bg_box_color="rgba(255, 255, 255, 0.12)",
-        border_box_color="rgba(255, 255, 255, 0.3)",
+        bg_box_color="#FFFFFF",
+        border_box_color=COLOR_PRIMARY_GREEN,
         border_radius=8,
         content_padding=12
     ))
 
     # -------------------------------------------------------------
-    # SECTION 6: BÀI VIẾT MỚI NHẤT (Blog / Post Type: post) - NỀN TRẮNG
+    # SECTION 6: BÀI VIẾT MỚI NHẤT (Blog / Post Type: post) - KHÔNG MÀU NỀN
     # -------------------------------------------------------------
     sec6 = create_container(
         direction="column",
         content_width="boxed",
         width=1200,
-        padding_top="30",
-        padding_bottom="30",
-        padding_left="40",
-        padding_right="40",
-        bg_color="#FFFFFF"
+        padding_top="45",
+        padding_bottom="45",
+        padding_left="20",
+        padding_right="20"
     )
     sec6["elements"].append(create_heading("BÀI VIẾT MỚI NHẤT & KINH NGHIỆM HỌC", size="h2", align="center", color=COLOR_TEXT_BLACK, font_size=28, font_weight="800"))
     sec6["elements"].append(create_divider(color=COLOR_PRIMARY_BLUE, width=80))
 
-    # Widget Posts query Post Type post (3 Cột) - NATIVE SETTINGS
+    # Widget Posts query Post Type post (3 Cột) - Nền thẻ trắng, viền xám tinh tế
     sec6["elements"].append(create_posts_widget(
         post_type="post",
         columns="3",
@@ -408,11 +404,11 @@ def build_homepage_json():
         show_title="yes",
         title_color=COLOR_TEXT_BLACK,
         show_excerpt="yes",
-        excerpt_color=COLOR_TEXT_BLACK,
+        excerpt_color="#4A5568",
         show_read_more="yes",
         read_more_text="ĐỌC TIẾP →",
         read_more_color=COLOR_BTN_ORANGE,
-        bg_box_color="#F8F9FA",
+        bg_box_color="#FFFFFF",
         border_box_color=COLOR_BORDER_GRAY,
         border_radius=8,
         content_padding=16
