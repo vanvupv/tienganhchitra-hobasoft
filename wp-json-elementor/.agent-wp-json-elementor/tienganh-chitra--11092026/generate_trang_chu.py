@@ -158,6 +158,47 @@ def create_posts_widget(post_type="post", columns="3", posts_per_page="3", show_
         "elements": []
     }
 
+def create_loop_carousel_widget(post_type="post", slides_to_show="4", posts_per_page=8, template_id=""):
+    """
+    Sinh Widget Loop Carousel chuẩn Native của Elementor Pro 3.35+:
+    - Động cơ Swiper.js native, vuốt trượt cảm ứng mượt mà trên mobile
+    - Query động Custom Post Types (giang_vien, hoc_vien, post)
+    - Tự động căn chỉnh chiều cao các thẻ (equal_height: yes)
+    - Tích hợp sẵn Navigation Arrows và Pagination Dots
+    """
+    settings = {
+        "_skin": "post",
+        "post_query_post_type": post_type,
+        "posts_per_page": posts_per_page,
+        "slides_to_show": str(slides_to_show),
+        "slides_to_show_tablet": "2",
+        "slides_to_show_mobile": "1",
+        "slides_to_scroll": "1",
+        "equal_height": "yes",
+        "autoplay": "yes",
+        "autoplay_speed": 4000,
+        "pause_on_hover": "yes",
+        "pause_on_interaction": "yes",
+        "infinite": "yes",
+        "speed": 500,
+        "arrows": "yes",
+        "pagination": "dots",
+        "arrows_color": COLOR_BTN_ORANGE,
+        "dots_color": COLOR_BTN_ORANGE,
+        "image_spacing_custom": {"unit": "px", "size": 20}
+    }
+    if template_id:
+        settings["template_id"] = str(template_id)
+
+    return {
+        "id": gen_id(),
+        "elType": "widget",
+        "widgetType": "loop-carousel",
+        "isInner": False,
+        "settings": settings,
+        "elements": []
+    }
+
 def create_reviews_widget(slides, slides_per_view=3):
     """
     Sinh Widget Reviews chính thức của Elementor Pro:
@@ -227,7 +268,7 @@ def build_homepage_json():
     })
 
     # -------------------------------------------------------------
-    # SECTION 2: ĐỘI NGŨ GIẢNG VIÊN (Post Type: giang_vien) - KHÔNG MÀU NỀN
+    # SECTION 2: ĐỘI NGŨ GIẢNG VIÊN - LOOP CAROUSEL (Post Type: giang_vien)
     # -------------------------------------------------------------
     sec2 = create_container(
         direction="column",
@@ -247,25 +288,15 @@ def build_homepage_json():
         font_size=15
     ))
 
-    # Widget Posts query Post Type giang_vien (4 Cột) - Nền thẻ trắng, viền xanh lá tinh tế
-    sec2["elements"].append(create_posts_widget(
+    # Widget Loop Carousel query Post Type giang_vien (4 Slides trên Desktop, Swiper Slider Native)
+    sec2["elements"].append(create_loop_carousel_widget(
         post_type="giang_vien",
-        columns="4",
-        posts_per_page="4",
-        show_image="yes",
-        show_title="yes",
-        title_color=COLOR_TEXT_BLACK,
-        show_excerpt="yes",
-        excerpt_color="#4A5568",
-        show_read_more="no",
-        bg_box_color="#FFFFFF",
-        border_box_color=COLOR_PRIMARY_GREEN,
-        border_radius=8,
-        content_padding=14
+        slides_to_show="4",
+        posts_per_page=8
     ))
 
     # -------------------------------------------------------------
-    # SECTION 3: CHƯƠNG TRÌNH ĐÀO TẠO (Post Type: khoa_hoc) - KHÔNG MÀU NỀN
+    # SECTION 3: CHƯƠNG TRÌNH ĐÀO TẠO (Post Type: khoa_hoc) - DUY NHẤT DÙNG WIDGET POSTS LƯỚI 3 CỘT
     # -------------------------------------------------------------
     sec3 = create_container(
         direction="column",
@@ -299,7 +330,7 @@ def build_homepage_json():
     ))
 
     # -------------------------------------------------------------
-    # SECTION 4: PHỤ HUYNH & HỌC VIÊN NÓI GÌ - KHÔNG MÀU NỀN
+    # SECTION 4: PHỤ HUYNH & HỌC VIÊN NÓI GÌ - KHÔNG MÀU NỀN (WIDGET REVIEWS)
     # -------------------------------------------------------------
     sec4 = create_container(
         direction="column",
@@ -343,7 +374,7 @@ def build_homepage_json():
     ))
 
     # -------------------------------------------------------------
-    # SECTION 5: HỌC VIÊN XUẤT SẮC (Post Type: hoc_vien) - KHÔNG MÀU NỀN
+    # SECTION 5: HỌC VIÊN XUẤT SẮC - LOOP CAROUSEL (Post Type: hoc_vien)
     # -------------------------------------------------------------
     sec5 = create_container(
         direction="column",
@@ -363,25 +394,15 @@ def build_homepage_json():
         font_size=15
     ))
 
-    # Widget Posts query Post Type hoc_vien (4 Cột) - Nền thẻ trắng, viền xanh lá tinh tế
-    sec5["elements"].append(create_posts_widget(
+    # Widget Loop Carousel query Post Type hoc_vien (4 Slides trên Desktop, Swiper Slider Native)
+    sec5["elements"].append(create_loop_carousel_widget(
         post_type="hoc_vien",
-        columns="4",
-        posts_per_page="4",
-        show_image="yes",
-        show_title="yes",
-        title_color=COLOR_TEXT_BLACK,
-        show_excerpt="yes",
-        excerpt_color="#4A5568",
-        show_read_more="no",
-        bg_box_color="#FFFFFF",
-        border_box_color=COLOR_PRIMARY_GREEN,
-        border_radius=8,
-        content_padding=12
+        slides_to_show="4",
+        posts_per_page=8
     ))
 
     # -------------------------------------------------------------
-    # SECTION 6: BÀI VIẾT MỚI NHẤT (Blog / Post Type: post) - KHÔNG MÀU NỀN
+    # SECTION 6: BÀI VIẾT MỚI NHẤT - LOOP CAROUSEL (Blog / Post Type: post)
     # -------------------------------------------------------------
     sec6 = create_container(
         direction="column",
@@ -395,23 +416,11 @@ def build_homepage_json():
     sec6["elements"].append(create_heading("BÀI VIẾT MỚI NHẤT & KINH NGHIỆM HỌC", size="h2", align="center", color=COLOR_TEXT_BLACK, font_size=28, font_weight="800"))
     sec6["elements"].append(create_divider(color=COLOR_PRIMARY_BLUE, width=80))
 
-    # Widget Posts query Post Type post (3 Cột) - Nền thẻ trắng, viền xám tinh tế
-    sec6["elements"].append(create_posts_widget(
+    # Widget Loop Carousel query Post Type post (3 Slides trên Desktop, Swiper Slider Native)
+    sec6["elements"].append(create_loop_carousel_widget(
         post_type="post",
-        columns="3",
-        posts_per_page="3",
-        show_image="yes",
-        show_title="yes",
-        title_color=COLOR_TEXT_BLACK,
-        show_excerpt="yes",
-        excerpt_color="#4A5568",
-        show_read_more="yes",
-        read_more_text="ĐỌC TIẾP →",
-        read_more_color=COLOR_BTN_ORANGE,
-        bg_box_color="#FFFFFF",
-        border_box_color=COLOR_BORDER_GRAY,
-        border_radius=8,
-        content_padding=16
+        slides_to_show="3",
+        posts_per_page=6
     ))
 
     # -------------------------------------------------------------
@@ -427,8 +436,110 @@ def build_homepage_json():
 
     return template
 
+def build_loop_item_json(border_color=COLOR_PRIMARY_GREEN):
+    """
+    Sinh Template Loop Item chuẩn Native Elementor Pro:
+    - Type: loop-item
+    - Khung Card bo tròn 8px, viền phẳng 1px solid
+    - Featured Image: tỷ lệ ảnh chuẩn, object-fit cover, height 200px (KHÔNG BAO GIỜ BỊ PHÓNG TO TRÊN MOBILE)
+    - Post Title: Font Plus Jakarta Sans, link_to post
+    - Post Excerpt: 15 từ, căn giữa, font 14px
+    """
+    card_container = {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": False,
+        "settings": {
+            "flex_direction": "column",
+            "content_width": "full",
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "15",
+                "left": "0",
+                "isLinked": False
+            },
+            "border_border": "solid",
+            "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True},
+            "border_color": border_color,
+            "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": True},
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "overflow": "hidden"
+        },
+        "elements": [
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "theme-post-featured-image",
+                "isInner": False,
+                "settings": {
+                    "image_size": "medium_large",
+                    "link_to": "post",
+                    "height": {"unit": "px", "size": 200},
+                    "height_mobile": {"unit": "px", "size": 180},
+                    "object_fit": "cover"
+                },
+                "elements": []
+            },
+            {
+                "id": gen_id(),
+                "elType": "container",
+                "isInner": True,
+                "settings": {
+                    "padding": {"unit": "px", "top": "12", "right": "15", "bottom": "0", "left": "15", "isLinked": False}
+                },
+                "elements": [
+                    {
+                        "id": gen_id(),
+                        "elType": "widget",
+                        "widgetType": "theme-post-title",
+                        "isInner": False,
+                        "settings": {
+                            "header_size": "h3",
+                            "align": "center",
+                            "title_color": COLOR_TEXT_BLACK,
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 17},
+                            "typography_font_weight": "700",
+                            "link_to": "post"
+                        },
+                        "elements": []
+                    },
+                    {
+                        "id": gen_id(),
+                        "elType": "widget",
+                        "widgetType": "theme-post-excerpt",
+                        "isInner": False,
+                        "settings": {
+                            "align": "center",
+                            "text_color": "#4A5568",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 14},
+                            "excerpt_length": 15
+                        },
+                        "elements": []
+                    }
+                ]
+            }
+        ]
+    }
+
+    return {
+        "version": "0.4",
+        "title": "Loop Item Card - Tiếng Anh Chị Trà",
+        "type": "loop-item",
+        "page_settings": [],
+        "content": [card_container]
+    }
+
 if __name__ == "__main__":
     out_dir = r"wp-json-elementor\.agent-wp-json-elementor\tienganh-chitra--11092026"
+    
+    # 1. Sinh file Trang Chu Elementor
     json_path = os.path.join(out_dir, "trang-chu-elementor.json")
     zip_path = os.path.join(out_dir, "trang-chu-elementor.zip")
 
@@ -440,5 +551,20 @@ if __name__ == "__main__":
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
         zf.write(json_path, "trang-chu-elementor.json")
 
-    print(f"[SUCCESS] Da sinh thanh cong file JSON thuan Native 100% khong custom css: {json_path}")
-    print(f"[SUCCESS] Da dong goi ZIP thanh cong: {zip_path}")
+    print(f"[SUCCESS] Da sinh thanh cong file JSON Trang Chu: {json_path}")
+    print(f"[SUCCESS] Da dong goi ZIP Trang Chu: {zip_path}")
+
+    # 2. Sinh file Loop Item Template (Chuan Swiper, Height 200px cover, khong lo vo anh mobile)
+    loop_item_json_path = os.path.join(out_dir, "loop-item-card.json")
+    loop_item_zip_path = os.path.join(out_dir, "loop-item-card.zip")
+
+    loop_template = build_loop_item_json()
+
+    with open(loop_item_json_path, "w", encoding="utf-8") as f:
+        json.dump(loop_template, f, ensure_ascii=False, indent=2)
+
+    with zipfile.ZipFile(loop_item_zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+        zf.write(loop_item_json_path, "loop-item-card.json")
+
+    print(f"[SUCCESS] Da sinh thanh cong Loop Item Template: {loop_item_json_path}")
+    print(f"[SUCCESS] Da dong goi Loop Item ZIP: {loop_item_zip_path}")

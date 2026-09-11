@@ -1,0 +1,123 @@
+{
+  "version": "0.4",
+  "title": "Loop Item Card - Tiếng Anh Chị Trà",
+  "type": "loop-item",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "541c0e6a",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "flex_direction": "column",
+        "content_width": "full",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "15",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_border": "solid",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_color": "#28A745",
+        "border_radius": {
+          "unit": "px",
+          "top": "8",
+          "right": "8",
+          "bottom": "8",
+          "left": "8",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "overflow": "hidden"
+      },
+      "elements": [
+        {
+          "id": "aa028408",
+          "elType": "widget",
+          "widgetType": "theme-post-featured-image",
+          "isInner": false,
+          "settings": {
+            "image_size": "medium_large",
+            "link_to": "post",
+            "height": {
+              "unit": "px",
+              "size": 200
+            },
+            "height_mobile": {
+              "unit": "px",
+              "size": 180
+            },
+            "object_fit": "cover"
+          },
+          "elements": []
+        },
+        {
+          "id": "c6ec0dc5",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "padding": {
+              "unit": "px",
+              "top": "12",
+              "right": "15",
+              "bottom": "0",
+              "left": "15",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "a97cddd7",
+              "elType": "widget",
+              "widgetType": "theme-post-title",
+              "isInner": false,
+              "settings": {
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17
+                },
+                "typography_font_weight": "700",
+                "link_to": "post"
+              },
+              "elements": []
+            },
+            {
+              "id": "ff107dc2",
+              "elType": "widget",
+              "widgetType": "theme-post-excerpt",
+              "isInner": false,
+              "settings": {
+                "align": "center",
+                "text_color": "#4A5568",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "excerpt_length": 15
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
