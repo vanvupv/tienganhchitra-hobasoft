@@ -624,9 +624,14 @@ def build_loop_item_hoc_vien():
 
 def build_loop_item_blog():
     """
-    3. Template Loop Item: BÀI VIẾT TIN TỨC & KINH NGHIỆM HỌC
-    - Ảnh bài viết tỷ lệ 16:9 chuẩn báo chí: height 185px, object-fit cover
-    - Căn lề trái toàn bộ: Ngày đăng bài nhỏ -> Tiêu đề bài viết -> Tóm tắt -> Nút ĐỌC TIẾP
+    3. Template Loop Item: BÀI VIẾT TIN TỨC & KINH NGHIỆM HỌC (CHUẨN 100% THEO ẢNH MẪU)
+    - Khung viền phẳng 1px solid #E5E7EB, nền trắng #FFFFFF
+    - Ảnh bài viết: height 240px (mobile 200px), object-fit cover
+    - Thứ tự nội dung chuẩn ảnh mẫu:
+      1. Tiêu đề bài viết H3 in đậm (font 18px, weight 700, line-height 1.35, màu đen #000000)
+      2. Ngày tháng đăng bài (font 13px, màu xám nhạt #9CA3AF, KHÔNG ICON LỊCH)
+      3. Đoạn trích dẫn tóm tắt (font 14px, line-height 1.6, màu #4B5563)
+      4. Nút "ĐỌC TIẾP →" in hoa, màu cam nổi bật #E67E22, không nền
     """
     card = {
         "id": gen_id(),
@@ -635,11 +640,11 @@ def build_loop_item_blog():
         "settings": {
             "flex_direction": "column",
             "content_width": "full",
-            "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "18", "left": "0", "isLinked": False},
+            "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": True},
             "border_border": "solid",
             "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True},
-            "border_color": COLOR_BORDER_GRAY,
-            "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": True},
+            "border_color": "#E5E7EB",
+            "border_radius": {"unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": True},
             "background_background": "classic",
             "background_color": "#FFFFFF",
             "overflow": "hidden"
@@ -651,10 +656,10 @@ def build_loop_item_blog():
                 "widgetType": "theme-post-featured-image",
                 "isInner": False,
                 "settings": {
-                    "image_size": "medium_large",
+                    "image_size": "full",
                     "link_to": "post",
-                    "height": {"unit": "px", "size": 185},
-                    "height_mobile": {"unit": "px", "size": 160},
+                    "height": {"unit": "px", "size": 240},
+                    "height_mobile": {"unit": "px", "size": 200},
                     "object_fit": "cover"
                 },
                 "elements": []
@@ -666,29 +671,9 @@ def build_loop_item_blog():
                 "settings": {
                     "flex_direction": "column",
                     "align_items": "flex-start",
-                    "padding": {"unit": "px", "top": "14", "right": "16", "bottom": "0", "left": "16", "isLinked": False}
+                    "padding": {"unit": "px", "top": "22", "right": "22", "bottom": "24", "left": "22", "isLinked": False}
                 },
                 "elements": [
-                    {
-                        "id": gen_id(),
-                        "elType": "widget",
-                        "widgetType": "post-info",
-                        "isInner": False,
-                        "settings": {
-                            "icon_list": [
-                                {
-                                    "_id": "meta_date",
-                                    "type": "date"
-                                }
-                            ],
-                            "icon_color": "#64748B",
-                            "text_color": "#64748B",
-                            "typography_typography": "custom",
-                            "typography_font_family": "Plus Jakarta Sans",
-                            "typography_font_size": {"unit": "px", "size": 12}
-                        },
-                        "elements": []
-                    },
                     {
                         "id": gen_id(),
                         "elType": "widget",
@@ -700,9 +685,33 @@ def build_loop_item_blog():
                             "title_color": COLOR_TEXT_BLACK,
                             "typography_typography": "custom",
                             "typography_font_family": "Plus Jakarta Sans",
-                            "typography_font_size": {"unit": "px", "size": 17},
+                            "typography_font_size": {"unit": "px", "size": 18},
                             "typography_font_weight": "700",
-                            "link_to": "post"
+                            "typography_line_height": {"unit": "em", "size": 1.35},
+                            "link_to": "post",
+                            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "6", "left": "0", "isLinked": False}
+                        },
+                        "elements": []
+                    },
+                    {
+                        "id": gen_id(),
+                        "elType": "widget",
+                        "widgetType": "post-info",
+                        "isInner": False,
+                        "settings": {
+                            "icon_list": [
+                                {
+                                    "_id": "meta_date",
+                                    "type": "date",
+                                    "show_icon": "none"
+                                }
+                            ],
+                            "text_color": "#9CA3AF",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 13},
+                            "typography_font_weight": "400",
+                            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "14", "left": "0", "isLinked": False}
                         },
                         "elements": []
                     },
@@ -713,11 +722,13 @@ def build_loop_item_blog():
                         "isInner": False,
                         "settings": {
                             "align": "left",
-                            "text_color": "#4A5568",
+                            "text_color": "#4B5563",
                             "typography_typography": "custom",
                             "typography_font_family": "Plus Jakarta Sans",
                             "typography_font_size": {"unit": "px", "size": 14},
-                            "excerpt_length": 16
+                            "typography_line_height": {"unit": "em", "size": 1.6},
+                            "excerpt_length": 25,
+                            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "18", "left": "0", "isLinked": False}
                         },
                         "elements": []
                     },
@@ -729,13 +740,14 @@ def build_loop_item_blog():
                         "settings": {
                             "text": "ĐỌC TIẾP →",
                             "align": "left",
-                            "button_text_color": COLOR_BTN_ORANGE,
+                            "button_text_color": "#E67E22",
                             "background_color": "rgba(0, 0, 0, 0)",
                             "typography_typography": "custom",
                             "typography_font_family": "Plus Jakarta Sans",
                             "typography_font_size": {"unit": "px", "size": 13},
                             "typography_font_weight": "700",
-                            "padding": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0", "isLinked": False}
+                            "typography_letter_spacing": {"unit": "px", "size": 0.5},
+                            "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": True}
                         },
                         "elements": []
                     }

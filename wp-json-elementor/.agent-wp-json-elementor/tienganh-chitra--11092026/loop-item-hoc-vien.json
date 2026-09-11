@@ -5,7 +5,7 @@
   "page_settings": [],
   "content": [
     {
-      "id": "92d69159",
+      "id": "440fa562",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -43,7 +43,7 @@
       },
       "elements": [
         {
-          "id": "9bf4a45f",
+          "id": "751e0569",
           "elType": "widget",
           "widgetType": "theme-post-featured-image",
           "isInner": false,
@@ -63,7 +63,7 @@
           "elements": []
         },
         {
-          "id": "9f11f55f",
+          "id": "1d8e05ec",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -80,7 +80,7 @@
           },
           "elements": [
             {
-              "id": "04ef312a",
+              "id": "20fa4ff3",
               "elType": "widget",
               "widgetType": "theme-post-title",
               "isInner": false,
@@ -100,7 +100,7 @@
               "elements": []
             },
             {
-              "id": "199875de",
+              "id": "27e52d34",
               "elType": "widget",
               "widgetType": "theme-post-excerpt",
               "isInner": false,
