@@ -6,6 +6,16 @@ import uuid
 def gen_id():
     return uuid.uuid4().hex[:8]
 
+# ==============================================================================
+# BẢNG MÃ MÀU CHUẨN DỰ ÁN TIẾNG ANH CHỊ TRÀ (BRAND COLOR TOKENS)
+# ==============================================================================
+COLOR_PRIMARY_BLUE  = "#007BFF"  # Màu chủ đạo - Xanh dương
+COLOR_PRIMARY_GREEN = "#28A745"  # Màu chủ đạo - Xanh lá
+COLOR_TEXT_MAIN     = "#000000"  # Màu văn bản
+COLOR_TEXT_WHITE    = "#FFFFFF"  # Màu chữ trên nền tối
+COLOR_BTN_ACCENT    = "#ED9717"  # Màu nút nổi bật - Màu cam
+COLOR_BORDER_LIGHT  = "#E2E8F0"  # Viền phân cách nhẹ (thay thế box-shadow)
+
 def create_container(direction="column", content_width="boxed", width=1200, padding_top="30", padding_bottom="30", padding_left="40", padding_right="40", bg_color="", bg_gradient=None, custom_css=""):
     settings = {
         "flex_direction": direction,
@@ -26,8 +36,8 @@ def create_container(direction="column", content_width="boxed", width=1200, padd
         settings["background_color"] = bg_color
     if bg_gradient:
         settings["background_background"] = "gradient"
-        settings["background_color"] = bg_gradient.get("color", "#0D9488")
-        settings["background_color_b"] = bg_gradient.get("color_b", "#0F766E")
+        settings["background_color"] = bg_gradient.get("color", COLOR_PRIMARY_GREEN)
+        settings["background_color_b"] = bg_gradient.get("color_b", "#1E7E34")
         settings["background_gradient_type"] = bg_gradient.get("type", "linear")
         settings["background_gradient_angle"] = {"unit": "deg", "size": bg_gradient.get("angle", 135)}
     if custom_css:
@@ -41,7 +51,7 @@ def create_container(direction="column", content_width="boxed", width=1200, padd
         "elements": []
     }
 
-def create_heading(title, size="h2", align="center", color="#1E293B", font_size=32, font_weight="800"):
+def create_heading(title, size="h2", align="center", color=COLOR_TEXT_MAIN, font_size=32, font_weight="800"):
     return {
         "id": gen_id(),
         "elType": "widget",
@@ -61,7 +71,7 @@ def create_heading(title, size="h2", align="center", color="#1E293B", font_size=
         "elements": []
     }
 
-def create_text_editor(text, align="center", color="#475569", font_size=16):
+def create_text_editor(text, align="center", color=COLOR_TEXT_MAIN, font_size=16):
     return {
         "id": gen_id(),
         "elType": "widget",
@@ -79,7 +89,7 @@ def create_text_editor(text, align="center", color="#475569", font_size=16):
         "elements": []
     }
 
-def create_divider(color="#E5A83B", width=80):
+def create_divider(color=COLOR_BTN_ACCENT, width=80):
     return {
         "id": gen_id(),
         "elType": "widget",
@@ -99,6 +109,7 @@ def create_posts_widget(post_type="post", columns="3", posts_per_page="3", skin=
     """
     Sinh Elementor Pro Posts Widget chuẩn:
     - Query động dữ liệu theo post_type: giang_vien, khoa_hoc, hoc_vien, post.
+    - TUYỆT ĐỐI KHÔNG DÙNG BOX-SHADOW.
     """
     prefix = f"{skin}_" if skin in ["classic", "cards"] else "classic_"
     
@@ -139,6 +150,7 @@ def create_reviews_widget(slides, slides_per_view=3, custom_css=""):
     Sinh Elementor Pro Reviews Widget chuẩn:
     - widgetType: 'reviews'
     - slides repeater với các trường: image, name, title, rating, content.
+    - TUYỆT ĐỐI KHÔNG DÙNG BOX-SHADOW.
     """
     slides_data = []
     for idx, s in enumerate(slides):
@@ -201,7 +213,7 @@ def build_homepage_json():
     })
 
     # -------------------------------------------------------------
-    # SECTION 2: ĐỘI NGŨ GIẢNG VIÊN (Post Type: giang_vien) - WIDGET POSTS
+    # SECTION 2: ĐỘI NGŨ GIẢNG VIÊN (Post Type: giang_vien) - MÀU XANH LÁ #28A745
     # -------------------------------------------------------------
     sec2 = create_container(
         direction="column",
@@ -211,45 +223,48 @@ def build_homepage_json():
         padding_bottom="30",
         padding_left="40",
         padding_right="40",
-        bg_gradient={"color": "#0D9488", "color_b": "#0F766E", "type": "linear", "angle": 135}
+        bg_gradient={"color": COLOR_PRIMARY_GREEN, "color_b": "#1E7E34", "type": "linear", "angle": 135}
     )
-    sec2["elements"].append(create_heading("ĐỘI NGŨ GIẢNG VIÊN TẠI TIẾNG ANH CHỊ TRÀ", size="h2", align="center", color="#FFFFFF", font_size=28, font_weight="800"))
-    sec2["elements"].append(create_divider(color="#FBBF24", width=90))
+    sec2["elements"].append(create_heading("ĐỘI NGŨ GIẢNG VIÊN TẠI TIẾNG ANH CHỊ TRÀ", size="h2", align="center", color=COLOR_TEXT_WHITE, font_size=28, font_weight="800"))
+    sec2["elements"].append(create_divider(color=COLOR_BTN_ACCENT, width=90))
     sec2["elements"].append(create_text_editor(
         "<p>Chặng đường phía trước còn nhiều gian nan, nhưng với tâm huyết và say mê ngành giáo dục tri thức của mình, đội ngũ giảng viên luôn tràn đầy năng lượng đồng hành cùng học viên tiến về phía trước.</p>",
         align="center",
-        color="#E2E8F0",
+        color="#F8FAFC",
         font_size=15
     ))
 
-    # Widget Posts query Post Type giang_vien (4 Cột)
-    css_teachers = """
-    selector .elementor-post {
-        background: rgba(255, 255, 255, 0.08) !important;
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        border-radius: 12px !important;
-        padding: 10px 10px 15px 10px !important;
-        transition: all 0.3s ease !important;
-    }
-    selector .elementor-post:hover {
-        transform: translateY(-6px) !important;
-        box-shadow: 0 12px 24px rgba(0,0,0,0.2) !important;
-    }
-    selector .elementor-post__thumbnail img {
+    # Widget Posts query Post Type giang_vien (4 Cột) - KHÔNG BOX-SHADOW
+    css_teachers = f"""
+    selector .elementor-post {{
+        background: rgba(255, 255, 255, 0.12) !important;
+        border: 1.5px solid rgba(255, 255, 255, 0.35) !important;
         border-radius: 8px !important;
-    }
-    selector .elementor-post__title a {
-        color: #FFFFFF !important;
+        padding: 10px 10px 15px 10px !important;
+        box-shadow: none !important;
+        transition: transform 0.25s ease, border-color 0.25s ease !important;
+    }}
+    selector .elementor-post:hover {{
+        transform: translateY(-4px) !important;
+        border-color: {COLOR_BTN_ACCENT} !important;
+        box-shadow: none !important;
+    }}
+    selector .elementor-post__thumbnail img {{
+        border-radius: 6px !important;
+    }}
+    selector .elementor-post__title a {{
+        color: {COLOR_TEXT_WHITE} !important;
         font-size: 17px !important;
         font-weight: 700 !important;
         text-align: center !important;
         display: block !important;
-    }
-    selector .elementor-post__excerpt p {
-        color: #FDE047 !important;
+    }}
+    selector .elementor-post__excerpt p {{
+        color: {COLOR_BTN_ACCENT} !important;
         font-size: 13px !important;
         text-align: center !important;
-    }
+        font-weight: 600 !important;
+    }}
     """
     sec2["elements"].append(create_posts_widget(
         post_type="giang_vien",
@@ -262,7 +277,7 @@ def build_homepage_json():
     ))
 
     # -------------------------------------------------------------
-    # SECTION 3: CHƯƠNG TRÌNH ĐÀO TẠO (Post Type: khoa_hoc) - WIDGET POSTS / KIỂU BÀI VIẾT
+    # SECTION 3: CHƯƠNG TRÌNH ĐÀO TẠO (Post Type: khoa_hoc) - MÀU XANH DƯƠNG #007BFF
     # -------------------------------------------------------------
     sec3 = create_container(
         direction="column",
@@ -272,52 +287,62 @@ def build_homepage_json():
         padding_bottom="30",
         padding_left="40",
         padding_right="40",
-        bg_color="#1B64B8"
+        bg_color=COLOR_PRIMARY_BLUE
     )
-    sec3["elements"].append(create_heading("CHƯƠNG TRÌNH ĐÀO TẠO TIẾNG ANH", size="h2", align="center", color="#FFFFFF", font_size=28, font_weight="800"))
-    sec3["elements"].append(create_divider(color="#FFFFFF", width=80))
+    sec3["elements"].append(create_heading("CHƯƠNG TRÌNH ĐÀO TẠO TIẾNG ANH", size="h2", align="center", color=COLOR_TEXT_WHITE, font_size=28, font_weight="800"))
+    sec3["elements"].append(create_divider(color=COLOR_BTN_ACCENT, width=80))
 
-    css_courses = """
-    selector .elementor-post {
+    # Card khóa học: Viền sắc nét, KHÔNG box-shadow, nút cam #ED9717
+    css_courses = f"""
+    selector .elementor-post {{
         background: #FFFFFF !important;
-        border-radius: 12px !important;
+        border: 1.5px solid #D1D5DB !important;
+        border-radius: 8px !important;
         overflow: hidden !important;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.15) !important;
-        transition: all 0.3s ease !important;
-    }
-    selector .elementor-post:hover {
-        transform: translateY(-6px) !important;
-    }
-    selector .elementor-post__title {
-        background: #0A4D92 !important;
+        box-shadow: none !important;
+        transition: transform 0.25s ease, border-color 0.25s ease !important;
+    }}
+    selector .elementor-post:hover {{
+        transform: translateY(-4px) !important;
+        border-color: {COLOR_BTN_ACCENT} !important;
+        box-shadow: none !important;
+    }}
+    selector .elementor-post__title {{
+        background: #0056B3 !important;
         margin: 0 !important;
         padding: 10px 15px !important;
         text-align: center !important;
-    }
-    selector .elementor-post__title a {
-        color: #FFFFFF !important;
+    }}
+    selector .elementor-post__title a {{
+        color: {COLOR_TEXT_WHITE} !important;
         font-size: 15px !important;
         font-weight: 800 !important;
         text-transform: uppercase !important;
-    }
-    selector .elementor-post__text {
+    }}
+    selector .elementor-post__text {{
         padding: 15px 18px 20px 18px !important;
-    }
-    selector .elementor-post__excerpt p {
-        color: #64748B !important;
+    }}
+    selector .elementor-post__excerpt p {{
+        color: {COLOR_TEXT_MAIN} !important;
         font-size: 13px !important;
         line-height: 1.6 !important;
-    }
-    selector .elementor-post__read-more {
+    }}
+    selector .elementor-post__read-more {{
         display: inline-block !important;
-        background: #0A4D92 !important;
-        color: #FFFFFF !important;
-        padding: 8px 18px !important;
+        background: {COLOR_BTN_ACCENT} !important;
+        color: {COLOR_TEXT_WHITE} !important;
+        padding: 9px 20px !important;
         border-radius: 6px !important;
         font-size: 13px !important;
         font-weight: 700 !important;
         margin-top: 10px !important;
-    }
+        box-shadow: none !important;
+        transition: background 0.2s ease !important;
+    }}
+    selector .elementor-post__read-more:hover {{
+        background: #D4830F !important;
+        box-shadow: none !important;
+    }}
     """
     sec3["elements"].append(create_posts_widget(
         post_type="khoa_hoc",
@@ -341,9 +366,9 @@ def build_homepage_json():
         padding_bottom="30",
         padding_left="40",
         padding_right="40",
-        bg_color="#E6F7FA"
+        bg_color="#F0F7FF"
     )
-    sec4["elements"].append(create_heading("Phụ huynh & Học viên nói gì", size="h2", align="center", color="#0F172A", font_size=32, font_weight="800"))
+    sec4["elements"].append(create_heading("Phụ huynh & Học viên nói gì", size="h2", align="center", color=COLOR_TEXT_MAIN, font_size=32, font_weight="800"))
 
     reviews_slides = [
         {
@@ -369,43 +394,46 @@ def build_homepage_json():
         }
     ]
 
-    css_reviews = """
-    selector .elementor-testimonial {
+    # Review Card: Viền xanh dương chuẩn #007BFF, sao cam #ED9717, KHÔNG box-shadow
+    css_reviews = f"""
+    selector .elementor-testimonial {{
         background: #FFFFFF !important;
-        border: 3.5px solid #DC2626 !important;
-        border-radius: 28px 16px 28px 16px !important;
+        border: 2.5px solid {COLOR_PRIMARY_BLUE} !important;
+        border-radius: 20px 12px 20px 12px !important;
         padding: 30px 22px 25px 22px !important;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.06) !important;
-        transition: all 0.3s ease !important;
-    }
-    selector .elementor-testimonial:hover {
-        transform: translateY(-6px) !important;
-    }
-    selector .elementor-testimonial__image img {
+        box-shadow: none !important;
+        transition: transform 0.25s ease, border-color 0.25s ease !important;
+    }}
+    selector .elementor-testimonial:hover {{
+        transform: translateY(-4px) !important;
+        border-color: {COLOR_BTN_ACCENT} !important;
+        box-shadow: none !important;
+    }}
+    selector .elementor-testimonial__image img {{
         border-radius: 50% !important;
-        border: 2px solid #DC2626 !important;
-    }
-    selector .elementor-testimonial__name {
-        color: #1E293B !important;
+        border: 2px solid {COLOR_PRIMARY_BLUE} !important;
+    }}
+    selector .elementor-testimonial__name {{
+        color: {COLOR_TEXT_MAIN} !important;
         font-size: 18px !important;
         font-weight: 700 !important;
-    }
-    selector .elementor-testimonial__title {
-        color: #94A3B8 !important;
+    }}
+    selector .elementor-testimonial__title {{
+        color: #64748B !important;
         font-size: 13px !important;
-    }
-    selector .elementor-star-rating {
-        color: #F59E0B !important;
-    }
-    selector .elementor-testimonial__text {
-        color: #334155 !important;
+    }}
+    selector .elementor-star-rating {{
+        color: {COLOR_BTN_ACCENT} !important;
+    }}
+    selector .elementor-testimonial__text {{
+        color: {COLOR_TEXT_MAIN} !important;
         font-size: 14px !important;
         line-height: 1.6 !important;
         font-style: italic !important;
-    }
-    selector .elementor-swiper-button {
-        color: #DC2626 !important;
-    }
+    }}
+    selector .elementor-swiper-button {{
+        color: {COLOR_BTN_ACCENT} !important;
+    }}
     """
     sec4["elements"].append(create_reviews_widget(
         slides=reviews_slides,
@@ -414,7 +442,7 @@ def build_homepage_json():
     ))
 
     # -------------------------------------------------------------
-    # SECTION 5: HỌC VIÊN XUẤT SẮC (Post Type: hoc_vien) - WIDGET POSTS
+    # SECTION 5: HỌC VIÊN XUẤT SẮC (Post Type: hoc_vien) - MÀU XANH LÁ #28A745
     # -------------------------------------------------------------
     sec5 = create_container(
         direction="column",
@@ -424,48 +452,51 @@ def build_homepage_json():
         padding_bottom="30",
         padding_left="40",
         padding_right="40",
-        bg_gradient={"color": "#047857", "color_b": "#065F46", "type": "linear", "angle": 135}
+        bg_gradient={"color": COLOR_PRIMARY_GREEN, "color_b": "#1E7E34", "type": "linear", "angle": 135}
     )
-    sec5["elements"].append(create_heading("BẢNG VÀNG HỌC VIÊN XUẤT SẮC", size="h2", align="center", color="#FFFFFF", font_size=28, font_weight="800"))
-    sec5["elements"].append(create_divider(color="#FDE047", width=90))
+    sec5["elements"].append(create_heading("BẢNG VÀNG HỌC VIÊN XUẤT SẮC", size="h2", align="center", color=COLOR_TEXT_WHITE, font_size=28, font_weight="800"))
+    sec5["elements"].append(create_divider(color=COLOR_BTN_ACCENT, width=90))
     sec5["elements"].append(create_text_editor(
         "<p>Vinh danh những gương mặt xuất sắc đạt thành tích cao trong các kỳ thi quốc tế và tiến bộ vượt bậc sau khóa học tại Tiếng Anh Chị Trà. Click vào ảnh để xem chi tiết câu chuyện học viên.</p>",
         align="center",
-        color="#E2E8F0",
+        color="#F8FAFC",
         font_size=15
     ))
 
-    css_students = """
-    selector .elementor-post {
-        background: rgba(255, 255, 255, 0.08) !important;
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        border-radius: 12px !important;
-        padding: 8px 8px 15px 8px !important;
-        transition: all 0.3s ease !important;
-        cursor: pointer !important;
-    }
-    selector .elementor-post:hover {
-        transform: translateY(-6px) !important;
-        box-shadow: 0 12px 24px rgba(0,0,0,0.25) !important;
-    }
-    selector .elementor-post__thumbnail img {
+    css_students = f"""
+    selector .elementor-post {{
+        background: rgba(255, 255, 255, 0.12) !important;
+        border: 1.5px solid rgba(255, 255, 255, 0.35) !important;
         border-radius: 8px !important;
-    }
-    selector .elementor-post__title a {
-        color: #FFFFFF !important;
+        padding: 8px 8px 15px 8px !important;
+        box-shadow: none !important;
+        transition: transform 0.25s ease, border-color 0.25s ease !important;
+        cursor: pointer !important;
+    }}
+    selector .elementor-post:hover {{
+        transform: translateY(-4px) !important;
+        border-color: {COLOR_BTN_ACCENT} !important;
+        box-shadow: none !important;
+    }}
+    selector .elementor-post__thumbnail img {{
+        border-radius: 6px !important;
+    }}
+    selector .elementor-post__title a {{
+        color: {COLOR_TEXT_WHITE} !important;
         font-size: 16px !important;
         font-weight: 800 !important;
         text-align: center !important;
         display: block !important;
         text-transform: uppercase !important;
         margin-top: 10px !important;
-    }
-    selector .elementor-post__excerpt p {
-        color: #FDE047 !important;
+    }}
+    selector .elementor-post__excerpt p {{
+        color: {COLOR_BTN_ACCENT} !important;
         font-size: 13px !important;
         text-align: center !important;
         margin: 5px 0 10px 0 !important;
-    }
+        font-weight: 700 !important;
+    }}
     """
     sec5["elements"].append(create_posts_widget(
         post_type="hoc_vien",
@@ -478,7 +509,7 @@ def build_homepage_json():
     ))
 
     # -------------------------------------------------------------
-    # SECTION 6: BÀI VIẾT MỚI NHẤT (Blog / Post Type: post) - WIDGET POSTS
+    # SECTION 6: BÀI VIẾT MỚI NHẤT (Blog / Post Type: post) - NỀN TRẮNG
     # -------------------------------------------------------------
     sec6 = create_container(
         direction="column",
@@ -490,49 +521,57 @@ def build_homepage_json():
         padding_right="40",
         bg_color="#FFFFFF"
     )
-    sec6["elements"].append(create_heading("BÀI VIẾT MỚI NHẤT & KINH NGHIỆM HỌC", size="h2", align="center", color="#0F172A", font_size=28, font_weight="800"))
-    sec6["elements"].append(create_divider(color="#0D9488", width=80))
+    sec6["elements"].append(create_heading("BÀI VIẾT MỚI NHẤT & KINH NGHIỆM HỌC", size="h2", align="center", color=COLOR_TEXT_MAIN, font_size=28, font_weight="800"))
+    sec6["elements"].append(create_divider(color=COLOR_PRIMARY_BLUE, width=80))
 
-    css_blogs = """
-    selector .elementor-post {
-        background: #F8FAFC !important;
-        border-radius: 12px !important;
+    css_blogs = f"""
+    selector .elementor-post {{
+        background: #F8F9FA !important;
+        border: 1px solid #DEE2E6 !important;
+        border-radius: 8px !important;
         overflow: hidden !important;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
-        transition: all 0.3s ease !important;
+        box-shadow: none !important;
+        transition: transform 0.25s ease, border-color 0.25s ease !important;
         padding-bottom: 20px !important;
-    }
-    selector .elementor-post:hover {
-        transform: translateY(-5px) !important;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
-    }
-    selector .elementor-post__text {
+    }}
+    selector .elementor-post:hover {{
+        transform: translateY(-4px) !important;
+        border-color: {COLOR_PRIMARY_BLUE} !important;
+        box-shadow: none !important;
+    }}
+    selector .elementor-post__text {{
         padding: 15px 18px 10px 18px !important;
-    }
-    selector .elementor-post__title a {
-        color: #1E293B !important;
+    }}
+    selector .elementor-post__title a {{
+        color: {COLOR_TEXT_MAIN} !important;
         font-size: 16px !important;
         font-weight: 700 !important;
-    }
-    selector .elementor-post__excerpt p {
-        color: #64748B !important;
+    }}
+    selector .elementor-post__excerpt p {{
+        color: {COLOR_TEXT_MAIN} !important;
         font-size: 13px !important;
-    }
-    selector .elementor-post__meta-data span {
-        color: #0D9488 !important;
+    }}
+    selector .elementor-post__meta-data span {{
+        color: {COLOR_PRIMARY_BLUE} !important;
         font-weight: 600 !important;
         font-size: 12px !important;
-    }
-    selector .elementor-post__read-more {
+    }}
+    selector .elementor-post__read-more {{
         display: inline-block !important;
-        background: #0D9488 !important;
-        color: #FFFFFF !important;
-        padding: 6px 14px !important;
+        background: {COLOR_BTN_ACCENT} !important;
+        color: {COLOR_TEXT_WHITE} !important;
+        padding: 7px 16px !important;
         border-radius: 6px !important;
         font-size: 13px !important;
         font-weight: 700 !important;
         margin-top: 8px !important;
-    }
+        box-shadow: none !important;
+        transition: background 0.2s ease !important;
+    }}
+    selector .elementor-post__read-more:hover {{
+        background: #D4830F !important;
+        box-shadow: none !important;
+    }}
     """
     sec6["elements"].append(create_posts_widget(
         post_type="post",
@@ -571,5 +610,5 @@ if __name__ == "__main__":
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
         zf.write(json_path, "trang-chu-elementor.json")
 
-    print(f"[SUCCESS] Da sinh thanh cong file JSON voi Posts Widget & Reviews Widget: {json_path}")
+    print(f"[SUCCESS] Da sinh thanh cong file JSON chuan ma mau va khong box-shadow: {json_path}")
     print(f"[SUCCESS] Da dong goi ZIP thanh cong: {zip_path}")

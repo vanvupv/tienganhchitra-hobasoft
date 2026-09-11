@@ -5,7 +5,7 @@
   "page_settings": [],
   "content": [
     {
-      "id": "f159da9c",
+      "id": "c786f72f",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -24,7 +24,7 @@
       },
       "elements": [
         {
-          "id": "59b50b1f",
+          "id": "01b8df01",
           "elType": "widget",
           "widgetType": "image",
           "isInner": false,
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": "4ca4b41f",
+      "id": "d269388c",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -60,8 +60,8 @@
           "size": 1200
         },
         "background_background": "gradient",
-        "background_color": "#0D9488",
-        "background_color_b": "#0F766E",
+        "background_color": "#28A745",
+        "background_color_b": "#1E7E34",
         "background_gradient_type": "linear",
         "background_gradient_angle": {
           "unit": "deg",
@@ -70,7 +70,7 @@
       },
       "elements": [
         {
-          "id": "e4abc1c2",
+          "id": "ecb3d7e1",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -94,12 +94,12 @@
           "elements": []
         },
         {
-          "id": "f082ed63",
+          "id": "08dd1f96",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
           "settings": {
-            "color": "#FBBF24",
+            "color": "#ED9717",
             "weight": {
               "unit": "px",
               "size": 3
@@ -117,14 +117,14 @@
           "elements": []
         },
         {
-          "id": "775f2a2e",
+          "id": "ed0898fb",
           "elType": "widget",
           "widgetType": "text-editor",
           "isInner": false,
           "settings": {
             "editor": "<p>Chặng đường phía trước còn nhiều gian nan, nhưng với tâm huyết và say mê ngành giáo dục tri thức của mình, đội ngũ giảng viên luôn tràn đầy năng lượng đồng hành cùng học viên tiến về phía trước.</p>",
             "align": "center",
-            "text_color": "#E2E8F0",
+            "text_color": "#F8FAFC",
             "typography_typography": "custom",
             "typography_font_family": "Plus Jakarta Sans",
             "typography_font_size": {
@@ -139,7 +139,7 @@
           "elements": []
         },
         {
-          "id": "b8b4a2b2",
+          "id": "c587d1b9",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -157,14 +157,14 @@
             "classic_show_read_more": "no",
             "read_more_text": "Xem thêm »",
             "classic_meta_data": [],
-            "custom_css": "\n    selector .elementor-post {\n        background: rgba(255, 255, 255, 0.08) !important;\n        border: 1px solid rgba(255, 255, 255, 0.2) !important;\n        border-radius: 12px !important;\n        padding: 10px 10px 15px 10px !important;\n        transition: all 0.3s ease !important;\n    }\n    selector .elementor-post:hover {\n        transform: translateY(-6px) !important;\n        box-shadow: 0 12px 24px rgba(0,0,0,0.2) !important;\n    }\n    selector .elementor-post__thumbnail img {\n        border-radius: 8px !important;\n    }\n    selector .elementor-post__title a {\n        color: #FFFFFF !important;\n        font-size: 17px !important;\n        font-weight: 700 !important;\n        text-align: center !important;\n        display: block !important;\n    }\n    selector .elementor-post__excerpt p {\n        color: #FDE047 !important;\n        font-size: 13px !important;\n        text-align: center !important;\n    }\n    "
+            "custom_css": "\n    selector .elementor-post {\n        background: rgba(255, 255, 255, 0.12) !important;\n        border: 1.5px solid rgba(255, 255, 255, 0.35) !important;\n        border-radius: 8px !important;\n        padding: 10px 10px 15px 10px !important;\n        box-shadow: none !important;\n        transition: transform 0.25s ease, border-color 0.25s ease !important;\n    }\n    selector .elementor-post:hover {\n        transform: translateY(-4px) !important;\n        border-color: #ED9717 !important;\n        box-shadow: none !important;\n    }\n    selector .elementor-post__thumbnail img {\n        border-radius: 6px !important;\n    }\n    selector .elementor-post__title a {\n        color: #FFFFFF !important;\n        font-size: 17px !important;\n        font-weight: 700 !important;\n        text-align: center !important;\n        display: block !important;\n    }\n    selector .elementor-post__excerpt p {\n        color: #ED9717 !important;\n        font-size: 13px !important;\n        text-align: center !important;\n        font-weight: 600 !important;\n    }\n    "
           },
           "elements": []
         }
       ]
     },
     {
-      "id": "050d458a",
+      "id": "742e2d38",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -183,11 +183,11 @@
           "size": 1200
         },
         "background_background": "classic",
-        "background_color": "#1B64B8"
+        "background_color": "#007BFF"
       },
       "elements": [
         {
-          "id": "1a4392a0",
+          "id": "9b7629d6",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -211,12 +211,12 @@
           "elements": []
         },
         {
-          "id": "d0086533",
+          "id": "1546331b",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
           "settings": {
-            "color": "#FFFFFF",
+            "color": "#ED9717",
             "weight": {
               "unit": "px",
               "size": 3
@@ -234,7 +234,7 @@
           "elements": []
         },
         {
-          "id": "e1c37aaf",
+          "id": "419a88e1",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -252,14 +252,14 @@
             "classic_show_read_more": "yes",
             "read_more_text": "TÌM HIỂU KHÓA HỌC »",
             "classic_meta_data": [],
-            "custom_css": "\n    selector .elementor-post {\n        background: #FFFFFF !important;\n        border-radius: 12px !important;\n        overflow: hidden !important;\n        box-shadow: 0 8px 20px rgba(0,0,0,0.15) !important;\n        transition: all 0.3s ease !important;\n    }\n    selector .elementor-post:hover {\n        transform: translateY(-6px) !important;\n    }\n    selector .elementor-post__title {\n        background: #0A4D92 !important;\n        margin: 0 !important;\n        padding: 10px 15px !important;\n        text-align: center !important;\n    }\n    selector .elementor-post__title a {\n        color: #FFFFFF !important;\n        font-size: 15px !important;\n        font-weight: 800 !important;\n        text-transform: uppercase !important;\n    }\n    selector .elementor-post__text {\n        padding: 15px 18px 20px 18px !important;\n    }\n    selector .elementor-post__excerpt p {\n        color: #64748B !important;\n        font-size: 13px !important;\n        line-height: 1.6 !important;\n    }\n    selector .elementor-post__read-more {\n        display: inline-block !important;\n        background: #0A4D92 !important;\n        color: #FFFFFF !important;\n        padding: 8px 18px !important;\n        border-radius: 6px !important;\n        font-size: 13px !important;\n        font-weight: 700 !important;\n        margin-top: 10px !important;\n    }\n    "
+            "custom_css": "\n    selector .elementor-post {\n        background: #FFFFFF !important;\n        border: 1.5px solid #D1D5DB !important;\n        border-radius: 8px !important;\n        overflow: hidden !important;\n        box-shadow: none !important;\n        transition: transform 0.25s ease, border-color 0.25s ease !important;\n    }\n    selector .elementor-post:hover {\n        transform: translateY(-4px) !important;\n        border-color: #ED9717 !important;\n        box-shadow: none !important;\n    }\n    selector .elementor-post__title {\n        background: #0056B3 !important;\n        margin: 0 !important;\n        padding: 10px 15px !important;\n        text-align: center !important;\n    }\n    selector .elementor-post__title a {\n        color: #FFFFFF !important;\n        font-size: 15px !important;\n        font-weight: 800 !important;\n        text-transform: uppercase !important;\n    }\n    selector .elementor-post__text {\n        padding: 15px 18px 20px 18px !important;\n    }\n    selector .elementor-post__excerpt p {\n        color: #000000 !important;\n        font-size: 13px !important;\n        line-height: 1.6 !important;\n    }\n    selector .elementor-post__read-more {\n        display: inline-block !important;\n        background: #ED9717 !important;\n        color: #FFFFFF !important;\n        padding: 9px 20px !important;\n        border-radius: 6px !important;\n        font-size: 13px !important;\n        font-weight: 700 !important;\n        margin-top: 10px !important;\n        box-shadow: none !important;\n        transition: background 0.2s ease !important;\n    }\n    selector .elementor-post__read-more:hover {\n        background: #D4830F !important;\n        box-shadow: none !important;\n    }\n    "
           },
           "elements": []
         }
       ]
     },
     {
-      "id": "4abf4906",
+      "id": "e1918934",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -278,11 +278,11 @@
           "size": 1200
         },
         "background_background": "classic",
-        "background_color": "#E6F7FA"
+        "background_color": "#F0F7FF"
       },
       "elements": [
         {
-          "id": "9a0d2651",
+          "id": "89433dfd",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -290,7 +290,7 @@
             "title": "Phụ huynh & Học viên nói gì",
             "header_size": "h2",
             "align": "center",
-            "title_color": "#0F172A",
+            "title_color": "#000000",
             "typography_typography": "custom",
             "typography_font_family": "Plus Jakarta Sans",
             "typography_font_size": {
@@ -306,7 +306,7 @@
           "elements": []
         },
         {
-          "id": "d41cd215",
+          "id": "be12c474",
           "elType": "widget",
           "widgetType": "reviews",
           "isInner": false,
@@ -354,14 +354,14 @@
             "autoplay_speed": 4000,
             "loop": "yes",
             "pause_on_hover": "yes",
-            "custom_css": "\n    selector .elementor-testimonial {\n        background: #FFFFFF !important;\n        border: 3.5px solid #DC2626 !important;\n        border-radius: 28px 16px 28px 16px !important;\n        padding: 30px 22px 25px 22px !important;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.06) !important;\n        transition: all 0.3s ease !important;\n    }\n    selector .elementor-testimonial:hover {\n        transform: translateY(-6px) !important;\n    }\n    selector .elementor-testimonial__image img {\n        border-radius: 50% !important;\n        border: 2px solid #DC2626 !important;\n    }\n    selector .elementor-testimonial__name {\n        color: #1E293B !important;\n        font-size: 18px !important;\n        font-weight: 700 !important;\n    }\n    selector .elementor-testimonial__title {\n        color: #94A3B8 !important;\n        font-size: 13px !important;\n    }\n    selector .elementor-star-rating {\n        color: #F59E0B !important;\n    }\n    selector .elementor-testimonial__text {\n        color: #334155 !important;\n        font-size: 14px !important;\n        line-height: 1.6 !important;\n        font-style: italic !important;\n    }\n    selector .elementor-swiper-button {\n        color: #DC2626 !important;\n    }\n    "
+            "custom_css": "\n    selector .elementor-testimonial {\n        background: #FFFFFF !important;\n        border: 2.5px solid #007BFF !important;\n        border-radius: 20px 12px 20px 12px !important;\n        padding: 30px 22px 25px 22px !important;\n        box-shadow: none !important;\n        transition: transform 0.25s ease, border-color 0.25s ease !important;\n    }\n    selector .elementor-testimonial:hover {\n        transform: translateY(-4px) !important;\n        border-color: #ED9717 !important;\n        box-shadow: none !important;\n    }\n    selector .elementor-testimonial__image img {\n        border-radius: 50% !important;\n        border: 2px solid #007BFF !important;\n    }\n    selector .elementor-testimonial__name {\n        color: #000000 !important;\n        font-size: 18px !important;\n        font-weight: 700 !important;\n    }\n    selector .elementor-testimonial__title {\n        color: #64748B !important;\n        font-size: 13px !important;\n    }\n    selector .elementor-star-rating {\n        color: #ED9717 !important;\n    }\n    selector .elementor-testimonial__text {\n        color: #000000 !important;\n        font-size: 14px !important;\n        line-height: 1.6 !important;\n        font-style: italic !important;\n    }\n    selector .elementor-swiper-button {\n        color: #ED9717 !important;\n    }\n    "
           },
           "elements": []
         }
       ]
     },
     {
-      "id": "1d956930",
+      "id": "8dc258f8",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -380,8 +380,8 @@
           "size": 1200
         },
         "background_background": "gradient",
-        "background_color": "#047857",
-        "background_color_b": "#065F46",
+        "background_color": "#28A745",
+        "background_color_b": "#1E7E34",
         "background_gradient_type": "linear",
         "background_gradient_angle": {
           "unit": "deg",
@@ -390,7 +390,7 @@
       },
       "elements": [
         {
-          "id": "c903e0bf",
+          "id": "b4728d7e",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -414,12 +414,12 @@
           "elements": []
         },
         {
-          "id": "51c2e144",
+          "id": "c118abb0",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
           "settings": {
-            "color": "#FDE047",
+            "color": "#ED9717",
             "weight": {
               "unit": "px",
               "size": 3
@@ -437,14 +437,14 @@
           "elements": []
         },
         {
-          "id": "919ce668",
+          "id": "1577125c",
           "elType": "widget",
           "widgetType": "text-editor",
           "isInner": false,
           "settings": {
             "editor": "<p>Vinh danh những gương mặt xuất sắc đạt thành tích cao trong các kỳ thi quốc tế và tiến bộ vượt bậc sau khóa học tại Tiếng Anh Chị Trà. Click vào ảnh để xem chi tiết câu chuyện học viên.</p>",
             "align": "center",
-            "text_color": "#E2E8F0",
+            "text_color": "#F8FAFC",
             "typography_typography": "custom",
             "typography_font_family": "Plus Jakarta Sans",
             "typography_font_size": {
@@ -459,7 +459,7 @@
           "elements": []
         },
         {
-          "id": "5c2d4dcd",
+          "id": "4e67661a",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -477,14 +477,14 @@
             "classic_show_read_more": "no",
             "read_more_text": "Xem thêm »",
             "classic_meta_data": [],
-            "custom_css": "\n    selector .elementor-post {\n        background: rgba(255, 255, 255, 0.08) !important;\n        border: 1px solid rgba(255, 255, 255, 0.2) !important;\n        border-radius: 12px !important;\n        padding: 8px 8px 15px 8px !important;\n        transition: all 0.3s ease !important;\n        cursor: pointer !important;\n    }\n    selector .elementor-post:hover {\n        transform: translateY(-6px) !important;\n        box-shadow: 0 12px 24px rgba(0,0,0,0.25) !important;\n    }\n    selector .elementor-post__thumbnail img {\n        border-radius: 8px !important;\n    }\n    selector .elementor-post__title a {\n        color: #FFFFFF !important;\n        font-size: 16px !important;\n        font-weight: 800 !important;\n        text-align: center !important;\n        display: block !important;\n        text-transform: uppercase !important;\n        margin-top: 10px !important;\n    }\n    selector .elementor-post__excerpt p {\n        color: #FDE047 !important;\n        font-size: 13px !important;\n        text-align: center !important;\n        margin: 5px 0 10px 0 !important;\n    }\n    "
+            "custom_css": "\n    selector .elementor-post {\n        background: rgba(255, 255, 255, 0.12) !important;\n        border: 1.5px solid rgba(255, 255, 255, 0.35) !important;\n        border-radius: 8px !important;\n        padding: 8px 8px 15px 8px !important;\n        box-shadow: none !important;\n        transition: transform 0.25s ease, border-color 0.25s ease !important;\n        cursor: pointer !important;\n    }\n    selector .elementor-post:hover {\n        transform: translateY(-4px) !important;\n        border-color: #ED9717 !important;\n        box-shadow: none !important;\n    }\n    selector .elementor-post__thumbnail img {\n        border-radius: 6px !important;\n    }\n    selector .elementor-post__title a {\n        color: #FFFFFF !important;\n        font-size: 16px !important;\n        font-weight: 800 !important;\n        text-align: center !important;\n        display: block !important;\n        text-transform: uppercase !important;\n        margin-top: 10px !important;\n    }\n    selector .elementor-post__excerpt p {\n        color: #ED9717 !important;\n        font-size: 13px !important;\n        text-align: center !important;\n        margin: 5px 0 10px 0 !important;\n        font-weight: 700 !important;\n    }\n    "
           },
           "elements": []
         }
       ]
     },
     {
-      "id": "086a64d5",
+      "id": "be5b1292",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -507,7 +507,7 @@
       },
       "elements": [
         {
-          "id": "2642176b",
+          "id": "7da0dc8f",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -515,7 +515,7 @@
             "title": "BÀI VIẾT MỚI NHẤT & KINH NGHIỆM HỌC",
             "header_size": "h2",
             "align": "center",
-            "title_color": "#0F172A",
+            "title_color": "#000000",
             "typography_typography": "custom",
             "typography_font_family": "Plus Jakarta Sans",
             "typography_font_size": {
@@ -531,12 +531,12 @@
           "elements": []
         },
         {
-          "id": "102e932f",
+          "id": "c2e06ae7",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
           "settings": {
-            "color": "#0D9488",
+            "color": "#007BFF",
             "weight": {
               "unit": "px",
               "size": 3
@@ -554,7 +554,7 @@
           "elements": []
         },
         {
-          "id": "7d6d8d11",
+          "id": "c3a87692",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -574,7 +574,7 @@
             "classic_meta_data": [
               "date"
             ],
-            "custom_css": "\n    selector .elementor-post {\n        background: #F8FAFC !important;\n        border-radius: 12px !important;\n        overflow: hidden !important;\n        box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;\n        transition: all 0.3s ease !important;\n        padding-bottom: 20px !important;\n    }\n    selector .elementor-post:hover {\n        transform: translateY(-5px) !important;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;\n    }\n    selector .elementor-post__text {\n        padding: 15px 18px 10px 18px !important;\n    }\n    selector .elementor-post__title a {\n        color: #1E293B !important;\n        font-size: 16px !important;\n        font-weight: 700 !important;\n    }\n    selector .elementor-post__excerpt p {\n        color: #64748B !important;\n        font-size: 13px !important;\n    }\n    selector .elementor-post__meta-data span {\n        color: #0D9488 !important;\n        font-weight: 600 !important;\n        font-size: 12px !important;\n    }\n    selector .elementor-post__read-more {\n        display: inline-block !important;\n        background: #0D9488 !important;\n        color: #FFFFFF !important;\n        padding: 6px 14px !important;\n        border-radius: 6px !important;\n        font-size: 13px !important;\n        font-weight: 700 !important;\n        margin-top: 8px !important;\n    }\n    "
+            "custom_css": "\n    selector .elementor-post {\n        background: #F8F9FA !important;\n        border: 1px solid #DEE2E6 !important;\n        border-radius: 8px !important;\n        overflow: hidden !important;\n        box-shadow: none !important;\n        transition: transform 0.25s ease, border-color 0.25s ease !important;\n        padding-bottom: 20px !important;\n    }\n    selector .elementor-post:hover {\n        transform: translateY(-4px) !important;\n        border-color: #007BFF !important;\n        box-shadow: none !important;\n    }\n    selector .elementor-post__text {\n        padding: 15px 18px 10px 18px !important;\n    }\n    selector .elementor-post__title a {\n        color: #000000 !important;\n        font-size: 16px !important;\n        font-weight: 700 !important;\n    }\n    selector .elementor-post__excerpt p {\n        color: #000000 !important;\n        font-size: 13px !important;\n    }\n    selector .elementor-post__meta-data span {\n        color: #007BFF !important;\n        font-weight: 600 !important;\n        font-size: 12px !important;\n    }\n    selector .elementor-post__read-more {\n        display: inline-block !important;\n        background: #ED9717 !important;\n        color: #FFFFFF !important;\n        padding: 7px 16px !important;\n        border-radius: 6px !important;\n        font-size: 13px !important;\n        font-weight: 700 !important;\n        margin-top: 8px !important;\n        box-shadow: none !important;\n        transition: background 0.2s ease !important;\n    }\n    selector .elementor-post__read-more:hover {\n        background: #D4830F !important;\n        box-shadow: none !important;\n    }\n    "
           },
           "elements": []
         }
