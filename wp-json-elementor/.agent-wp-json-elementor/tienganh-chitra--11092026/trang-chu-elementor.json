@@ -5,7 +5,7 @@
   "page_settings": [],
   "content": [
     {
-      "id": "e6b0560d",
+      "id": "5e37a868",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -24,7 +24,7 @@
       },
       "elements": [
         {
-          "id": "4d19e309",
+          "id": "e73fd61a",
           "elType": "widget",
           "widgetType": "image",
           "isInner": false,
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": "ae029b6d",
+      "id": "f916534f",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -62,7 +62,7 @@
       },
       "elements": [
         {
-          "id": "e67cc84d",
+          "id": "7a742fca",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -86,7 +86,7 @@
           "elements": []
         },
         {
-          "id": "c682fca2",
+          "id": "d724fbcc",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -109,7 +109,7 @@
           "elements": []
         },
         {
-          "id": "7eb78129",
+          "id": "cb694bea",
           "elType": "widget",
           "widgetType": "text-editor",
           "isInner": false,
@@ -131,7 +131,7 @@
           "elements": []
         },
         {
-          "id": "69216e5d",
+          "id": "67f3fcdb",
           "elType": "widget",
           "widgetType": "loop-carousel",
           "isInner": false,
@@ -164,7 +164,7 @@
       ]
     },
     {
-      "id": "6c506a48",
+      "id": "1540f259",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -185,7 +185,7 @@
       },
       "elements": [
         {
-          "id": "eb2666ad",
+          "id": "bde260b8",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -209,7 +209,7 @@
           "elements": []
         },
         {
-          "id": "53f196b0",
+          "id": "5499dbfc",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -232,60 +232,636 @@
           "elements": []
         },
         {
-          "id": "8bb2e9c9",
-          "elType": "widget",
-          "widgetType": "posts",
-          "isInner": false,
+          "id": "e629f426",
+          "elType": "container",
+          "isInner": true,
           "settings": {
-            "_skin": "classic",
-            "posts_post_type": "khoa_hoc",
-            "classic_columns": "3",
-            "classic_columns_tablet": "2",
-            "classic_columns_mobile": "1",
-            "classic_posts_per_page": "3",
-            "classic_show_image": "yes",
-            "classic_image_size": "medium_large",
-            "classic_show_title": "yes",
-            "classic_title_color": "#000000",
-            "classic_show_excerpt": "yes",
-            "classic_excerpt_color": "#4A5568",
-            "classic_show_read_more": "yes",
-            "classic_read_more_text": "TÌM HIỂU KHÓA HỌC »",
-            "classic_read_more_color": "#ED9717",
-            "classic_meta_data": [],
-            "classic_content_padding": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_direction_tablet": "row",
+            "flex_direction_mobile": "column",
+            "justify_content": "space-between",
+            "align_items": "stretch",
+            "flex_wrap": "wrap",
+            "gap": {
               "unit": "px",
-              "top": "16",
-              "right": "16",
-              "bottom": "16",
-              "left": "16",
-              "isLinked": true
+              "size": 25,
+              "column": 25,
+              "row": 30
             },
-            "classic_box_bg_color": "#FFFFFF",
-            "classic_box_border_color": "#007BFF",
-            "classic_box_border_width": {
+            "padding": {
               "unit": "px",
-              "top": "1",
-              "right": "1",
-              "bottom": "1",
-              "left": "1",
-              "isLinked": true
-            },
-            "classic_box_border_radius": {
-              "unit": "px",
-              "top": "8",
-              "right": "8",
-              "bottom": "8",
-              "left": "8",
-              "isLinked": true
+              "top": "15",
+              "right": "0",
+              "bottom": "15",
+              "left": "0",
+              "isLinked": false
             }
           },
-          "elements": []
+          "elements": [
+            {
+              "id": "0c03dbc9",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 31.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "align_items": "center",
+                "justify_content": "space-between",
+                "background_background": "classic",
+                "background_color": "#CD2828",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "35",
+                  "right": "35",
+                  "bottom": "35",
+                  "left": "35",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "24",
+                  "bottom": "35",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "110",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "margin_mobile": {
+                  "unit": "px",
+                  "top": "90",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "overflow": "visible"
+              },
+              "elements": [
+                {
+                  "id": "31da6b7f",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "isInner": false,
+                  "settings": {
+                    "image": {
+                      "url": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/image-program-5-1.png",
+                      "id": 0
+                    },
+                    "image_size": "full",
+                    "align": "center",
+                    "_margin": {
+                      "unit": "px",
+                      "top": "-105",
+                      "right": "0",
+                      "bottom": "15",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "_margin_mobile": {
+                      "unit": "px",
+                      "top": "-85",
+                      "right": "0",
+                      "bottom": "15",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "_z_index": 2
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "c7434051",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "isInner": false,
+                  "settings": {
+                    "title": "GET READY (5–7 tuổi)",
+                    "header_size": "h3",
+                    "align": "center",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.3
+                    },
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "12",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "9b29f8f1",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "isInner": false,
+                  "settings": {
+                    "editor": "<p>Chương trình tiếng Anh mầm non giúp trẻ làm quen với phát âm chuẩn bản xứ, phát triển ngôn ngữ tự nhiên qua các trò chơi và hoạt động sáng tạo vui nhộn.</p>",
+                    "align": "center",
+                    "text_color": "rgba(255, 255, 255, 0.95)",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.6
+                    },
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "25",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "239ad9cc",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "isInner": false,
+                  "settings": {
+                    "text": "→",
+                    "link": {
+                      "url": "#khoa-hoc-5-7-tuoi",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "align": "center",
+                    "button_text_color": "#222222",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "99",
+                      "right": "99",
+                      "bottom": "99",
+                      "left": "99",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "18",
+                      "bottom": "10",
+                      "left": "18",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22
+                    },
+                    "typography_font_weight": "900"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "455f9d17",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 31.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "align_items": "center",
+                "justify_content": "space-between",
+                "background_background": "classic",
+                "background_color": "#007BFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "35",
+                  "right": "35",
+                  "bottom": "35",
+                  "left": "35",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "24",
+                  "bottom": "35",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "110",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "margin_mobile": {
+                  "unit": "px",
+                  "top": "90",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "overflow": "visible"
+              },
+              "elements": [
+                {
+                  "id": "c25eabe3",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "isInner": false,
+                  "settings": {
+                    "image": {
+                      "url": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/image-program-2-1.png",
+                      "id": 0
+                    },
+                    "image_size": "full",
+                    "align": "center",
+                    "_margin": {
+                      "unit": "px",
+                      "top": "-105",
+                      "right": "0",
+                      "bottom": "15",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "_margin_mobile": {
+                      "unit": "px",
+                      "top": "-85",
+                      "right": "0",
+                      "bottom": "15",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "_z_index": 2
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "c2e9b526",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "isInner": false,
+                  "settings": {
+                    "title": "KIDS LEADERS (7–11 tuổi)",
+                    "header_size": "h3",
+                    "align": "center",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.3
+                    },
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "12",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "d6f5c288",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "isInner": false,
+                  "settings": {
+                    "editor": "<p>Phát triển toàn diện 4 kỹ năng Nghe - Nói - Đọc - Viết, tự tin giao tiếp, xây dựng tư duy logic và đạt thành tích cao trong các kỳ thi Cambridge quốc tế.</p>",
+                    "align": "center",
+                    "text_color": "rgba(255, 255, 255, 0.95)",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.6
+                    },
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "25",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "261ebca2",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "isInner": false,
+                  "settings": {
+                    "text": "→",
+                    "link": {
+                      "url": "#khoa-hoc-7-11-tuoi",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "align": "center",
+                    "button_text_color": "#222222",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "99",
+                      "right": "99",
+                      "bottom": "99",
+                      "left": "99",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "18",
+                      "bottom": "10",
+                      "left": "18",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22
+                    },
+                    "typography_font_weight": "900"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "0660f88a",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 31.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "align_items": "center",
+                "justify_content": "space-between",
+                "background_background": "classic",
+                "background_color": "#28A745",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "35",
+                  "right": "35",
+                  "bottom": "35",
+                  "left": "35",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "24",
+                  "bottom": "35",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "110",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "margin_mobile": {
+                  "unit": "px",
+                  "top": "90",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "overflow": "visible"
+              },
+              "elements": [
+                {
+                  "id": "2a4a65a6",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "isInner": false,
+                  "settings": {
+                    "image": {
+                      "url": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/image-program-3-1.png",
+                      "id": 0
+                    },
+                    "image_size": "full",
+                    "align": "center",
+                    "_margin": {
+                      "unit": "px",
+                      "top": "-105",
+                      "right": "0",
+                      "bottom": "15",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "_margin_mobile": {
+                      "unit": "px",
+                      "top": "-85",
+                      "right": "0",
+                      "bottom": "15",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "_z_index": 2
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "5105e045",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "isInner": false,
+                  "settings": {
+                    "title": "TEENS & IELTS (12–18 tuổi)",
+                    "header_size": "h3",
+                    "align": "center",
+                    "title_color": "#FFFFFF",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.3
+                    },
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "12",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "e92111f3",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "isInner": false,
+                  "settings": {
+                    "editor": "<p>Lộ trình đào tạo học thuật chuyên sâu, bứt phá band điểm IELTS từ 6.5 - 8.0+, rèn luyện tư duy phản biện và kỹ năng thuyết trình chuẩn quốc tế.</p>",
+                    "align": "center",
+                    "text_color": "rgba(255, 255, 255, 0.95)",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.6
+                    },
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "25",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "eee6670d",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "isInner": false,
+                  "settings": {
+                    "text": "→",
+                    "link": {
+                      "url": "#khoa-hoc-12-18-tuoi",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "align": "center",
+                    "button_text_color": "#222222",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "99",
+                      "right": "99",
+                      "bottom": "99",
+                      "left": "99",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "18",
+                      "bottom": "10",
+                      "left": "18",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 22
+                    },
+                    "typography_font_weight": "900"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "id": "93570458",
+      "id": "603c009c",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -306,7 +882,7 @@
       },
       "elements": [
         {
-          "id": "7d944a9a",
+          "id": "8fbb6a84",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -330,7 +906,7 @@
           "elements": []
         },
         {
-          "id": "e1593f22",
+          "id": "9982ebcc",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -353,7 +929,7 @@
           "elements": []
         },
         {
-          "id": "f90d1658",
+          "id": "8f9e27c8",
           "elType": "widget",
           "widgetType": "reviews",
           "isInner": false,
@@ -412,7 +988,7 @@
       ]
     },
     {
-      "id": "f8caabd2",
+      "id": "a457f65a",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -433,7 +1009,7 @@
       },
       "elements": [
         {
-          "id": "32765cfc",
+          "id": "d61d9e60",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -457,7 +1033,7 @@
           "elements": []
         },
         {
-          "id": "c4df3a59",
+          "id": "e5eef6d9",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -480,7 +1056,7 @@
           "elements": []
         },
         {
-          "id": "1423faa0",
+          "id": "eb462b54",
           "elType": "widget",
           "widgetType": "text-editor",
           "isInner": false,
@@ -502,7 +1078,7 @@
           "elements": []
         },
         {
-          "id": "57ca7409",
+          "id": "26708a46",
           "elType": "widget",
           "widgetType": "loop-carousel",
           "isInner": false,
@@ -535,7 +1111,7 @@
       ]
     },
     {
-      "id": "24cb7da7",
+      "id": "901a0a0a",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -556,7 +1132,7 @@
       },
       "elements": [
         {
-          "id": "23329889",
+          "id": "85d35648",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -580,7 +1156,7 @@
           "elements": []
         },
         {
-          "id": "cc6dc596",
+          "id": "46f93972",
           "elType": "widget",
           "widgetType": "divider",
           "isInner": false,
@@ -603,7 +1179,7 @@
           "elements": []
         },
         {
-          "id": "8cf456b1",
+          "id": "88f8c003",
           "elType": "widget",
           "widgetType": "loop-carousel",
           "isInner": false,

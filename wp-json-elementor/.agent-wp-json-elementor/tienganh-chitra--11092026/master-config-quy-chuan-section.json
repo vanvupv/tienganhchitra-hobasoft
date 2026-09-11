@@ -104,29 +104,42 @@
     },
     {
       "section_id": "sec_03_khoa_hoc",
-      "name": "Chương Trình Đào Tạo",
+      "name": "Chương Trình Đào Tạo Tiếng Anh (Thẻ Nhân Vật 3D Pop-out)",
       "post_type": "khoa_hoc",
       "heading": {
         "title": "CHƯƠNG TRÌNH ĐÀO TẠO TIẾNG ANH",
         "color": "#007BFF",
-        "divider_color": "#E67E22",
+        "divider_color": "#ED9717",
         "divider_width": 80
       },
-      "widget": {
-        "widget_type": "posts",
-        "skin": "classic",
-        "query_post_type": "khoa_hoc",
-        "columns": { "desktop": "3", "tablet": "2", "mobile": "1" },
-        "posts_per_page": "3",
-        "image_ratio": 0.85,
-        "card_style": {
-          "bg_color": "#FFFFFF",
-          "border_color": "#007BFF",
-          "border_radius": 8,
-          "cta_text": "TÌM HIỂU KHÓA HỌC »",
-          "cta_color": "#E67E22"
+      "layout_style": "popout_3d_cards",
+      "cards": [
+        {
+          "title": "GET READY (5–7 tuổi)",
+          "bg_color": "#CD2828",
+          "character_image": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/image-program-5-1.png",
+          "image_margin_top": -105,
+          "card_border_radius": 35,
+          "card_margin_top": 110
+        },
+        {
+          "title": "KIDS LEADERS (7–11 tuổi)",
+          "bg_color": "#007BFF",
+          "character_image": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/image-program-2-1.png",
+          "image_margin_top": -105,
+          "card_border_radius": 35,
+          "card_margin_top": 110
+        },
+        {
+          "title": "TEENS & IELTS (12–18 tuổi)",
+          "bg_color": "#28A745",
+          "character_image": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/image-program-3-1.png",
+          "image_margin_top": -105,
+          "card_border_radius": 35,
+          "card_margin_top": 110
         }
-      }
+      ],
+      "loop_template": "loop-item-khoa-hoc-3d.zip"
     },
     {
       "section_id": "sec_04_danh_gia",

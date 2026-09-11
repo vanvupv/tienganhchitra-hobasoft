@@ -1,0 +1,183 @@
+{
+  "version": "0.4",
+  "title": "Loop Item - Khóa Học 3D Pop-out",
+  "type": "loop-item",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "a50b84b1",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "flex_direction": "column",
+        "content_width": "full",
+        "align_items": "center",
+        "justify_content": "space-between",
+        "background_background": "classic",
+        "background_color": "#CD2828",
+        "border_radius": {
+          "unit": "px",
+          "top": "35",
+          "right": "35",
+          "bottom": "35",
+          "left": "35",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "35",
+          "left": "24",
+          "isLinked": false
+        },
+        "margin": {
+          "unit": "px",
+          "top": "110",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "margin_mobile": {
+          "unit": "px",
+          "top": "90",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "overflow": "visible"
+      },
+      "elements": [
+        {
+          "id": "4f585e24",
+          "elType": "widget",
+          "widgetType": "theme-post-featured-image",
+          "isInner": false,
+          "settings": {
+            "image_size": "full",
+            "link_to": "post",
+            "align": "center",
+            "_margin": {
+              "unit": "px",
+              "top": "-105",
+              "right": "0",
+              "bottom": "15",
+              "left": "0",
+              "isLinked": false
+            },
+            "_margin_mobile": {
+              "unit": "px",
+              "top": "-85",
+              "right": "0",
+              "bottom": "15",
+              "left": "0",
+              "isLinked": false
+            },
+            "_z_index": 2
+          },
+          "elements": []
+        },
+        {
+          "id": "e58e1bb7",
+          "elType": "widget",
+          "widgetType": "theme-post-title",
+          "isInner": false,
+          "settings": {
+            "header_size": "h3",
+            "align": "center",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 22
+            },
+            "typography_font_weight": "800",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.3
+            },
+            "link_to": "post",
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "12",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "4b23348a",
+          "elType": "widget",
+          "widgetType": "theme-post-excerpt",
+          "isInner": false,
+          "settings": {
+            "align": "center",
+            "text_color": "rgba(255, 255, 255, 0.95)",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 14
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.6
+            },
+            "excerpt_length": 25,
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "25",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "6b4f5014",
+          "elType": "widget",
+          "widgetType": "button",
+          "isInner": false,
+          "settings": {
+            "text": "→",
+            "align": "center",
+            "button_text_color": "#222222",
+            "background_color": "#FFFFFF",
+            "border_radius": {
+              "unit": "px",
+              "top": "99",
+              "right": "99",
+              "bottom": "99",
+              "left": "99",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "right": "18",
+              "bottom": "10",
+              "left": "18",
+              "isLinked": false
+            },
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 22
+            },
+            "typography_font_weight": "900"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ]
+}
