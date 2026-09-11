@@ -1,0 +1,309 @@
+{
+  "version": "3.0.0",
+  "title": "Trang Tin Tức / Blog (Blog & Articles Page)",
+  "type": "page",
+  "elementor_version": "3.35.1",
+  "content": [
+    {
+      "id": "sec_blog_hero",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "40",
+          "bottom": "60",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col_blog_hero_left",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "w_blog_hero_title",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "MẸO CHĂM SÓC DA BÉ",
+                "title_color": "#1B5B65",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 34
+                },
+                "typography_font_weight": "800",
+                "typography_font_family": "Roboto"
+              }
+            },
+            {
+              "id": "w_blog_hero_desc",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='color: #555; font-size: 16px; line-height: 1.7; margin: 15px 0 25px 0;'>Hướng dẫn từ các chuyên gia da liễu hàng đầu giúp mẹ xây dựng quy trình tắm và dưỡng ẩm dịu lành nhất cho bé yêu ngay từ những ngày đầu đời.</p>"
+              }
+            },
+            {
+              "id": "w_blog_hero_btn",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "button",
+              "settings": {
+                "text": "XEM BÀI VIẾT",
+                "background_color": "#1B5B65",
+                "button_text_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "25",
+                  "right": "25",
+                  "bottom": "25",
+                  "left": "25",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "30",
+                  "bottom": "12",
+                  "left": "30",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "col_blog_hero_right",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "w_blog_hero_img",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "http://chamomdemo.demoweb360.top/wp-content/uploads/2026/08/GOONGBE-Cong-Bo-Dat-Chuan-Chung-Nhan-Dermatest-Muc-Cao-Nhat.jpg"
+                },
+                "align": "center",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_blog_sub_hero",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "50",
+          "right": "40",
+          "bottom": "60",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col_blog_sub_left",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "w_blog_sub_title",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "BÍ QUYẾT CHỌN SẢN PHẨM AN TOÀN CHO TRẺ SƠ SINH",
+                "title_color": "#1B5B65",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 28
+                },
+                "typography_font_weight": "800",
+                "typography_font_family": "Roboto"
+              }
+            },
+            {
+              "id": "w_blog_sub_desc",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='color: #555; font-size: 15px; line-height: 1.7; margin: 15px 0 25px 0;'>Làn da trẻ sơ sinh mỏng hơn 30% so với người lớn. Khám phá lý do tại sao phức hợp thảo dược tự nhiên Oji Relief Complex™ là sự lựa chọn an toàn hàng đầu được bác sĩ khuyên dùng.</p>"
+              }
+            },
+            {
+              "id": "w_blog_sub_btn",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "button",
+              "settings": {
+                "text": "ĐỌC NGAY",
+                "background_color": "#FFFFFF",
+                "button_text_color": "#1B5B65",
+                "border_border": "solid",
+                "border_color": "#1B5B65",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1"
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "25",
+                  "right": "25",
+                  "bottom": "25",
+                  "left": "25",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "10",
+                  "right": "30",
+                  "bottom": "10",
+                  "left": "30",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "col_blog_sub_right",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "id": "w_blog_sub_img",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "http://chamomdemo.demoweb360.top/wp-content/uploads/2026/08/GOONGBE-Va-Hanh-Trinh-Nang-Chuan-Cham-Soc-Lan-Da-Tre-Em-Tai-Viet-Nam.jpg"
+                },
+                "align": "center",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_blog_grid_catalog",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "50",
+          "right": "40",
+          "bottom": "70",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col_blog_grid_main",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "w_blog_catalog_title",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "TẤT CẢ BÀI VIẾT & KINH NGHIỆM CHO MẸ",
+                "align": "center",
+                "title_color": "#1B5B65",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32
+                },
+                "typography_font_weight": "800",
+                "typography_font_family": "Roboto",
+                "margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "35",
+                  "left": "0",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "w_blog_posts_widget",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "posts",
+              "settings": {
+                "classic_columns": "3",
+                "classic_show_read_more": "yes",
+                "read_more_text": "Đọc tiếp »",
+                "classic_meta_data": [
+                  "date",
+                  "comments"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

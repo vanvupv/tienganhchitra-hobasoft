@@ -1,0 +1,95 @@
+[
+  {
+    "id": "sec_meta_bar_legacy",
+    "elType": "section",
+    "isInner": false,
+    "settings": {
+      "padding": {
+        "unit": "px",
+        "top": "12",
+        "right": "0",
+        "bottom": "12",
+        "left": "0",
+        "isLinked": false
+      },
+      "border_border": "solid",
+      "border_width": {
+        "unit": "px",
+        "top": "1",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      },
+      "border_color": "#E5E7EB"
+    },
+    "elements": [
+      {
+        "id": "col_left_stats",
+        "elType": "column",
+        "isInner": false,
+        "settings": {
+          "_column_size": 50,
+          "_inline_size": 50
+        },
+        "elements": [
+          {
+            "id": "w_view",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "icon-box",
+            "settings": {
+              "selected_icon": {
+                "value": "far fa-eye",
+                "library": "fa-regular"
+              },
+              "title_text": "8",
+              "position": "left",
+              "title_color": "#0EA5E9"
+            }
+          },
+          {
+            "id": "w_comment",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "icon-box",
+            "settings": {
+              "selected_icon": {
+                "value": "far fa-comment",
+                "library": "fa-regular"
+              },
+              "title_text": "0",
+              "position": "left",
+              "title_color": "#0EA5E9"
+            }
+          }
+        ]
+      },
+      {
+        "id": "col_right_heart",
+        "elType": "column",
+        "isInner": false,
+        "settings": {
+          "_column_size": 50,
+          "_inline_size": 50
+        },
+        "elements": [
+          {
+            "id": "w_heart",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "icon",
+            "settings": {
+              "selected_icon": {
+                "value": "far fa-heart",
+                "library": "fa-regular"
+              },
+              "primary_color": "#EF4444",
+              "align": "right"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

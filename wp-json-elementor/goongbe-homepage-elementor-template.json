@@ -1,0 +1,2006 @@
+{
+  "version": "3.0.0",
+  "elementor_version": "3.35.1",
+  "title": "Trang Chủ GOONGBE VN - Cha & Mom",
+  "type": "page",
+  "page_settings": {},
+  "content": [
+    {
+      "id": "sec_1001",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "full_width",
+        "background_background": "classic",
+        "background_color": "#E8F6F9",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col_1002",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50
+          },
+          "elements": [
+            {
+              "id": "widget_1003",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "GOONGBE BABY COLLECTION",
+                "header_size": "h4",
+                "title_color": "#4CB9CC",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": "16"
+                },
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": "2"
+                }
+              }
+            },
+            {
+              "id": "widget_1004",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "AN TOÀN CHO BÉ YÊU TỪ NHỮNG NGÀY ĐẦU ĐỜI",
+                "header_size": "h1",
+                "title_color": "#1B5B65",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": "42"
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": "1.2"
+                }
+              }
+            },
+            {
+              "id": "widget_1005",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-size: 16px; color: #555555; line-height: 1.6;'>Sản phẩm chăm sóc da Hoàng Gia Hàn Quốc dành riêng cho trẻ sơ sinh & trẻ nhỏ. Chiết xuất 100% thảo dược thiên nhiên lành tính, bảo vệ làn da bé luôn mềm mịn và khỏe mạnh.</p>"
+              }
+            },
+            {
+              "id": "widget_1006",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "button",
+              "settings": {
+                "text": "KHÁM PHÁ NGAY",
+                "link": {
+                  "url": "#bestseller"
+                },
+                "button_type": "info",
+                "background_color": "#1B5B65",
+                "button_text_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "30",
+                  "right": "30",
+                  "bottom": "30",
+                  "left": "30"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "15",
+                  "right": "35",
+                  "bottom": "15",
+                  "left": "35",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "col_1007",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50
+          },
+          "elements": [
+            {
+              "id": "widget_1008",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "https://via.placeholder.com/600x400/4CB9CC/ffffff?text=Goongbe+Baby+Collection"
+                },
+                "caption_source": "none",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_1021",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "40",
+          "bottom": "60",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col_header_1022",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "widget_1023",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "DANH MỤC SẢN PHẨM NỔI BẬT",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1B5B65",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": "32"
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "widget_1024",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666; font-size: 16px; margin-bottom: 40px;'>Chăm sóc dịu nhẹ và nâng niu làn da bé trong những năm tháng đầu đời</p>"
+              }
+            },
+            {
+              "id": "sec_inner_row1_1025",
+              "elType": "section",
+              "isInner": true,
+              "settings": {},
+              "elements": [
+                {
+                  "id": "col_1009",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 50,
+                    "_inline_size": 50
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1010",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/600x350/E8F6F9/1B5B65?text=NEW+Chong+Nang+Goongbe"
+                        },
+                        "align": "center",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1011",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "<span style='background:#FF6B35; color:#fff; font-size:12px; font-weight:bold; padding:4px 12px; border-radius:4px; margin-right:8px;'>NEW</span> Bộ sản phẩm chống nắng GOONGBE",
+                        "header_size": "h4",
+                        "align": "center",
+                        "title_color": "#1B5B65",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "17"
+                        },
+                        "typography_font_weight": "700",
+                        "margin": {
+                          "unit": "px",
+                          "top": "15",
+                          "right": "0",
+                          "bottom": "25",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_1012",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 50,
+                    "_inline_size": 50
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1013",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/600x350/D8F1F5/1B5B65?text=BEST+Nang+Cap+Ao+Duoc"
+                        },
+                        "align": "center",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1014",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "<span style='background:#009AA5; color:#fff; font-size:12px; font-weight:bold; padding:4px 12px; border-radius:4px; margin-right:8px;'>BEST</span> Bộ Sản Phẩm GOONGBE Nâng Cấp Áo Dược",
+                        "header_size": "h4",
+                        "align": "center",
+                        "title_color": "#1B5B65",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "17"
+                        },
+                        "typography_font_weight": "700",
+                        "margin": {
+                          "unit": "px",
+                          "top": "15",
+                          "right": "0",
+                          "bottom": "25",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "sec_inner_row2_1026",
+              "elType": "section",
+              "isInner": true,
+              "settings": {},
+              "elements": [
+                {
+                  "id": "col_1015",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 50,
+                    "_inline_size": 50
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1016",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/600x350/FFF3B0/1B5B65?text=GOONGBE+x+YUMMA+Yellow"
+                        },
+                        "align": "center",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1017",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Bộ Sản Phẩm GOONGBE x YUMMA Chăm Sóc Da Bé",
+                        "header_size": "h4",
+                        "align": "center",
+                        "title_color": "#1B5B65",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "17"
+                        },
+                        "typography_font_weight": "700",
+                        "margin": {
+                          "unit": "px",
+                          "top": "15",
+                          "right": "0",
+                          "bottom": "15",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_1018",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 50,
+                    "_inline_size": 50
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1019",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/600x350/C7F9CC/1B5B65?text=GOONGBE+x+YUMMA+Green"
+                        },
+                        "align": "center",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1020",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Dòng Sản Phẩm Trẻ Em GOONGBE x YUMMA",
+                        "header_size": "h4",
+                        "align": "center",
+                        "title_color": "#1B5B65",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "17"
+                        },
+                        "typography_font_weight": "700",
+                        "margin": {
+                          "unit": "px",
+                          "top": "15",
+                          "right": "0",
+                          "bottom": "15",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_1027",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#D8F1F5",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "right": "40",
+          "bottom": "70",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col_1028",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "widget_1029",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "DƯỠNG ẨM TOÀN THÂN 48 GIỜ PHỤC HỒI DA NHẠY CẢM",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1B5B65",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": "34"
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "widget_1030",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #444; font-size: 17px; max-width: 800px; margin: 0 auto 25px auto;'>Công thức độc quyền Oji Relief Complex từ 5 loại thảo dược Hoàng Gia Hàn Quốc giúp tăng cường hàng rào tự nhiên, cấp ẩm chuyên sâu và ngăn ngừa mẩn đỏ cho bé.</p>"
+              }
+            },
+            {
+              "id": "widget_1031",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "button",
+              "settings": {
+                "text": "TÌM HIỂU CÔNG THỨC OJI RELIEF",
+                "align": "center",
+                "background_color": "#1B5B65",
+                "button_text_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "25",
+                  "right": "25",
+                  "bottom": "25",
+                  "left": "25"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_1052",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "40",
+          "bottom": "60",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col_1053",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "widget_1054",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "GOONGBE's Best Sellers",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1B5B65",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": "32"
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "widget_1055",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666; font-size: 16px; margin-bottom: 30px;'>Bộ 3 sản phẩm bán chạy nhất: Kem dưỡng ẩm - Sữa tắm gội - Lotion</p>"
+              }
+            },
+            {
+              "id": "sec_inner_1056",
+              "elType": "section",
+              "isInner": true,
+              "settings": {},
+              "elements": [
+                {
+                  "id": "col_1032",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 25,
+                    "_inline_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1033",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/260x260/ffffff/1B5B65?text=Goongbe+Product"
+                        },
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "id": "widget_1034",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "<span style='color:#4CB9CC; font-size:12px; font-weight:bold;'>[BESTSELLER]</span><br>Kem Dưỡng Ẩm Pri-mmune Moisture Cream 180ml",
+                        "header_size": "h4",
+                        "align": "center",
+                        "title_color": "#333333",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "15"
+                        },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "widget_1035",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style='text-align: center; color: #1B5B65; font-weight: bold; font-size: 16px;'>650.000đ</p>"
+                      }
+                    },
+                    {
+                      "id": "widget_1036",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "THÊM VÀO GIỎ",
+                        "align": "center",
+                        "background_color": "#4CB9CC",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "20",
+                          "right": "20",
+                          "bottom": "20",
+                          "left": "20"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_1037",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 25,
+                    "_inline_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1038",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/260x260/ffffff/1B5B65?text=Goongbe+Product"
+                        },
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "id": "widget_1039",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "<span style='color:#4CB9CC; font-size:12px; font-weight:bold;'>[TOP 1]</span><br>Sữa Tắm Gội 2in1 Pri-mmune Shampoo & Bath 350ml",
+                        "header_size": "h4",
+                        "align": "center",
+                        "title_color": "#333333",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "15"
+                        },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "widget_1040",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style='text-align: center; color: #1B5B65; font-weight: bold; font-size: 16px;'>520.000đ</p>"
+                      }
+                    },
+                    {
+                      "id": "widget_1041",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "THÊM VÀO GIỎ",
+                        "align": "center",
+                        "background_color": "#4CB9CC",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "20",
+                          "right": "20",
+                          "bottom": "20",
+                          "left": "20"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_1042",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 25,
+                    "_inline_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1043",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/260x260/ffffff/1B5B65?text=Goongbe+Product"
+                        },
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "id": "widget_1044",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "<span style='color:#4CB9CC; font-size:12px; font-weight:bold;'>[HOT]</span><br>Sữa Dưỡng Thể Pri-mmune Moisture Lotion 350ml",
+                        "header_size": "h4",
+                        "align": "center",
+                        "title_color": "#333333",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "15"
+                        },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "widget_1045",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style='text-align: center; color: #1B5B65; font-weight: bold; font-size: 16px;'>580.000đ</p>"
+                      }
+                    },
+                    {
+                      "id": "widget_1046",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "THÊM VÀO GIỎ",
+                        "align": "center",
+                        "background_color": "#4CB9CC",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "20",
+                          "right": "20",
+                          "bottom": "20",
+                          "left": "20"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_1047",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 25,
+                    "_inline_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1048",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/260x260/ffffff/1B5B65?text=Goongbe+Product"
+                        },
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "id": "widget_1049",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "<span style='color:#4CB9CC; font-size:12px; font-weight:bold;'>[NEW]</span><br>Kem Chống Nắng Dạng Thỏi Fresh Sun Stick SPF50+",
+                        "header_size": "h4",
+                        "align": "center",
+                        "title_color": "#333333",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "15"
+                        },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "widget_1050",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style='text-align: center; color: #1B5B65; font-weight: bold; font-size: 16px;'>490.000đ</p>"
+                      }
+                    },
+                    {
+                      "id": "widget_1051",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "THÊM VÀO GIỎ",
+                        "align": "center",
+                        "background_color": "#4CB9CC",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "20",
+                          "right": "20",
+                          "bottom": "20",
+                          "left": "20"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_new_products_carousel",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FAF9F6",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "right": "40",
+          "bottom": "70",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col_new_products_container",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "widget_new_products_heading",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "SẢN PHẨM MỚI & BỘ SẢN PHẨM KHĂN ƯỚT DỊU NHẸ",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1B5B65",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": "32"
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "sec_inner_products_4cols",
+              "elType": "section",
+              "isInner": true,
+              "settings": {},
+              "elements": [
+                {
+                  "id": "col_prod_1",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 25,
+                    "_inline_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_prod_1_img",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/300x300/ffffff/1B5B65?text=Phan+Phu+Baby+Powder"
+                        },
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "id": "widget_prod_1_title",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "<span style='background:#009AA5; color:#fff; font-size:11px; padding:3px 8px; border-radius:4px;'>NEW</span> Phấn Phủ Dịu Nhẹ Em Bé GOONGBE 25g",
+                        "header_size": "h4",
+                        "align": "center",
+                        "title_color": "#333333",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "15"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_prod_2",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 25,
+                    "_inline_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_prod_2_img",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/300x300/ffffff/1B5B65?text=Baby+Hip+Cleanser"
+                        },
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "id": "widget_prod_2_title",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "<span style='background:#009AA5; color:#fff; font-size:11px; padding:3px 8px; border-radius:4px;'>NEW</span> Sữa Tắm Vệ Sinh Em Bé Baby Hip Cleanser",
+                        "header_size": "h4",
+                        "align": "center",
+                        "title_color": "#333333",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "15"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_prod_3",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 25,
+                    "_inline_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_prod_3_img",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/300x300/ffffff/1B5B65?text=Baby+Wipes+Tissue"
+                        },
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "id": "widget_prod_3_title",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "<span style='background:#009AA5; color:#fff; font-size:11px; padding:3px 8px; border-radius:4px;'>NEW</span> Khăn Ướt Em Bé An Toàn GOONGBE 70 Tờ",
+                        "header_size": "h4",
+                        "align": "center",
+                        "title_color": "#333333",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "15"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_prod_4",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 25,
+                    "_inline_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_prod_4_img",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/300x300/ffffff/1B5B65?text=Family+Soft+Wipes"
+                        },
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "id": "widget_prod_4_title",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Khăn Ướt Dịu Nhẹ Gia Đình GOONGBE 100 Tờ",
+                        "header_size": "h4",
+                        "align": "center",
+                        "title_color": "#333333",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "15"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_1057",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#E5F6F8",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "right": "50",
+          "bottom": "70",
+          "left": "50",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col_1058",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50
+          },
+          "elements": [
+            {
+              "id": "widget_1059",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "Mây - Nhân vật hoạt hình tại thị trường Việt Nam",
+                "header_size": "h2",
+                "title_color": "#1B5B65",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": "30"
+                },
+                "typography_font_weight": "700"
+              }
+            },
+            {
+              "id": "widget_1060",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "divider",
+              "settings": {
+                "color": "#4CB9CC",
+                "weight": {
+                  "unit": "px",
+                  "size": "3"
+                },
+                "width": {
+                  "unit": "%",
+                  "size": "15"
+                },
+                "align": "left",
+                "gap": {
+                  "unit": "px",
+                  "size": "15"
+                }
+              }
+            },
+            {
+              "id": "widget_1061",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='color: #444444; font-size: 16px; line-height: 1.7; margin-top: 15px; margin-bottom: 25px;'>MÂY – nhân vật hoạt hình siêu đáng yêu từ GOONGBE đã chính thức \"đổ bộ\" tại Việt Nam! Với đôi má hồng xinh xắn, bước nhảy lả lướt và chiếc mũ đỏ nổi bật. Nhân vật Mây hứa hẹn sẽ là người bạn đồng hành cùng các bé trong những hoạt động siêu đáng yêu, siêu thú vị sắp tới của Goongbe tại Việt Nam!</p>"
+              }
+            },
+            {
+              "id": "widget_1062",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "button",
+              "settings": {
+                "text": "Xem trên Youtube",
+                "link": {
+                  "url": "https://www.youtube.com/@GOONGBEVietNam"
+                },
+                "button_type": "default",
+                "background_color": "#FFFFFF",
+                "button_text_color": "#4CB9CC",
+                "border_border": "solid",
+                "border_color": "#4CB9CC",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1"
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "4",
+                  "right": "4",
+                  "bottom": "4",
+                  "left": "4"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "30",
+                  "bottom": "12",
+                  "left": "30",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "col_1063",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50
+          },
+          "elements": [
+            {
+              "id": "widget_1064",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "https://via.placeholder.com/550x400/E5F6F8/1B5B65?text=May+-+Goongbe+Mascot"
+                },
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_1083",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F4FAFC",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "40",
+          "bottom": "60",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col_1084",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "widget_1085",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "ĐỐI TÁC CHÍNH THỨC",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1B5B65",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": "32"
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "widget_1086",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #666; font-size: 16px; margin-bottom: 35px;'>GOONGBE tự hào hợp tác cùng các hệ thống phân phối & bán lẻ uy tín hàng đầu</p>"
+              }
+            },
+            {
+              "id": "sec_inner_1087",
+              "elType": "section",
+              "isInner": true,
+              "settings": {},
+              "elements": [
+                {
+                  "id": "col_1065",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 16.66,
+                    "_inline_size": 16.66
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1066",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/200x80/ffffff/1B5B65?text=OLIVE+YOUNG"
+                        },
+                        "align": "center",
+                        "border_border": "solid",
+                        "border_color": "#E5E7EB",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1"
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "10",
+                          "right": "10",
+                          "bottom": "10",
+                          "left": "10"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1067",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Olive Young",
+                        "header_size": "h5",
+                        "align": "center",
+                        "title_color": "#1B5B65",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "14"
+                        },
+                        "typography_font_weight": "700"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_1068",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 16.66,
+                    "_inline_size": 16.66
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1069",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/200x80/ffffff/1B5B65?text=SHINSEGAE"
+                        },
+                        "align": "center",
+                        "border_border": "solid",
+                        "border_color": "#E5E7EB",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1"
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "10",
+                          "right": "10",
+                          "bottom": "10",
+                          "left": "10"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1070",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Shinsegae",
+                        "header_size": "h5",
+                        "align": "center",
+                        "title_color": "#1B5B65",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "14"
+                        },
+                        "typography_font_weight": "700"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_1071",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 16.66,
+                    "_inline_size": 16.66
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1072",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/200x80/ffffff/1B5B65?text=HYUNDAI"
+                        },
+                        "align": "center",
+                        "border_border": "solid",
+                        "border_color": "#E5E7EB",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1"
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "10",
+                          "right": "10",
+                          "bottom": "10",
+                          "left": "10"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1073",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Hyundai Mall",
+                        "header_size": "h5",
+                        "align": "center",
+                        "title_color": "#1B5B65",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "14"
+                        },
+                        "typography_font_weight": "700"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_1074",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 16.66,
+                    "_inline_size": 16.66
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1075",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/200x80/ffffff/1B5B65?text=LOTTE"
+                        },
+                        "align": "center",
+                        "border_border": "solid",
+                        "border_color": "#E5E7EB",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1"
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "10",
+                          "right": "10",
+                          "bottom": "10",
+                          "left": "10"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1076",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Lotte Mart",
+                        "header_size": "h5",
+                        "align": "center",
+                        "title_color": "#1B5B65",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "14"
+                        },
+                        "typography_font_weight": "700"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_1077",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 16.66,
+                    "_inline_size": 16.66
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1078",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/200x80/ffffff/1B5B65?text=CON+CUNG"
+                        },
+                        "align": "center",
+                        "border_border": "solid",
+                        "border_color": "#E5E7EB",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1"
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "10",
+                          "right": "10",
+                          "bottom": "10",
+                          "left": "10"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1079",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Concung",
+                        "header_size": "h5",
+                        "align": "center",
+                        "title_color": "#1B5B65",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "14"
+                        },
+                        "typography_font_weight": "700"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_1080",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 16.66,
+                    "_inline_size": 16.66
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1081",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/200x80/ffffff/1B5B65?text=SHOPEE+MALL"
+                        },
+                        "align": "center",
+                        "border_border": "solid",
+                        "border_color": "#E5E7EB",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1"
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "10",
+                          "right": "10",
+                          "bottom": "10",
+                          "left": "10"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1082",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Shopee Mall",
+                        "header_size": "h5",
+                        "align": "center",
+                        "title_color": "#1B5B65",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "14"
+                        },
+                        "typography_font_weight": "700"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_1106",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FAF9F6",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "right": "40",
+          "bottom": "70",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col_1107",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "widget_1108",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "GOONGBE's News",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1B5B65",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": "34"
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "widget_1109",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tin tức & Truyền thông",
+                "header_size": "h4",
+                "align": "center",
+                "title_color": "#4CB9CC",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": "20"
+                },
+                "typography_font_weight": "600",
+                "margin": {
+                  "unit": "px",
+                  "top": "-10",
+                  "right": "0",
+                  "bottom": "35",
+                  "left": "0",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "sec_inner_1110",
+              "elType": "section",
+              "isInner": true,
+              "settings": {},
+              "elements": [
+                {
+                  "id": "col_1088",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 33,
+                    "_inline_size": 33.33
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1089",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/400x250/1B5B65/ffffff?text=Bac+Si+Da+Lieu"
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "12",
+                          "right": "12",
+                          "bottom": "0",
+                          "left": "0"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1090",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style='background: #E8F6F9; color: #1B5B65; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 12px;'>LỜI KHUYÊN BÁC SĨ</span> <span style='color: #888; font-size: 12px; margin-left: 10px;'>📅 03/08/2026</span>"
+                      }
+                    },
+                    {
+                      "id": "widget_1091",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Chuyên gia da liễu hướng dẫn chọn kem dưỡng ẩm an toàn cho trẻ sơ sinh",
+                        "header_size": "h3",
+                        "title_color": "#333333",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "17"
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": "1.3"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1092",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style='color: #666666; font-size: 14px; line-height: 1.5;'>Làn da trẻ sơ sinh mỏng hơn 30% so với người lớn, việc lựa chọn sản phẩm chứa phức hợp thảo dược tự nhiên lành tính giúp bảo vệ màng ẩm mỏng mong của bé...</p>"
+                      }
+                    },
+                    {
+                      "id": "widget_1093",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Đọc tiếp →",
+                        "button_type": "link",
+                        "button_text_color": "#1B5B65",
+                        "typography_font_weight": "700"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_1094",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 33,
+                    "_inline_size": 33.33
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1095",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/400x250/4CB9CC/ffffff?text=Hoi+Thao+Y+Khoa"
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "12",
+                          "right": "12",
+                          "bottom": "0",
+                          "left": "0"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1096",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style='background: #E8F6F9; color: #1B5B65; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 12px;'>SỰ KIỆN Y KHOA</span> <span style='color: #888; font-size: 12px; margin-left: 10px;'>📅 28/07/2026</span>"
+                      }
+                    },
+                    {
+                      "id": "widget_1097",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Goongbe đồng hành cùng Hội thảo Khoa học Chăm sóc da Nhi khoa 2026",
+                        "header_size": "h3",
+                        "title_color": "#333333",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "17"
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": "1.3"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1098",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style='color: #666666; font-size: 14px; line-height: 1.5;'>Hơn 200 bác sĩ da liễu đầu ngành đã tham dự và đánh giá cao hiệu quả thực tế của dòng sản phẩm Pri-mmune trong việc làm dịu da viêm cơ địa ở trẻ nhỏ...</p>"
+                      }
+                    },
+                    {
+                      "id": "widget_1099",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Đọc tiếp →",
+                        "button_type": "link",
+                        "button_text_color": "#1B5B65",
+                        "typography_font_weight": "700"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "col_1100",
+                  "elType": "column",
+                  "isInner": false,
+                  "settings": {
+                    "_column_size": 33,
+                    "_inline_size": 33.33
+                  },
+                  "elements": [
+                    {
+                      "id": "widget_1101",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/400x250/1B5B65/ffffff?text=Su+Kien+Ra+Mat"
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "12",
+                          "right": "12",
+                          "bottom": "0",
+                          "left": "0"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1102",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style='background: #E8F6F9; color: #1B5B65; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 12px;'>TIN NỔI BẬT</span> <span style='color: #888; font-size: 12px; margin-left: 10px;'>📅 15/07/2026</span>"
+                      }
+                    },
+                    {
+                      "id": "widget_1103",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Ra mắt dòng sản phẩm Pri-mmune thế hệ mới nâng cấp gấp 2 lần dưỡng chất",
+                        "header_size": "h3",
+                        "title_color": "#333333",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": "17"
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": "1.3"
+                        }
+                      }
+                    },
+                    {
+                      "id": "widget_1104",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style='color: #666666; font-size: 14px; line-height: 1.5;'>Đột phá với công thức Oji Relief Complex giúp tăng cường sức đề kháng cho làn da bé ngay từ những tháng đầu đời trước tác động môi trường bên ngoài...</p>"
+                      }
+                    },
+                    {
+                      "id": "widget_1105",
+                      "elType": "widget",
+                      "isInner": false,
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Đọc tiếp →",
+                        "button_type": "link",
+                        "button_text_color": "#1B5B65",
+                        "typography_font_weight": "700"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "widget_1111",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "button",
+              "settings": {
+                "text": "XEM TẤT CẢ TIN TỨC",
+                "align": "center",
+                "background_color": "#1B5B65",
+                "button_text_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "25",
+                  "right": "25",
+                  "bottom": "25",
+                  "left": "25"
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "35",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_1112",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1B5B65",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "40",
+          "bottom": "60",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col_1113",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "widget_1114",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
+                "title": "DÀNH CHO LÀN DA NHẠY CẢM CỦA BÉ YÊU",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": "30"
+                },
+                "typography_font_weight": "700"
+              }
+            },
+            {
+              "id": "widget_1115",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #E8F6F9; font-size: 16px; margin-bottom: 25px;'>Hãy để Goongbe cùng mẹ bảo vệ làn da bé mỗi ngày với tình yêu thương dịu nhẹ nhất từ thiên nhiên.</p>"
+              }
+            },
+            {
+              "id": "widget_1116",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "button",
+              "settings": {
+                "text": "LIÊN HỆ TƯ VẤN NGAY",
+                "align": "center",
+                "background_color": "#4CB9CC",
+                "button_text_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "25",
+                  "right": "25",
+                  "bottom": "25",
+                  "left": "25"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

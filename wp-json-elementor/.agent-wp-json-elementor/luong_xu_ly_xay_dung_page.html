@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sơ Đồ Luồng Xử Lý - Elementor JSON Builder (.agent-wp-json-elementor)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #0B0F17;
+            --bg-card: #151D2A;
+            --bg-card-hover: #1E293B;
+            --primary: #0EA5E9;
+            --accent: #14B8A6;
+            --warning: #F59E0B;
+            --purple: #8B5CF6;
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border: #263346;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.2), rgba(20, 184, 166, 0.2));
+            color: var(--primary);
+            border: 1px solid rgba(14, 165, 233, 0.4);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            background: linear-gradient(to right, #FFFFFF, #94A3B8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 12px;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        /* METRICS COUNTER */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .metric-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.15);
+        }
+
+        .metric-val {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 6px;
+        }
+
+        .metric-label {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* SECTION FLOW DIAGRAM */
+        .diagram-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title span {
+            background: var(--primary);
+            color: #000;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        /* FLOW NODES */
+        .flow-vertical {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            position: relative;
+        }
+
+        .node-card {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 20px 24px;
+            position: relative;
+        }
+
+        .node-card.highlight {
+            border-color: var(--primary);
+            background: rgba(14, 165, 233, 0.08);
+        }
+
+        .node-card.branch {
+            border-color: var(--warning);
+            background: rgba(245, 158, 11, 0.08);
+        }
+
+        .node-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .node-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #FFF;
+        }
+
+        .node-tag {
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+        }
+
+        .tag-blue { background: rgba(14, 165, 233, 0.2); color: var(--primary); }
+        .tag-teal { background: rgba(20, 184, 166, 0.2); color: var(--accent); }
+        .tag-amber { background: rgba(245, 158, 11, 0.2); color: var(--warning); }
+        .tag-purple { background: rgba(139, 92, 246, 0.2); color: var(--purple); }
+
+        .node-desc {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* GRID BRANCHES */
+        .branch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .sub-card {
+            background: var(--bg-main);
+            border: 1px dashed var(--border);
+            border-radius: 10px;
+            padding: 16px;
+        }
+
+        .sub-card h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--accent);
+        }
+
+        /* ARROW CONNECTORS */
+        .arrow-down {
+            text-align: center;
+            color: var(--primary);
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">EFFECTIVE HTML ARCHITECTURE</div>
+            <h1>BỘ THIẾT LẬP & LUỒNG XỬ LÝ ELEMENTOR JSON</h1>
+            <p class="subtitle">Quy trình tối ưu hóa xây dựng Page từ 4h xuống 1-2h bằng chuẩn JSON Elementor 3.x</p>
+        </header>
+
+        <!-- METRICS CARDS -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-val">4h ➔ 1-2h</div>
+                <div class="metric-label">Thời gian hoàn thành trang</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-val">100%</div>
+                <div class="metric-label">Độ chính xác so với HTML/Design</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-val">Elementor 3.x</div>
+                <div class="metric-label">Chuẩn JSON Import & Bypass DB</div>
+            </div>
+        </div>
+
+        <!-- DIAGRAM SECTION 1: BỘ THIẾT LẬP -->
+        <div class="diagram-section">
+            <div class="section-title">
+                <span>1</span> BỘ THIẾT LẬP BAN ĐẦU (PRE-BUILD CONFIGURATION)
+            </div>
+
+            <div class="branch-grid">
+                <div class="sub-card">
+                    <h4>1. Số lượng Section</h4>
+                    <p class="node-desc">Đếm tổng số khối Section cấu thành trang (Loại bỏ Header & Footer).</p>
+                </div>
+                <div class="sub-card">
+                    <h4>2. Tên từng Section</h4>
+                    <p class="node-desc">Định danh theo chức năng: Banner, Categories Grid, Bestsellers, Mascot Mây, Partners, News.</p>
+                </div>
+                <div class="sub-card">
+                    <h4>3. Giao diện Tương ứng</h4>
+                    <p class="node-desc">Gom tài nguyên tham khảo: File HTML/CSS snippet, Ảnh screenshot mockup.</p>
+                </div>
+                <div class="sub-card">
+                    <h4>4. Hướng Xây dựng</h4>
+                    <p class="node-desc">Xác định nguồn dựng cho từng Section: Thư viện UI (Libraries) hay Dựng mới (Custom Scratch).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DIAGRAM SECTION 2: LUỒNG XỬ LÝ CHI TIẾT -->
+        <div class="diagram-section">
+            <div class="section-title">
+                <span>2</span> LUỒNG XỬ LÝ (WORKFLOW PIPELINE)
+            </div>
+
+            <div class="flow-vertical">
+                <div class="node-card highlight">
+                    <div class="node-header">
+                        <div class="node-title">BƯỚC 1: KHỞI TẠO BỘ THIẾT LẬP & TRÌNH DUYỆT</div>
+                        <div class="node-tag tag-blue">Input Analysis</div>
+                    </div>
+                    <div class="node-desc">Nhận dữ liệu HTML/Ảnh $\rightarrow$ Phân tích số lượng & tên từng Section $\rightarrow$ Trình duyệt danh sách để xác nhận trước khi code.</div>
+                </div>
+
+                <div class="arrow-down">⬇️</div>
+
+                <div class="node-card branch">
+                    <div class="node-header">
+                        <div class="node-title">BƯỚC 2: PHÂN NHÁNH XÂY DỰNG TỪNG SECTION</div>
+                        <div class="node-tag tag-amber">2 Hướng Xử Lý</div>
+                    </div>
+                    <div class="branch-grid">
+                        <div class="sub-card">
+                            <h4 style="color: var(--primary);">HƯỚNG A: Thư viện UI Library</h4>
+                            <p class="node-desc">Section đã có sẵn trong thư viện mẫu $\rightarrow$ Tái sử dụng cấu trúc JSON, cập nhật nội dung & hình ảnh.</p>
+                        </div>
+                        <div class="sub-card">
+                            <h4 style="color: var(--accent);">HƯỚNG B: Dựng mới Custom Scratch</h4>
+                            <p class="node-desc">Section mới chưa có mẫu $\rightarrow$ Phân tích Grid Cột (100%, 50-50, 2x2 grid, 6 cột), Color Tokens và Widgets.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow-down">⬇️</div>
+
+                <div class="node-card highlight">
+                    <div class="node-header">
+                        <div class="node-title">BƯỚC 3: GHÉP NỐI THÀNH PAGE JSON TEMPLATE 3.X</div>
+                        <div class="node-tag tag-purple">Assembly</div>
+                    </div>
+                    <div class="node-desc">Tập hợp tất cả mảng JSON Sections $\rightarrow$ Sinh ID phần tử duy nhất $\rightarrow$ Xuất file `.json` chuẩn Elementor 3.35.1+.</div>
+                </div>
+
+                <div class="arrow-down">⬇️</div>
+
+                <div class="node-card">
+                    <div class="node-header">
+                        <div class="node-title">BƯỚC 4: NÉN ZIP & AUTOMATION DEPLOYMENT</div>
+                        <div class="node-tag tag-teal">DB Import & Git Sync</div>
+                    </div>
+                    <div class="node-desc">Tự động nén `.zip` $\rightarrow$ Chạy script `import_elementor_template.php` nạp trực tiếp Database $\rightarrow$ Push Git sync Vietnix Hosting.</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Hệ thống tự động hóa xây dựng Elementor Pro Page | Dự án Cha & Mom (GOONGBE VN)</p>
+        </footer>
+    </div>
+</body>
+</html>

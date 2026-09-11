@@ -1,0 +1,501 @@
+{
+  "version": "0.4",
+  "title": "GOONGBE Product Catalog Page Template (WooCommerce Menu Cart & Products Grid)",
+  "type": "page",
+  "elementor_version": "3.35.1",
+  "content": [
+    {
+      "id": "cnt_prod_sec1_banner",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "auto",
+          "bottom": "40",
+          "left": "auto",
+          "isLinked": false
+        },
+        "position": "relative"
+      },
+      "elements": [
+        {
+          "id": "w_prod_banner_slides",
+          "elType": "widget",
+          "isInner": false,
+          "widgetType": "slides",
+          "settings": {
+            "slides": [
+              {
+                "heading": "",
+                "description": "",
+                "button_text": "",
+                "background_color": "",
+                "background_image": {
+                  "url": "http://chamomdemo.demoweb360.top/wp-content/uploads/2026/08/Banner-1.jpg"
+                },
+                "_id": "slide_prod_1"
+              }
+            ],
+            "slides_height": {
+              "unit": "vh",
+              "size": 60
+            }
+          }
+        },
+        {
+          "id": "w_prod_menu_cart_top",
+          "elType": "widget",
+          "isInner": false,
+          "widgetType": "woocommerce-menu-cart",
+          "settings": {
+            "icon": "bag-light",
+            "items_indicator": "bubble",
+            "hide_empty_indicator": "no",
+            "cart_type": "side-cart",
+            "align": "right",
+            "cart_icon_color": "#1B5B65",
+            "_position": "absolute",
+            "_offset_x": {
+              "unit": "px",
+              "size": 25
+            },
+            "_offset_y": {
+              "unit": "px",
+              "size": 20
+            },
+            "_offset_orientation_h": "end",
+            "z_index": 999
+          }
+        }
+      ]
+    },
+    {
+      "id": "cnt_prod_sec2_catalog",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "20",
+          "bottom": "40",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "w_prod_main_heading",
+          "elType": "widget",
+          "isInner": false,
+          "widgetType": "heading",
+          "settings": {
+            "title": "Gia đình GOONGBE",
+            "align": "center",
+            "title_color": "#1B5B65",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 32
+            },
+            "typography_font_weight": "800",
+            "typography_font_family": "Roboto",
+            "margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "30",
+              "left": "0",
+              "isLinked": false
+            }
+          }
+        },
+        {
+          "id": "w_prod_posts_grid",
+          "elType": "widget",
+          "isInner": false,
+          "widgetType": "posts",
+          "settings": {
+            "posts_post_type": "product",
+            "posts_posts_per_page": 12,
+            "columns": 2,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "classic_show_image": "yes",
+            "classic_show_title": "yes",
+            "classic_show_excerpt": "yes",
+            "classic_show_read_more": "yes",
+            "classic_read_more_text": "XEM CHI TIẾT & GIỎ HÀNG",
+            "margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "20",
+              "left": "0",
+              "isLinked": false
+            }
+          }
+        },
+        {
+          "id": "w_prod_wc_grid",
+          "elType": "widget",
+          "isInner": false,
+          "widgetType": "wc-products",
+          "settings": {
+            "posts_per_page": 12,
+            "columns": 2,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "show_image": "yes",
+            "show_title": "yes",
+            "show_price": "yes",
+            "show_button": "yes",
+            "margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cnt_prod_sec3_cta",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "row",
+        "flex_wrap": "nowrap",
+        "padding": {
+          "unit": "px",
+          "top": "30",
+          "right": "20",
+          "bottom": "50",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "cnt_cta_item_1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 32
+            },
+            "background_background": "classic",
+            "background_color": "#009AA5",
+            "padding": {
+              "unit": "px",
+              "top": "25",
+              "right": "20",
+              "bottom": "25",
+              "left": "20",
+              "isLinked": false
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "12",
+              "right": "12",
+              "bottom": "12",
+              "left": "12",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "w_cta_text_1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Điểm bán sản phẩm<br><strong>GOONGBE</strong>",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "typography_font_family": "Roboto"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cnt_cta_item_2",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 32
+            },
+            "background_background": "classic",
+            "background_color": "#38BDF8",
+            "padding": {
+              "unit": "px",
+              "top": "25",
+              "right": "20",
+              "bottom": "25",
+              "left": "20",
+              "isLinked": false
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "12",
+              "right": "12",
+              "bottom": "12",
+              "left": "12",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "w_cta_text_2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Mua hàng Online<br><strong>Thanh toán tại nhà</strong>",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "typography_font_family": "Roboto"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cnt_cta_item_3",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 32
+            },
+            "background_background": "classic",
+            "background_color": "#0088CC",
+            "padding": {
+              "unit": "px",
+              "top": "25",
+              "right": "20",
+              "bottom": "25",
+              "left": "20",
+              "isLinked": false
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "12",
+              "right": "12",
+              "bottom": "12",
+              "left": "12",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "w_cta_text_3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Hotline Hỗ Trợ<br><strong>1800 8179 (Miễn phí)</strong>",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "typography_font_family": "Roboto"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_prod_sec4_order",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "row",
+        "background_background": "classic",
+        "background_color": "#FFF9F5",
+        "padding": {
+          "unit": "px",
+          "top": "50",
+          "right": "40",
+          "bottom": "50",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "cnt_order_form_col",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 55
+            },
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "right": "20",
+              "bottom": "10",
+              "left": "20",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "w_order_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Đặt mua GOONGBE",
+                "align": "left",
+                "title_color": "#1B5B65",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 26
+                },
+                "typography_font_weight": "800",
+                "typography_font_family": "Roboto",
+                "margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "15",
+                  "left": "0",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "w_order_form",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "Form Đặt Mua GOONGBE Nhanh",
+                "form_fields": [
+                  {
+                    "field_type": "select",
+                    "field_label": "Sản phẩm chọn mua",
+                    "placeholder": "Chọn sản phẩm",
+                    "_id": "f_prod"
+                  },
+                  {
+                    "field_type": "number",
+                    "field_label": "Số lượng",
+                    "placeholder": "1",
+                    "_id": "f_qty"
+                  },
+                  {
+                    "field_type": "text",
+                    "field_label": "Họ và tên",
+                    "placeholder": "Nhập họ tên...",
+                    "_id": "f_name"
+                  },
+                  {
+                    "field_type": "tel",
+                    "field_label": "Số điện thoại",
+                    "placeholder": "Nhập SĐT...",
+                    "_id": "f_phone"
+                  },
+                  {
+                    "field_type": "textarea",
+                    "field_label": "Địa chỉ giao hàng & Ghi chú",
+                    "placeholder": "Nhập địa chỉ cụ thể...",
+                    "_id": "f_addr"
+                  }
+                ],
+                "button_text": "ĐẶT HÀNG NGAY",
+                "button_background_color": "#F39C12"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cnt_order_img_col",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 42
+            },
+            "flex_direction": "column",
+            "justify_content": "center",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "w_order_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "http://chamomdemo.demoweb360.top/wp-content/uploads/2026/08/Goongbe-500X500.jpg"
+                },
+                "align": "center",
+                "width": {
+                  "unit": "%",
+                  "size": 90
+                }
+              }
+            },
+            {
+              "id": "w_order_hotline_text",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Hotline CSKH: <strong>1800 8179</strong>",
+                "align": "center",
+                "title_color": "#E67E22",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20
+                },
+                "typography_font_weight": "800",
+                "typography_font_family": "Roboto",
+                "margin": {
+                  "unit": "px",
+                  "top": "15",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}
