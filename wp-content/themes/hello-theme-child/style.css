@@ -39,11 +39,29 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     display: none !important;
 }
 
-/* Base Card Styling (Hỗ trợ cả .testimonial-box và Elementor .elementor-testimonial) */
+/* Dành khoảng đệm an toàn 75px ở đáy container Swiper cho 2 nút Next/Prev */
+.phongvt-feedback .elementor-main-swiper {
+    padding-bottom: 75px !important;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+/* Triệt tiêu toàn bộ màu nền/viền chữ nhật mặc định của Elementor */
+.phongvt-feedback .swiper-slide,
+.phongvt-feedback .elementor-testimonial,
+.phongvt-feedback .elementor-testimonial__header,
+.phongvt-feedback .elementor-testimonial__content {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Base Card Styling */
 .phongvt-feedback .testimonial-box,
 .phongvt-feedback .elementor-testimonial {
     position: relative;
-    padding: 2.5rem 1.8rem 2.8rem 1.8rem !important;
+    padding: 20px 22px 42px 22px !important;
     background: none !important;
     border: none !important;
     box-shadow: none !important;
@@ -53,7 +71,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 380px;
+    min-height: 400px;
     transition: all 0.35s ease;
 }
 
@@ -62,16 +80,16 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 .phongvt-feedback .elementor-testimonial::before {
     content: "";
     position: absolute;
-    bottom: 8px;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 78%;
+    height: 80%;
     pointer-events: none;
     background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1448 922" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M1356.34 22.1114C924.251 -9.03098 401.784 -5.26023 96.2822 20.8442C61.6385 23.8045 33.5749 49.9675 28.3935 84.3492C-16.1595 379.988 -1.77575 665.634 27.1422 840.09C32.7627 873.997 61.2945 898.845 95.574 901.339C522.111 932.373 968.22 924.218 1352.58 900.702C1387.87 898.543 1417.19 872.807 1422.12 837.791C1448.48 650.255 1462.77 303.276 1423.8 81.3584C1417.99 48.2734 1389.85 24.5262 1356.34 22.1114Z" fill="%23C8102E"/><path d="M1310.14 59.809C923.284 25.3291 446.236 39.496 145.516 60.6607C103.269 63.6341 68.6712 95.1845 62.9364 137.146C29.4612 382.086 38.6299 640.686 61.5967 794.428C67.5946 834.579 101.465 863.647 141.968 866.411C536.13 893.304 947.111 886.341 1303.44 865.744C1345.37 863.32 1380.35 832.847 1385.95 791.215C1408.9 620.527 1420.5 326.102 1387.56 129.398C1381.14 91.0372 1348.89 63.2619 1310.14 59.809Z" fill="white"/></svg>') no-repeat center / 100% 100%;
     z-index: -1;
 }
 
-/* Căn chỉnh các thành phần bên trong Elementor Testimonial */
+/* Căn chỉnh Avatar */
 .phongvt-feedback .elementor-testimonial__header {
     display: flex;
     flex-direction: column;
@@ -102,14 +120,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     object-fit: cover !important;
     padding: 0 !important;
     display: block;
-}
-
-/* Thẻ active được viền đỏ nổi bật */
-.phongvt-feedback .swiper-slide-active .elementor-testimonial__image img,
-.phongvt-feedback .is-selected .testimonial-image img,
-.phongvt-feedback .is-selected .testimonial-image-wrapper img {
-    border: 4px solid #C8102E !important;
-    box-shadow: 0 6px 18px rgba(200, 16, 46, 0.28) !important;
+    transition: all 0.3s ease;
 }
 
 .phongvt-feedback .elementor-testimonial__cite {
@@ -134,9 +145,10 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     color: #6B7280 !important;
     margin-bottom: 6px !important;
     font-weight: 500 !important;
+    text-align: center !important;
 }
 
-/* Ẩn icon mạng xã hội Twitter / icon Elementor */
+/* Ẩn icon mạng xã hội Twitter */
 .phongvt-feedback .elementor-testimonial__icon {
     display: none !important;
 }
@@ -146,7 +158,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 .phongvt-feedback .star-rating,
 .phongvt-feedback .testimonial-stars {
     text-align: center !important;
-    margin: 4px 0 12px 0 !important;
+    margin: 4px 0 10px 0 !important;
     color: #F59E0B !important;
     font-size: 22px !important;
 }
@@ -155,38 +167,73 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 .phongvt-feedback .elementor-testimonial__content,
 .phongvt-feedback .testimonial-text,
 .phongvt-feedback .testimonial-quote {
-    font-size: 14.5px !important;
+    font-size: 14px !important;
     line-height: 1.6 !important;
     color: #374151 !important;
     font-style: italic !important;
     text-align: center !important;
-    padding: 0 10px !important;
+    padding: 0 8px !important;
 }
 
-/* Hiệu ứng Focus Slide: Thẻ ở 2 bên thu nhỏ 86% và mờ nhẹ, thẻ chính giữa nổi bật */
-.phongvt-feedback .swiper-slide:not(.swiper-slide-active),
-.phongvt-feedback .flickity-slider > .row:not(.is-selected) {
+/* ==========================================================================
+   QUY TẮC FOCUS SLIDE: LUÔN LÀM NỔI BẬT THẺ Ở CHÍNH GIỮA (CENTER CARD)
+   Hỗ trợ cả Swiper có centeredSlides lẫn Swiper 3 cột tiêu chuẩn
+   ========================================================================== */
+/* Mặc định tất cả các slide thu nhỏ 86% và mờ nhẹ 0.65 */
+.phongvt-feedback .swiper-slide {
     opacity: 0.65 !important;
     transform: scale(0.86) !important;
-    transition: all 0.4s ease !important;
+    transition: transform 0.4s ease, opacity 0.4s ease !important;
 }
 
-.phongvt-feedback .swiper-slide-active,
+/* Trường hợp 1: Khi bật centeredSlides (hoặc Flickity is-selected): Thẻ active là thẻ chính giữa */
+.phongvt-feedback .swiper-slide.swiper-slide-active,
 .phongvt-feedback .flickity-slider > .row.is-selected {
     opacity: 1 !important;
     transform: scale(1.02) !important;
     z-index: 5 !important;
-    transition: all 0.4s ease !important;
 }
 
-/* Nút điều hướng chuyển Slide (Previous & Next Button) ở dưới đáy căn giữa */
+.phongvt-feedback .swiper-slide.swiper-slide-active .elementor-testimonial__image img,
+.phongvt-feedback .is-selected .testimonial-image img,
+.phongvt-feedback .is-selected .testimonial-image-wrapper img {
+    border: 4px solid #C8102E !important;
+    box-shadow: 0 6px 18px rgba(200, 16, 46, 0.28) !important;
+}
+
+/* Trường hợp 2: Khi Swiper chạy 3 slide chuẩn (thẻ giữa là swiper-slide-next liền kề) */
+@media (min-width: 1025px) {
+    .phongvt-feedback .elementor-main-swiper:not(.is-centered) .swiper-slide-active {
+        opacity: 0.65 !important;
+        transform: scale(0.86) !important;
+        z-index: 1 !important;
+    }
+    .phongvt-feedback .elementor-main-swiper:not(.is-centered) .swiper-slide-active .elementor-testimonial__image img {
+        border: 5px solid #ffffff !important;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12) !important;
+    }
+    .phongvt-feedback .elementor-main-swiper:not(.is-centered) .swiper-slide-active + .swiper-slide {
+        opacity: 1 !important;
+        transform: scale(1.02) !important;
+        z-index: 5 !important;
+    }
+    .phongvt-feedback .elementor-main-swiper:not(.is-centered) .swiper-slide-active + .swiper-slide .elementor-testimonial__image img {
+        border: 4px solid #C8102E !important;
+        box-shadow: 0 6px 18px rgba(200, 16, 46, 0.28) !important;
+    }
+}
+
+/* ==========================================================================
+   NÚT ĐIỀU HƯỚNG PREVIOUS & NEXT: ĐẶT DƯỚI ĐÁY KHÔNG ĐÈ CHỮ
+   ========================================================================== */
 .phongvt-feedback .elementor-swiper-button-prev,
 .phongvt-feedback .elementor-swiper-button-next,
 .phongvt-feedback button.flickity-button {
+    position: absolute !important;
     top: auto !important;
-    bottom: 5px !important;
-    width: 42px !important;
-    height: 42px !important;
+    bottom: 12px !important;
+    width: 44px !important;
+    height: 44px !important;
     background-color: #C8102E !important;
     border-radius: 50% !important;
     color: #ffffff !important;
@@ -198,30 +245,31 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     border: none !important;
     outline: none !important;
     box-shadow: 0 4px 10px rgba(200, 16, 46, 0.25) !important;
-    position: absolute !important;
     z-index: 10 !important;
+    margin: 0 !important;
 }
 
-/* Vòng tròn viền nét đứt đỏ bao quanh nút điều hướng chuẩn mẫu SLA */
+/* Vòng tròn nét đứt bao quanh nút */
 .phongvt-feedback .elementor-swiper-button-prev::after,
 .phongvt-feedback .elementor-swiper-button-next::after,
 .phongvt-feedback button.flickity-button::after {
     content: "" !important;
     position: absolute !important;
-    top: -5px !important;
-    left: -5px !important;
-    right: -5px !important;
-    bottom: -5px !important;
+    top: -4px !important;
+    left: -4px !important;
+    right: -4px !important;
+    bottom: -4px !important;
     border-radius: 50% !important;
     border: 1.5px dashed #C8102E !important;
     pointer-events: none !important;
     display: block !important;
+    box-sizing: border-box !important;
 }
 
-/* Căn vị trí 2 nút ngay giữa đáy */
+/* Căn giữa 2 nút ở đáy */
 .phongvt-feedback .elementor-swiper-button-prev,
 .phongvt-feedback button.flickity-button.previous {
-    left: calc(50% - 48px) !important;
+    left: calc(50% - 50px) !important;
     right: auto !important;
 }
 

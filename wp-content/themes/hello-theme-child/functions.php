@@ -220,4 +220,38 @@ function tienganh_chitra_register_acf_thanh_tich()
     }
 }
 
-
+/**
+ * ============================================================================
+ * TỰ ĐỘNG CĂN GIỮA SLIDE ACTIVE (centeredSlides: true) CHO WIDGET REVIEWS
+ * ============================================================================
+ */
+add_action('wp_footer', 'tienganh_chitra_custom_swiper_centered_script', 99);
+function tienganh_chitra_custom_swiper_centered_script()
+{
+    ?>
+    <script>
+    (function($) {
+        $(window).on('elementor/frontend/init', function() {
+            if (window.elementorFrontend && elementorFrontend.hooks) {
+                elementorFrontend.hooks.addAction('frontend/element_ready/reviews.default', function($scope) {
+                    var $container = $scope.find('.elementor-main-swiper');
+                    if ($container.length) {
+                        var enableCentered = function() {
+                            var swiper = $container.data('swiper');
+                            if (swiper && !swiper.params.centeredSlides) {
+                                swiper.params.centeredSlides = true;
+                                swiper.params.slideToClickedSlide = true;
+                                $container.addClass('is-centered');
+                                swiper.update();
+                            }
+                        };
+                        setTimeout(enableCentered, 100);
+                        setTimeout(enableCentered, 400);
+                    }
+                });
+            }
+        });
+    })(jQuery);
+    </script>
+    <?php
+}
