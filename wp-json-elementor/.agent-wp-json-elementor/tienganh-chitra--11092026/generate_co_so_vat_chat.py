@@ -218,103 +218,33 @@ def build_section_2_intro():
         ]
     }
 
-def build_section_3_alternating_blocks():
+def build_section_3_vertical_blocks():
     """
-    SECTION 3: 2 KHỐI NỘI DUNG XEN KẼ (Z-pattern)
-    - Khối 1: Ảnh phòng học (Trái) + Nội dung tiện nghi (Phải)
-    - Khối 2: Nội dung công nghệ (Trái) + Ảnh trang thiết bị (Phải)
-    - Cả 2 ảnh đều hỗ trợ nhấp để phóng to toàn màn hình (Lightbox)
+    SECTION 3: 2 KHỐI NỘI DUNG VÀ HÌNH ẢNH DẠNG DỌC (Stacked Column)
+    - Mỗi khối gồm 2 Container con xếp dọc theo đúng ảnh mẫu:
+      1. Container Nội dung (Tiêu đề H3 + Các đoạn văn bản mô tả)
+      2. Container Hình ảnh (Ảnh to rộng 100% bên dưới, hỗ trợ nhấp phóng to Lightbox)
     """
-    # ----------------------------------------------------
-    # Khối 1: Ảnh Trái - Nội dung Phải
-    # ----------------------------------------------------
-    col1_image = {
+    # ====================================================
+    # KHỐI 1: PHÒNG HỌC & TIỆN NGHI HỌC ĐƯỜNG
+    # ====================================================
+    block1_content = {
         "id": gen_id(),
         "elType": "container",
         "isInner": True,
         "settings": {
-            "width": {"unit": "%", "size": 48},
-            "width_mobile": {"unit": "%", "size": 100},
-            "flex_direction": "column",
-            "align_items": "center",
-            "justify_content": "center"
-        },
-        "elements": [
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "image",
-                "isInner": False,
-                "settings": {
-                    "image": {
-                        "url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop",
-                        "id": ""
-                    },
-                    "image_size": "large",
-                    "link_to": "file",
-                    "open_lightbox": "yes",
-                    "border_radius": {
-                        "unit": "px",
-                        "top": "12",
-                        "right": "12",
-                        "bottom": "12",
-                        "left": "12",
-                        "isLinked": True
-                    },
-                    "box_shadow_box_shadow_type": "yes",
-                    "box_shadow_box_shadow": {
-                        "horizontal": 0,
-                        "vertical": 10,
-                        "blur": 25,
-                        "spread": 0,
-                        "color": "rgba(0, 0, 0, 0.07)"
-                    }
-                },
-                "elements": []
-            }
-        ]
-    }
-
-    col1_text = {
-        "id": gen_id(),
-        "elType": "container",
-        "isInner": True,
-        "settings": {
-            "width": {"unit": "%", "size": 48},
-            "width_mobile": {"unit": "%", "size": 100},
             "flex_direction": "column",
             "align_items": "flex-start",
-            "justify_content": "center"
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "24",
+                "left": "0",
+                "isLinked": False
+            }
         },
         "elements": [
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "heading",
-                "isInner": False,
-                "settings": {
-                    "title": "KHÔNG GIAN TIỆN NGHI",
-                    "header_size": "span",
-                    "align": "left",
-                    "title_color": COLOR_BTN_ORANGE,
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {"unit": "px", "size": 13},
-                    "typography_font_weight": "700",
-                    "typography_text_transform": "uppercase",
-                    "typography_letter_spacing": {"unit": "px", "size": 1.5},
-                    "typography_line_height": {"unit": "em", "size": 1.2},
-                    "_margin": {
-                        "unit": "px",
-                        "top": "0",
-                        "right": "0",
-                        "bottom": "8",
-                        "left": "0",
-                        "isLinked": False
-                    }
-                },
-                "elements": []
-            },
             {
                 "id": gen_id(),
                 "elType": "widget",
@@ -365,6 +295,59 @@ def build_section_3_alternating_blocks():
         ]
     }
 
+    block1_image = {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "justify_content": "center",
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": True
+            }
+        },
+        "elements": [
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "image",
+                "isInner": False,
+                "settings": {
+                    "image": {
+                        "url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop",
+                        "id": ""
+                    },
+                    "image_size": "full",
+                    "link_to": "file",
+                    "open_lightbox": "yes",
+                    "border_radius": {
+                        "unit": "px",
+                        "top": "10",
+                        "right": "10",
+                        "bottom": "10",
+                        "left": "10",
+                        "isLinked": True
+                    },
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                        "horizontal": 0,
+                        "vertical": 10,
+                        "blur": 25,
+                        "spread": 0,
+                        "color": "rgba(0, 0, 0, 0.06)"
+                    }
+                },
+                "elements": []
+            }
+        ]
+    }
+
     block_1 = {
         "id": gen_id(),
         "elType": "container",
@@ -372,65 +355,39 @@ def build_section_3_alternating_blocks():
         "settings": {
             "content_width": "boxed",
             "width": {"unit": "px", "size": 1200},
-            "flex_direction": "row",
-            "flex_wrap": "wrap",
-            "justify_content": "space-between",
-            "align_items": "center",
+            "flex_direction": "column",
             "padding": {
                 "unit": "px",
                 "top": "30",
                 "right": "20",
-                "bottom": "40",
+                "bottom": "50",
                 "left": "20",
                 "isLinked": False
             }
         },
-        "elements": [col1_image, col1_text]
+        "elements": [block1_content, block1_image]
     }
 
-    # ----------------------------------------------------
-    # Khối 2: Nội dung Trái - Ảnh Phải (Xen kẽ đảo chiều)
-    # ----------------------------------------------------
-    col2_text = {
+    # ====================================================
+    # KHỐI 2: TRANG THIẾT BỊ HỌC TẬP VÀ TRUYỀN THÔNG TƯƠNG TÁC
+    # ====================================================
+    block2_content = {
         "id": gen_id(),
         "elType": "container",
         "isInner": True,
         "settings": {
-            "width": {"unit": "%", "size": 48},
-            "width_mobile": {"unit": "%", "size": 100},
             "flex_direction": "column",
             "align_items": "flex-start",
-            "justify_content": "center"
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "24",
+                "left": "0",
+                "isLinked": False
+            }
         },
         "elements": [
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "heading",
-                "isInner": False,
-                "settings": {
-                    "title": "CÔNG NGHỆ HIỆN ĐẠI",
-                    "header_size": "span",
-                    "align": "left",
-                    "title_color": COLOR_PRIMARY_BLUE,
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {"unit": "px", "size": 13},
-                    "typography_font_weight": "700",
-                    "typography_text_transform": "uppercase",
-                    "typography_letter_spacing": {"unit": "px", "size": 1.5},
-                    "typography_line_height": {"unit": "em", "size": 1.2},
-                    "_margin": {
-                        "unit": "px",
-                        "top": "0",
-                        "right": "0",
-                        "bottom": "8",
-                        "left": "0",
-                        "isLinked": False
-                    }
-                },
-                "elements": []
-            },
             {
                 "id": gen_id(),
                 "elType": "widget",
@@ -481,16 +438,22 @@ def build_section_3_alternating_blocks():
         ]
     }
 
-    col2_image = {
+    block2_image = {
         "id": gen_id(),
         "elType": "container",
         "isInner": True,
         "settings": {
-            "width": {"unit": "%", "size": 48},
-            "width_mobile": {"unit": "%", "size": 100},
             "flex_direction": "column",
             "align_items": "center",
-            "justify_content": "center"
+            "justify_content": "center",
+            "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": True
+            }
         },
         "elements": [
             {
@@ -500,18 +463,18 @@ def build_section_3_alternating_blocks():
                 "isInner": False,
                 "settings": {
                     "image": {
-                        "url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop",
+                        "url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
                         "id": ""
                     },
-                    "image_size": "large",
+                    "image_size": "full",
                     "link_to": "file",
                     "open_lightbox": "yes",
                     "border_radius": {
                         "unit": "px",
-                        "top": "12",
-                        "right": "12",
-                        "bottom": "12",
-                        "left": "12",
+                        "top": "10",
+                        "right": "10",
+                        "bottom": "10",
+                        "left": "10",
                         "isLinked": True
                     },
                     "box_shadow_box_shadow_type": "yes",
@@ -520,7 +483,7 @@ def build_section_3_alternating_blocks():
                         "vertical": 10,
                         "blur": 25,
                         "spread": 0,
-                        "color": "rgba(0, 0, 0, 0.07)"
+                        "color": "rgba(0, 0, 0, 0.06)"
                     }
                 },
                 "elements": []
@@ -535,20 +498,17 @@ def build_section_3_alternating_blocks():
         "settings": {
             "content_width": "boxed",
             "width": {"unit": "px", "size": 1200},
-            "flex_direction": "row",
-            "flex_wrap": "wrap",
-            "justify_content": "space-between",
-            "align_items": "center",
+            "flex_direction": "column",
             "padding": {
                 "unit": "px",
                 "top": "20",
                 "right": "20",
-                "bottom": "40",
+                "bottom": "50",
                 "left": "20",
                 "isLinked": False
             }
         },
-        "elements": [col2_text, col2_image]
+        "elements": [block2_content, block2_image]
     }
 
     return [block_1, block_2]
@@ -688,10 +648,10 @@ def build_co_so_vat_chat_page_json():
     """Xây dựng gói Page Template hoàn chỉnh cho Trang Cơ Sở Vật Chất"""
     sec1 = build_section_1_banner()
     sec2 = build_section_2_intro()
-    alternating_blocks = build_section_3_alternating_blocks()
+    vertical_blocks = build_section_3_vertical_blocks()
     sec4 = build_section_4_carousel()
 
-    content = [sec1, sec2] + alternating_blocks + [sec4]
+    content = [sec1, sec2] + vertical_blocks + [sec4]
 
     return {
         "version": "0.4",
