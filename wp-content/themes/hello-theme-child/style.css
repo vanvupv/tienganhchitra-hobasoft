@@ -286,3 +286,20 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     width: 14px !important;
     height: 14px !important;
 }
+
+/* ==========================================================================
+   IMAGE CAROUSEL: ĐỒNG ĐỀU CHIỀU CAO HÌNH ẢNH (EQUAL HEIGHT SLIDES)
+   Tự động căn chỉnh tất cả các ảnh bằng nhau tăm tắp, không bị méo hình
+   ========================================================================== */
+.elementor-widget-image-carousel .swiper-slide-image {
+    height: 240px !important;
+    object-fit: cover !important;
+    width: 100% !important;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .elementor-widget-image-carousel .swiper-slide-image {
+        height: 200px !important;
+    }
+}
