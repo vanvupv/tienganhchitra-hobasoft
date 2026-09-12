@@ -227,19 +227,23 @@
       }
     },
     "loop_item_hoc_vien": {
-      "card_border": { "width": "1px", "color": "#28A745", "radius": "10px" },
+      "card_border": { "width": "1px", "color": "#E5E7EB", "radius": "12px" },
       "card_bg": "#FFFFFF",
       "image": {
-        "height_desktop": 210,
+        "height_desktop": 220,
         "height_mobile": 180,
         "object_fit": "cover",
         "link_to": "post"
       },
       "text_group": {
         "align": "center",
-        "padding": { "top": "14", "right": "15", "bottom": "0", "left": "15" },
-        "title": { "tag": "h3", "font_size": 17, "weight": "700", "color": "#000000" },
-        "score_excerpt": { "font_size": 14, "weight": "700", "color": "#E67E22", "words_limit": 14 }
+        "padding": { "top": "18", "right": "18", "bottom": "22", "left": "18" },
+        "elements_order": [
+          { "type": "title", "tag": "h3", "font_size": 18, "weight": "800", "line_height": 1.2, "color": "#000000" },
+          { "type": "field_thanh_tich", "meta_key": "thanh_tich", "fallback": "🏆 IELTS 8.0 Overall", "font_size": 15, "weight": "800", "line_height": 1.2, "color": "#1B8A38" },
+          { "type": "excerpt", "font_size": 13.5, "line_height": 1.5, "color": "#4B5563", "words_limit": 20 },
+          { "type": "button_cta", "text": "Xem chi tiết →", "font_size": 13, "weight": "700", "color": "#1B8A38", "bg_color": "#EAF7EE", "radius": "99px", "padding": "8px 22px" }
+        ]
       }
     },
     "loop_item_blog": {

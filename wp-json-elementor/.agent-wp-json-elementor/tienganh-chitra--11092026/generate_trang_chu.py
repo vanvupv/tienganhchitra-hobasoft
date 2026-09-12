@@ -769,10 +769,12 @@ def build_loop_item_giang_vien():
 
 def build_loop_item_hoc_vien():
     """
-    2. Template Loop Item: BẢNG VÀNG HỌC VIÊN XUẤT SẮC
-    - Ảnh chân dung học viên rạng rỡ: height 210px, object-fit cover
-    - Tên học viên H3 căn giữa
-    - Điểm số IELTS / Thành tích nổi bật màu Cam #ED9717 thu hút
+    2. Template Loop Item: BẢNG VÀNG HỌC VIÊN XUẤT SẮC (Chuẩn 100% theo ảnh mẫu thực tế)
+    - Ảnh chân dung học viên: height 220px, object-fit cover
+    - Tên học viên H3 căn giữa, font 18px bold 800, màu đen
+    - Trường THÀNH TÍCH (thanh_tich): "🏆 IELTS 8.0 Overall" màu xanh lá đậm #1B8A38, font 15px bold
+    - Đoạn trích dẫn câu chuyện học viên ngắn gọn, căn giữa
+    - Nút CTA dạng pill: "Xem chi tiết →" nền xanh nhạt pastel #EAF7EE, chữ xanh lá #1B8A38 bo tròn 99px
     """
     card = {
         "id": gen_id(),
@@ -781,11 +783,11 @@ def build_loop_item_hoc_vien():
         "settings": {
             "flex_direction": "column",
             "content_width": "full",
-            "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "18", "left": "0", "isLinked": False},
+            "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": True},
             "border_border": "solid",
             "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True},
-            "border_color": COLOR_PRIMARY_GREEN,
-            "border_radius": {"unit": "px", "top": "10", "right": "10", "bottom": "10", "left": "10", "isLinked": True},
+            "border_color": "#E5E7EB",
+            "border_radius": {"unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": True},
             "background_background": "classic",
             "background_color": "#FFFFFF",
             "overflow": "hidden"
@@ -799,7 +801,7 @@ def build_loop_item_hoc_vien():
                 "settings": {
                     "image_size": "medium_large",
                     "link_to": "post",
-                    "height": {"unit": "px", "size": 210},
+                    "height": {"unit": "px", "size": 220},
                     "height_mobile": {"unit": "px", "size": 180},
                     "object_fit": "cover"
                 },
@@ -812,9 +814,10 @@ def build_loop_item_hoc_vien():
                 "settings": {
                     "flex_direction": "column",
                     "align_items": "center",
-                    "padding": {"unit": "px", "top": "14", "right": "15", "bottom": "0", "left": "15", "isLinked": False}
+                    "padding": {"unit": "px", "top": "18", "right": "18", "bottom": "22", "left": "18", "isLinked": False}
                 },
                 "elements": [
+                    # 1. Tên học viên
                     {
                         "id": gen_id(),
                         "elType": "widget",
@@ -826,13 +829,38 @@ def build_loop_item_hoc_vien():
                             "title_color": COLOR_TEXT_BLACK,
                             "typography_typography": "custom",
                             "typography_font_family": "Plus Jakarta Sans",
-                            "typography_font_size": {"unit": "px", "size": 17},
-                            "typography_font_weight": "700",
+                            "typography_font_size": {"unit": "px", "size": 18},
+                            "typography_font_weight": "800",
                             "typography_line_height": {"unit": "em", "size": 1.2},
-                            "link_to": "post"
+                            "link_to": "post",
+                            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": False}
                         },
                         "elements": []
                     },
+                    # 2. Trường THÀNH TÍCH (Post Meta / ACF: thanh_tich)
+                    {
+                        "id": gen_id(),
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "isInner": False,
+                        "settings": {
+                            "title": "🏆 IELTS 8.0 Overall",
+                            "__dynamic__": {
+                                "title": "[elementor-tag id=\"\" name=\"post-custom-field\" settings=\"%7B%22key%22%3A%22thanh_tich%22%7D\"]"
+                            },
+                            "header_size": "h4",
+                            "align": "center",
+                            "title_color": "#1B8A38",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 15},
+                            "typography_font_weight": "800",
+                            "typography_line_height": {"unit": "em", "size": 1.2},
+                            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": False}
+                        },
+                        "elements": []
+                    },
+                    # 3. Trích dẫn câu chuyện học viên
                     {
                         "id": gen_id(),
                         "elType": "widget",
@@ -840,12 +868,33 @@ def build_loop_item_hoc_vien():
                         "isInner": False,
                         "settings": {
                             "align": "center",
-                            "text_color": COLOR_BTN_ORANGE,
+                            "text_color": "#4B5563",
                             "typography_typography": "custom",
                             "typography_font_family": "Plus Jakarta Sans",
-                            "typography_font_size": {"unit": "px", "size": 14},
-                            "typography_font_weight": "700",
-                            "excerpt_length": 14
+                            "typography_font_size": {"unit": "px", "size": 13.5},
+                            "typography_line_height": {"unit": "em", "size": 1.5},
+                            "excerpt_length": 20,
+                            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "18", "left": "0", "isLinked": False}
+                        },
+                        "elements": []
+                    },
+                    # 4. Nút CTA Xem chi tiết
+                    {
+                        "id": gen_id(),
+                        "elType": "widget",
+                        "widgetType": "button",
+                        "isInner": False,
+                        "settings": {
+                            "text": "Xem chi tiết →",
+                            "align": "center",
+                            "button_text_color": "#1B8A38",
+                            "background_color": "#EAF7EE",
+                            "border_radius": {"unit": "px", "top": "99", "right": "99", "bottom": "99", "left": "99", "isLinked": True},
+                            "padding": {"unit": "px", "top": "8", "right": "22", "bottom": "8", "left": "22", "isLinked": False},
+                            "typography_typography": "custom",
+                            "typography_font_family": "Plus Jakarta Sans",
+                            "typography_font_size": {"unit": "px", "size": 13},
+                            "typography_font_weight": "700"
                         },
                         "elements": []
                     }
