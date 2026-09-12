@@ -1,0 +1,805 @@
+{
+  "version": "0.4",
+  "title": "Trang Giới Thiệu - Tiếng Anh Chị Trà",
+  "type": "page",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "42c5a052",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "justify_content": "center",
+        "align_items": "center",
+        "min_height": {
+          "unit": "px",
+          "size": 430
+        },
+        "padding": {
+          "unit": "px",
+          "top": "110",
+          "right": "20",
+          "bottom": "140",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1600&auto=format&fit=crop",
+          "id": ""
+        },
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_repeat": "no-repeat",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0, 0, 0, 0.48)"
+      },
+      "elements": [
+        {
+          "id": "a4e6ea87",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "WHO WE ARE",
+            "header_size": "h5",
+            "align": "center",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 13
+            },
+            "typography_font_weight": "700",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+              "unit": "px",
+              "size": 2.5
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "12",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "ba31d1db",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "ABOUT US",
+            "header_size": "h1",
+            "align": "center",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 48
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 32
+            },
+            "typography_font_weight": "800",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            }
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "3f1a4446",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "justify_content": "space-between",
+        "gap": {
+          "unit": "px",
+          "size": 20,
+          "column": "20",
+          "row": "20",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "-65",
+          "right": "auto",
+          "bottom": "0",
+          "left": "auto",
+          "isLinked": false
+        },
+        "z_index": 10,
+        "position": "relative",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "20",
+          "bottom": "0",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "c681b40c",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "justify_content": "center",
+            "width": {
+              "unit": "%",
+              "size": 23.5
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 48
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#F0F0F0",
+            "border_radius": {
+              "unit": "px",
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8",
+              "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 10,
+              "blur": 25,
+              "spread": 0,
+              "color": "rgba(0, 0, 0, 0.06)"
+            },
+            "padding": {
+              "unit": "px",
+              "top": "28",
+              "right": "20",
+              "bottom": "24",
+              "left": "20",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "b6061979",
+              "elType": "widget",
+              "widgetType": "icon",
+              "isInner": false,
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-graduation-cap",
+                  "library": "fa-solid"
+                },
+                "view": "default",
+                "align": "center",
+                "primary_color": "#007BFF",
+                "size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "14",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "e150c7fa",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "22 +",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#111827",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "6",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "ca9bf609",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "Giáo viên bộ môn",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#6B7280",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4
+                }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "dd8124bc",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "justify_content": "center",
+            "width": {
+              "unit": "%",
+              "size": 23.5
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 48
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#F0F0F0",
+            "border_radius": {
+              "unit": "px",
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8",
+              "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 10,
+              "blur": 25,
+              "spread": 0,
+              "color": "rgba(0, 0, 0, 0.06)"
+            },
+            "padding": {
+              "unit": "px",
+              "top": "28",
+              "right": "20",
+              "bottom": "24",
+              "left": "20",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "930d99ce",
+              "elType": "widget",
+              "widgetType": "icon",
+              "isInner": false,
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-book-open",
+                  "library": "fa-solid"
+                },
+                "view": "default",
+                "align": "center",
+                "primary_color": "#C8102E",
+                "size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "14",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "64e3300c",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "17 +",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#111827",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "6",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "befa9233",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "Lớp học",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#6B7280",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4
+                }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "ed677f44",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "justify_content": "center",
+            "width": {
+              "unit": "%",
+              "size": 23.5
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 48
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#F0F0F0",
+            "border_radius": {
+              "unit": "px",
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8",
+              "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 10,
+              "blur": 25,
+              "spread": 0,
+              "color": "rgba(0, 0, 0, 0.06)"
+            },
+            "padding": {
+              "unit": "px",
+              "top": "28",
+              "right": "20",
+              "bottom": "24",
+              "left": "20",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "1a72f268",
+              "elType": "widget",
+              "widgetType": "icon",
+              "isInner": false,
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-award",
+                  "library": "fa-solid"
+                },
+                "view": "default",
+                "align": "center",
+                "primary_color": "#ED9717",
+                "size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "14",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "8cb9b6ff",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "18 +",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#111827",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "6",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "f254f7a0",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "Năm hoạt động",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#6B7280",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4
+                }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "290696c7",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "justify_content": "center",
+            "width": {
+              "unit": "%",
+              "size": 23.5
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 48
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "background_background": "classic",
+            "background_color": "#FFFFFF",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "#F0F0F0",
+            "border_radius": {
+              "unit": "px",
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8",
+              "isLinked": true
+            },
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {
+              "horizontal": 0,
+              "vertical": 10,
+              "blur": 25,
+              "spread": 0,
+              "color": "rgba(0, 0, 0, 0.06)"
+            },
+            "padding": {
+              "unit": "px",
+              "top": "28",
+              "right": "20",
+              "bottom": "24",
+              "left": "20",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "2a8d7111",
+              "elType": "widget",
+              "widgetType": "icon",
+              "isInner": false,
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-users",
+                  "library": "fa-solid"
+                },
+                "view": "default",
+                "align": "center",
+                "primary_color": "#28A745",
+                "size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "14",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "bd669806",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "21,875 +",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#111827",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 32
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "6",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "857f3b90",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "Học sinh đã tốt nghiệp",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#6B7280",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "500",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.4
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "563a1bea",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 960
+        },
+        "flex_direction": "column",
+        "align_items": "flex-start",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "a7e0307a",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "GIỚI THIỆU TIẾNG ANH CHỊ TRÀ",
+            "header_size": "h2",
+            "align": "left",
+            "title_color": "#111827",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 26
+            },
+            "typography_font_weight": "800",
+            "typography_text_transform": "uppercase",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "28",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "69113b82",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "isInner": false,
+          "settings": {
+            "editor": "<p>Khi giáo dục ngày càng phát triển, việc chọn cho con em mình môi trường học tập tốt luôn là điều trăn trở của các bậc phụ huynh. Ở trường, môn Tiếng Anh khiến nhiều học sinh gặp không ít khó khăn, bởi đa số các em chưa nắm vững kiến thức căn bản từ lớp trước, đặc biệt chưa có phương pháp tiếp cận tự nhiên và môi trường rèn luyện phản xạ giao tiếp phù hợp.</p><p>Được thành lập với sứ mệnh đồng hành và thắp sáng tình yêu ngôn ngữ, <strong>Tiếng Anh Chị Trà</strong> quy tụ tập thể giảng viên giàu kinh nghiệm, chuyên môn sư phạm vững vàng cùng chương trình đào tạo chuẩn quốc tế. Chúng tôi giúp học sinh củng cố các kiến thức cơ bản và dần dần tiếp cận với các kiến thức nâng cao, rèn khả năng tư duy ngôn ngữ độc lập, tự tin làm chủ 4 kỹ năng Nghe - Nói - Đọc - Viết để đạt kết quả cao trong các kỳ thi ở trường cũng như các kỳ thi chứng chỉ Cambridge, IELTS.</p><p>Nhằm đảm bảo chất lượng dạy và học tốt nhất, trung tâm duy trì <strong>sĩ số vàng không quá 15 – 20 học sinh</strong> cùng một giảng viên chính và một trợ giảng theo sát từng em. Phối hợp chặt chẽ với gia đình, chúng tôi luôn chủ động liên hệ, thông tin đến phụ huynh về tiến độ học tập, tổ chức các bài kiểm tra định kỳ để đánh giá năng lực thực tế và báo cáo kết quả chi tiết bằng <em>Phiếu báo học tập</em>. Phụ huynh hoàn toàn an tâm và thấy được sự tiến bộ rõ rệt của con qua từng khóa học.</p><p><strong>Vậy Tiếng Anh Chị Trà có điểm gì đặc biệt?</strong> Không chỉ là nơi truyền đạt kiến thức, trung tâm tạo dựng môi trường học tập tương tác, thân thiện, tràn đầy cảm hứng với cơ sở vật chất hiện đại, giúp các em xóa bỏ rào cản sợ hãi tiếng Anh, tự tin mở rộng thế giới và sẵn sàng bước ra toàn cầu.</p>",
+            "align": "left",
+            "text_color": "#4B5563",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 16
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.75
+            }
+          },
+          "elements": []
+        }
+      ]
+    }
+  ]
+}
