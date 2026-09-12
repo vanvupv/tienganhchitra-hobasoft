@@ -1,0 +1,753 @@
+{
+  "version": "0.4",
+  "title": "Trang Cơ Sở Vật Chất - Tiếng Anh Chị Trà",
+  "type": "page",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "b0ecccaf",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "justify_content": "center",
+        "align_items": "center",
+        "min_height": {
+          "unit": "px",
+          "size": 400
+        },
+        "padding": {
+          "unit": "px",
+          "top": "90",
+          "right": "20",
+          "bottom": "90",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1600&auto=format&fit=crop",
+          "id": ""
+        },
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_repeat": "no-repeat",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0, 0, 0, 0.48)"
+      },
+      "elements": [
+        {
+          "id": "9742ff82",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "MODERN FACILITIES",
+            "header_size": "h5",
+            "align": "center",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 13
+            },
+            "typography_font_weight": "700",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+              "unit": "px",
+              "size": 2.5
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "12",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "1c19744d",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "CƠ SỞ VẬT CHẤT TIÊU CHUẨN",
+            "header_size": "h1",
+            "align": "center",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 44
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 30
+            },
+            "typography_font_weight": "800",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            }
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "be4117d5",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 960
+        },
+        "flex_direction": "column",
+        "align_items": "center",
+        "justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "4012e693",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "MÔI TRƯỜNG HỌC TẬP LÝ TƯỞNG",
+            "header_size": "span",
+            "align": "center",
+            "title_color": "#28A745",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 14
+            },
+            "typography_font_weight": "700",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+              "unit": "px",
+              "size": 1.5
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "10",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "7e8c5362",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "KHÔNG GIAN TRUYỀN CẢM HỨNG - CHUẨN HÓA QUỐC TẾ",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#111827",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 28
+            },
+            "typography_font_weight": "800",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "16",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "9298cc46",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "isInner": false,
+          "settings": {
+            "editor": "<p style='text-align: center;'>Bên cạnh đội ngũ giảng viên tâm huyết và giáo trình chuẩn hóa, Tiếng Anh Chị Trà luôn chú trọng đầu tư hệ thống cơ sở vật chất khang trang, hiện đại bậc nhất. Từng góc học tập, từng chiếc bàn chiếc ghế đều được thiết kế tỉ mỉ nhằm mang lại cho học sinh môi trường học tập an toàn, thân thiện, kích thích tối đa sự sáng tạo và niềm hứng khởi trong mỗi buổi học.</p>",
+            "align": "center",
+            "text_color": "#4B5563",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 16
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.7
+            }
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "282f7629",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "justify_content": "space-between",
+        "align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "30",
+          "right": "20",
+          "bottom": "40",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "902e9c90",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 48
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "align_items": "center",
+            "justify_content": "center"
+          },
+          "elements": [
+            {
+              "id": "3c8eae86",
+              "elType": "widget",
+              "widgetType": "image",
+              "isInner": false,
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop",
+                  "id": ""
+                },
+                "image_size": "large",
+                "link_to": "file",
+                "open_lightbox": "yes",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "12",
+                  "bottom": "12",
+                  "left": "12",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 10,
+                  "blur": 25,
+                  "spread": 0,
+                  "color": "rgba(0, 0, 0, 0.07)"
+                }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "8bdc3fe9",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 48
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "align_items": "flex-start",
+            "justify_content": "center"
+          },
+          "elements": [
+            {
+              "id": "cd86ad24",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "KHÔNG GIAN TIỆN NGHI",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "#ED9717",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "typography_font_weight": "700",
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.5
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "8",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "a5c6da06",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "PHÒNG HỌC THOÁNG MÁT & ÁNH SÁNG CHUẨN HỌC ĐƯỜNG",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#111827",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "14",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "cc8bc1d1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "isInner": false,
+              "settings": {
+                "editor": "<p>100% phòng học tại trung tâm đều được bố trí hệ thống cửa sổ đón ánh sáng tự nhiên kết hợp dàn đèn LED chống cận thị chuẩn học đường. Hệ thống điều hòa hai chiều và máy lọc không khí đảm bảo môi trường luôn thoáng mát, bảo vệ sức khỏe cho học sinh trong suốt buổi học.</p><p>Bàn ghế được thiết kế công thái học linh hoạt theo từng lứa tuổi, dễ dàng di chuyển và sắp xếp theo cụm chữ U hoặc theo nhóm, tạo điều kiện tối đa cho các hoạt động thảo luận và thuyết trình sôi nổi.</p>",
+                "align": "left",
+                "text_color": "#4B5563",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e0bc3ede",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "justify_content": "space-between",
+        "align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "40",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "d212fcc5",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 48
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "align_items": "flex-start",
+            "justify_content": "center"
+          },
+          "elements": [
+            {
+              "id": "eb8a23e7",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "CÔNG NGHỆ HIỆN ĐẠI",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "#007BFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "typography_font_weight": "700",
+                "typography_text_transform": "uppercase",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1.5
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "8",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "8d7977b8",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "TRANG THIẾT BỊ HỌC TẬP VÀ TRUYỀN THÔNG TƯƠNG TÁC",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#111827",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "14",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "b8daba58",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "isInner": false,
+              "settings": {
+                "editor": "<p>Các phòng học đều được tích hợp máy chiếu siêu nét và màn hình tương tác thông minh, phục vụ các bài giảng visual sống động và video thực tế. Hệ thống âm thanh vòm chất lượng cao giúp học sinh luyện phát âm chuẩn ngữ điệu bản ngữ và rèn luyện phản xạ nghe tự nhiên.</p><p>Đặc biệt, trung tâm trang bị góc thư viện sách tiếng Anh phong phú với hàng trăm đầu sách truyện tranh, sách khoa học Cambridge, Oxford và khu vực tự học thư giãn giúp các em thỏa sức khám phá tri thức ngoài giờ lên lớp.</p>",
+                "align": "left",
+                "text_color": "#4B5563",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7
+                }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "058adbe0",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 48
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "align_items": "center",
+            "justify_content": "center"
+          },
+          "elements": [
+            {
+              "id": "f93a834c",
+              "elType": "widget",
+              "widgetType": "image",
+              "isInner": false,
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop",
+                  "id": ""
+                },
+                "image_size": "large",
+                "link_to": "file",
+                "open_lightbox": "yes",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "12",
+                  "bottom": "12",
+                  "left": "12",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 10,
+                  "blur": 25,
+                  "spread": 0,
+                  "color": "rgba(0, 0, 0, 0.07)"
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cf1e28e2",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "flex_direction": "column",
+        "align_items": "center",
+        "justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "30",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "98e91050",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "HÌNH ẢNH THỰC TẾ TẠI TRUNG TÂM",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#111827",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 26
+            },
+            "typography_font_weight": "800",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "8",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "3428e5be",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "(Nhấp vào hình ảnh bất kỳ để phóng to toàn màn hình)",
+            "header_size": "span",
+            "align": "center",
+            "title_color": "#6B7280",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 14
+            },
+            "typography_font_style": "italic",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.4
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "28",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "67aa133a",
+          "elType": "widget",
+          "widgetType": "image-carousel",
+          "isInner": false,
+          "settings": {
+            "carousel": [
+              {
+                "id": "",
+                "url": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1000&auto=format&fit=crop"
+              },
+              {
+                "id": "",
+                "url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop"
+              },
+              {
+                "id": "",
+                "url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop"
+              },
+              {
+                "id": "",
+                "url": "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1000&auto=format&fit=crop"
+              },
+              {
+                "id": "",
+                "url": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1000&auto=format&fit=crop"
+              },
+              {
+                "id": "",
+                "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000&auto=format&fit=crop"
+              }
+            ],
+            "thumbnail_size": "large",
+            "slides_to_show": "3",
+            "slides_to_show_tablet": "2",
+            "slides_to_show_mobile": "1",
+            "slides_to_scroll": "1",
+            "image_stretch": "yes",
+            "navigation": "both",
+            "autoplay": "yes",
+            "autoplay_speed": 3500,
+            "pause_on_hover": "yes",
+            "infinite": "yes",
+            "link_to": "file",
+            "open_lightbox": "yes",
+            "arrows_color": "#ED9717",
+            "dots_color": "#ED9717",
+            "image_spacing_custom": {
+              "unit": "px",
+              "size": 20
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "10",
+              "right": "10",
+              "bottom": "10",
+              "left": "10",
+              "isLinked": true
+            }
+          },
+          "elements": []
+        }
+      ]
+    }
+  ]
+}
