@@ -39,11 +39,12 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     display: none !important;
 }
 
-/* Dành khoảng đệm an toàn 75px ở đáy container Swiper cho 2 nút Next/Prev */
+/* Dành khoảng đệm an toàn 75px ở đáy cho 2 nút Next/Prev, và overflow: hidden để chỉ hiển thị đúng 3 khối */
 .phongvt-feedback .elementor-main-swiper {
+    padding-top: 15px !important;
     padding-bottom: 75px !important;
     position: relative !important;
-    overflow: visible !important;
+    overflow: hidden !important;
 }
 
 /* Triệt tiêu toàn bộ màu nền/viền chữ nhật mặc định của Elementor */
