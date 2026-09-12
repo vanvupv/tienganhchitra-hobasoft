@@ -5,7 +5,7 @@
   "page_settings": [],
   "content": [
     {
-      "id": "02ea0909",
+      "id": "bf3a40ee",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -51,7 +51,7 @@
       },
       "elements": [
         {
-          "id": "d7f257db",
+          "id": "c472e1f6",
           "elType": "widget",
           "widgetType": "theme-post-featured-image",
           "isInner": false,
@@ -80,7 +80,7 @@
           "elements": []
         },
         {
-          "id": "68dbb999",
+          "id": "57b7b490",
           "elType": "widget",
           "widgetType": "theme-post-title",
           "isInner": false,
@@ -97,7 +97,7 @@
             "typography_font_weight": "800",
             "typography_line_height": {
               "unit": "em",
-              "size": 1.3
+              "size": 1.2
             },
             "link_to": "post",
             "_margin": {
@@ -112,7 +112,7 @@
           "elements": []
         },
         {
-          "id": "ed09effe",
+          "id": "c31d19b5",
           "elType": "widget",
           "widgetType": "theme-post-excerpt",
           "isInner": false,
@@ -142,7 +142,7 @@
           "elements": []
         },
         {
-          "id": "ae408d67",
+          "id": "e47e2f09",
           "elType": "widget",
           "widgetType": "button",
           "isInner": false,

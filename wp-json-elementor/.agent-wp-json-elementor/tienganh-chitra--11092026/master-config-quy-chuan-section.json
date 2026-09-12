@@ -17,23 +17,25 @@
     },
     "typography": {
       "font_family": "Plus Jakarta Sans",
+      "default_line_height": { "size": 1.2, "unit": "em" },
       "heading_section_h2": {
-        "desktop": { "font_size": 28, "unit": "px", "font_weight": "800", "line_height": 1.3 },
-        "tablet": { "font_size": 24, "unit": "px", "font_weight": "800", "line_height": 1.3 },
-        "mobile": { "font_size": 21, "unit": "px", "font_weight": "800", "line_height": 1.35 }
+        "desktop": { "font_size": 28, "unit": "px", "font_weight": "800", "line_height": 1.2 },
+        "tablet": { "font_size": 24, "unit": "px", "font_weight": "800", "line_height": 1.2 },
+        "mobile": { "font_size": 21, "unit": "px", "font_weight": "800", "line_height": 1.2 }
       },
       "heading_card_h3": {
-        "desktop": { "font_size": 18, "unit": "px", "font_weight": "700", "line_height": 1.35 },
-        "tablet": { "font_size": 17, "unit": "px", "font_weight": "700", "line_height": 1.35 },
-        "mobile": { "font_size": 16, "unit": "px", "font_weight": "700", "line_height": 1.35 }
+        "desktop": { "font_size": 18, "unit": "px", "font_weight": "700", "line_height": 1.2 },
+        "tablet": { "font_size": 17, "unit": "px", "font_weight": "700", "line_height": 1.2 },
+        "mobile": { "font_size": 16, "unit": "px", "font_weight": "700", "line_height": 1.2 }
       },
       "body_text": {
-        "desktop": { "font_size": 15, "unit": "px", "line_height": 1.6 },
-        "mobile": { "font_size": 14, "unit": "px", "line_height": 1.6 }
+        "desktop": { "font_size": 15, "unit": "px", "line_height": 1.5 },
+        "mobile": { "font_size": 14, "unit": "px", "line_height": 1.5 }
       },
       "meta_date": {
         "font_size": 13,
         "unit": "px",
+        "line_height": 1.2,
         "color": "#9CA3AF",
         "show_icon": "none"
       }

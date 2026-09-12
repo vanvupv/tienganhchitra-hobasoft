@@ -66,7 +66,7 @@ def create_heading(title, size="h2", align="center", color=COLOR_TEXT_BLACK, fon
             "typography_font_family": "Plus Jakarta Sans",
             "typography_font_size": {"unit": "px", "size": font_size},
             "typography_font_weight": str(font_weight),
-            "typography_line_height": {"unit": "em", "size": 1.3}
+            "typography_line_height": {"unit": "em", "size": 1.2}
         },
         "elements": []
     }
@@ -380,7 +380,7 @@ def create_popout_course_card(bg_color, img_url, title, desc, link="#"):
                             "typography_font_size": {"unit": "px", "size": 22},
                             "typography_font_size_mobile": {"unit": "px", "size": 20},
                             "typography_font_weight": "800",
-                            "typography_line_height": {"unit": "em", "size": 1.3},
+                            "typography_line_height": {"unit": "em", "size": 1.2},
                             "_margin": {
                                 "unit": "px",
                                 "top": "0",
@@ -734,6 +734,7 @@ def build_loop_item_giang_vien():
                             "typography_font_family": "Plus Jakarta Sans",
                             "typography_font_size": {"unit": "px", "size": 18},
                             "typography_font_weight": "700",
+                            "typography_line_height": {"unit": "em", "size": 1.2},
                             "link_to": "post"
                         },
                         "elements": []
@@ -827,6 +828,7 @@ def build_loop_item_hoc_vien():
                             "typography_font_family": "Plus Jakarta Sans",
                             "typography_font_size": {"unit": "px", "size": 17},
                             "typography_font_weight": "700",
+                            "typography_line_height": {"unit": "em", "size": 1.2},
                             "link_to": "post"
                         },
                         "elements": []
@@ -923,8 +925,8 @@ def build_loop_item_blog():
                             "typography_typography": "custom",
                             "typography_font_family": "Plus Jakarta Sans",
                             "typography_font_size": {"unit": "px", "size": 18},
-                            "typography_font_weight": "700",
-                            "typography_line_height": {"unit": "em", "size": 1.35},
+                            "typography_font_weight": "800",
+                            "typography_line_height": {"unit": "em", "size": 1.2},
                             "link_to": "post",
                             "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "6", "left": "0", "isLinked": False}
                         },
@@ -1047,7 +1049,7 @@ def build_loop_item_khoa_hoc_3d():
                     "typography_font_family": "Plus Jakarta Sans",
                     "typography_font_size": {"unit": "px", "size": 22},
                     "typography_font_weight": "800",
-                    "typography_line_height": {"unit": "em", "size": 1.3},
+                    "typography_line_height": {"unit": "em", "size": 1.2},
                     "link_to": "post",
                     "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": False}
                 },
