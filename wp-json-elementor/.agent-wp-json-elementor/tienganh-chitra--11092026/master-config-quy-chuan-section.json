@@ -3,6 +3,9 @@
   "project_name": "Tiếng Anh Chị Trà",
   "version": "1.0.0",
   "created_at": "2026-09-11",
+  "completion_time_hours": 6,
+  "completion_rate": "80%",
+  "status_note": "Hoàn thành Trang chủ giai đoạn 1 (80% / 100%), còn một số lỗi nhỏ cần tiếp tục tinh chỉnh tối ưu",
   "engine": "Elementor Pro 3.35.1 (Flexbox Container & Loop Builder)",
   "design_system": {
     "brand_colors": {
