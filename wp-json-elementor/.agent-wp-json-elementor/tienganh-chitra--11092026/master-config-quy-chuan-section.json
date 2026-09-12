@@ -146,11 +146,28 @@
     {
       "section_id": "sec_04_danh_gia",
       "name": "Phụ Huynh & Học Viên Nói Gì",
+      "css_class": "phongvt-feedback",
+      "background_gradient": { "start": "#BBF6FF", "end": "#FFFFFF", "angle": 180 },
       "heading": {
         "title": "Phụ huynh & Học viên nói gì",
-        "color": "#000000",
-        "divider_color": "#E67E22",
-        "divider_width": 70
+        "color": "#0D3B66",
+        "font_size": 30,
+        "font_weight": "800",
+        "divider": "none"
+      },
+      "card_style": {
+        "background_type": "pseudo_before_svg",
+        "border_color": "#C8102E",
+        "inner_bg": "#FFFFFF",
+        "avatar_size": 95,
+        "avatar_border": "5px solid #FFFFFF",
+        "avatar_active_border": "4px solid #C8102E",
+        "focus_scale": { "active": 1.02, "inactive": 0.86, "inactive_opacity": 0.65 },
+        "navigation_buttons": {
+          "position": "bottom_center",
+          "bg_color": "#C8102E",
+          "outer_dashed_border": "1.5px dashed #C8102E"
+        }
       },
       "widget": {
         "widget_type": "reviews",
@@ -158,8 +175,7 @@
         "slides_to_scroll": "1",
         "autoplay": "yes",
         "autoplay_speed": 4000,
-        "star_color": "#E67E22",
-        "arrows_color": "#E67E22"
+        "star_color": "#F59E0B"
       }
     },
     {

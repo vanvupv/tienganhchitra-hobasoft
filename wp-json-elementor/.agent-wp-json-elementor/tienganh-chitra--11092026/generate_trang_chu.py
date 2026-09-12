@@ -567,41 +567,112 @@ def build_homepage_json():
     sec3["elements"].append(courses_row)
 
     # -------------------------------------------------------------
-    # SECTION 4: PHỤ HUYNH & HỌC VIÊN NÓI GÌ - KHÔNG MÀU NỀN (WIDGET REVIEWS)
+    # SECTION 4: PHỤ HUYNH & HỌC VIÊN NÓI GÌ - CHUẨN MẪU SLA (SVG ::before CARD)
     # -------------------------------------------------------------
     sec4 = create_container(
         direction="column",
         content_width="boxed",
         width=1200,
-        padding_top="45",
-        padding_bottom="45",
+        padding_top="60",
+        padding_bottom="70",
         padding_left="20",
-        padding_right="20"
+        padding_right="20",
+        bg_gradient={"color": "#BBF6FF", "color_b": "#FFFFFF", "type": "linear", "angle": 180}
     )
-    sec4["elements"].append(create_heading("Phụ huynh & Học viên nói gì", size="h2", align="center", color=COLOR_TEXT_BLACK, font_size=30, font_weight="800"))
-    sec4["elements"].append(create_divider(color=COLOR_BTN_ORANGE, width=70))
+    sec4["settings"]["_css_classes"] = "phongvt-feedback"
+
+    feedback_custom_css = (
+        "selector {\n"
+        "  background: linear-gradient(180deg, #bbf6ff 0%, #ffffff 100%) !important;\n"
+        "}\n"
+        "selector .elementor-widget-divider {\n"
+        "  display: none !important;\n"
+        "}\n"
+        "selector .testimonial-box,\n"
+        "selector .elementor-testimonial {\n"
+        "  position: relative;\n"
+        "  padding: 2.5rem 1.8rem 2.8rem 1.8rem !important;\n"
+        "  background: none !important;\n"
+        "  border: none !important;\n"
+        "  box-shadow: none !important;\n"
+        "  text-align: center;\n"
+        "  z-index: 1;\n"
+        "  display: flex;\n"
+        "  flex-direction: column;\n"
+        "  align-items: center;\n"
+        "  min-height: 380px;\n"
+        "}\n"
+        "selector .testimonial-box::before,\n"
+        "selector .elementor-testimonial::before {\n"
+        "  content: \"\";\n"
+        "  position: absolute;\n"
+        "  bottom: 8px;\n"
+        "  left: 0;\n"
+        "  width: 100%;\n"
+        "  height: 78%;\n"
+        "  pointer-events: none;\n"
+        "  background: url('data:image/svg+xml;utf8,<svg viewBox=\"0 0 1448 922\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"none\"><path d=\"M1356.34 22.1114C924.251 -9.03098 401.784 -5.26023 96.2822 20.8442C61.6385 23.8045 33.5749 49.9675 28.3935 84.3492C-16.1595 379.988 -1.77575 665.634 27.1422 840.09C32.7627 873.997 61.2945 898.845 95.574 901.339C522.111 932.373 968.22 924.218 1352.58 900.702C1387.87 898.543 1417.19 872.807 1422.12 837.791C1448.48 650.255 1462.77 303.276 1423.8 81.3584C1417.99 48.2734 1389.85 24.5262 1356.34 22.1114Z\" fill=\"%23C8102E\"/><path d=\"M1310.14 59.809C923.284 25.3291 446.236 39.496 145.516 60.6607C103.269 63.6341 68.6712 95.1845 62.9364 137.146C29.4612 382.086 38.6299 640.686 61.5967 794.428C67.5946 834.579 101.465 863.647 141.968 866.411C536.13 893.304 947.111 886.341 1303.44 865.744C1345.37 863.32 1380.35 832.847 1385.95 791.215C1408.9 620.527 1420.5 326.102 1387.56 129.398C1381.14 91.0372 1348.89 63.2619 1310.14 59.809Z\" fill=\"white\"/></svg>') no-repeat center / 100% 100%;\n"
+        "  z-index: -1;\n"
+        "}\n"
+        "selector .elementor-testimonial__header { display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 8px; width: 100%; }\n"
+        "selector .elementor-testimonial__image, selector .testimonial-image { width: 95px !important; height: 95px !important; margin: 0 auto 12px auto !important; position: relative; z-index: 2; }\n"
+        "selector .elementor-testimonial__image img, selector .testimonial-image img { width: 95px !important; height: 95px !important; border-radius: 50% !important; border: 5px solid #ffffff !important; box-shadow: 0 4px 14px rgba(0,0,0,0.12) !important; object-fit: cover !important; padding: 0 !important; }\n"
+        "selector .swiper-slide-active .elementor-testimonial__image img { border: 4px solid #C8102E !important; box-shadow: 0 6px 18px rgba(200, 16, 46, 0.28) !important; }\n"
+        "selector .elementor-testimonial__cite { display: flex !important; flex-direction: column !important; align-items: center !important; text-align: center !important; }\n"
+        "selector .elementor-testimonial__name, selector .testimonial-name { font-size: 20px !important; font-weight: 800 !important; color: #111827 !important; margin-bottom: 2px !important; text-align: center !important; }\n"
+        "selector .elementor-testimonial__title, selector .testimonial-company { font-size: 14px !important; color: #6B7280 !important; margin-bottom: 6px !important; font-weight: 500 !important; text-align: center !important; }\n"
+        "selector .elementor-testimonial__icon { display: none !important; }\n"
+        "selector .elementor-testimonial__rating, selector .star-rating { text-align: center !important; margin: 4px 0 12px 0 !important; color: #F59E0B !important; font-size: 22px !important; }\n"
+        "selector .elementor-testimonial__content, selector .testimonial-text { font-size: 14.5px !important; line-height: 1.6 !important; color: #374151 !important; font-style: italic !important; text-align: center !important; padding: 0 10px !important; }\n"
+        "selector .swiper-slide:not(.swiper-slide-active) { opacity: 0.65 !important; transform: scale(0.86) !important; transition: all 0.4s ease !important; }\n"
+        "selector .swiper-slide-active { opacity: 1 !important; transform: scale(1.02) !important; z-index: 5 !important; transition: all 0.4s ease !important; }\n"
+        "selector .elementor-swiper-button-prev, selector .elementor-swiper-button-next {\n"
+        "  top: auto !important; bottom: 5px !important; width: 42px !important; height: 42px !important;\n"
+        "  background-color: #C8102E !important; border-radius: 50% !important; color: #ffffff !important;\n"
+        "  display: flex !important; align-items: center !important; justify-content: center !important;\n"
+        "  cursor: pointer !important; opacity: 1 !important; border: none !important; box-shadow: 0 4px 10px rgba(200, 16, 46, 0.25) !important;\n"
+        "  position: absolute !important; z-index: 10 !important;\n"
+        "}\n"
+        "selector .elementor-swiper-button-prev::after, selector .elementor-swiper-button-next::after {\n"
+        "  content: \"\" !important; position: absolute !important; top: -5px !important; left: -5px !important; right: -5px !important; bottom: -5px !important;\n"
+        "  border-radius: 50% !important; border: 1.5px dashed #C8102E !important; pointer-events: none !important;\n"
+        "}\n"
+        "selector .elementor-swiper-button-prev { left: calc(50% - 48px) !important; right: auto !important; }\n"
+        "selector .elementor-swiper-button-next { left: calc(50% + 6px) !important; right: auto !important; }\n"
+        "selector .elementor-swiper-button-prev svg, selector .elementor-swiper-button-next svg { fill: #ffffff !important; width: 14px !important; height: 14px !important; }\n"
+    )
+    sec4["settings"]["custom_css"] = feedback_custom_css
+
+    sec4["elements"].append(create_heading("Phụ huynh & Học viên nói gì", size="h2", align="center", color="#0D3B66", font_size=30, font_weight="800"))
 
     reviews_slides = [
-        {
-            "name": "Chị Lê Thu Hà",
-            "job": "Kinh doanh tự do",
-            "rating": 5,
-            "quote": "“Tôi lựa chọn Tiếng Anh Chị Trà vì chương trình học bài bản và môi trường tương tác rất hiện đại. Con tôi từ rụt rè nay rất hào hứng đi học và tự tin sử dụng tiếng Anh mỗi ngày.”",
-            "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop"
-        },
-        {
-            "name": "Anh Trần Minh Hoàng",
-            "job": "Kỹ sư",
-            "rating": 5,
-            "quote": "“Trung tâm có lộ trình học khoa học, giáo viên trách nhiệm và báo cáo kết quả học tập minh bạch. Con tôi học tập nghiêm túc hơn và có sự tiến bộ rõ rệt qua từng tháng.”",
-            "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
-        },
         {
             "name": "Anh Phạm Quang Huy",
             "job": "Giáo viên",
             "rating": 5,
             "quote": "“Là người làm trong ngành giáo dục, tôi đánh giá cao phương pháp giảng dạy tại đây. Nội dung học phù hợp, dễ tiếp thu và theo sát năng lực thực tế của từng học viên.”",
-            "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+            "avatar": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/ps3-150x150.webp"
+        },
+        {
+            "name": "Chị Tuyết Thanh",
+            "job": "Food Analyst",
+            "rating": 5,
+            "quote": "“Sau khi cho con học tại SLA, tôi thấy con tiến bộ rõ rệt về khả năng giao tiếp tiếng Anh. Giáo viên tận tâm, thường xuyên trao đổi với phụ huynh nên tôi rất yên tâm.”",
+            "avatar": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/ps1-150x150.webp"
+        },
+        {
+            "name": "Chị Lê Thu Hà",
+            "job": "Kinh doanh tự do",
+            "rating": 5,
+            "quote": "“Tôi lựa chọn Tiếng Anh Chị Trà vì chương trình học bài bản và môi trường học hiện đại. Con tôi rất hào hứng đi học và tự tin sử dụng tiếng Anh hơn.”",
+            "avatar": "https://hocvienngoaingusla.edu.vn/wp-content/uploads/2025/05/ps3-150x150.webp"
+        },
+        {
+            "name": "Anh Trần Minh Hoàng",
+            "job": "Kỹ sư công nghệ",
+            "rating": 5,
+            "quote": "“Trung tâm có lộ trình học khoa học, giáo viên trách nhiệm và báo cáo kết quả minh bạch. Con tôi học tập nghiêm túc và có sự tiến bộ rõ rệt qua từng tháng.”",
+            "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
         }
     ]
 
