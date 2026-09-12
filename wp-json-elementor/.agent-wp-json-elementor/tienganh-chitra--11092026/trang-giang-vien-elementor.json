@@ -1,0 +1,305 @@
+{
+  "version": "0.4",
+  "title": "Trang Giảng Viên - Tiếng Anh Chị Trà",
+  "type": "page",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "0655d34e",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "justify_content": "center",
+        "align_items": "center",
+        "min_height": {
+          "unit": "px",
+          "size": 400
+        },
+        "padding": {
+          "unit": "px",
+          "top": "90",
+          "right": "20",
+          "bottom": "90",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1600&auto=format&fit=crop",
+          "id": ""
+        },
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_repeat": "no-repeat",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0, 0, 0, 0.48)"
+      },
+      "elements": [
+        {
+          "id": "dd6bbf30",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "OUR TEACHERS",
+            "header_size": "h5",
+            "align": "center",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 13
+            },
+            "typography_font_weight": "700",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+              "unit": "px",
+              "size": 2.5
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "12",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "e71f4ff0",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "ĐỘI NGŨ GIẢNG VIÊN TÂM HUYẾT",
+            "header_size": "h1",
+            "align": "center",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 44
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 30
+            },
+            "typography_font_weight": "800",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            }
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "307e7a2e",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 960
+        },
+        "flex_direction": "column",
+        "align_items": "center",
+        "justify_content": "center",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "20",
+          "bottom": "25",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "bf49a022",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "CHUYÊN MÔN & TẬN TÂM",
+            "header_size": "span",
+            "align": "center",
+            "title_color": "#28A745",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 14
+            },
+            "typography_font_weight": "700",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+              "unit": "px",
+              "size": 1.5
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "10",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "f9e20360",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "NGƯỜI THẦY TRUYỀN CẢM HỨNG VÀ ĐỒNG HÀNH CÙNG CON",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#111827",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 28
+            },
+            "typography_font_weight": "800",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "16",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "729df258",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "isInner": false,
+          "settings": {
+            "editor": "<p style='text-align: center;'>Tại Tiếng Anh Chị Trà, mỗi thầy cô không chỉ là người truyền thụ tri thức mà còn là người bạn đồng hành tin cậy, thấu hiểu tâm lý lứa tuổi và khơi gợi niềm đam mê tiếng Anh tự nhiên trong mỗi học sinh. Đội ngũ giáo viên 100% đạt chuẩn sư phạm quốc tế (IELTS 8.0+, TESOL, CELTA) với phương pháp giảng dạy tương tác sinh động, luôn theo sát tiến độ từng em để phát huy tối đa tiềm năng ngôn ngữ.</p>",
+            "align": "center",
+            "text_color": "#4B5563",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 16
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.7
+            }
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "c57c27a4",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "80",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "7e304ebb",
+          "elType": "widget",
+          "widgetType": "posts",
+          "isInner": false,
+          "settings": {
+            "_skin": "classic",
+            "posts_post_type": "giang_vien",
+            "classic_columns": "4",
+            "classic_columns_tablet": "2",
+            "classic_columns_mobile": "1",
+            "classic_posts_per_page": "8",
+            "classic_show_image": "yes",
+            "classic_image_size": "medium_large",
+            "classic_show_title": "yes",
+            "classic_title_color": "#111827",
+            "classic_title_tag": "h3",
+            "classic_show_excerpt": "yes",
+            "classic_excerpt_color": "#4B5563",
+            "classic_excerpt_length": 18,
+            "classic_show_read_more": "yes",
+            "classic_read_more_text": "Xem hồ sơ →",
+            "classic_read_more_color": "#ED9717",
+            "classic_box_bg_color": "#FFFFFF",
+            "classic_box_border_color": "#28A745",
+            "classic_box_border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "classic_box_border_radius": {
+              "unit": "px",
+              "top": "10",
+              "right": "10",
+              "bottom": "10",
+              "left": "10",
+              "isLinked": true
+            },
+            "classic_content_padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "18",
+              "left": "16",
+              "isLinked": false
+            },
+            "pagination_type": "numbers",
+            "pagination_page_limit": "5",
+            "pagination_numbers_spacing": {
+              "unit": "px",
+              "size": 10
+            }
+          },
+          "elements": []
+        }
+      ]
+    }
+  ]
+}
