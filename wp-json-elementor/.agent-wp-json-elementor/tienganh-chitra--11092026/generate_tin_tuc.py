@@ -110,211 +110,100 @@ def build_section_1_banner():
 
 def build_section_2_featured_post():
     """
-    SECTION 2: KHỐI BÀI VIẾT NỔI BẬT (Featured Post)
+    SECTION 2: KHỐI BÀI VIẾT NỔI BẬT LẤY ĐỘNG 100% (Dynamic Featured Post)
     - Boxed 1200px
-    - Thẻ ngang: Cột trái ảnh lớn (45%), Cột phải nội dung thông báo nổi bật (55%)
+    - Widget 'posts' (Skin: cards):
+      * Lấy động 1 bài mới nhất (posts_per_page: 1)
+      * Ảnh nằm bên trái, nội dung bên phải (image_position: left)
+      * Tự động kéo Featured Image, Title, Date, Author, Excerpt và Link the_permalink()
+      * Tự động lấy Badge danh mục (Category)
     """
-    featured_img_col = {
-        "id": gen_id(),
-        "elType": "container",
-        "isInner": True,
-        "settings": {
-            "width": {"unit": "%", "size": 45},
-            "width_mobile": {"unit": "%", "size": 100},
-            "flex_direction": "column",
-            "align_items": "center",
-            "justify_content": "center"
+    featured_settings = {
+        "_skin": "cards",
+        "posts_post_type": "post",
+        "cards_columns": "1",
+        "cards_posts_per_page": "1",
+        "cards_image_position": "left",
+        "cards_image_size": "large",
+        "cards_show_badge": "yes",
+        "cards_badge_taxonomy": "category",
+        "cards_badge_color": COLOR_TEXT_WHITE,
+        "cards_badge_bg_color": COLOR_PRIMARY_RED,
+        "cards_badge_radius": {"unit": "px", "size": 4},
+        "cards_badge_typography_typography": "custom",
+        "cards_badge_typography_font_family": "Plus Jakarta Sans",
+        "cards_badge_typography_font_size": {"unit": "px", "size": 12},
+        "cards_badge_typography_font_weight": "700",
+        "cards_badge_typography_text_transform": "uppercase",
+        "cards_show_avatar": "none",
+        "cards_show_title": "yes",
+        "cards_title_tag": "h3",
+        "cards_title_color": COLOR_TEXT_BLACK,
+        "cards_title_typography_typography": "custom",
+        "cards_title_typography_font_family": "Plus Jakarta Sans",
+        "cards_title_typography_font_size": {"unit": "px", "size": 24},
+        "cards_title_typography_font_weight": "800",
+        "cards_title_typography_line_height": {"unit": "em", "size": 1.2},
+        "cards_show_excerpt": "yes",
+        "cards_excerpt_length": 32,
+        "cards_excerpt_color": COLOR_TEXT_BODY,
+        "cards_excerpt_typography_typography": "custom",
+        "cards_excerpt_typography_font_family": "Plus Jakarta Sans",
+        "cards_excerpt_typography_font_size": {"unit": "px", "size": 15},
+        "cards_excerpt_typography_line_height": {"unit": "em", "size": 1.6},
+        "cards_meta_data": ["author", "date"],
+        "cards_meta_color": COLOR_TEXT_MUTED,
+        "cards_meta_separator": "•",
+        "cards_show_read_more": "yes",
+        "cards_read_more_text": "Đọc tiếp »",
+        "cards_read_more_color": COLOR_BTN_ORANGE,
+        "cards_read_more_typography_typography": "custom",
+        "cards_read_more_typography_font_family": "Plus Jakarta Sans",
+        "cards_read_more_typography_font_size": {"unit": "px", "size": 14},
+        "cards_read_more_typography_font_weight": "700",
+        "cards_box_bg_color": COLOR_TEXT_WHITE,
+        "cards_box_border_color": COLOR_BORDER_LIGHT,
+        "cards_box_border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "isLinked": True
         },
-        "elements": [
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "image",
-                "isInner": False,
-                "settings": {
-                    "image": {
-                        "url": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1000&auto=format&fit=crop",
-                        "id": ""
-                    },
-                    "image_size": "large",
-                    "border_radius": {
-                        "unit": "px",
-                        "top": "10",
-                        "right": "10",
-                        "bottom": "10",
-                        "left": "10",
-                        "isLinked": True
-                    }
-                },
-                "elements": []
-            }
-        ]
+        "cards_box_border_radius": {
+            "unit": "px",
+            "top": "12",
+            "right": "12",
+            "bottom": "12",
+            "left": "12",
+            "isLinked": True
+        },
+        "cards_box_shadow_box_shadow_type": "yes",
+        "cards_box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 6,
+            "blur": 20,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.05)"
+        },
+        "cards_content_padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "28",
+            "bottom": "24",
+            "left": "28",
+            "isLinked": False
+        }
     }
 
-    featured_content_col = {
+    featured_widget = {
         "id": gen_id(),
-        "elType": "container",
-        "isInner": True,
-        "settings": {
-            "width": {"unit": "%", "size": 52},
-            "width_mobile": {"unit": "%", "size": 100},
-            "flex_direction": "column",
-            "align_items": "flex-start",
-            "justify_content": "center"
-        },
-        "elements": [
-            # Tag Thông báo
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "heading",
-                "isInner": False,
-                "settings": {
-                    "title": "THÔNG BÁO MỚI NHẤT",
-                    "header_size": "span",
-                    "align": "left",
-                    "title_color": COLOR_PRIMARY_RED,
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {"unit": "px", "size": 13},
-                    "typography_font_weight": "700",
-                    "typography_text_transform": "uppercase",
-                    "typography_letter_spacing": {"unit": "px", "size": 1.5},
-                    "typography_line_height": {"unit": "em", "size": 1.2},
-                    "_margin": {
-                        "unit": "px",
-                        "top": "0",
-                        "right": "0",
-                        "bottom": "8",
-                        "left": "0",
-                        "isLinked": False
-                    }
-                },
-                "elements": []
-            },
-            # Tiêu đề H3
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "heading",
-                "isInner": False,
-                "settings": {
-                    "title": "THÔNG BÁO V/V LỊCH NGHỈ LỄ & KẾ HOẠCH HỌC TẬP MỚI NHẤT NĂM HỌC 2026",
-                    "header_size": "h3",
-                    "align": "left",
-                    "title_color": COLOR_TEXT_BLACK,
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {"unit": "px", "size": 22},
-                    "typography_font_weight": "800",
-                    "typography_line_height": {"unit": "em", "size": 1.3},
-                    "_margin": {
-                        "unit": "px",
-                        "top": "0",
-                        "right": "0",
-                        "bottom": "10",
-                        "left": "0",
-                        "isLinked": False
-                    }
-                },
-                "elements": []
-            },
-            # Meta ngày / tác giả
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "heading",
-                "isInner": False,
-                "settings": {
-                    "title": "👤 Ban Giám Hiệu  •  🕒 09/07/2026 10:26",
-                    "header_size": "span",
-                    "align": "left",
-                    "title_color": COLOR_TEXT_MUTED,
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {"unit": "px", "size": 13},
-                    "typography_font_weight": "500",
-                    "typography_line_height": {"unit": "em", "size": 1.4},
-                    "_margin": {
-                        "unit": "px",
-                        "top": "0",
-                        "right": "0",
-                        "bottom": "12",
-                        "left": "0",
-                        "isLinked": False
-                    }
-                },
-                "elements": []
-            },
-            # Tóm tắt
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "text-editor",
-                "isInner": False,
-                "settings": {
-                    "editor": (
-                        "<p>Trung tâm Tiếng Anh Chị Trà xin trân trọng thông báo đến Quý phụ huynh và toàn thể học sinh "
-                        "lịch nghỉ lễ chính thức cùng kế hoạch học bù chi tiết nhằm đảm bảo tối đa tiến độ và chất lượng đào tạo các khóa học...</p>"
-                    ),
-                    "align": "left",
-                    "text_color": COLOR_TEXT_BODY,
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {"unit": "px", "size": 15},
-                    "typography_line_height": {"unit": "em", "size": 1.6}
-                },
-                "elements": []
-            },
-            # Nút Đọc tiếp
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "button",
-                "isInner": False,
-                "settings": {
-                    "text": "Đọc tiếp »",
-                    "align": "left",
-                    "button_text_color": COLOR_BTN_ORANGE,
-                    "background_color": "rgba(0,0,0,0)",
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {"unit": "px", "size": 14},
-                    "typography_font_weight": "700",
-                    "padding": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": True}
-                },
-                "elements": []
-            }
-        ]
-    }
-
-    featured_card = {
-        "id": gen_id(),
-        "elType": "container",
-        "isInner": True,
-        "settings": {
-            "content_width": "full",
-            "flex_direction": "row",
-            "flex_wrap": "wrap",
-            "justify_content": "space-between",
-            "align_items": "center",
-            "background_background": "classic",
-            "background_color": COLOR_TEXT_WHITE,
-            "border_border": "solid",
-            "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True},
-            "border_color": COLOR_BORDER_LIGHT,
-            "border_radius": {"unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": True},
-            "box_shadow_box_shadow_type": "yes",
-            "box_shadow_box_shadow": {
-                "horizontal": 0,
-                "vertical": 6,
-                "blur": 20,
-                "spread": 0,
-                "color": "rgba(0, 0, 0, 0.05)"
-            },
-            "padding": {"unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": True}
-        },
-        "elements": [featured_img_col, featured_content_col]
+        "elType": "widget",
+        "widgetType": "posts",
+        "isInner": False,
+        "settings": featured_settings,
+        "elements": []
     }
 
     return {
@@ -334,7 +223,7 @@ def build_section_2_featured_post():
                 "isLinked": False
             }
         },
-        "elements": [featured_card]
+        "elements": [featured_widget]
     }
 
 def build_section_3_posts_grid():
@@ -343,6 +232,7 @@ def build_section_3_posts_grid():
     - Boxed 1200px
     - Widget 'posts' 3 cột Desktop / 2 cột Tablet / 1 cột Mobile
     - 6 bài/trang (2 hàng x 3 cột)
+    - offset: 1 (Bỏ qua bài viết đầu tiên đã hiển thị ở Section 2 để KHÔNG BỊ TRÙNG LẶP)
     - Phân trang đầy đủ số trang và Prev/Next: '< 1 2 3 ... >'
     """
     posts_settings = {
@@ -352,18 +242,35 @@ def build_section_3_posts_grid():
         "classic_columns_tablet": "2",
         "classic_columns_mobile": "1",
         "classic_posts_per_page": "6",
+        "offset": 1,
+        "posts_offset": 1,
         "classic_show_image": "yes",
         "classic_image_size": "medium_large",
         "classic_show_title": "yes",
-        "classic_title_color": COLOR_TEXT_BLACK,
         "classic_title_tag": "h3",
+        "classic_title_color": COLOR_TEXT_BLACK,
+        "classic_title_typography_typography": "custom",
+        "classic_title_typography_font_family": "Plus Jakarta Sans",
+        "classic_title_typography_font_size": {"unit": "px", "size": 18},
+        "classic_title_typography_font_weight": "700",
+        "classic_title_typography_line_height": {"unit": "em", "size": 1.2},
         "classic_show_excerpt": "yes",
         "classic_excerpt_color": COLOR_TEXT_BODY,
-        "classic_excerpt_length": 15,
+        "classic_excerpt_length": 16,
+        "classic_excerpt_typography_typography": "custom",
+        "classic_excerpt_typography_font_family": "Plus Jakarta Sans",
+        "classic_excerpt_typography_font_size": {"unit": "px", "size": 14},
+        "classic_excerpt_typography_line_height": {"unit": "em", "size": 1.5},
         "classic_meta_data": ["author", "date"],
+        "classic_meta_color": COLOR_TEXT_MUTED,
+        "classic_meta_separator": "•",
         "classic_show_read_more": "yes",
         "classic_read_more_text": "Xem chi tiết →",
         "classic_read_more_color": COLOR_BTN_ORANGE,
+        "classic_read_more_typography_typography": "custom",
+        "classic_read_more_typography_font_family": "Plus Jakarta Sans",
+        "classic_read_more_typography_font_size": {"unit": "px", "size": 13},
+        "classic_read_more_typography_font_weight": "700",
         "classic_box_bg_color": COLOR_TEXT_WHITE,
         "classic_box_border_color": COLOR_BORDER_LIGHT,
         "classic_box_border_width": {
@@ -396,7 +303,12 @@ def build_section_3_posts_grid():
         "pagination_next_label": "›",
         "pagination_page_limit": "5",
         "pagination_align": "left",
-        "pagination_spacing": {"unit": "px", "size": 12}
+        "pagination_spacing": {"unit": "px", "size": 12},
+        "pagination_color": COLOR_TEXT_BODY,
+        "pagination_typography_typography": "custom",
+        "pagination_typography_font_family": "Plus Jakarta Sans",
+        "pagination_typography_font_size": {"unit": "px", "size": 14},
+        "pagination_typography_font_weight": "600"
     }
 
     posts_widget = {

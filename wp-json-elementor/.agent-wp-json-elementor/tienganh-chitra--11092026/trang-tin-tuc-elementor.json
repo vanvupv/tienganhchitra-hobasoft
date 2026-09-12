@@ -5,7 +5,7 @@
   "page_settings": [],
   "content": [
     {
-      "id": "f941ad59",
+      "id": "6e860466",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -38,7 +38,7 @@
       },
       "elements": [
         {
-          "id": "5241a6db",
+          "id": "b8a4c8ef",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -75,7 +75,7 @@
           "elements": []
         },
         {
-          "id": "84603dd3",
+          "id": "829281ca",
           "elType": "widget",
           "widgetType": "heading",
           "isInner": false,
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "id": "e4c9a2dc",
+      "id": "aff151ed",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -126,19 +126,80 @@
       },
       "elements": [
         {
-          "id": "9a713bfc",
-          "elType": "container",
-          "isInner": true,
+          "id": "e355c6ce",
+          "elType": "widget",
+          "widgetType": "posts",
+          "isInner": false,
           "settings": {
-            "content_width": "full",
-            "flex_direction": "row",
-            "flex_wrap": "wrap",
-            "justify_content": "space-between",
-            "align_items": "center",
-            "background_background": "classic",
-            "background_color": "#FFFFFF",
-            "border_border": "solid",
-            "border_width": {
+            "_skin": "cards",
+            "posts_post_type": "post",
+            "cards_columns": "1",
+            "cards_posts_per_page": "1",
+            "cards_image_position": "left",
+            "cards_image_size": "large",
+            "cards_show_badge": "yes",
+            "cards_badge_taxonomy": "category",
+            "cards_badge_color": "#FFFFFF",
+            "cards_badge_bg_color": "#C8102E",
+            "cards_badge_radius": {
+              "unit": "px",
+              "size": 4
+            },
+            "cards_badge_typography_typography": "custom",
+            "cards_badge_typography_font_family": "Plus Jakarta Sans",
+            "cards_badge_typography_font_size": {
+              "unit": "px",
+              "size": 12
+            },
+            "cards_badge_typography_font_weight": "700",
+            "cards_badge_typography_text_transform": "uppercase",
+            "cards_show_avatar": "none",
+            "cards_show_title": "yes",
+            "cards_title_tag": "h3",
+            "cards_title_color": "#111827",
+            "cards_title_typography_typography": "custom",
+            "cards_title_typography_font_family": "Plus Jakarta Sans",
+            "cards_title_typography_font_size": {
+              "unit": "px",
+              "size": 24
+            },
+            "cards_title_typography_font_weight": "800",
+            "cards_title_typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "cards_show_excerpt": "yes",
+            "cards_excerpt_length": 32,
+            "cards_excerpt_color": "#4B5563",
+            "cards_excerpt_typography_typography": "custom",
+            "cards_excerpt_typography_font_family": "Plus Jakarta Sans",
+            "cards_excerpt_typography_font_size": {
+              "unit": "px",
+              "size": 15
+            },
+            "cards_excerpt_typography_line_height": {
+              "unit": "em",
+              "size": 1.6
+            },
+            "cards_meta_data": [
+              "author",
+              "date"
+            ],
+            "cards_meta_color": "#6B7280",
+            "cards_meta_separator": "•",
+            "cards_show_read_more": "yes",
+            "cards_read_more_text": "Đọc tiếp »",
+            "cards_read_more_color": "#ED9717",
+            "cards_read_more_typography_typography": "custom",
+            "cards_read_more_typography_font_family": "Plus Jakarta Sans",
+            "cards_read_more_typography_font_size": {
+              "unit": "px",
+              "size": 14
+            },
+            "cards_read_more_typography_font_weight": "700",
+            "cards_box_bg_color": "#FFFFFF",
+            "cards_box_border_color": "#E5E7EB",
+            "cards_box_border_width": {
               "unit": "px",
               "top": "1",
               "right": "1",
@@ -146,8 +207,7 @@
               "left": "1",
               "isLinked": true
             },
-            "border_color": "#E5E7EB",
-            "border_radius": {
+            "cards_box_border_radius": {
               "unit": "px",
               "top": "12",
               "right": "12",
@@ -155,243 +215,29 @@
               "left": "12",
               "isLinked": true
             },
-            "box_shadow_box_shadow_type": "yes",
-            "box_shadow_box_shadow": {
+            "cards_box_shadow_box_shadow_type": "yes",
+            "cards_box_shadow_box_shadow": {
               "horizontal": 0,
               "vertical": 6,
               "blur": 20,
               "spread": 0,
               "color": "rgba(0, 0, 0, 0.05)"
             },
-            "padding": {
+            "cards_content_padding": {
               "unit": "px",
               "top": "24",
-              "right": "24",
+              "right": "28",
               "bottom": "24",
-              "left": "24",
-              "isLinked": true
+              "left": "28",
+              "isLinked": false
             }
           },
-          "elements": [
-            {
-              "id": "3377e882",
-              "elType": "container",
-              "isInner": true,
-              "settings": {
-                "width": {
-                  "unit": "%",
-                  "size": 45
-                },
-                "width_mobile": {
-                  "unit": "%",
-                  "size": 100
-                },
-                "flex_direction": "column",
-                "align_items": "center",
-                "justify_content": "center"
-              },
-              "elements": [
-                {
-                  "id": "9f08a20b",
-                  "elType": "widget",
-                  "widgetType": "image",
-                  "isInner": false,
-                  "settings": {
-                    "image": {
-                      "url": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1000&auto=format&fit=crop",
-                      "id": ""
-                    },
-                    "image_size": "large",
-                    "border_radius": {
-                      "unit": "px",
-                      "top": "10",
-                      "right": "10",
-                      "bottom": "10",
-                      "left": "10",
-                      "isLinked": true
-                    }
-                  },
-                  "elements": []
-                }
-              ]
-            },
-            {
-              "id": "15f57234",
-              "elType": "container",
-              "isInner": true,
-              "settings": {
-                "width": {
-                  "unit": "%",
-                  "size": 52
-                },
-                "width_mobile": {
-                  "unit": "%",
-                  "size": 100
-                },
-                "flex_direction": "column",
-                "align_items": "flex-start",
-                "justify_content": "center"
-              },
-              "elements": [
-                {
-                  "id": "73660484",
-                  "elType": "widget",
-                  "widgetType": "heading",
-                  "isInner": false,
-                  "settings": {
-                    "title": "THÔNG BÁO MỚI NHẤT",
-                    "header_size": "span",
-                    "align": "left",
-                    "title_color": "#C8102E",
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {
-                      "unit": "px",
-                      "size": 13
-                    },
-                    "typography_font_weight": "700",
-                    "typography_text_transform": "uppercase",
-                    "typography_letter_spacing": {
-                      "unit": "px",
-                      "size": 1.5
-                    },
-                    "typography_line_height": {
-                      "unit": "em",
-                      "size": 1.2
-                    },
-                    "_margin": {
-                      "unit": "px",
-                      "top": "0",
-                      "right": "0",
-                      "bottom": "8",
-                      "left": "0",
-                      "isLinked": false
-                    }
-                  },
-                  "elements": []
-                },
-                {
-                  "id": "f61f72ed",
-                  "elType": "widget",
-                  "widgetType": "heading",
-                  "isInner": false,
-                  "settings": {
-                    "title": "THÔNG BÁO V/V LỊCH NGHỈ LỄ & KẾ HOẠCH HỌC TẬP MỚI NHẤT NĂM HỌC 2026",
-                    "header_size": "h3",
-                    "align": "left",
-                    "title_color": "#111827",
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {
-                      "unit": "px",
-                      "size": 22
-                    },
-                    "typography_font_weight": "800",
-                    "typography_line_height": {
-                      "unit": "em",
-                      "size": 1.3
-                    },
-                    "_margin": {
-                      "unit": "px",
-                      "top": "0",
-                      "right": "0",
-                      "bottom": "10",
-                      "left": "0",
-                      "isLinked": false
-                    }
-                  },
-                  "elements": []
-                },
-                {
-                  "id": "0ef90c19",
-                  "elType": "widget",
-                  "widgetType": "heading",
-                  "isInner": false,
-                  "settings": {
-                    "title": "👤 Ban Giám Hiệu  •  🕒 09/07/2026 10:26",
-                    "header_size": "span",
-                    "align": "left",
-                    "title_color": "#6B7280",
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {
-                      "unit": "px",
-                      "size": 13
-                    },
-                    "typography_font_weight": "500",
-                    "typography_line_height": {
-                      "unit": "em",
-                      "size": 1.4
-                    },
-                    "_margin": {
-                      "unit": "px",
-                      "top": "0",
-                      "right": "0",
-                      "bottom": "12",
-                      "left": "0",
-                      "isLinked": false
-                    }
-                  },
-                  "elements": []
-                },
-                {
-                  "id": "8e3cc71a",
-                  "elType": "widget",
-                  "widgetType": "text-editor",
-                  "isInner": false,
-                  "settings": {
-                    "editor": "<p>Trung tâm Tiếng Anh Chị Trà xin trân trọng thông báo đến Quý phụ huynh và toàn thể học sinh lịch nghỉ lễ chính thức cùng kế hoạch học bù chi tiết nhằm đảm bảo tối đa tiến độ và chất lượng đào tạo các khóa học...</p>",
-                    "align": "left",
-                    "text_color": "#4B5563",
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {
-                      "unit": "px",
-                      "size": 15
-                    },
-                    "typography_line_height": {
-                      "unit": "em",
-                      "size": 1.6
-                    }
-                  },
-                  "elements": []
-                },
-                {
-                  "id": "aeb69eca",
-                  "elType": "widget",
-                  "widgetType": "button",
-                  "isInner": false,
-                  "settings": {
-                    "text": "Đọc tiếp »",
-                    "align": "left",
-                    "button_text_color": "#ED9717",
-                    "background_color": "rgba(0,0,0,0)",
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {
-                      "unit": "px",
-                      "size": 14
-                    },
-                    "typography_font_weight": "700",
-                    "padding": {
-                      "unit": "px",
-                      "top": "0",
-                      "right": "0",
-                      "bottom": "0",
-                      "left": "0",
-                      "isLinked": true
-                    }
-                  },
-                  "elements": []
-                }
-              ]
-            }
-          ]
+          "elements": []
         }
       ]
     },
     {
-      "id": "2c7b22fb",
+      "id": "a831bed5",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -412,7 +258,7 @@
       },
       "elements": [
         {
-          "id": "3d58a44a",
+          "id": "ff199a75",
           "elType": "widget",
           "widgetType": "posts",
           "isInner": false,
@@ -423,21 +269,53 @@
             "classic_columns_tablet": "2",
             "classic_columns_mobile": "1",
             "classic_posts_per_page": "6",
+            "offset": 1,
+            "posts_offset": 1,
             "classic_show_image": "yes",
             "classic_image_size": "medium_large",
             "classic_show_title": "yes",
-            "classic_title_color": "#111827",
             "classic_title_tag": "h3",
+            "classic_title_color": "#111827",
+            "classic_title_typography_typography": "custom",
+            "classic_title_typography_font_family": "Plus Jakarta Sans",
+            "classic_title_typography_font_size": {
+              "unit": "px",
+              "size": 18
+            },
+            "classic_title_typography_font_weight": "700",
+            "classic_title_typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
             "classic_show_excerpt": "yes",
             "classic_excerpt_color": "#4B5563",
-            "classic_excerpt_length": 15,
+            "classic_excerpt_length": 16,
+            "classic_excerpt_typography_typography": "custom",
+            "classic_excerpt_typography_font_family": "Plus Jakarta Sans",
+            "classic_excerpt_typography_font_size": {
+              "unit": "px",
+              "size": 14
+            },
+            "classic_excerpt_typography_line_height": {
+              "unit": "em",
+              "size": 1.5
+            },
             "classic_meta_data": [
               "author",
               "date"
             ],
+            "classic_meta_color": "#6B7280",
+            "classic_meta_separator": "•",
             "classic_show_read_more": "yes",
             "classic_read_more_text": "Xem chi tiết →",
             "classic_read_more_color": "#ED9717",
+            "classic_read_more_typography_typography": "custom",
+            "classic_read_more_typography_font_family": "Plus Jakarta Sans",
+            "classic_read_more_typography_font_size": {
+              "unit": "px",
+              "size": 13
+            },
+            "classic_read_more_typography_font_weight": "700",
             "classic_box_bg_color": "#FFFFFF",
             "classic_box_border_color": "#E5E7EB",
             "classic_box_border_width": {
@@ -472,7 +350,15 @@
             "pagination_spacing": {
               "unit": "px",
               "size": 12
-            }
+            },
+            "pagination_color": "#4B5563",
+            "pagination_typography_typography": "custom",
+            "pagination_typography_font_family": "Plus Jakarta Sans",
+            "pagination_typography_font_size": {
+              "unit": "px",
+              "size": 14
+            },
+            "pagination_typography_font_weight": "600"
           },
           "elements": []
         }
