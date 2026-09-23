@@ -1,0 +1,2478 @@
+{
+  "version": "0.4",
+  "title": "Trang Danh Mục Bài Viết - Tiếng Anh Chị Trà",
+  "type": "page",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "89f5d636",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "justify_content": "center",
+        "align_items": "center",
+        "min_height": {
+          "unit": "px",
+          "size": 170
+        },
+        "min_height_mobile": {
+          "unit": "px",
+          "size": 130
+        },
+        "padding": {
+          "unit": "px",
+          "top": "36",
+          "right": "20",
+          "bottom": "30",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "gradient",
+        "background_color": "#EAF4FF",
+        "background_color_b": "#F6FAFF",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 180
+        }
+      },
+      "elements": [
+        {
+          "id": "b252ef91",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "TIN TỨC & SỰ KIỆN",
+            "header_size": "h5",
+            "align": "center",
+            "title_color": "#007BFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 12
+            },
+            "typography_font_weight": "700",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+              "unit": "px",
+              "size": 2
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "8",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "171295bc",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "TIN TỨC & SỰ KIỆN",
+            "header_size": "h1",
+            "align": "center",
+            "title_color": "#002D62",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 36
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 26
+            },
+            "typography_font_weight": "800",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            }
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "2a52e456",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1240
+        },
+        "flex_direction": "row",
+        "align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "16",
+          "right": "20",
+          "bottom": "8",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "52208112",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "isInner": false,
+          "settings": {
+            "editor": "<p style=\"margin: 0; font-size: 13px; color: #6B7280; font-family: 'Plus Jakarta Sans', sans-serif;\"><span style=\"color: #4B5563;\">🏠 Trang chủ</span> <span style=\"margin: 0 6px; color: #9CA3AF;\">›</span> <span style=\"color: #007BFF; font-weight: 600;\">Tin tức & sự kiện</span></p>"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "b581fa3b",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1240
+        },
+        "flex_direction": "row",
+        "flex_direction_mobile": "column",
+        "align_items": "flex-start",
+        "gap": {
+          "unit": "px",
+          "size": 30
+        },
+        "padding": {
+          "unit": "px",
+          "top": "15",
+          "right": "20",
+          "bottom": "60",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "af26a8fe",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 68
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column"
+          },
+          "elements": [
+            {
+              "id": "18b4fadc",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_direction_mobile": "column",
+                "align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E5E7EB",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 6,
+                  "blur": 24,
+                  "spread": 0,
+                  "color": "rgba(0, 45, 98, 0.06)"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "18",
+                  "right": "18",
+                  "bottom": "18",
+                  "left": "18",
+                  "isLinked": true
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "25",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "404c148b",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 48
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100
+                    },
+                    "position": "relative",
+                    "flex_direction": "column"
+                  },
+                  "elements": [
+                    {
+                      "id": "5f273145",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "isInner": false,
+                      "settings": {
+                        "image": {
+                          "url": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1000&auto=format&fit=crop",
+                          "id": ""
+                        },
+                        "image_size": "large",
+                        "image_border_radius": {
+                          "unit": "px",
+                          "top": "12",
+                          "right": "12",
+                          "bottom": "12",
+                          "left": "12",
+                          "isLinked": true
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "e74bdb45",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "isInner": false,
+                      "settings": {
+                        "html": "<div style=\"background: #007BFF; color: #ffffff; border-radius: 8px; width: 48px; padding: 6px 2px; text-align: center; box-shadow: 0 4px 10px rgba(0, 123, 255, 0.35); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.1;\">\n  <div style=\"font-size: 17px; font-weight: 800; letter-spacing: -0.5px;\">07</div>\n  <div style=\"font-size: 10px; font-weight: 700; text-transform: uppercase; margin-top: 2px;\">Th5</div>\n  <div style=\"font-size: 10px; opacity: 0.9; margin-top: 1px;\">2025</div>\n</div>",
+                        "_position": "absolute",
+                        "_offset_orientation_h": "start",
+                        "_offset_x": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_orientation_v": "start",
+                        "_offset_y": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "z_index": 2
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "8d9cc7b2",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "width": {
+                      "unit": "%",
+                      "size": 52
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100
+                    },
+                    "flex_direction": "column",
+                    "justify_content": "center",
+                    "align_items": "flex-start",
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "10",
+                      "bottom": "10",
+                      "left": "15",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "15",
+                      "right": "0",
+                      "bottom": "5",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "a3bf2a17",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "isInner": false,
+                      "settings": {
+                        "html": "<span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; font-family: 'Plus Jakarta Sans', sans-serif;\">Tin tức</span>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "10",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "b1d830c1",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "GÓI LỘ TRÌNH TĂNG CƯỜNG KỸ NĂNG TIẾNG ANH – BƯỚC ĐỆM VỮNG CHẮC CHO TƯƠNG LAI",
+                        "header_size": "h3",
+                        "title_color": "#002D62",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 20
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 17
+                        },
+                        "typography_font_weight": "800",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "eb8323d9",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"font-size: 13.5px; line-height: 1.6; color: #556987; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif;\">Chương trình được thiết kế theo lộ trình rõ ràng, phù hợp với từng độ tuổi và mục tiêu học tập, giúp học viên phát triển toàn diện 4 kỹ năng: Nghe – Nói – Đọc – Viết.</p>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "18",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "b01dacc0",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "isInner": false,
+                      "settings": {
+                        "text": "Xem chi tiết →",
+                        "link": {
+                          "url": "#",
+                          "is_external": false,
+                          "nofollow": false
+                        },
+                        "size": "sm",
+                        "button_type": "default",
+                        "background_color": "#007BFF",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "30",
+                          "right": "30",
+                          "bottom": "30",
+                          "left": "30",
+                          "isLinked": true
+                        },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13
+                        },
+                        "typography_font_weight": "700",
+                        "padding": {
+                          "unit": "px",
+                          "top": "10",
+                          "right": "22",
+                          "bottom": "10",
+                          "left": "22",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "123674fc",
+              "elType": "widget",
+              "widgetType": "html",
+              "isInner": false,
+              "settings": {
+                "html": "<div style=\"display: flex; justify-content: center; gap: 8px; margin-bottom: 25px;\"><span style=\"width: 8px; height: 8px; border-radius: 50%; background: #007BFF; display: inline-block;\"></span><span style=\"width: 8px; height: 8px; border-radius: 50%; background: #D1E5F8; display: inline-block;\"></span><span style=\"width: 8px; height: 8px; border-radius: 50%; background: #D1E5F8; display: inline-block;\"></span></div>",
+                "hide_desktop": "default",
+                "hide_tablet": "default",
+                "hide_mobile": ""
+              },
+              "elements": []
+            },
+            {
+              "id": "ae2b2730",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "justify_content": "space-between",
+                "align_items": "center",
+                "_margin": {
+                  "unit": "px",
+                  "top": "5",
+                  "right": "0",
+                  "bottom": "18",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "348c30a9",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "isInner": false,
+                  "settings": {
+                    "title": "| TIN TỨC MỚI NHẤT",
+                    "header_size": "h3",
+                    "title_color": "#002D62",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18
+                    },
+                    "typography_font_weight": "800"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "2adc9359",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "isInner": false,
+                  "settings": {
+                    "title": "Xem tất cả →",
+                    "header_size": "h6",
+                    "title_color": "#007BFF",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 13
+                    },
+                    "typography_font_weight": "700",
+                    "link": {
+                      "url": "#",
+                      "is_external": false,
+                      "nofollow": false
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "fe1da339",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "container_type": "grid",
+                "grid_columns_grid": {
+                  "unit": "custom",
+                  "size": 3
+                },
+                "grid_columns_grid_tablet": {
+                  "unit": "custom",
+                  "size": 2
+                },
+                "grid_columns_grid_mobile": {
+                  "unit": "custom",
+                  "size": 1
+                },
+                "grid_gap": {
+                  "unit": "px",
+                  "row": 20,
+                  "column": 20,
+                  "isLinked": true
+                },
+                "hide_mobile": "hidden"
+              },
+              "elements": [
+                {
+                  "id": "594661e1",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E5E7EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "16",
+                      "left": "12",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "fdc6c2cc",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "position": "relative",
+                        "width": {
+                          "unit": "%",
+                          "size": 100
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "68e1a41e",
+                          "elType": "widget",
+                          "widgetType": "image",
+                          "isInner": false,
+                          "settings": {
+                            "image": {
+                              "url": "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800&auto=format&fit=crop",
+                              "id": ""
+                            },
+                            "image_size": "medium_large",
+                            "image_border_radius": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "10",
+                              "bottom": "10",
+                              "left": "10",
+                              "isLinked": true
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "2946e777",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "isInner": false,
+                          "settings": {
+                            "html": "<div style=\"background: #007BFF; color: #ffffff; border-radius: 8px; width: 48px; padding: 6px 2px; text-align: center; box-shadow: 0 4px 10px rgba(0, 123, 255, 0.35); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.1;\">\n  <div style=\"font-size: 17px; font-weight: 800; letter-spacing: -0.5px;\">05</div>\n  <div style=\"font-size: 10px; font-weight: 700; text-transform: uppercase; margin-top: 2px;\">Th5</div>\n  <div style=\"font-size: 10px; opacity: 0.9; margin-top: 1px;\">2025</div>\n</div>",
+                            "_position": "absolute",
+                            "_offset_orientation_h": "start",
+                            "_offset_x": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "_offset_orientation_v": "start",
+                            "_offset_y": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "z_index": 2
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "34d4ba2b",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "isInner": false,
+                      "settings": {
+                        "html": "<span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 15px; font-family: 'Plus Jakarta Sans', sans-serif;\">Chương trình đào tạo</span>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "5b7f7e22",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "PHƯƠNG PHÁP HỌC TIẾNG ANH HIỆU QUẢ DÀNH CHO HỌC SINH THCS",
+                        "header_size": "h4",
+                        "title_color": "#002D62",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14.5
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "8cdfe574",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"font-size: 12.5px; line-height: 1.5; color: #556987; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif;\">Với phương pháp học tập hiện đại, kết hợp giữa lý thuyết và thực hành, học viên sẽ được rèn luyện kỹ năng toàn diện...</p>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "e611b7cf",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Xem chi tiết →",
+                        "header_size": "span",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12.5
+                        },
+                        "typography_font_weight": "700",
+                        "link": {
+                          "url": "#",
+                          "is_external": false,
+                          "nofollow": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "8f7eb4ae",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E5E7EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "16",
+                      "left": "12",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "a953bb69",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "position": "relative",
+                        "width": {
+                          "unit": "%",
+                          "size": 100
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "e771199a",
+                          "elType": "widget",
+                          "widgetType": "image",
+                          "isInner": false,
+                          "settings": {
+                            "image": {
+                              "url": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=800&auto=format&fit=crop",
+                              "id": ""
+                            },
+                            "image_size": "medium_large",
+                            "image_border_radius": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "10",
+                              "bottom": "10",
+                              "left": "10",
+                              "isLinked": true
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "63b75c0d",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "isInner": false,
+                          "settings": {
+                            "html": "<div style=\"background: #007BFF; color: #ffffff; border-radius: 8px; width: 48px; padding: 6px 2px; text-align: center; box-shadow: 0 4px 10px rgba(0, 123, 255, 0.35); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.1;\">\n  <div style=\"font-size: 17px; font-weight: 800; letter-spacing: -0.5px;\">03</div>\n  <div style=\"font-size: 10px; font-weight: 700; text-transform: uppercase; margin-top: 2px;\">Th5</div>\n  <div style=\"font-size: 10px; opacity: 0.9; margin-top: 1px;\">2025</div>\n</div>",
+                            "_position": "absolute",
+                            "_offset_orientation_h": "start",
+                            "_offset_x": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "_offset_orientation_v": "start",
+                            "_offset_y": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "z_index": 2
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "449bcd06",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "isInner": false,
+                      "settings": {
+                        "html": "<span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 15px; font-family: 'Plus Jakarta Sans', sans-serif;\">Hoạt động ngoại khóa</span>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "609ff33b",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "CÁC HOẠT ĐỘNG NGOẠI KHÓA GIÚP HỌC VIÊN TỰ TIN HƠN",
+                        "header_size": "h4",
+                        "title_color": "#002D62",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14.5
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "48bcbe61",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"font-size: 12.5px; line-height: 1.5; color: #556987; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif;\">Không chỉ học trên lớp, các hoạt động ngoại khóa tại trung tâm giúp học viên rèn luyện kỹ năng mềm, phát triển tư duy...</p>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "e7399f37",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Xem chi tiết →",
+                        "header_size": "span",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12.5
+                        },
+                        "typography_font_weight": "700",
+                        "link": {
+                          "url": "#",
+                          "is_external": false,
+                          "nofollow": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "e0221281",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E5E7EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "16",
+                      "left": "12",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "9c3acafa",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "position": "relative",
+                        "width": {
+                          "unit": "%",
+                          "size": 100
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "7115fe98",
+                          "elType": "widget",
+                          "widgetType": "image",
+                          "isInner": false,
+                          "settings": {
+                            "image": {
+                              "url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop",
+                              "id": ""
+                            },
+                            "image_size": "medium_large",
+                            "image_border_radius": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "10",
+                              "bottom": "10",
+                              "left": "10",
+                              "isLinked": true
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "535d174a",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "isInner": false,
+                          "settings": {
+                            "html": "<div style=\"background: #007BFF; color: #ffffff; border-radius: 8px; width: 48px; padding: 6px 2px; text-align: center; box-shadow: 0 4px 10px rgba(0, 123, 255, 0.35); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.1;\">\n  <div style=\"font-size: 17px; font-weight: 800; letter-spacing: -0.5px;\">01</div>\n  <div style=\"font-size: 10px; font-weight: 700; text-transform: uppercase; margin-top: 2px;\">Th5</div>\n  <div style=\"font-size: 10px; opacity: 0.9; margin-top: 1px;\">2025</div>\n</div>",
+                            "_position": "absolute",
+                            "_offset_orientation_h": "start",
+                            "_offset_x": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "_offset_orientation_v": "start",
+                            "_offset_y": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "z_index": 2
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "34a7ed2b",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "isInner": false,
+                      "settings": {
+                        "html": "<span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 15px; font-family: 'Plus Jakarta Sans', sans-serif;\">Tin tức</span>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "ea483e79",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "LỢI ÍCH CỦA VIỆC HỌC TIẾNG ANH SỚM CHO TRẺ",
+                        "header_size": "h4",
+                        "title_color": "#002D62",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14.5
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "70bb46b6",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"font-size: 12.5px; line-height: 1.5; color: #556987; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif;\">Học tiếng Anh từ sớm giúp trẻ hình thành sự tư duy linh hoạt, tăng khả năng giao tiếp và mở rộng cơ hội học tập trong tương lai.</p>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "49f27174",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Xem chi tiết →",
+                        "header_size": "span",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12.5
+                        },
+                        "typography_font_weight": "700",
+                        "link": {
+                          "url": "#",
+                          "is_external": false,
+                          "nofollow": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "d2d5423b",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E5E7EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "16",
+                      "left": "12",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "287135cf",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "position": "relative",
+                        "width": {
+                          "unit": "%",
+                          "size": 100
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "c24dec8e",
+                          "elType": "widget",
+                          "widgetType": "image",
+                          "isInner": false,
+                          "settings": {
+                            "image": {
+                              "url": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop",
+                              "id": ""
+                            },
+                            "image_size": "medium_large",
+                            "image_border_radius": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "10",
+                              "bottom": "10",
+                              "left": "10",
+                              "isLinked": true
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "b0beb99b",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "isInner": false,
+                          "settings": {
+                            "html": "<div style=\"background: #007BFF; color: #ffffff; border-radius: 8px; width: 48px; padding: 6px 2px; text-align: center; box-shadow: 0 4px 10px rgba(0, 123, 255, 0.35); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.1;\">\n  <div style=\"font-size: 17px; font-weight: 800; letter-spacing: -0.5px;\">28</div>\n  <div style=\"font-size: 10px; font-weight: 700; text-transform: uppercase; margin-top: 2px;\">Th4</div>\n  <div style=\"font-size: 10px; opacity: 0.9; margin-top: 1px;\">2025</div>\n</div>",
+                            "_position": "absolute",
+                            "_offset_orientation_h": "start",
+                            "_offset_x": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "_offset_orientation_v": "start",
+                            "_offset_y": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "z_index": 2
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "d1fb5783",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "isInner": false,
+                      "settings": {
+                        "html": "<span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 15px; font-family: 'Plus Jakarta Sans', sans-serif;\">Sự kiện</span>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "69fa625a",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "CHƯƠNG TRÌNH GIAO LƯU TIẾNG ANH TẠI TRƯỜNG THCS",
+                        "header_size": "h4",
+                        "title_color": "#002D62",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14.5
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "59b5f2f3",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"font-size: 12.5px; line-height: 1.5; color: #556987; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif;\">Chương trình giao lưu với giáo viên bản ngữ đã mang đến nhiều trải nghiệm thú vị, giúp học viên tự tin hơn khi sử dụng Tiếng Anh.</p>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "bee41cde",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Xem chi tiết →",
+                        "header_size": "span",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12.5
+                        },
+                        "typography_font_weight": "700",
+                        "link": {
+                          "url": "#",
+                          "is_external": false,
+                          "nofollow": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "1ab3363d",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E5E7EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "16",
+                      "left": "12",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "a29b149e",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "position": "relative",
+                        "width": {
+                          "unit": "%",
+                          "size": 100
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "664a76cb",
+                          "elType": "widget",
+                          "widgetType": "image",
+                          "isInner": false,
+                          "settings": {
+                            "image": {
+                              "url": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=800&auto=format&fit=crop",
+                              "id": ""
+                            },
+                            "image_size": "medium_large",
+                            "image_border_radius": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "10",
+                              "bottom": "10",
+                              "left": "10",
+                              "isLinked": true
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "29a8a740",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "isInner": false,
+                          "settings": {
+                            "html": "<div style=\"background: #007BFF; color: #ffffff; border-radius: 8px; width: 48px; padding: 6px 2px; text-align: center; box-shadow: 0 4px 10px rgba(0, 123, 255, 0.35); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.1;\">\n  <div style=\"font-size: 17px; font-weight: 800; letter-spacing: -0.5px;\">26</div>\n  <div style=\"font-size: 10px; font-weight: 700; text-transform: uppercase; margin-top: 2px;\">Th4</div>\n  <div style=\"font-size: 10px; opacity: 0.9; margin-top: 1px;\">2025</div>\n</div>",
+                            "_position": "absolute",
+                            "_offset_orientation_h": "start",
+                            "_offset_x": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "_offset_orientation_v": "start",
+                            "_offset_y": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "z_index": 2
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0de04b0e",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "isInner": false,
+                      "settings": {
+                        "html": "<span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 15px; font-family: 'Plus Jakarta Sans', sans-serif;\">Kinh nghiệm học tập</span>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "353897da",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "5 TIPS GIÚP BẠN CẢI THIỆN KỸ NĂNG NGHE TIẾNG ANH NHANH CHÓNG",
+                        "header_size": "h4",
+                        "title_color": "#002D62",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14.5
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "e0223268",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"font-size: 12.5px; line-height: 1.5; color: #556987; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif;\">Từ việc luyện nghe mỗi ngày đến sử dụng các nguồn tài liệu đón hộp, những mẹo nhỏ dưới đây sẽ giúp bạn tiến bộ rõ rệt.</p>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "d78817f0",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Xem chi tiết →",
+                        "header_size": "span",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12.5
+                        },
+                        "typography_font_weight": "700",
+                        "link": {
+                          "url": "#",
+                          "is_external": false,
+                          "nofollow": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "fa3596b6",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E5E7EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "16",
+                      "left": "12",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "a2be4dd2",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "position": "relative",
+                        "width": {
+                          "unit": "%",
+                          "size": 100
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "5bce61df",
+                          "elType": "widget",
+                          "widgetType": "image",
+                          "isInner": false,
+                          "settings": {
+                            "image": {
+                              "url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop",
+                              "id": ""
+                            },
+                            "image_size": "medium_large",
+                            "image_border_radius": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "10",
+                              "bottom": "10",
+                              "left": "10",
+                              "isLinked": true
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "9822d249",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "isInner": false,
+                          "settings": {
+                            "html": "<div style=\"background: #007BFF; color: #ffffff; border-radius: 8px; width: 48px; padding: 6px 2px; text-align: center; box-shadow: 0 4px 10px rgba(0, 123, 255, 0.35); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.1;\">\n  <div style=\"font-size: 17px; font-weight: 800; letter-spacing: -0.5px;\">20</div>\n  <div style=\"font-size: 10px; font-weight: 700; text-transform: uppercase; margin-top: 2px;\">Th4</div>\n  <div style=\"font-size: 10px; opacity: 0.9; margin-top: 1px;\">2025</div>\n</div>",
+                            "_position": "absolute",
+                            "_offset_orientation_h": "start",
+                            "_offset_x": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "_offset_orientation_v": "start",
+                            "_offset_y": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "z_index": 2
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "d07882ee",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "isInner": false,
+                      "settings": {
+                        "html": "<span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 15px; font-family: 'Plus Jakarta Sans', sans-serif;\">Hoạt động ngoại khóa</span>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "896d698a",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "HỌC VIÊN TIẾNG ANH CHỊ TRÀ ĐẠT THÀNH TÍCH CAO TRONG KỲ THI",
+                        "header_size": "h4",
+                        "title_color": "#002D62",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14.5
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "d9d1d6b9",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"font-size: 12.5px; line-height: 1.5; color: #556987; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif;\">Những nỗ lực không ngừng nghỉ đã mang lại kết quả đáng tự hào cho các bạn học viên trong kỳ thi vừa qua.</p>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "54e93686",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Xem chi tiết →",
+                        "header_size": "span",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12.5
+                        },
+                        "typography_font_weight": "700",
+                        "link": {
+                          "url": "#",
+                          "is_external": false,
+                          "nofollow": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "a310ad5a",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E5E7EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "16",
+                      "left": "12",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0b0101e5",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "position": "relative",
+                        "width": {
+                          "unit": "%",
+                          "size": 100
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "c5c90303",
+                          "elType": "widget",
+                          "widgetType": "image",
+                          "isInner": false,
+                          "settings": {
+                            "image": {
+                              "url": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=800&auto=format&fit=crop",
+                              "id": ""
+                            },
+                            "image_size": "medium_large",
+                            "image_border_radius": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "10",
+                              "bottom": "10",
+                              "left": "10",
+                              "isLinked": true
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "d7ff3acf",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "isInner": false,
+                          "settings": {
+                            "html": "<div style=\"background: #007BFF; color: #ffffff; border-radius: 8px; width: 48px; padding: 6px 2px; text-align: center; box-shadow: 0 4px 10px rgba(0, 123, 255, 0.35); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.1;\">\n  <div style=\"font-size: 17px; font-weight: 800; letter-spacing: -0.5px;\">15</div>\n  <div style=\"font-size: 10px; font-weight: 700; text-transform: uppercase; margin-top: 2px;\">Th4</div>\n  <div style=\"font-size: 10px; opacity: 0.9; margin-top: 1px;\">2025</div>\n</div>",
+                            "_position": "absolute",
+                            "_offset_orientation_h": "start",
+                            "_offset_x": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "_offset_orientation_v": "start",
+                            "_offset_y": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "z_index": 2
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "2ab29dc7",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "isInner": false,
+                      "settings": {
+                        "html": "<span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 15px; font-family: 'Plus Jakarta Sans', sans-serif;\">Chương trình đào tạo</span>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "7d722224",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "HÀNH TRÌNH TRẢI NGHIỆM TIẾNG ANH TẠI TRẠI HÈ 2025",
+                        "header_size": "h4",
+                        "title_color": "#002D62",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14.5
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "bb68f537",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"font-size: 12.5px; line-height: 1.5; color: #556987; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif;\">Trại hè tiếng Anh là cơ hội để học viên rèn luyện kỹ năng, khám phá văn hóa và tạo nên những kỷ niệm đáng nhớ.</p>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "135561c5",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Xem chi tiết →",
+                        "header_size": "span",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12.5
+                        },
+                        "typography_font_weight": "700",
+                        "link": {
+                          "url": "#",
+                          "is_external": false,
+                          "nofollow": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "34afe7db",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E5E7EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "16",
+                      "left": "12",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "a2674160",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "position": "relative",
+                        "width": {
+                          "unit": "%",
+                          "size": 100
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "467c8947",
+                          "elType": "widget",
+                          "widgetType": "image",
+                          "isInner": false,
+                          "settings": {
+                            "image": {
+                              "url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
+                              "id": ""
+                            },
+                            "image_size": "medium_large",
+                            "image_border_radius": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "10",
+                              "bottom": "10",
+                              "left": "10",
+                              "isLinked": true
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "575342c3",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "isInner": false,
+                          "settings": {
+                            "html": "<div style=\"background: #007BFF; color: #ffffff; border-radius: 8px; width: 48px; padding: 6px 2px; text-align: center; box-shadow: 0 4px 10px rgba(0, 123, 255, 0.35); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.1;\">\n  <div style=\"font-size: 17px; font-weight: 800; letter-spacing: -0.5px;\">10</div>\n  <div style=\"font-size: 10px; font-weight: 700; text-transform: uppercase; margin-top: 2px;\">Th4</div>\n  <div style=\"font-size: 10px; opacity: 0.9; margin-top: 1px;\">2025</div>\n</div>",
+                            "_position": "absolute",
+                            "_offset_orientation_h": "start",
+                            "_offset_x": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "_offset_orientation_v": "start",
+                            "_offset_y": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "z_index": 2
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "119a61aa",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "isInner": false,
+                      "settings": {
+                        "html": "<span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 15px; font-family: 'Plus Jakarta Sans', sans-serif;\">Tin tức</span>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "d050c12f",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "TỔNG KẾT KHOÁ HỌC THÁNG 4/2025",
+                        "header_size": "h4",
+                        "title_color": "#002D62",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14.5
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "110ad499",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"font-size: 12.5px; line-height: 1.5; color: #556987; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif;\">Cùng nhìn lại những khoảnh khắc đáng nhớ, thành tích nổi bật và sự tiến bộ của các học viên trong tháng 4 vừa qua.</p>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "f0bd9d98",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Xem chi tiết →",
+                        "header_size": "span",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12.5
+                        },
+                        "typography_font_weight": "700",
+                        "link": {
+                          "url": "#",
+                          "is_external": false,
+                          "nofollow": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "2db0ba52",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#E5E7EB",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "12",
+                      "left": "12",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "12",
+                      "right": "12",
+                      "bottom": "16",
+                      "left": "12",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "46ef8efd",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "position": "relative",
+                        "width": {
+                          "unit": "%",
+                          "size": 100
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "9d5756d1",
+                          "elType": "widget",
+                          "widgetType": "image",
+                          "isInner": false,
+                          "settings": {
+                            "image": {
+                              "url": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=800&auto=format&fit=crop",
+                              "id": ""
+                            },
+                            "image_size": "medium_large",
+                            "image_border_radius": {
+                              "unit": "px",
+                              "top": "10",
+                              "right": "10",
+                              "bottom": "10",
+                              "left": "10",
+                              "isLinked": true
+                            }
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "1f3eecca",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "isInner": false,
+                          "settings": {
+                            "html": "<div style=\"background: #007BFF; color: #ffffff; border-radius: 8px; width: 48px; padding: 6px 2px; text-align: center; box-shadow: 0 4px 10px rgba(0, 123, 255, 0.35); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.1;\">\n  <div style=\"font-size: 17px; font-weight: 800; letter-spacing: -0.5px;\">05</div>\n  <div style=\"font-size: 10px; font-weight: 700; text-transform: uppercase; margin-top: 2px;\">Th4</div>\n  <div style=\"font-size: 10px; opacity: 0.9; margin-top: 1px;\">2025</div>\n</div>",
+                            "_position": "absolute",
+                            "_offset_orientation_h": "start",
+                            "_offset_x": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "_offset_orientation_v": "start",
+                            "_offset_y": {
+                              "unit": "px",
+                              "size": 8
+                            },
+                            "z_index": 2
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "2063531b",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "isInner": false,
+                      "settings": {
+                        "html": "<span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 15px; font-family: 'Plus Jakarta Sans', sans-serif;\">Sự kiện</span>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "e405ff5f",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "VINH DANH HỌC VIÊN XUẤT SẮC QUÝ I/2025",
+                        "header_size": "h4",
+                        "title_color": "#002D62",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14.5
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "8",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "fc8f4fa4",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"font-size: 12.5px; line-height: 1.5; color: #556987; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif;\">Cùng vinh danh những gương mặt tiêu biểu đã nỗ lực và đạt thành tích xuất sắc trong học tập và rèn luyện.</p>",
+                        "_margin": {
+                          "unit": "px",
+                          "top": "0",
+                          "right": "0",
+                          "bottom": "12",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "50d79d12",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Xem chi tiết →",
+                        "header_size": "span",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 12.5
+                        },
+                        "typography_font_weight": "700",
+                        "link": {
+                          "url": "#",
+                          "is_external": false,
+                          "nofollow": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1f27b0be",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "hide_desktop": "hidden",
+                "hide_tablet": "hidden"
+              },
+              "elements": [
+                {
+                  "id": "44c11778",
+                  "elType": "widget",
+                  "widgetType": "html",
+                  "isInner": false,
+                  "settings": {
+                    "html": "<div style=\"display: flex; align-items: center; justify-content: space-between; background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 12px; padding: 10px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.02); font-family: 'Plus Jakarta Sans', sans-serif;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; flex: 1;\">\n    <div style=\"position: relative; width: 85px; height: 68px; flex-shrink: 0; border-radius: 8px; overflow: hidden;\">\n      <img src=\"https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800&auto=format&fit=crop\" alt=\"PHƯƠNG PHÁP HỌC TIẾNG ANH HIỆU QUẢ DÀNH CHO HỌC SINH THCS\" style=\"width: 100%; height: 100%; object-fit: cover;\" />\n      <div style=\"position: absolute; top: 4px; left: 4px; background: #007BFF; color: #fff; border-radius: 4px; width: 34px; padding: 2px 0; text-align: center; line-height: 1;\">\n        <span style=\"font-size: 11px; font-weight: 800; display: block;\">05</span>\n        <span style=\"font-size: 7.5px; font-weight: 600; text-transform: uppercase;\">Th5</span>\n      </div>\n    </div>\n    <div style=\"flex: 1; min-width: 0;\">\n      <span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin-bottom: 4px;\">Chương trình đào tạo</span>\n      <h4 style=\"margin: 0; font-size: 13px; font-weight: 700; line-height: 1.3; color: #002D62; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;\">PHƯƠNG PHÁP HỌC TIẾNG ANH HIỆU QUẢ DÀNH CHO HỌC SINH THCS</h4>\n    </div>\n  </div>\n  <div style=\"color: #9CA3AF; font-size: 16px; font-weight: bold; margin-left: 8px; flex-shrink: 0;\">›</div>\n</div>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "03c61169",
+                  "elType": "widget",
+                  "widgetType": "html",
+                  "isInner": false,
+                  "settings": {
+                    "html": "<div style=\"display: flex; align-items: center; justify-content: space-between; background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 12px; padding: 10px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.02); font-family: 'Plus Jakarta Sans', sans-serif;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; flex: 1;\">\n    <div style=\"position: relative; width: 85px; height: 68px; flex-shrink: 0; border-radius: 8px; overflow: hidden;\">\n      <img src=\"https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=800&auto=format&fit=crop\" alt=\"CÁC HOẠT ĐỘNG NGOẠI KHÓA GIÚP HỌC VIÊN TỰ TIN HƠN\" style=\"width: 100%; height: 100%; object-fit: cover;\" />\n      <div style=\"position: absolute; top: 4px; left: 4px; background: #007BFF; color: #fff; border-radius: 4px; width: 34px; padding: 2px 0; text-align: center; line-height: 1;\">\n        <span style=\"font-size: 11px; font-weight: 800; display: block;\">03</span>\n        <span style=\"font-size: 7.5px; font-weight: 600; text-transform: uppercase;\">Th5</span>\n      </div>\n    </div>\n    <div style=\"flex: 1; min-width: 0;\">\n      <span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin-bottom: 4px;\">Hoạt động ngoại khóa</span>\n      <h4 style=\"margin: 0; font-size: 13px; font-weight: 700; line-height: 1.3; color: #002D62; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;\">CÁC HOẠT ĐỘNG NGOẠI KHÓA GIÚP HỌC VIÊN TỰ TIN HƠN</h4>\n    </div>\n  </div>\n  <div style=\"color: #9CA3AF; font-size: 16px; font-weight: bold; margin-left: 8px; flex-shrink: 0;\">›</div>\n</div>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "422051b7",
+                  "elType": "widget",
+                  "widgetType": "html",
+                  "isInner": false,
+                  "settings": {
+                    "html": "<div style=\"display: flex; align-items: center; justify-content: space-between; background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 12px; padding: 10px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.02); font-family: 'Plus Jakarta Sans', sans-serif;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; flex: 1;\">\n    <div style=\"position: relative; width: 85px; height: 68px; flex-shrink: 0; border-radius: 8px; overflow: hidden;\">\n      <img src=\"https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop\" alt=\"LỢI ÍCH CỦA VIỆC HỌC TIẾNG ANH SỚM CHO TRẺ\" style=\"width: 100%; height: 100%; object-fit: cover;\" />\n      <div style=\"position: absolute; top: 4px; left: 4px; background: #007BFF; color: #fff; border-radius: 4px; width: 34px; padding: 2px 0; text-align: center; line-height: 1;\">\n        <span style=\"font-size: 11px; font-weight: 800; display: block;\">01</span>\n        <span style=\"font-size: 7.5px; font-weight: 600; text-transform: uppercase;\">Th5</span>\n      </div>\n    </div>\n    <div style=\"flex: 1; min-width: 0;\">\n      <span style=\"display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin-bottom: 4px;\">Tin tức</span>\n      <h4 style=\"margin: 0; font-size: 13px; font-weight: 700; line-height: 1.3; color: #002D62; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;\">LỢI ÍCH CỦA VIỆC HỌC TIẾNG ANH SỚM CHO TRẺ</h4>\n    </div>\n  </div>\n  <div style=\"color: #9CA3AF; font-size: 16px; font-weight: bold; margin-left: 8px; flex-shrink: 0;\">›</div>\n</div>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "34643f56",
+              "elType": "widget",
+              "widgetType": "html",
+              "isInner": false,
+              "settings": {
+                "html": "<div style=\"display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 35px; font-family: 'Plus Jakarta Sans', sans-serif;\">\n  <a href=\"#\" style=\"display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; border-radius: 50%; color: #6B7280; text-decoration: none; font-size: 13px; font-weight: 600;\">‹</a>\n  <span style=\"display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; border-radius: 50%; background-color: #007BFF; color: #FFFFFF; font-size: 13px; font-weight: 700; box-shadow: 0 2px 8px rgba(0, 123, 255, 0.35);\">1</span>\n  <a href=\"#\" style=\"display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; border-radius: 50%; color: #4B5563; text-decoration: none; font-size: 13px; font-weight: 600;\">2</a>\n  <a href=\"#\" style=\"display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; border-radius: 50%; color: #4B5563; text-decoration: none; font-size: 13px; font-weight: 600;\">3</a>\n  <a href=\"#\" style=\"display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; border-radius: 50%; color: #4B5563; text-decoration: none; font-size: 13px; font-weight: 600;\">4</a>\n  <a href=\"#\" style=\"display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; border-radius: 50%; color: #6B7280; text-decoration: none; font-size: 13px; font-weight: 600;\">›</a>\n</div>",
+                "hide_mobile": "hidden"
+              },
+              "elements": []
+            },
+            {
+              "id": "93e63b9b",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "hide_desktop": "hidden",
+                "hide_tablet": "hidden",
+                "_margin": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "0",
+                  "bottom": "10",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "cdf57ec3",
+                  "elType": "widget",
+                  "widgetType": "html",
+                  "isInner": false,
+                  "settings": {
+                    "html": "<div style=\"position: relative; overflow: hidden; background: linear-gradient(135deg, #E6F3FF 0%, #CCE6FF 100%); border: 1px solid #B8DCFF; border-radius: 16px; padding: 22px 18px; box-shadow: 0 8px 24px rgba(0, 123, 255, 0.08); font-family: 'Plus Jakarta Sans', sans-serif;\">\n  <div style=\"position: relative; z-index: 2; max-width: 60%;\">\n    <h3 style=\"margin: 0 0 6px 0; font-size: 18px; font-weight: 800; color: #007BFF; line-height: 1.3; font-style: italic;\">Cùng con tự tin chinh phục tiếng Anh</h3>\n    <p style=\"margin: 0 0 14px 0; font-size: 11.5px; color: #4B5563; font-weight: 500;\">Kiến tạo tương lai vững chắc!</p>\n    <a href=\"#\" style=\"display: inline-block; background: #007BFF; color: #FFFFFF; font-size: 12px; font-weight: 700; padding: 7px 16px; border-radius: 20px; text-decoration: none; box-shadow: 0 3px 10px rgba(0, 123, 255, 0.35);\">Đăng ký ngay →</a>\n  </div>\n  <div style=\"position: absolute; right: 0; bottom: 0; width: 45%; max-height: 100%; display: flex; align-items: flex-end; justify-content: flex-end;\">\n    <img src=\"https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=400&auto=format&fit=crop\" alt=\"Học viên Tiếng Anh Chị Trà\" style=\"width: 110%; object-fit: contain; pointer-events: none;\" />\n  </div>\n</div>"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "668b011e",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {
+              "unit": "%",
+              "size": 32
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "flex_direction": "column",
+            "gap": {
+              "unit": "px",
+              "size": 22
+            },
+            "hide_mobile": "hidden"
+          },
+          "elements": [
+            {
+              "id": "293ca8c2",
+              "elType": "widget",
+              "widgetType": "html",
+              "isInner": false,
+              "settings": {
+                "html": "<div style=\"background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 14px; padding: 18px; box-shadow: 0 4px 16px rgba(0, 45, 98, 0.04); font-family: 'Plus Jakarta Sans', sans-serif;\">\n  <div style=\"display: flex; align-items: center; gap: 8px; margin-bottom: 14px;\">\n    <span style=\"color: #007BFF; font-size: 16px;\">🔍</span>\n    <h4 style=\"margin: 0; font-size: 15px; font-weight: 800; color: #002D62;\">Tìm kiếm bài viết</h4>\n  </div>\n  <div style=\"display: flex; gap: 8px;\">\n    <input type=\"text\" placeholder=\"Nhập từ khóa...\" style=\"flex: 1; border: 1px solid #E5E7EB; border-radius: 8px; padding: 9px 12px; font-size: 13px; outline: none; background: #F9FAFB;\" />\n    <button type=\"button\" style=\"background: #007BFF; color: #fff; border: none; border-radius: 8px; padding: 0 14px; cursor: pointer; display: flex; align-items: center; justify-content: center;\">\n      <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"><circle cx=\"11\" cy=\"11\" r=\"8\"></circle><line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\"></line></svg>\n    </button>\n  </div>\n</div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "949daefd",
+              "elType": "widget",
+              "widgetType": "html",
+              "isInner": false,
+              "settings": {
+                "html": "<div style=\"background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 14px; padding: 18px; box-shadow: 0 4px 16px rgba(0, 45, 98, 0.04); font-family: 'Plus Jakarta Sans', sans-serif;\">\n  <div style=\"display: flex; align-items: center; gap: 8px; margin-bottom: 8px;\">\n    <span style=\"color: #007BFF; font-size: 16px;\">📁</span>\n    <h4 style=\"margin: 0; font-size: 15px; font-weight: 800; color: #002D62;\">Danh mục tin tức</h4>\n  </div>\n  <ul style=\"list-style: none; padding: 0; margin: 0;\">\n    <li style=\"display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed #F0F2F5;\">\n      <div style=\"display: flex; align-items: center; gap: 8px;\">\n        <span style=\"width: 6px; height: 6px; border-radius: 50%; background: #93C5FD; display: inline-block;\"></span>\n        <a href=\"#\" style=\"color: #4B5563; font-size: 13.5px; font-weight: 600; text-decoration: none; transition: color 0.2s;\">Tin tức</a>\n      </div>\n      <span style=\"background: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; border-radius: 12px; padding: 2px 8px;\">24</span>\n    </li>\n\n    <li style=\"display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed #F0F2F5;\">\n      <div style=\"display: flex; align-items: center; gap: 8px;\">\n        <span style=\"width: 6px; height: 6px; border-radius: 50%; background: #93C5FD; display: inline-block;\"></span>\n        <a href=\"#\" style=\"color: #4B5563; font-size: 13.5px; font-weight: 600; text-decoration: none; transition: color 0.2s;\">Sự kiện</a>\n      </div>\n      <span style=\"background: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; border-radius: 12px; padding: 2px 8px;\">18</span>\n    </li>\n\n    <li style=\"display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed #F0F2F5;\">\n      <div style=\"display: flex; align-items: center; gap: 8px;\">\n        <span style=\"width: 6px; height: 6px; border-radius: 50%; background: #93C5FD; display: inline-block;\"></span>\n        <a href=\"#\" style=\"color: #4B5563; font-size: 13.5px; font-weight: 600; text-decoration: none; transition: color 0.2s;\">Hoạt động ngoại khóa</a>\n      </div>\n      <span style=\"background: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; border-radius: 12px; padding: 2px 8px;\">12</span>\n    </li>\n\n    <li style=\"display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed #F0F2F5;\">\n      <div style=\"display: flex; align-items: center; gap: 8px;\">\n        <span style=\"width: 6px; height: 6px; border-radius: 50%; background: #93C5FD; display: inline-block;\"></span>\n        <a href=\"#\" style=\"color: #4B5563; font-size: 13.5px; font-weight: 600; text-decoration: none; transition: color 0.2s;\">Chương trình đào tạo</a>\n      </div>\n      <span style=\"background: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; border-radius: 12px; padding: 2px 8px;\">10</span>\n    </li>\n\n    <li style=\"display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed #F0F2F5;\">\n      <div style=\"display: flex; align-items: center; gap: 8px;\">\n        <span style=\"width: 6px; height: 6px; border-radius: 50%; background: #93C5FD; display: inline-block;\"></span>\n        <a href=\"#\" style=\"color: #4B5563; font-size: 13.5px; font-weight: 600; text-decoration: none; transition: color 0.2s;\">Kinh nghiệm học tập</a>\n      </div>\n      <span style=\"background: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; border-radius: 12px; padding: 2px 8px;\">8</span>\n    </li>\n  </ul>\n</div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "51d57e68",
+              "elType": "widget",
+              "widgetType": "html",
+              "isInner": false,
+              "settings": {
+                "html": "<div style=\"background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 14px; padding: 18px; box-shadow: 0 4px 16px rgba(0, 45, 98, 0.04); font-family: 'Plus Jakarta Sans', sans-serif;\">\n  <div style=\"display: flex; align-items: center; gap: 8px; margin-bottom: 6px;\">\n    <span style=\"color: #007BFF; font-size: 16px;\">📰</span>\n    <h4 style=\"margin: 0; font-size: 15px; font-weight: 800; color: #002D62;\">Bài viết nổi bật</h4>\n  </div>\n  <div style=\"display: flex; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px dashed #F0F2F5;\">\n      <img src=\"https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=200&auto=format&fit=crop\" alt=\"Gói lộ trình tăng cường kỹ năng tiếng Anh – Bước đệm vững chắc cho tương lai\" style=\"width: 60px; height: 50px; border-radius: 8px; object-fit: cover; flex-shrink: 0;\" />\n      <div style=\"flex: 1; min-width: 0;\">\n        <a href=\"#\" style=\"color: #002D62; font-size: 12.5px; font-weight: 700; line-height: 1.3; text-decoration: none; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 4px;\">Gói lộ trình tăng cường kỹ năng tiếng Anh – Bước đệm vững chắc cho tương lai</a>\n        <div style=\"color: #6B7280; font-size: 11px; display: flex; align-items: center; gap: 4px;\">\n          <span>🕒</span> 07/05/2025\n        </div>\n      </div>\n    </div>\n\n    <div style=\"display: flex; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px dashed #F0F2F5;\">\n      <img src=\"https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=200&auto=format&fit=crop\" alt=\"Chương trình giao lưu tiếng Anh tại trường THCS\" style=\"width: 60px; height: 50px; border-radius: 8px; object-fit: cover; flex-shrink: 0;\" />\n      <div style=\"flex: 1; min-width: 0;\">\n        <a href=\"#\" style=\"color: #002D62; font-size: 12.5px; font-weight: 700; line-height: 1.3; text-decoration: none; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 4px;\">Chương trình giao lưu tiếng Anh tại trường THCS</a>\n        <div style=\"color: #6B7280; font-size: 11px; display: flex; align-items: center; gap: 4px;\">\n          <span>🕒</span> 28/04/2025\n        </div>\n      </div>\n    </div>\n\n    <div style=\"display: flex; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px dashed #F0F2F5;\">\n      <img src=\"https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=200&auto=format&fit=crop\" alt=\"5 tips giúp bạn cải thiện kỹ năng nghe tiếng Anh nhanh chóng\" style=\"width: 60px; height: 50px; border-radius: 8px; object-fit: cover; flex-shrink: 0;\" />\n      <div style=\"flex: 1; min-width: 0;\">\n        <a href=\"#\" style=\"color: #002D62; font-size: 12.5px; font-weight: 700; line-height: 1.3; text-decoration: none; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 4px;\">5 tips giúp bạn cải thiện kỹ năng nghe tiếng Anh nhanh chóng</a>\n        <div style=\"color: #6B7280; font-size: 11px; display: flex; align-items: center; gap: 4px;\">\n          <span>🕒</span> 26/04/2025\n        </div>\n      </div>\n    </div>\n\n    <div style=\"display: flex; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px dashed #F0F2F5;\">\n      <img src=\"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=200&auto=format&fit=crop\" alt=\"Học viên đạt thành tích cao trong kỳ thi\" style=\"width: 60px; height: 50px; border-radius: 8px; object-fit: cover; flex-shrink: 0;\" />\n      <div style=\"flex: 1; min-width: 0;\">\n        <a href=\"#\" style=\"color: #002D62; font-size: 12.5px; font-weight: 700; line-height: 1.3; text-decoration: none; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 4px;\">Học viên đạt thành tích cao trong kỳ thi</a>\n        <div style=\"color: #6B7280; font-size: 11px; display: flex; align-items: center; gap: 4px;\">\n          <span>🕒</span> 07/05/2025\n        </div>\n      </div>\n    </div>\n</div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "9d4421f7",
+              "elType": "widget",
+              "widgetType": "html",
+              "isInner": false,
+              "settings": {
+                "html": "<div style=\"position: relative; overflow: hidden; background: linear-gradient(135deg, #E6F3FF 0%, #CCE6FF 100%); border: 1px solid #B8DCFF; border-radius: 16px; padding: 22px 18px; box-shadow: 0 8px 24px rgba(0, 123, 255, 0.08); font-family: 'Plus Jakarta Sans', sans-serif;\">\n  <div style=\"position: relative; z-index: 2; max-width: 60%;\">\n    <h3 style=\"margin: 0 0 6px 0; font-size: 18px; font-weight: 800; color: #007BFF; line-height: 1.3; font-style: italic;\">Cùng con tự tin chinh phục tiếng Anh</h3>\n    <p style=\"margin: 0 0 14px 0; font-size: 11.5px; color: #4B5563; font-weight: 500;\">Kiến tạo tương lai vững chắc!</p>\n    <a href=\"#\" style=\"display: inline-block; background: #007BFF; color: #FFFFFF; font-size: 12px; font-weight: 700; padding: 7px 16px; border-radius: 20px; text-decoration: none; box-shadow: 0 3px 10px rgba(0, 123, 255, 0.35);\">Đăng ký ngay →</a>\n  </div>\n  <div style=\"position: absolute; right: 0; bottom: 0; width: 45%; max-height: 100%; display: flex; align-items: flex-end; justify-content: flex-end;\">\n    <img src=\"https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=400&auto=format&fit=crop\" alt=\"Học viên Tiếng Anh Chị Trà\" style=\"width: 110%; object-fit: contain; pointer-events: none;\" />\n  </div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

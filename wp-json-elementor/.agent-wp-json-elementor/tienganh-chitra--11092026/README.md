@@ -50,6 +50,12 @@ tienganh-chitra--11092026/
 │   ├── generate_tin_tuc.py
 │   └── 9. Trang tin tuc.md
 │
+├── 📁 07-danh-muc-bai-viet/      # Trang Danh Mục Bài Viết (Category / Archive 2 cột + Mobile List)
+│   ├── danh-muc-bai-viet-elementor.json
+│   ├── danh-muc-bai-viet-elementor.zip
+│   ├── generate_danh_muc_bai_viet.py
+│   └── 10. Trang danh muc bai viet.md
+│
 ├── 📁 loop-items/                 # Các mẫu Loop Item động dùng trong Loop Grid / Carousel
 │   ├── loop-item-giang-vien.json / .zip
 │   ├── loop-item-khoa-hoc-3d.json / .zip
