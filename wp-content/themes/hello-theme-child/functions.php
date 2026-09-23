@@ -38,9 +38,10 @@ add_action('wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20);
 /**
  * ============================================================================
  * ĐĂNG KÝ CUSTOM POST TYPES DỰ ÁN TIẾNG ANH CHỊ TRÀ
- * 1. giang_vien  : Đội ngũ giảng viên
- * 2. khoa_hoc    : Chương trình đào tạo / Khóa học
- * 3. hoc_vien    : Bảng vàng học viên xuất sắc
+ * 1. giang_vien       : Đội ngũ giảng viên
+ * 2. khoa_hoc         : Chương trình đào tạo / Khóa học
+ * 3. hoc_vien         : Bảng vàng học viên xuất sắc
+ * 4. du_an_cong_dong  : Dự án cộng đồng (Taxonomy: danh_muc_du_an)
  * ============================================================================
  */
 add_action('init', 'tienganh_chitra_register_custom_post_types');
@@ -113,6 +114,52 @@ function tienganh_chitra_register_custom_post_types()
         'menu_icon'          => 'dashicons-awards',
         'supports'           => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
         'rewrite'            => array('slug' => 'hoc-vien-xuat-sac', 'with_front' => false),
+    ));
+
+    // 4. Post Type: Dự Án Cộng Đồng
+    register_post_type('du_an_cong_dong', array(
+        'labels' => array(
+            'name'               => __('Dự Án Cộng Đồng', 'tienganh-chitra'),
+            'singular_name'      => __('Dự Án Cộng Đồng', 'tienganh-chitra'),
+            'menu_name'          => __('Dự Án Cộng Đồng', 'tienganh-chitra'),
+            'all_items'          => __('Tất Cả Dự Án', 'tienganh-chitra'),
+            'add_new'            => __('Thêm Dự Án Mới', 'tienganh-chitra'),
+            'add_new_item'       => __('Thêm Dự Án Mới', 'tienganh-chitra'),
+            'edit_item'          => __('Chỉnh Sửa Dự Án', 'tienganh-chitra'),
+            'new_item'           => __('Dự Án Mới', 'tienganh-chitra'),
+            'view_item'          => __('Xem Dự Án', 'tienganh-chitra'),
+            'search_items'       => __('Tìm Kiếm Dự Án', 'tienganh-chitra'),
+            'not_found'          => __('Không tìm thấy dự án nào', 'tienganh-chitra'),
+        ),
+        'public'             => true,
+        'has_archive'        => true,
+        'show_in_rest'       => true, // Kích hoạt Gutenberg, Elementor Loop Grid & Dynamic Tags
+        'menu_icon'          => 'dashicons-heart',
+        'supports'           => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+        'rewrite'            => array('slug' => 'du-an-cong-dong', 'with_front' => false),
+    ));
+
+    // Taxonomy: Danh Mục Dự Án Cộng Đồng
+    register_taxonomy('danh_muc_du_an', 'du_an_cong_dong', array(
+        'labels' => array(
+            'name'              => __('Danh Mục Dự Án', 'tienganh-chitra'),
+            'singular_name'     => __('Danh Mục Dự Án', 'tienganh-chitra'),
+            'search_items'      => __('Tìm Danh Mục', 'tienganh-chitra'),
+            'all_items'         => __('Tất Cả Danh Mục', 'tienganh-chitra'),
+            'parent_item'       => __('Danh Mục Cha', 'tienganh-chitra'),
+            'parent_item_colon' => __('Danh Mục Cha:', 'tienganh-chitra'),
+            'edit_item'         => __('Chỉnh Sửa Danh Mục', 'tienganh-chitra'),
+            'update_item'       => __('Cập Nhật Danh Mục', 'tienganh-chitra'),
+            'add_new_item'      => __('Thêm Danh Mục Mới', 'tienganh-chitra'),
+            'new_item_name'     => __('Tên Danh Mục Mới', 'tienganh-chitra'),
+            'menu_name'         => __('Danh Mục Dự Án', 'tienganh-chitra'),
+        ),
+        'hierarchical'      => true,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'show_in_rest'      => true,
+        'query_var'         => true,
+        'rewrite'           => array('slug' => 'danh-muc-du-an'),
     ));
 }
 
