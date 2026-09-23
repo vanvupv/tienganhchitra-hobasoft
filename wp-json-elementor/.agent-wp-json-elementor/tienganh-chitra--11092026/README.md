@@ -56,6 +56,12 @@ tienganh-chitra--11092026/
 │   ├── generate_danh_muc_bai_viet.py
 │   └── 10. Trang danh muc bai viet.md
 │
+├── 📁 08-bang-vang-hoc-vien/       # Trang Bảng Vàng Học Viên (7 Section: Banner + Tabs + Lưới 8 Thẻ + Stats + CTA)
+│   ├── bang-vang-hoc-vien-elementor.json
+│   ├── bang-vang-hoc-vien-elementor.zip
+│   ├── generate_bang_vang_hoc_vien.py
+│   └── 11. Trang bang vang hoc vien.md
+│
 ├── 📁 loop-items/                 # Các mẫu Loop Item động dùng trong Loop Grid / Carousel
 │   ├── loop-item-giang-vien.json / .zip
 │   ├── loop-item-khoa-hoc-3d.json / .zip

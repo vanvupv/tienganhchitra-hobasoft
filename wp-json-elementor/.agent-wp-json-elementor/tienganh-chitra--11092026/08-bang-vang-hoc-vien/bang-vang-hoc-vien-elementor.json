@@ -1,0 +1,3840 @@
+{
+  "version": "0.4",
+  "title": "Bảng Vàng Học Viên - Tiếng Anh Chị Trà",
+  "type": "page",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "4bc5e940",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "justify_content": "center",
+        "align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "20",
+          "bottom": "40",
+          "left": "20",
+          "isLinked": false
+        },
+        "background_background": "gradient",
+        "background_color": "#EAF4FF",
+        "background_color_b": "#F6FAFF",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 180
+        }
+      },
+      "elements": [
+        {
+          "id": "59f3d9a0",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "width": {
+              "unit": "px",
+              "size": 1240
+            },
+            "flex_direction": "row",
+            "flex_direction_tablet": "column-reverse",
+            "justify_content": "space-between",
+            "align_items": "center",
+            "gap": {
+              "unit": "px",
+              "size": 40
+            }
+          },
+          "elements": [
+            {
+              "id": "eb253f18",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "align_items": "center",
+                "justify_content": "center"
+              },
+              "elements": [
+                {
+                  "id": "1b698668",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "isInner": false,
+                  "settings": {
+                    "image": {
+                      "url": "https://englishchitra.demoweb360.top/wp-content/uploads/2026/09/Ban-sao-cua-ANH02083-scaled-1.jpg",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "align": "center",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "16",
+                      "left": "16",
+                      "isLinked": true
+                    },
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 12,
+                      "blur": 28,
+                      "spread": 0,
+                      "color": "rgba(0, 123, 255, 0.12)"
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "947a9aaa",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 50
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "align_items": "flex-start",
+                "justify_content": "center"
+              },
+              "elements": [
+                {
+                  "id": "b49a83de",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "isInner": false,
+                  "settings": {
+                    "title": "THÀNH TÍCH & TỰ HÀO",
+                    "header_size": "h5",
+                    "align": "left",
+                    "title_color": "#007BFF",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    },
+                    "typography_font_weight": "800",
+                    "typography_text_transform": "uppercase",
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": 2
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2
+                    },
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "10",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "e722fa01",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "isInner": false,
+                  "settings": {
+                    "title": "BẢNG VÀNG HỌC VIÊN",
+                    "header_size": "h1",
+                    "align": "left",
+                    "title_color": "#002D62",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 42
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 30
+                    },
+                    "typography_font_weight": "800",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2
+                    },
+                    "_margin": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "16",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "d8dc0103",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "isInner": false,
+                  "settings": {
+                    "editor": "<p>Những dấu ấn nổi bật trên hành trình học tập của các học viên Tiếng Anh Chị Trà.</p>",
+                    "align": "left",
+                    "text_color": "#64748B",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.6
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5c52d6db",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1240
+        },
+        "flex_direction": "row",
+        "align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "16",
+          "right": "20",
+          "bottom": "10",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "4fd036a5",
+          "elType": "widget",
+          "widgetType": "yoast-breadcrumbs",
+          "isInner": false,
+          "settings": {},
+          "elements": []
+        },
+        {
+          "id": "fc690347",
+          "elType": "widget",
+          "widgetType": "shortcode",
+          "isInner": false,
+          "settings": {
+            "shortcode": "[wpseo_breadcrumb]"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "1da21ff3",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1240
+        },
+        "flex_direction": "column",
+        "align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "20",
+          "bottom": "15",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "e99531f5",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "NHỮNG DẤU ẤN ĐÁNG TỰ HÀO",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#002D62",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 30
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 22
+            },
+            "typography_font_weight": "800",
+            "typography_text_transform": "uppercase",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "12",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "deef6463",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "isInner": false,
+          "settings": {
+            "editor": "<p style=\"text-align: center; max-width: 650px; margin: 0 auto; color: #64748B; font-size: 15px; line-height: 1.6;\">Mỗi chứng chỉ, mỗi giải thưởng là một dấu mốc ghi nhận sự nỗ lực và hành trình trưởng thành của học viên tại Tiếng Anh Chị Trà.</p>",
+            "align": "center",
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "25",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "ad8845e7",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "justify_content": "center",
+            "align_items": "center",
+            "flex_wrap": "wrap",
+            "gap": {
+              "unit": "px",
+              "size": 14
+            }
+          },
+          "elements": [
+            {
+              "id": "72933453",
+              "elType": "widget",
+              "widgetType": "button",
+              "isInner": false,
+              "settings": {
+                "text": "IC3",
+                "link": {
+                  "url": "#ic3"
+                },
+                "align": "center",
+                "size": "md",
+                "selected_icon": {
+                  "value": "fas fa-desktop",
+                  "library": "fa-solid"
+                },
+                "icon_align": "left",
+                "icon_indent": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "700",
+                "button_text_color": "#FFFFFF",
+                "background_color": "#007BFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "99",
+                  "right": "99",
+                  "bottom": "99",
+                  "left": "99",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 4,
+                  "blur": 14,
+                  "spread": 0,
+                  "color": "rgba(0, 123, 255, 0.35)"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "32",
+                  "bottom": "12",
+                  "left": "32",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "dbb86133",
+              "elType": "widget",
+              "widgetType": "button",
+              "isInner": false,
+              "settings": {
+                "text": "Cambridge",
+                "link": {
+                  "url": "#cambridge"
+                },
+                "align": "center",
+                "size": "md",
+                "selected_icon": {
+                  "value": "fas fa-shield-alt",
+                  "library": "fa-solid"
+                },
+                "icon_align": "left",
+                "icon_indent": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "700",
+                "button_text_color": "#334155",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1.5",
+                  "right": "1.5",
+                  "bottom": "1.5",
+                  "left": "1.5",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "99",
+                  "right": "99",
+                  "bottom": "99",
+                  "left": "99",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "28",
+                  "bottom": "12",
+                  "left": "28",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "702f16cb",
+              "elType": "widget",
+              "widgetType": "button",
+              "isInner": false,
+              "settings": {
+                "text": "IELTS",
+                "link": {
+                  "url": "#ielts"
+                },
+                "align": "center",
+                "size": "md",
+                "selected_icon": {
+                  "value": "fas fa-award",
+                  "library": "fa-solid"
+                },
+                "icon_align": "left",
+                "icon_indent": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "700",
+                "button_text_color": "#334155",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1.5",
+                  "right": "1.5",
+                  "bottom": "1.5",
+                  "left": "1.5",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "99",
+                  "right": "99",
+                  "bottom": "99",
+                  "left": "99",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "28",
+                  "bottom": "12",
+                  "left": "28",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "fe0e8b25",
+              "elType": "widget",
+              "widgetType": "button",
+              "isInner": false,
+              "settings": {
+                "text": "Giải quốc tế",
+                "link": {
+                  "url": "#giai-quoc-te"
+                },
+                "align": "center",
+                "size": "md",
+                "selected_icon": {
+                  "value": "fas fa-trophy",
+                  "library": "fa-solid"
+                },
+                "icon_align": "left",
+                "icon_indent": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "700",
+                "button_text_color": "#334155",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1.5",
+                  "right": "1.5",
+                  "bottom": "1.5",
+                  "left": "1.5",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "99",
+                  "right": "99",
+                  "bottom": "99",
+                  "left": "99",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "28",
+                  "bottom": "12",
+                  "left": "28",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "27bb873c",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1240
+        },
+        "padding": {
+          "unit": "px",
+          "top": "24",
+          "right": "32",
+          "bottom": "24",
+          "left": "32",
+          "isLinked": false
+        },
+        "_margin": {
+          "unit": "px",
+          "top": "20",
+          "right": "auto",
+          "bottom": "35",
+          "left": "auto",
+          "isLinked": false
+        },
+        "border_border": "solid",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_color": "#E2E8F0",
+        "border_radius": {
+          "unit": "px",
+          "top": "18",
+          "right": "18",
+          "bottom": "18",
+          "left": "18",
+          "isLinked": true
+        },
+        "background_background": "gradient",
+        "background_color": "#F8FAFC",
+        "background_color_b": "#F0F7FF",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 90
+        }
+      },
+      "elements": [
+        {
+          "id": "197e1ee3",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_direction_tablet": "column",
+            "justify_content": "space-between",
+            "align_items": "center",
+            "gap": {
+              "unit": "px",
+              "size": 24
+            }
+          },
+          "elements": [
+            {
+              "id": "c359fa2f",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 65
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "row",
+                "align_items": "center",
+                "gap": {
+                  "unit": "px",
+                  "size": 18
+                }
+              },
+              "elements": [
+                {
+                  "id": "eaa4d1b1",
+                  "elType": "widget",
+                  "widgetType": "icon",
+                  "isInner": false,
+                  "settings": {
+                    "selected_icon": {
+                      "value": "fas fa-desktop",
+                      "library": "fa-solid"
+                    },
+                    "view": "default",
+                    "primary_color": "#007BFF",
+                    "size": {
+                      "unit": "px",
+                      "size": 38
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "1a78dff8",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": {
+                      "unit": "px",
+                      "size": 4
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "ec00b38a",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "IC3",
+                        "header_size": "h3",
+                        "align": "left",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 24
+                        },
+                        "typography_font_weight": "800",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.2
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "6abfead1",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"color: #64748B; font-size: 14px; margin: 0; line-height: 1.5;\">Chứng chỉ công nghệ thông tin quốc tế, giúp học viên trang bị kỹ năng máy tính và tư duy số trong thời đại mới.</p>",
+                        "align": "left"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "61cf0380",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "row",
+                "justify_content": "flex-end",
+                "justify_content_tablet": "center",
+                "align_items": "center"
+              },
+              "elements": [
+                {
+                  "id": "0d1c51ad",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "isInner": false,
+                  "settings": {
+                    "title": "<span style=\"color: #22C55E; font-size: 26px; font-weight: 900; letter-spacing: 1px;\">IC3</span> <span style=\"font-size: 12px; font-weight: 800; color: #334155; text-transform: uppercase;\">DIGITAL LITERACY<br>CERTIFICATION</span>",
+                    "header_size": "div",
+                    "align": "right"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "da052b61",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1240
+        },
+        "padding": {
+          "unit": "px",
+          "top": "10",
+          "right": "20",
+          "bottom": "30",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "1ae00f60",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "justify_content": "space-between",
+            "gap": {
+              "unit": "px",
+              "size": 20
+            }
+          },
+          "elements": [
+            {
+              "id": "b82e50de",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "overflow": "hidden",
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "18",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 4,
+                  "blur": 16,
+                  "spread": 0,
+                  "color": "rgba(0, 0, 0, 0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "f0e81229",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "position": "relative",
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {
+                      "id": "46439c20",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "isInner": false,
+                      "settings": {
+                        "image": {
+                          "url": "https://englishchitra.demoweb360.top/wp-content/uploads/2026/09/Ban-sao-cua-ANH02508-1-scaled-1.jpg",
+                          "id": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "height": {
+                          "unit": "px",
+                          "size": 200
+                        },
+                        "object_fit": "cover"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "1649545a",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "isInner": false,
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-award",
+                          "library": "fa-solid"
+                        },
+                        "view": "stacked",
+                        "shape": "circle",
+                        "primary_color": "#F59E0B",
+                        "secondary_color": "#FFFFFF",
+                        "size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "_position": "absolute",
+                        "_offset_x": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_y": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_x_end": {
+                          "unit": "px",
+                          "size": 12
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "3e15ac61",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "0",
+                      "left": "16",
+                      "isLinked": false
+                    },
+                    "gap": {
+                      "unit": "px",
+                      "size": 10
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "21d1e00f",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Nguyễn Minh Anh",
+                        "header_size": "h4",
+                        "align": "left",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "7b56788c",
+                      "elType": "widget",
+                      "widgetType": "icon-list",
+                      "isInner": false,
+                      "settings": {
+                        "icon_list": [
+                          {
+                            "text": "IC3 GS6",
+                            "selected_icon": {
+                              "value": "fas fa-desktop",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Điểm số: 980/1000",
+                            "selected_icon": {
+                              "value": "fas fa-certificate",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Năm đạt: 2026",
+                            "selected_icon": {
+                              "value": "fas fa-calendar-alt",
+                              "library": "fa-solid"
+                            }
+                          }
+                        ],
+                        "icon_color": "#007BFF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 13
+                        },
+                        "text_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "space_between": {
+                          "unit": "px",
+                          "size": 8
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "8fc4f22d",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "isInner": false,
+                      "settings": {
+                        "text": "Xem chi tiết →",
+                        "link": {
+                          "url": "#"
+                        },
+                        "align": "left",
+                        "size": "sm",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "typography_font_weight": "700",
+                        "button_text_color": "#007BFF",
+                        "background_color": "transparent",
+                        "padding": {
+                          "unit": "px",
+                          "top": "4",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "50082811",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "overflow": "hidden",
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "18",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 4,
+                  "blur": 16,
+                  "spread": 0,
+                  "color": "rgba(0, 0, 0, 0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "81fd8a5b",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "position": "relative",
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {
+                      "id": "37cc14f6",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "isInner": false,
+                      "settings": {
+                        "image": {
+                          "url": "https://englishchitra.demoweb360.top/wp-content/uploads/2026/09/Ban-sao-cua-ANH02524-1-scaled-1.jpg",
+                          "id": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "height": {
+                          "unit": "px",
+                          "size": 200
+                        },
+                        "object_fit": "cover"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "d29cdecf",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "isInner": false,
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-award",
+                          "library": "fa-solid"
+                        },
+                        "view": "stacked",
+                        "shape": "circle",
+                        "primary_color": "#F59E0B",
+                        "secondary_color": "#FFFFFF",
+                        "size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "_position": "absolute",
+                        "_offset_x": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_y": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_x_end": {
+                          "unit": "px",
+                          "size": 12
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "fe9b5b12",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "0",
+                      "left": "16",
+                      "isLinked": false
+                    },
+                    "gap": {
+                      "unit": "px",
+                      "size": 10
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "8318172d",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Trần Đức Minh",
+                        "header_size": "h4",
+                        "align": "left",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "49dbcf9c",
+                      "elType": "widget",
+                      "widgetType": "icon-list",
+                      "isInner": false,
+                      "settings": {
+                        "icon_list": [
+                          {
+                            "text": "IC3 GS5",
+                            "selected_icon": {
+                              "value": "fas fa-desktop",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Điểm số: 950/1000",
+                            "selected_icon": {
+                              "value": "fas fa-certificate",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Năm đạt: 2025",
+                            "selected_icon": {
+                              "value": "fas fa-calendar-alt",
+                              "library": "fa-solid"
+                            }
+                          }
+                        ],
+                        "icon_color": "#007BFF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 13
+                        },
+                        "text_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "space_between": {
+                          "unit": "px",
+                          "size": 8
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "7f642fb9",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "isInner": false,
+                      "settings": {
+                        "text": "Xem chi tiết →",
+                        "link": {
+                          "url": "#"
+                        },
+                        "align": "left",
+                        "size": "sm",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "typography_font_weight": "700",
+                        "button_text_color": "#007BFF",
+                        "background_color": "transparent",
+                        "padding": {
+                          "unit": "px",
+                          "top": "4",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d53d37fd",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "overflow": "hidden",
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "18",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 4,
+                  "blur": 16,
+                  "spread": 0,
+                  "color": "rgba(0, 0, 0, 0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "3a244954",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "position": "relative",
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {
+                      "id": "56b43887",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "isInner": false,
+                      "settings": {
+                        "image": {
+                          "url": "https://englishchitra.demoweb360.top/wp-content/uploads/2026/09/Ban-sao-cua-ANH02556-1-scaled-1.jpg",
+                          "id": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "height": {
+                          "unit": "px",
+                          "size": 200
+                        },
+                        "object_fit": "cover"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "ddb64e70",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "isInner": false,
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-award",
+                          "library": "fa-solid"
+                        },
+                        "view": "stacked",
+                        "shape": "circle",
+                        "primary_color": "#F59E0B",
+                        "secondary_color": "#FFFFFF",
+                        "size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "_position": "absolute",
+                        "_offset_x": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_y": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_x_end": {
+                          "unit": "px",
+                          "size": 12
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "e03ec786",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "0",
+                      "left": "16",
+                      "isLinked": false
+                    },
+                    "gap": {
+                      "unit": "px",
+                      "size": 10
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "6067a39f",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Lê Khánh Linh",
+                        "header_size": "h4",
+                        "align": "left",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "bfe94b9b",
+                      "elType": "widget",
+                      "widgetType": "icon-list",
+                      "isInner": false,
+                      "settings": {
+                        "icon_list": [
+                          {
+                            "text": "IC3 GS6",
+                            "selected_icon": {
+                              "value": "fas fa-desktop",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Điểm số: 970/1000",
+                            "selected_icon": {
+                              "value": "fas fa-certificate",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Năm đạt: 2025",
+                            "selected_icon": {
+                              "value": "fas fa-calendar-alt",
+                              "library": "fa-solid"
+                            }
+                          }
+                        ],
+                        "icon_color": "#007BFF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 13
+                        },
+                        "text_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "space_between": {
+                          "unit": "px",
+                          "size": 8
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "35c33aa1",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "isInner": false,
+                      "settings": {
+                        "text": "Xem chi tiết →",
+                        "link": {
+                          "url": "#"
+                        },
+                        "align": "left",
+                        "size": "sm",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "typography_font_weight": "700",
+                        "button_text_color": "#007BFF",
+                        "background_color": "transparent",
+                        "padding": {
+                          "unit": "px",
+                          "top": "4",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "33861442",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "overflow": "hidden",
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "18",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 4,
+                  "blur": 16,
+                  "spread": 0,
+                  "color": "rgba(0, 0, 0, 0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "0ca943f3",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "position": "relative",
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {
+                      "id": "ccde6351",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "isInner": false,
+                      "settings": {
+                        "image": {
+                          "url": "https://englishchitra.demoweb360.top/wp-content/uploads/2026/09/Ban-sao-cua-ANH02584-scaled-1.jpg",
+                          "id": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "height": {
+                          "unit": "px",
+                          "size": 200
+                        },
+                        "object_fit": "cover"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "6a0c8df0",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "isInner": false,
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-award",
+                          "library": "fa-solid"
+                        },
+                        "view": "stacked",
+                        "shape": "circle",
+                        "primary_color": "#F59E0B",
+                        "secondary_color": "#FFFFFF",
+                        "size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "_position": "absolute",
+                        "_offset_x": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_y": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_x_end": {
+                          "unit": "px",
+                          "size": 12
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "c77677fc",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "0",
+                      "left": "16",
+                      "isLinked": false
+                    },
+                    "gap": {
+                      "unit": "px",
+                      "size": 10
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "95c29267",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Phạm Nhật Minh",
+                        "header_size": "h4",
+                        "align": "left",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "5c4c421e",
+                      "elType": "widget",
+                      "widgetType": "icon-list",
+                      "isInner": false,
+                      "settings": {
+                        "icon_list": [
+                          {
+                            "text": "IC3 GS5",
+                            "selected_icon": {
+                              "value": "fas fa-desktop",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Điểm số: 930/1000",
+                            "selected_icon": {
+                              "value": "fas fa-certificate",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Năm đạt: 2025",
+                            "selected_icon": {
+                              "value": "fas fa-calendar-alt",
+                              "library": "fa-solid"
+                            }
+                          }
+                        ],
+                        "icon_color": "#007BFF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 13
+                        },
+                        "text_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "space_between": {
+                          "unit": "px",
+                          "size": 8
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "ed427930",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "isInner": false,
+                      "settings": {
+                        "text": "Xem chi tiết →",
+                        "link": {
+                          "url": "#"
+                        },
+                        "align": "left",
+                        "size": "sm",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "typography_font_weight": "700",
+                        "button_text_color": "#007BFF",
+                        "background_color": "transparent",
+                        "padding": {
+                          "unit": "px",
+                          "top": "4",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f71bdae9",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "overflow": "hidden",
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "18",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 4,
+                  "blur": 16,
+                  "spread": 0,
+                  "color": "rgba(0, 0, 0, 0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "f7e2457c",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "position": "relative",
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {
+                      "id": "f87e6b7b",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "isInner": false,
+                      "settings": {
+                        "image": {
+                          "url": "https://englishchitra.demoweb360.top/wp-content/uploads/2026/09/Ban-sao-cua-ANH03316-scaled-1.jpg",
+                          "id": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "height": {
+                          "unit": "px",
+                          "size": 200
+                        },
+                        "object_fit": "cover"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "691c0f2b",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "isInner": false,
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-award",
+                          "library": "fa-solid"
+                        },
+                        "view": "stacked",
+                        "shape": "circle",
+                        "primary_color": "#F59E0B",
+                        "secondary_color": "#FFFFFF",
+                        "size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "_position": "absolute",
+                        "_offset_x": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_y": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_x_end": {
+                          "unit": "px",
+                          "size": 12
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "dd6023c2",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "0",
+                      "left": "16",
+                      "isLinked": false
+                    },
+                    "gap": {
+                      "unit": "px",
+                      "size": 10
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "924227dc",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Đỗ Mai Anh",
+                        "header_size": "h4",
+                        "align": "left",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "5eeb9d55",
+                      "elType": "widget",
+                      "widgetType": "icon-list",
+                      "isInner": false,
+                      "settings": {
+                        "icon_list": [
+                          {
+                            "text": "IC3 GS6",
+                            "selected_icon": {
+                              "value": "fas fa-desktop",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Điểm số: 965/1000",
+                            "selected_icon": {
+                              "value": "fas fa-certificate",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Năm đạt: 2024",
+                            "selected_icon": {
+                              "value": "fas fa-calendar-alt",
+                              "library": "fa-solid"
+                            }
+                          }
+                        ],
+                        "icon_color": "#007BFF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 13
+                        },
+                        "text_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "space_between": {
+                          "unit": "px",
+                          "size": 8
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "2ef6733b",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "isInner": false,
+                      "settings": {
+                        "text": "Xem chi tiết →",
+                        "link": {
+                          "url": "#"
+                        },
+                        "align": "left",
+                        "size": "sm",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "typography_font_weight": "700",
+                        "button_text_color": "#007BFF",
+                        "background_color": "transparent",
+                        "padding": {
+                          "unit": "px",
+                          "top": "4",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "06a95283",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "overflow": "hidden",
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "18",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 4,
+                  "blur": 16,
+                  "spread": 0,
+                  "color": "rgba(0, 0, 0, 0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "a1b62591",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "position": "relative",
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {
+                      "id": "877fe4e2",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "isInner": false,
+                      "settings": {
+                        "image": {
+                          "url": "https://englishchitra.demoweb360.top/wp-content/uploads/2026/09/ANH02197-scaled-1.jpg",
+                          "id": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "height": {
+                          "unit": "px",
+                          "size": 200
+                        },
+                        "object_fit": "cover"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "3d8900a0",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "isInner": false,
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-award",
+                          "library": "fa-solid"
+                        },
+                        "view": "stacked",
+                        "shape": "circle",
+                        "primary_color": "#F59E0B",
+                        "secondary_color": "#FFFFFF",
+                        "size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "_position": "absolute",
+                        "_offset_x": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_y": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_x_end": {
+                          "unit": "px",
+                          "size": 12
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "d5b33a1e",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "0",
+                      "left": "16",
+                      "isLinked": false
+                    },
+                    "gap": {
+                      "unit": "px",
+                      "size": 10
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "d5176c0c",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Hoàng Gia Bảo",
+                        "header_size": "h4",
+                        "align": "left",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "1856d153",
+                      "elType": "widget",
+                      "widgetType": "icon-list",
+                      "isInner": false,
+                      "settings": {
+                        "icon_list": [
+                          {
+                            "text": "IC3 GS5",
+                            "selected_icon": {
+                              "value": "fas fa-desktop",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Điểm số: 920/1000",
+                            "selected_icon": {
+                              "value": "fas fa-certificate",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Năm đạt: 2024",
+                            "selected_icon": {
+                              "value": "fas fa-calendar-alt",
+                              "library": "fa-solid"
+                            }
+                          }
+                        ],
+                        "icon_color": "#007BFF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 13
+                        },
+                        "text_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "space_between": {
+                          "unit": "px",
+                          "size": 8
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "80e2b8a9",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "isInner": false,
+                      "settings": {
+                        "text": "Xem chi tiết →",
+                        "link": {
+                          "url": "#"
+                        },
+                        "align": "left",
+                        "size": "sm",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "typography_font_weight": "700",
+                        "button_text_color": "#007BFF",
+                        "background_color": "transparent",
+                        "padding": {
+                          "unit": "px",
+                          "top": "4",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bcae1a0d",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "overflow": "hidden",
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "18",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 4,
+                  "blur": 16,
+                  "spread": 0,
+                  "color": "rgba(0, 0, 0, 0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "1850a3fa",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "position": "relative",
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {
+                      "id": "66adafa7",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "isInner": false,
+                      "settings": {
+                        "image": {
+                          "url": "https://englishchitra.demoweb360.top/wp-content/uploads/2026/09/ANH02206-scaled-1.jpg",
+                          "id": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "height": {
+                          "unit": "px",
+                          "size": 200
+                        },
+                        "object_fit": "cover"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "7b73d269",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "isInner": false,
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-award",
+                          "library": "fa-solid"
+                        },
+                        "view": "stacked",
+                        "shape": "circle",
+                        "primary_color": "#F59E0B",
+                        "secondary_color": "#FFFFFF",
+                        "size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "_position": "absolute",
+                        "_offset_x": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_y": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_x_end": {
+                          "unit": "px",
+                          "size": 12
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "739d29c5",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "0",
+                      "left": "16",
+                      "isLinked": false
+                    },
+                    "gap": {
+                      "unit": "px",
+                      "size": 10
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0ed82b03",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Vũ Thảo My",
+                        "header_size": "h4",
+                        "align": "left",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "87c0bfd4",
+                      "elType": "widget",
+                      "widgetType": "icon-list",
+                      "isInner": false,
+                      "settings": {
+                        "icon_list": [
+                          {
+                            "text": "IC3 GS6",
+                            "selected_icon": {
+                              "value": "fas fa-desktop",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Điểm số: 980/1000",
+                            "selected_icon": {
+                              "value": "fas fa-certificate",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Năm đạt: 2024",
+                            "selected_icon": {
+                              "value": "fas fa-calendar-alt",
+                              "library": "fa-solid"
+                            }
+                          }
+                        ],
+                        "icon_color": "#007BFF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 13
+                        },
+                        "text_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "space_between": {
+                          "unit": "px",
+                          "size": 8
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "bf0e3b7c",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "isInner": false,
+                      "settings": {
+                        "text": "Xem chi tiết →",
+                        "link": {
+                          "url": "#"
+                        },
+                        "align": "left",
+                        "size": "sm",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "typography_font_weight": "700",
+                        "button_text_color": "#007BFF",
+                        "background_color": "transparent",
+                        "padding": {
+                          "unit": "px",
+                          "top": "4",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "350d9bbf",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "overflow": "hidden",
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "18",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 4,
+                  "blur": 16,
+                  "spread": 0,
+                  "color": "rgba(0, 0, 0, 0.05)"
+                }
+              },
+              "elements": [
+                {
+                  "id": "535bff2d",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "position": "relative",
+                    "overflow": "hidden"
+                  },
+                  "elements": [
+                    {
+                      "id": "12e58374",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "isInner": false,
+                      "settings": {
+                        "image": {
+                          "url": "https://englishchitra.demoweb360.top/wp-content/uploads/2026/09/ANH02236-scaled-1.jpg",
+                          "id": ""
+                        },
+                        "image_size": "full",
+                        "align": "center",
+                        "height": {
+                          "unit": "px",
+                          "size": 200
+                        },
+                        "object_fit": "cover"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "4702ba27",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "isInner": false,
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-award",
+                          "library": "fa-solid"
+                        },
+                        "view": "stacked",
+                        "shape": "circle",
+                        "primary_color": "#F59E0B",
+                        "secondary_color": "#FFFFFF",
+                        "size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "_position": "absolute",
+                        "_offset_x": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_y": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "_offset_x_end": {
+                          "unit": "px",
+                          "size": 12
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "60c72882",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "16",
+                      "bottom": "0",
+                      "left": "16",
+                      "isLinked": false
+                    },
+                    "gap": {
+                      "unit": "px",
+                      "size": 10
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "acf4f8bf",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Ngô Đức Anh",
+                        "header_size": "h4",
+                        "align": "left",
+                        "title_color": "#0F172A",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 17
+                        },
+                        "typography_font_weight": "700",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.3
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "a76b3e8b",
+                      "elType": "widget",
+                      "widgetType": "icon-list",
+                      "isInner": false,
+                      "settings": {
+                        "icon_list": [
+                          {
+                            "text": "IC3 GS5",
+                            "selected_icon": {
+                              "value": "fas fa-desktop",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Điểm số: 935/1000",
+                            "selected_icon": {
+                              "value": "fas fa-certificate",
+                              "library": "fa-solid"
+                            }
+                          },
+                          {
+                            "text": "Năm đạt: 2024",
+                            "selected_icon": {
+                              "value": "fas fa-calendar-alt",
+                              "library": "fa-solid"
+                            }
+                          }
+                        ],
+                        "icon_color": "#007BFF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 13
+                        },
+                        "text_color": "#64748B",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "space_between": {
+                          "unit": "px",
+                          "size": 8
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "e8566971",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "isInner": false,
+                      "settings": {
+                        "text": "Xem chi tiết →",
+                        "link": {
+                          "url": "#"
+                        },
+                        "align": "left",
+                        "size": "sm",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 13.5
+                        },
+                        "typography_font_weight": "700",
+                        "button_text_color": "#007BFF",
+                        "background_color": "transparent",
+                        "padding": {
+                          "unit": "px",
+                          "top": "4",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "910034c5",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "justify_content": "center",
+            "align_items": "center",
+            "gap": {
+              "unit": "px",
+              "size": 8
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "35",
+              "right": "0",
+              "bottom": "20",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "3a5f8664",
+              "elType": "widget",
+              "widgetType": "button",
+              "isInner": false,
+              "settings": {
+                "text": "‹",
+                "link": {
+                  "url": "#"
+                },
+                "button_text_color": "#64748B",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "99",
+                  "right": "99",
+                  "bottom": "99",
+                  "left": "99",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "14",
+                  "bottom": "8",
+                  "left": "14",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "cef644a3",
+              "elType": "widget",
+              "widgetType": "button",
+              "isInner": false,
+              "settings": {
+                "text": "1",
+                "link": {
+                  "url": "#"
+                },
+                "button_text_color": "#FFFFFF",
+                "background_color": "#007BFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "99",
+                  "right": "99",
+                  "bottom": "99",
+                  "left": "99",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "14",
+                  "bottom": "8",
+                  "left": "14",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "7044c3db",
+              "elType": "widget",
+              "widgetType": "button",
+              "isInner": false,
+              "settings": {
+                "text": "2",
+                "link": {
+                  "url": "#"
+                },
+                "button_text_color": "#64748B",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "99",
+                  "right": "99",
+                  "bottom": "99",
+                  "left": "99",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "14",
+                  "bottom": "8",
+                  "left": "14",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "cd675fa4",
+              "elType": "widget",
+              "widgetType": "button",
+              "isInner": false,
+              "settings": {
+                "text": "3",
+                "link": {
+                  "url": "#"
+                },
+                "button_text_color": "#64748B",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "99",
+                  "right": "99",
+                  "bottom": "99",
+                  "left": "99",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "14",
+                  "bottom": "8",
+                  "left": "14",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "e837e251",
+              "elType": "widget",
+              "widgetType": "button",
+              "isInner": false,
+              "settings": {
+                "text": "›",
+                "link": {
+                  "url": "#"
+                },
+                "button_text_color": "#64748B",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "99",
+                  "right": "99",
+                  "bottom": "99",
+                  "left": "99",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "14",
+                  "bottom": "8",
+                  "left": "14",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b110e661",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1240
+        },
+        "padding": {
+          "unit": "px",
+          "top": "30",
+          "right": "35",
+          "bottom": "30",
+          "left": "35",
+          "isLinked": false
+        },
+        "_margin": {
+          "unit": "px",
+          "top": "20",
+          "right": "auto",
+          "bottom": "30",
+          "left": "auto",
+          "isLinked": false
+        },
+        "border_border": "solid",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_color": "#E2E8F0",
+        "border_radius": {
+          "unit": "px",
+          "top": "18",
+          "right": "18",
+          "bottom": "18",
+          "left": "18",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F8FAFC"
+      },
+      "elements": [
+        {
+          "id": "0a24f8d7",
+          "elType": "widget",
+          "widgetType": "heading",
+          "isInner": false,
+          "settings": {
+            "title": "NHỮNG CON SỐ ẤN TƯỢNG",
+            "header_size": "h3",
+            "align": "left",
+            "title_color": "#002D62",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 20
+            },
+            "typography_font_weight": "800",
+            "typography_text_transform": "uppercase",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2
+            },
+            "_margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "24",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "adb62319",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "justify_content": "space-between",
+            "align_items": "center",
+            "gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "56f49dc5",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "row",
+                "align_items": "center",
+                "gap": {
+                  "unit": "px",
+                  "size": 14
+                }
+              },
+              "elements": [
+                {
+                  "id": "02894d71",
+                  "elType": "widget",
+                  "widgetType": "icon",
+                  "isInner": false,
+                  "settings": {
+                    "selected_icon": {
+                      "value": "fas fa-desktop",
+                      "library": "fa-solid"
+                    },
+                    "view": "default",
+                    "primary_color": "#007BFF",
+                    "size": {
+                      "unit": "px",
+                      "size": 36
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "057cdc5f",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": {
+                      "unit": "px",
+                      "size": 2
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "d5d0745b",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "150+",
+                        "header_size": "h3",
+                        "align": "left",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 28
+                        },
+                        "typography_font_weight": "800",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.2
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "55ff8254",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"color: #64748B; font-size: 13.5px; margin: 0; line-height: 1.4;\">Chứng chỉ IC3</p>",
+                        "align": "left"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cc56a72d",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "row",
+                "align_items": "center",
+                "gap": {
+                  "unit": "px",
+                  "size": 14
+                }
+              },
+              "elements": [
+                {
+                  "id": "addbc6a0",
+                  "elType": "widget",
+                  "widgetType": "icon",
+                  "isInner": false,
+                  "settings": {
+                    "selected_icon": {
+                      "value": "fas fa-shield-alt",
+                      "library": "fa-solid"
+                    },
+                    "view": "default",
+                    "primary_color": "#007BFF",
+                    "size": {
+                      "unit": "px",
+                      "size": 36
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "71af01ea",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": {
+                      "unit": "px",
+                      "size": 2
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "05d2c71f",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "80+",
+                        "header_size": "h3",
+                        "align": "left",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 28
+                        },
+                        "typography_font_weight": "800",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.2
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "5a2fa81f",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"color: #64748B; font-size: 13.5px; margin: 0; line-height: 1.4;\">Học viên đạt từ GS5 trở lên</p>",
+                        "align": "left"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d034e05f",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "row",
+                "align_items": "center",
+                "gap": {
+                  "unit": "px",
+                  "size": 14
+                }
+              },
+              "elements": [
+                {
+                  "id": "ca96f238",
+                  "elType": "widget",
+                  "widgetType": "icon",
+                  "isInner": false,
+                  "settings": {
+                    "selected_icon": {
+                      "value": "fas fa-trophy",
+                      "library": "fa-solid"
+                    },
+                    "view": "default",
+                    "primary_color": "#007BFF",
+                    "size": {
+                      "unit": "px",
+                      "size": 36
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ea63aabf",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": {
+                      "unit": "px",
+                      "size": 2
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "c4631a16",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "30+",
+                        "header_size": "h3",
+                        "align": "left",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 28
+                        },
+                        "typography_font_weight": "800",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.2
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "eebc122d",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"color: #64748B; font-size: 13.5px; margin: 0; line-height: 1.4;\">Học viên đạt giải quốc tế</p>",
+                        "align": "left"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d34f7181",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 23.5
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 48
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "row",
+                "align_items": "center",
+                "gap": {
+                  "unit": "px",
+                  "size": 14
+                }
+              },
+              "elements": [
+                {
+                  "id": "cd3197fa",
+                  "elType": "widget",
+                  "widgetType": "icon",
+                  "isInner": false,
+                  "settings": {
+                    "selected_icon": {
+                      "value": "fas fa-star",
+                      "library": "fa-solid"
+                    },
+                    "view": "default",
+                    "primary_color": "#007BFF",
+                    "size": {
+                      "unit": "px",
+                      "size": 36
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "2f16110a",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": {
+                      "unit": "px",
+                      "size": 2
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "1aefbdc4",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "100%",
+                        "header_size": "h3",
+                        "align": "left",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 28
+                        },
+                        "typography_font_weight": "800",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.2
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "f3e2c7df",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"color: #64748B; font-size: 13.5px; margin: 0; line-height: 1.4;\">Học viên được công nhận và vinh danh</p>",
+                        "align": "left"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ebdac11e",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "width": {
+          "unit": "px",
+          "size": 1240
+        },
+        "padding": {
+          "unit": "px",
+          "top": "35",
+          "right": "45",
+          "bottom": "35",
+          "left": "45",
+          "isLinked": false
+        },
+        "_margin": {
+          "unit": "px",
+          "top": "15",
+          "right": "auto",
+          "bottom": "45",
+          "left": "auto",
+          "isLinked": false
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "20",
+          "right": "20",
+          "bottom": "20",
+          "left": "20",
+          "isLinked": true
+        },
+        "background_background": "gradient",
+        "background_color": "#EBF5FF",
+        "background_color_b": "#E0F2FE",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 135
+        }
+      },
+      "elements": [
+        {
+          "id": "54e9db0e",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_direction_tablet": "column",
+            "justify_content": "space-between",
+            "align_items": "center",
+            "gap": {
+              "unit": "px",
+              "size": 30
+            }
+          },
+          "elements": [
+            {
+              "id": "4479db5c",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 65
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "row",
+                "align_items": "center",
+                "gap": {
+                  "unit": "px",
+                  "size": 22
+                }
+              },
+              "elements": [
+                {
+                  "id": "caa1ccbe",
+                  "elType": "widget",
+                  "widgetType": "icon",
+                  "isInner": false,
+                  "settings": {
+                    "selected_icon": {
+                      "value": "fas fa-user-friends",
+                      "library": "fa-solid"
+                    },
+                    "view": "stacked",
+                    "shape": "circle",
+                    "primary_color": "#FFFFFF",
+                    "secondary_color": "#007BFF",
+                    "size": {
+                      "unit": "px",
+                      "size": 26
+                    },
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 4,
+                      "blur": 12,
+                      "spread": 0,
+                      "color": "rgba(0, 123, 255, 0.15)"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "5aa1c950",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": {
+                      "unit": "px",
+                      "size": 8
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "b7cad3d8",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "isInner": false,
+                      "settings": {
+                        "title": "Cùng con tự tin chinh phục tiếng Anh",
+                        "header_size": "h3",
+                        "align": "left",
+                        "title_color": "#007BFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 24
+                        },
+                        "typography_font_size_mobile": {
+                          "unit": "px",
+                          "size": 20
+                        },
+                        "typography_font_weight": "800",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.2
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "229d3f6c",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "isInner": false,
+                      "settings": {
+                        "editor": "<p style=\"color: #475569; font-size: 14.5px; margin: 0; line-height: 1.5;\">Kiến tạo tương lai vững chắc với chương trình học chất lượng cùng đội ngũ giáo viên chuyên nghiệp.</p>",
+                        "align": "left"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "48481e02",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "isInner": false,
+                      "settings": {
+                        "text": "Đăng ký ngay →",
+                        "link": {
+                          "url": "https://englishchitra.demoweb360.top/lien-he/"
+                        },
+                        "align": "left",
+                        "size": "md",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14
+                        },
+                        "typography_font_weight": "700",
+                        "button_text_color": "#FFFFFF",
+                        "background_color": "#007BFF",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "99",
+                          "right": "99",
+                          "bottom": "99",
+                          "left": "99",
+                          "isLinked": true
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "12",
+                          "right": "28",
+                          "bottom": "12",
+                          "left": "28",
+                          "isLinked": false
+                        },
+                        "_margin": {
+                          "unit": "px",
+                          "top": "8",
+                          "right": "0",
+                          "bottom": "0",
+                          "left": "0",
+                          "isLinked": false
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7b681d49",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 30
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100
+                },
+                "flex_direction": "row",
+                "justify_content": "center",
+                "align_items": "center"
+              },
+              "elements": [
+                {
+                  "id": "ee29c88d",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "isInner": false,
+                  "settings": {
+                    "image": {
+                      "url": "https://englishchitra.demoweb360.top/wp-content/uploads/2026/09/image-program-1-1-1.png",
+                      "id": ""
+                    },
+                    "image_size": "full",
+                    "align": "center",
+                    "height": {
+                      "unit": "px",
+                      "size": 180
+                    },
+                    "object_fit": "contain"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
