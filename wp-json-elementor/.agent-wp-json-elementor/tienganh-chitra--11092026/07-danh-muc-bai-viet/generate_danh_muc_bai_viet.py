@@ -20,12 +20,145 @@ COLOR_TAG_TEXT_BLUE   = "#007BFF"  # Màu chữ tag pill
 COLOR_BORDER_LIGHT    = "#E5E7EB"  # Viền thẻ bài viết
 COLOR_BTN_HOVER       = "#0056b3"  # Màu nút hover
 
+# ==============================================================================
+# HÀM HỖ TRỢ TẠO CÁC NATIVE ELEMENTOR WIDGETS
+# ==============================================================================
+
+def create_date_badge_container(day="07", month="Th5", year="2025", is_mini=False):
+    """
+    Tạo Date Badge hoàn toàn bằng 100% Native Container + Heading Widgets
+    Không dùng bất kỳ thẻ HTML nào!
+    """
+    width_px = 38 if is_mini else 50
+    day_size = 12 if is_mini else 18
+    sub_size = 8 if is_mini else 10
+    pad_tb   = "3" if is_mini else "6"
+
+    badge_elements = [
+        # Số ngày (Day)
+        {
+            "id": gen_id(),
+            "elType": "widget",
+            "widgetType": "heading",
+            "isInner": False,
+            "settings": {
+                "title": day,
+                "header_size": "span",
+                "align": "center",
+                "title_color": COLOR_TEXT_WHITE,
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {"unit": "px", "size": day_size},
+                "typography_font_weight": "800",
+                "typography_line_height": {"unit": "em", "size": 1.1},
+                "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": True}
+            },
+            "elements": []
+        },
+        # Tháng (Month)
+        {
+            "id": gen_id(),
+            "elType": "widget",
+            "widgetType": "heading",
+            "isInner": False,
+            "settings": {
+                "title": month,
+                "header_size": "span",
+                "align": "center",
+                "title_color": COLOR_TEXT_WHITE,
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {"unit": "px", "size": sub_size},
+                "typography_font_weight": "700",
+                "typography_text_transform": "uppercase",
+                "typography_line_height": {"unit": "em", "size": 1.1},
+                "_margin": {"unit": "px", "top": "1", "right": "0", "bottom": "0", "left": "0", "isLinked": False}
+            },
+            "elements": []
+        }
+    ]
+
+    if not is_mini:
+        # Năm (Year)
+        badge_elements.append({
+            "id": gen_id(),
+            "elType": "widget",
+            "widgetType": "heading",
+            "isInner": False,
+            "settings": {
+                "title": year,
+                "header_size": "span",
+                "align": "center",
+                "title_color": "rgba(255, 255, 255, 0.9)",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {"unit": "px", "size": sub_size},
+                "typography_font_weight": "500",
+                "typography_line_height": {"unit": "em", "size": 1.1},
+                "_margin": {"unit": "px", "top": "1", "right": "0", "bottom": "0", "left": "0", "isLinked": False}
+            },
+            "elements": []
+        })
+
+    return {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "position": "absolute",
+            "_position": "absolute",
+            "_offset_orientation_h": "start",
+            "_offset_x": {"unit": "px", "size": 8 if is_mini else 12},
+            "_offset_orientation_v": "start",
+            "_offset_y": {"unit": "px", "size": 8 if is_mini else 12},
+            "z_index": 2,
+            "content_width": "full",
+            "width": {"unit": "px", "size": width_px},
+            "flex_direction": "column",
+            "align_items": "center",
+            "justify_content": "center",
+            "background_background": "classic",
+            "background_color": COLOR_PRIMARY_BLUE,
+            "border_radius": {"unit": "px", "top": "6" if is_mini else "8", "right": "6" if is_mini else "8", "bottom": "6" if is_mini else "8", "left": "6" if is_mini else "8", "isLinked": True},
+            "padding": {"unit": "px", "top": pad_tb, "right": "2", "bottom": pad_tb, "left": "2", "isLinked": False},
+            "box_shadow_box_shadow_type": "yes",
+            "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 10, "spread": 0, "color": "rgba(0, 123, 255, 0.35)"}
+        },
+        "elements": badge_elements
+    }
+
+def create_category_pill_widget(tag_name):
+    """
+    Tạo Tag danh mục pill bằng 100% Native Elementor Button Widget
+    """
+    return {
+        "id": gen_id(),
+        "elType": "widget",
+        "widgetType": "button",
+        "isInner": False,
+        "settings": {
+            "text": tag_name,
+            "link": {"url": "#", "is_external": False, "nofollow": False},
+            "size": "xs",
+            "button_type": "default",
+            "background_color": COLOR_TAG_BG_BLUE,
+            "button_text_color": COLOR_TAG_TEXT_BLUE,
+            "border_radius": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": True},
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {"unit": "px", "size": 11.5},
+            "typography_font_weight": "700",
+            "padding": {"unit": "px", "top": "3", "right": "10", "bottom": "3", "left": "10", "isLinked": False},
+            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": False}
+        },
+        "elements": []
+    }
+
+# ==============================================================================
+# SECTION 1: HERO BANNER & BREADCRUMB
+# ==============================================================================
+
 def build_section_1_hero_and_breadcrumb():
-    """
-    SECTION 1: HERO BANNER & BREADCRUMB
-    - Hero Banner: Nền xanh nhạt #F0F7FF, họa tiết tinh tế, tiêu đề kép 'TIN TỨC & SỰ KIỆN'
-    - Breadcrumb Bar: Trang chủ > Tin tức & sự kiện
-    """
     banner_container = {
         "id": gen_id(),
         "elType": "container",
@@ -70,14 +203,7 @@ def build_section_1_hero_and_breadcrumb():
                     "typography_text_transform": "uppercase",
                     "typography_letter_spacing": {"unit": "px", "size": 2},
                     "typography_line_height": {"unit": "em", "size": 1.2},
-                    "_margin": {
-                        "unit": "px",
-                        "top": "0",
-                        "right": "0",
-                        "bottom": "8",
-                        "left": "0",
-                        "isLinked": False
-                    }
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": False}
                 },
                 "elements": []
             },
@@ -104,7 +230,7 @@ def build_section_1_hero_and_breadcrumb():
         ]
     }
 
-    # Breadcrumb Container
+    # Breadcrumb Container sử dụng các widget Heading native
     breadcrumb_container = {
         "id": gen_id(),
         "elType": "container",
@@ -114,6 +240,7 @@ def build_section_1_hero_and_breadcrumb():
             "width": {"unit": "px", "size": 1240},
             "flex_direction": "row",
             "align_items": "center",
+            "gap": {"unit": "px", "size": 8},
             "padding": {
                 "unit": "px",
                 "top": "16",
@@ -127,10 +254,47 @@ def build_section_1_hero_and_breadcrumb():
             {
                 "id": gen_id(),
                 "elType": "widget",
-                "widgetType": "text-editor",
+                "widgetType": "heading",
                 "isInner": False,
                 "settings": {
-                    "editor": '<p style="margin: 0; font-size: 13px; color: #6B7280; font-family: \'Plus Jakarta Sans\', sans-serif;"><span style="color: #4B5563;">🏠 Trang chủ</span> <span style="margin: 0 6px; color: #9CA3AF;">›</span> <span style="color: #007BFF; font-weight: 600;">Tin tức & sự kiện</span></p>'
+                    "title": "🏠 Trang chủ",
+                    "header_size": "span",
+                    "title_color": COLOR_TEXT_BODY,
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 13},
+                    "link": {"url": "#", "is_external": False, "nofollow": False}
+                },
+                "elements": []
+            },
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "heading",
+                "isInner": False,
+                "settings": {
+                    "title": "›",
+                    "header_size": "span",
+                    "title_color": "#9CA3AF",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 13}
+                },
+                "elements": []
+            },
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "heading",
+                "isInner": False,
+                "settings": {
+                    "title": "Tin tức & sự kiện",
+                    "header_size": "span",
+                    "title_color": COLOR_PRIMARY_BLUE,
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 13},
+                    "typography_font_weight": "600"
                 },
                 "elements": []
             }
@@ -139,21 +303,11 @@ def build_section_1_hero_and_breadcrumb():
 
     return banner_container, breadcrumb_container
 
-def create_date_badge_html(day="07", month="Th5", year="2025"):
-    """Tạo badge ngày tháng bo tròn đè lên góc ảnh đại diện"""
-    return f"""<div style="background: #007BFF; color: #ffffff; border-radius: 8px; width: 48px; padding: 6px 2px; text-align: center; box-shadow: 0 4px 10px rgba(0, 123, 255, 0.35); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.1;">
-  <div style="font-size: 17px; font-weight: 800; letter-spacing: -0.5px;">{day}</div>
-  <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; margin-top: 2px;">{month}</div>
-  <div style="font-size: 10px; opacity: 0.9; margin-top: 1px;">{year}</div>
-</div>"""
+# ==============================================================================
+# SECTION 2: KHỐI BÀI VIẾT NỔI BẬT (FEATURED CARD)
+# ==============================================================================
 
 def build_featured_card():
-    """
-    Khối Bài Viết Nổi Bật Đầu Trang (Featured Post Card)
-    - Khung trắng bo góc 16px, đổ bóng nhẹ
-    - Desktop: 2 cột ngang (Ảnh trái 48%, Nội dung phải 52%)
-    - Mobile: 1 cột dọc (Ảnh trên, Nội dung dưới, kèm 3 dots phân trang phía dưới)
-    """
     img_col = {
         "id": gen_id(),
         "elType": "container",
@@ -188,23 +342,8 @@ def build_featured_card():
                 },
                 "elements": []
             },
-            # Date Badge Absolute Overlay
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "html",
-                "isInner": False,
-                "settings": {
-                    "html": create_date_badge_html("07", "Th5", "2025"),
-                    "_position": "absolute",
-                    "_offset_orientation_h": "start",
-                    "_offset_x": {"unit": "px", "size": 12},
-                    "_offset_orientation_v": "start",
-                    "_offset_y": {"unit": "px", "size": 12},
-                    "z_index": 2
-                },
-                "elements": []
-            }
+            # Date Badge Native Container
+            create_date_badge_container("07", "Th5", "2025")
         ]
     }
 
@@ -236,18 +375,8 @@ def build_featured_card():
             }
         },
         "elements": [
-            # Tag pill danh mục
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "html",
-                "isInner": False,
-                "settings": {
-                    "html": '<span style="display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; font-family: \'Plus Jakarta Sans\', sans-serif;">Tin tức</span>',
-                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0", "isLinked": False}
-                },
-                "elements": []
-            },
+            # Tag pill widget
+            create_category_pill_widget("Tin tức"),
             # Tiêu đề bài viết nổi bật
             {
                 "id": gen_id(),
@@ -275,7 +404,12 @@ def build_featured_card():
                 "widgetType": "text-editor",
                 "isInner": False,
                 "settings": {
-                    "editor": '<p style="font-size: 13.5px; line-height: 1.6; color: #556987; margin: 0; font-family: \'Plus Jakarta Sans\', sans-serif;">Chương trình được thiết kế theo lộ trình rõ ràng, phù hợp với từng độ tuổi và mục tiêu học tập, giúp học viên phát triển toàn diện 4 kỹ năng: Nghe – Nói – Đọc – Viết.</p>',
+                    "editor": "<p>Chương trình được thiết kế theo lộ trình rõ ràng, phù hợp với từng độ tuổi và mục tiêu học tập, giúp học viên phát triển toàn diện 4 kỹ năng: Nghe – Nói – Đọc – Viết.</p>",
+                    "text_color": "#556987",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 13.5},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
                     "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "18", "left": "0", "isLinked": False}
                 },
                 "elements": []
@@ -305,7 +439,6 @@ def build_featured_card():
         ]
     }
 
-    # Card Featured Container
     card_wrapper = {
         "id": gen_id(),
         "elType": "container",
@@ -335,74 +468,70 @@ def build_featured_card():
         "elements": [img_col, content_col]
     }
 
-    # Mobile Dots Indicators (Chỉ hiển thị trên mobile theo ảnh 2)
-    mobile_dots = {
+    # Mobile Dots Indicators bằng Container Flexbox native (3 dots ● ○ ○)
+    dot_active = {
         "id": gen_id(),
-        "elType": "widget",
-        "widgetType": "html",
-        "isInner": False,
+        "elType": "container",
+        "isInner": True,
         "settings": {
-            "html": '<div style="display: flex; justify-content: center; gap: 8px; margin-bottom: 25px;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #007BFF; display: inline-block;"></span><span style="width: 8px; height: 8px; border-radius: 50%; background: #D1E5F8; display: inline-block;"></span><span style="width: 8px; height: 8px; border-radius: 50%; background: #D1E5F8; display: inline-block;"></span></div>',
-            "hide_desktop": "default",
-            "hide_tablet": "default",
-            "hide_mobile": ""
+            "width": {"unit": "px", "size": 8},
+            "min_height": {"unit": "px", "size": 8},
+            "border_radius": {"unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": True},
+            "background_background": "classic",
+            "background_color": COLOR_PRIMARY_BLUE
+        },
+        "elements": []
+    }
+    dot_inactive_1 = {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "width": {"unit": "px", "size": 8},
+            "min_height": {"unit": "px", "size": 8},
+            "border_radius": {"unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": True},
+            "background_background": "classic",
+            "background_color": "#D1E5F8"
+        },
+        "elements": []
+    }
+    dot_inactive_2 = {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "width": {"unit": "px", "size": 8},
+            "min_height": {"unit": "px", "size": 8},
+            "border_radius": {"unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": True},
+            "background_background": "classic",
+            "background_color": "#D1E5F8"
         },
         "elements": []
     }
 
-    return card_wrapper, mobile_dots
-
-def build_heading_bar():
-    """Thanh tiêu đề: '| TIN TỨC MỚI NHẤT' + 'Xem tất cả →'"""
-    return {
+    mobile_dots_container = {
         "id": gen_id(),
         "elType": "container",
         "isInner": True,
         "settings": {
             "content_width": "full",
             "flex_direction": "row",
-            "justify_content": "space-between",
+            "justify_content": "center",
             "align_items": "center",
-            "_margin": {"unit": "px", "top": "5", "right": "0", "bottom": "18", "left": "0", "isLinked": False}
+            "gap": {"unit": "px", "size": 8},
+            "hide_desktop": "hidden",
+            "hide_tablet": "hidden",
+            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "25", "left": "0", "isLinked": False}
         },
-        "elements": [
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "heading",
-                "isInner": False,
-                "settings": {
-                    "title": "| TIN TỨC MỚI NHẤT",
-                    "header_size": "h3",
-                    "title_color": COLOR_NAVY_TITLE,
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {"unit": "px", "size": 18},
-                    "typography_font_weight": "800"
-                },
-                "elements": []
-            },
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "heading",
-                "isInner": False,
-                "settings": {
-                    "title": "Xem tất cả →",
-                    "header_size": "h6",
-                    "title_color": COLOR_PRIMARY_BLUE,
-                    "typography_typography": "custom",
-                    "typography_font_family": "Plus Jakarta Sans",
-                    "typography_font_size": {"unit": "px", "size": 13},
-                    "typography_font_weight": "700",
-                    "link": {"url": "#", "is_external": False, "nofollow": False}
-                },
-                "elements": []
-            }
-        ]
+        "elements": [dot_active, dot_inactive_1, dot_inactive_2]
     }
 
-# Dữ liệu 9 bài viết mẫu chuẩn xác theo đúng mockup ảnh
+    return card_wrapper, mobile_dots_container
+
+# ==============================================================================
+# BÀI VIẾT DỮ LIỆU & LƯỚI CARD
+# ==============================================================================
+
 POSTS_DATA = [
     {
         "day": "05", "month": "Th5", "year": "2025",
@@ -470,7 +599,14 @@ POSTS_DATA = [
 ]
 
 def build_desktop_post_card(p):
-    """Xây dựng 1 Card bài viết trên Desktop (Dạng thẻ đứng 3 cột)"""
+    """
+    Card bài viết Desktop chuẩn 100% Native Container và Widgets:
+    - Image widget + Date Badge Container
+    - Button widget dạng Tag Pill
+    - Heading widget H4 (Tiêu đề)
+    - Text-Editor widget (Trích dẫn)
+    - Heading widget (Link Xem chi tiết)
+    """
     return {
         "id": gen_id(),
         "elType": "container",
@@ -487,7 +623,7 @@ def build_desktop_post_card(p):
             "padding": {"unit": "px", "top": "12", "right": "12", "bottom": "16", "left": "12", "isLinked": False}
         },
         "elements": [
-            # Ảnh + Date Badge Overlay
+            # Ảnh + Date Badge Container
             {
                 "id": gen_id(),
                 "elType": "container",
@@ -510,36 +646,11 @@ def build_desktop_post_card(p):
                         },
                         "elements": []
                     },
-                    {
-                        "id": gen_id(),
-                        "elType": "widget",
-                        "widgetType": "html",
-                        "isInner": False,
-                        "settings": {
-                            "html": create_date_badge_html(p["day"], p["month"], p["year"]),
-                            "_position": "absolute",
-                            "_offset_orientation_h": "start",
-                            "_offset_x": {"unit": "px", "size": 8},
-                            "_offset_orientation_v": "start",
-                            "_offset_y": {"unit": "px", "size": 8},
-                            "z_index": 2
-                        },
-                        "elements": []
-                    }
+                    create_date_badge_container(p["day"], p["month"], p["year"])
                 ]
             },
-            # Tag pill
-            {
-                "id": gen_id(),
-                "elType": "widget",
-                "widgetType": "html",
-                "isInner": False,
-                "settings": {
-                    "html": f'<span style="display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 15px; font-family: \'Plus Jakarta Sans\', sans-serif;">{p["tag"]}</span>',
-                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "8", "left": "0", "isLinked": False}
-                },
-                "elements": []
-            },
+            # Tag Pill button
+            create_category_pill_widget(p["tag"]),
             # Tiêu đề H4
             {
                 "id": gen_id(),
@@ -559,14 +670,19 @@ def build_desktop_post_card(p):
                 },
                 "elements": []
             },
-            # Excerpt
+            # Trích dẫn bài viết
             {
                 "id": gen_id(),
                 "elType": "widget",
                 "widgetType": "text-editor",
                 "isInner": False,
                 "settings": {
-                    "editor": f'<p style="font-size: 12.5px; line-height: 1.5; color: #556987; margin: 0; font-family: \'Plus Jakarta Sans\', sans-serif;">{p["excerpt"]}</p>',
+                    "editor": f"<p>{p['excerpt']}</p>",
+                    "text_color": "#556987",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 12.5},
+                    "typography_line_height": {"unit": "em", "size": 1.5},
                     "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": False}
                 },
                 "elements": []
@@ -594,172 +710,345 @@ def build_desktop_post_card(p):
 
 def build_mobile_horizontal_list_item(p):
     """
-    Xây dựng 1 hàng bài viết trên Mobile theo đúng ảnh 2:
-    - Thumbnail bên trái kèm Date Badge
-    - Bên phải là Tag Pill + Tiêu đề bài viết
-    - Icon mũi tên '>' ở góc phải
+    Card bài viết hàng ngang trên Mobile (100% Native Container + Widgets):
+    - Left: Container Thumbnail (Image + Mini Date Badge)
+    - Middle: Container Info (Category Pill Button + Heading Title)
+    - Right: Native Icon Widget (fas fa-chevron-right)
     """
-    html_code = f"""
-<div style="display: flex; align-items: center; justify-content: space-between; background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 12px; padding: 10px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.02); font-family: 'Plus Jakarta Sans', sans-serif;">
-  <div style="display: flex; align-items: center; gap: 12px; flex: 1;">
-    <div style="position: relative; width: 85px; height: 68px; flex-shrink: 0; border-radius: 8px; overflow: hidden;">
-      <img src="{p['image']}" alt="{p['title']}" style="width: 100%; height: 100%; object-fit: cover;" />
-      <div style="position: absolute; top: 4px; left: 4px; background: #007BFF; color: #fff; border-radius: 4px; width: 34px; padding: 2px 0; text-align: center; line-height: 1;">
-        <span style="font-size: 11px; font-weight: 800; display: block;">{p['day']}</span>
-        <span style="font-size: 7.5px; font-weight: 600; text-transform: uppercase;">{p['month']}</span>
-      </div>
-    </div>
-    <div style="flex: 1; min-width: 0;">
-      <span style="display: inline-block; background-color: #EBF5FF; color: #007BFF; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin-bottom: 4px;">{p['tag']}</span>
-      <h4 style="margin: 0; font-size: 13px; font-weight: 700; line-height: 1.3; color: #002D62; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">{p['title']}</h4>
-    </div>
-  </div>
-  <div style="color: #9CA3AF; font-size: 16px; font-weight: bold; margin-left: 8px; flex-shrink: 0;">›</div>
-</div>
-"""
-    return {
+    # Thumbnail Container
+    thumb_container = {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "position": "relative",
+            "width": {"unit": "px", "size": 85},
+            "flex_shrink": "0"
+        },
+        "elements": [
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "image",
+                "isInner": False,
+                "settings": {
+                    "image": {"url": p["image"], "id": ""},
+                    "image_size": "medium",
+                    "image_border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": True}
+                },
+                "elements": []
+            },
+            create_date_badge_container(p["day"], p["month"], p["year"], is_mini=True)
+        ]
+    }
+
+    # Info Container
+    info_container = {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "flex_grow": "1",
+            "flex_direction": "column",
+            "align_items": "flex-start",
+            "padding": {"unit": "px", "top": "0", "right": "8", "bottom": "0", "left": "12", "isLinked": False}
+        },
+        "elements": [
+            create_category_pill_widget(p["tag"]),
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "heading",
+                "isInner": False,
+                "settings": {
+                    "title": p["title"],
+                    "header_size": "h4",
+                    "title_color": COLOR_NAVY_TITLE,
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 13},
+                    "typography_font_weight": "700",
+                    "typography_line_height": {"unit": "em", "size": 1.3}
+                },
+                "elements": []
+            }
+        ]
+    }
+
+    # Arrow Icon
+    arrow_icon = {
         "id": gen_id(),
         "elType": "widget",
-        "widgetType": "html",
+        "widgetType": "icon",
         "isInner": False,
         "settings": {
-            "html": html_code.strip()
+            "selected_icon": {"value": "fas fa-chevron-right", "library": "fa-solid"},
+            "size": {"unit": "px", "size": 13},
+            "primary_color": "#9CA3AF"
         },
         "elements": []
     }
 
-def build_posts_grid_container():
-    """Lưới 9 bài viết Desktop (3 cột) và Container ẩn/hiện theo Responsive"""
-    # 1. Desktop Grid (3 cột x 3 hàng)
-    desktop_grid = {
+    return {
         "id": gen_id(),
         "elType": "container",
         "isInner": True,
         "settings": {
             "content_width": "full",
-            "container_type": "grid",
-            "grid_columns_grid": {"unit": "custom", "size": 3},
-            "grid_columns_grid_tablet": {"unit": "custom", "size": 2},
-            "grid_columns_grid_mobile": {"unit": "custom", "size": 1},
-            "grid_gap": {"unit": "px", "row": 20, "column": 20, "isLinked": True},
-            "hide_mobile": "hidden"  # Ẩn trên mobile vì mobile dùng layout List Item ngang
+            "flex_direction": "row",
+            "align_items": "center",
+            "justify_content": "space-between",
+            "background_background": "classic",
+            "background_color": COLOR_TEXT_WHITE,
+            "border_border": "solid",
+            "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True},
+            "border_color": COLOR_BORDER_LIGHT,
+            "border_radius": {"unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": True},
+            "padding": {"unit": "px", "top": "10", "right": "12", "bottom": "10", "left": "10", "isLinked": False},
+            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": False}
         },
-        "elements": [build_desktop_post_card(p) for p in POSTS_DATA]
+        "elements": [thumb_container, info_container, arrow_icon]
     }
 
-    # 2. Mobile Horizontal List (Hiển thị 3 bài đầu tiên theo ảnh 2 mobile)
-    mobile_list = {
+# ==============================================================================
+# PHÂN TRANG (PAGINATION) BẰNG NATIVE BUTTON WIDGETS
+# ==============================================================================
+
+def build_pagination():
+    def create_page_btn(text, is_active=False):
+        return {
+            "id": gen_id(),
+            "elType": "widget",
+            "widgetType": "button",
+            "isInner": False,
+            "settings": {
+                "text": text,
+                "link": {"url": "#", "is_external": False, "nofollow": False},
+                "size": "xs",
+                "button_type": "default",
+                "background_color": COLOR_PRIMARY_BLUE if is_active else "transparent",
+                "button_text_color": COLOR_TEXT_WHITE if is_active else "#4B5563",
+                "border_radius": {"unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": True},
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {"unit": "px", "size": 13},
+                "typography_font_weight": "700" if is_active else "600",
+                "padding": {"unit": "px", "top": "6", "right": "12", "bottom": "6", "left": "12", "isLinked": False}
+            },
+            "elements": []
+        }
+
+    return {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "justify_content": "center",
+            "align_items": "center",
+            "gap": {"unit": "px", "size": 6},
+            "_margin": {"unit": "px", "top": "35", "right": "0", "bottom": "10", "left": "0", "isLinked": False},
+            "hide_mobile": "hidden"
+        },
+        "elements": [
+            create_page_btn("‹"),
+            create_page_btn("1", is_active=True),
+            create_page_btn("2"),
+            create_page_btn("3"),
+            create_page_btn("4"),
+            create_page_btn("›")
+        ]
+    }
+
+# ==============================================================================
+# CỘT PHẢI (SIDEBAR) 100% NATIVE WIDGETS
+# ==============================================================================
+
+def build_sidebar_search_widget():
+    """Sidebar 1: Native Search-Form Widget"""
+    return {
         "id": gen_id(),
         "elType": "container",
         "isInner": True,
         "settings": {
             "content_width": "full",
             "flex_direction": "column",
-            "hide_desktop": "hidden",
-            "hide_tablet": "hidden"  # Chỉ hiển thị trên mobile
+            "background_background": "classic",
+            "background_color": COLOR_TEXT_WHITE,
+            "border_border": "solid",
+            "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True},
+            "border_color": COLOR_BORDER_LIGHT,
+            "border_radius": {"unit": "px", "top": "14", "right": "14", "bottom": "14", "left": "14", "isLinked": True},
+            "padding": {"unit": "px", "top": "18", "right": "18", "bottom": "18", "left": "18", "isLinked": True}
         },
-        "elements": [build_mobile_horizontal_list_item(p) for p in POSTS_DATA[:3]]
-    }
-
-    return desktop_grid, mobile_list
-
-def build_pagination():
-    """Cụm phân trang: <  1  2  3  4  >"""
-    html_pagination = """
-<div style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 35px; font-family: 'Plus Jakarta Sans', sans-serif;">
-  <a href="#" style="display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; border-radius: 50%; color: #6B7280; text-decoration: none; font-size: 13px; font-weight: 600;">‹</a>
-  <span style="display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; border-radius: 50%; background-color: #007BFF; color: #FFFFFF; font-size: 13px; font-weight: 700; box-shadow: 0 2px 8px rgba(0, 123, 255, 0.35);">1</span>
-  <a href="#" style="display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; border-radius: 50%; color: #4B5563; text-decoration: none; font-size: 13px; font-weight: 600;">2</a>
-  <a href="#" style="display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; border-radius: 50%; color: #4B5563; text-decoration: none; font-size: 13px; font-weight: 600;">3</a>
-  <a href="#" style="display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; border-radius: 50%; color: #4B5563; text-decoration: none; font-size: 13px; font-weight: 600;">4</a>
-  <a href="#" style="display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; border-radius: 50%; color: #6B7280; text-decoration: none; font-size: 13px; font-weight: 600;">›</a>
-</div>
-"""
-    return {
-        "id": gen_id(),
-        "elType": "widget",
-        "widgetType": "html",
-        "isInner": False,
-        "settings": {
-            "html": html_pagination.strip(),
-            "hide_mobile": "hidden"
-        },
-        "elements": []
-    }
-
-# ==============================================================================
-# CÁC WIDGET BÊN CỘT PHẢI (SIDEBAR)
-# ==============================================================================
-
-def build_sidebar_search_widget():
-    """Sidebar Widget 1: Tìm kiếm bài viết"""
-    html_search = """
-<div style="background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 14px; padding: 18px; box-shadow: 0 4px 16px rgba(0, 45, 98, 0.04); font-family: 'Plus Jakarta Sans', sans-serif;">
-  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 14px;">
-    <span style="color: #007BFF; font-size: 16px;">🔍</span>
-    <h4 style="margin: 0; font-size: 15px; font-weight: 800; color: #002D62;">Tìm kiếm bài viết</h4>
-  </div>
-  <div style="display: flex; gap: 8px;">
-    <input type="text" placeholder="Nhập từ khóa..." style="flex: 1; border: 1px solid #E5E7EB; border-radius: 8px; padding: 9px 12px; font-size: 13px; outline: none; background: #F9FAFB;" />
-    <button type="button" style="background: #007BFF; color: #fff; border: none; border-radius: 8px; padding: 0 14px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-    </button>
-  </div>
-</div>
-"""
-    return {
-        "id": gen_id(),
-        "elType": "widget",
-        "widgetType": "html",
-        "isInner": False,
-        "settings": {"html": html_search.strip()},
-        "elements": []
+        "elements": [
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "heading",
+                "isInner": False,
+                "settings": {
+                    "title": "🔍 Tìm kiếm bài viết",
+                    "header_size": "h4",
+                    "title_color": COLOR_NAVY_TITLE,
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 15},
+                    "typography_font_weight": "800",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "14", "left": "0", "isLinked": False}
+                },
+                "elements": []
+            },
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "search-form",
+                "isInner": False,
+                "settings": {
+                    "skin": "classic",
+                    "placeholder": "Nhập từ khóa...",
+                    "button_type": "icon",
+                    "icon": {"value": "fas fa-search", "library": "fa-solid"},
+                    "button_color": COLOR_PRIMARY_BLUE,
+                    "button_text_color": COLOR_TEXT_WHITE,
+                    "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": True}
+                },
+                "elements": []
+            }
+        ]
     }
 
 def build_sidebar_categories_widget():
-    """Sidebar Widget 2: Danh mục tin tức"""
+    """Sidebar 2: Native Category Rows với Icon và Badge Button"""
     cats = [
         {"name": "Tin tức", "count": 24},
         {"name": "Sự kiện", "count": 18},
         {"name": "Hoạt động ngoại khóa", "count": 12},
         {"name": "Chương trình đào tạo", "count": 10},
-        {"name": "Kinh nghiệm học tập", "count": 8},
+        {"name": "Kinh nghiệm học tập", "count": 8}
     ]
 
-    items_html = ""
+    cat_rows = []
     for c in cats:
-        items_html += f"""
-    <li style="display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed #F0F2F5;">
-      <div style="display: flex; align-items: center; gap: 8px;">
-        <span style="width: 6px; height: 6px; border-radius: 50%; background: #93C5FD; display: inline-block;"></span>
-        <a href="#" style="color: #4B5563; font-size: 13.5px; font-weight: 600; text-decoration: none; transition: color 0.2s;">{c['name']}</a>
-      </div>
-      <span style="background: #EBF5FF; color: #007BFF; font-size: 11px; font-weight: 700; border-radius: 12px; padding: 2px 8px;">{c['count']}</span>
-    </li>
-"""
+        cat_rows.append({
+            "id": gen_id(),
+            "elType": "container",
+            "isInner": True,
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "justify_content": "space-between",
+                "align_items": "center",
+                "padding": {"unit": "px", "top": "8", "right": "0", "bottom": "8", "left": "0", "isLinked": False},
+                "border_border": "dashed",
+                "border_width": {"unit": "px", "top": "0", "right": "0", "bottom": "1", "left": "0", "isLinked": False},
+                "border_color": "#F0F2F5"
+            },
+            "elements": [
+                # Left: Dot icon + Category name
+                {
+                    "id": gen_id(),
+                    "elType": "container",
+                    "isInner": True,
+                    "settings": {
+                        "flex_direction": "row",
+                        "align_items": "center",
+                        "gap": {"unit": "px", "size": 8}
+                    },
+                    "elements": [
+                        {
+                            "id": gen_id(),
+                            "elType": "widget",
+                            "widgetType": "icon",
+                            "isInner": False,
+                            "settings": {
+                                "selected_icon": {"value": "fas fa-circle", "library": "fa-solid"},
+                                "size": {"unit": "px", "size": 6},
+                                "primary_color": "#93C5FD"
+                            },
+                            "elements": []
+                        },
+                        {
+                            "id": gen_id(),
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "isInner": False,
+                            "settings": {
+                                "title": c["name"],
+                                "header_size": "span",
+                                "title_color": COLOR_TEXT_BODY,
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {"unit": "px", "size": 13.5},
+                                "typography_font_weight": "600",
+                                "link": {"url": "#", "is_external": False, "nofollow": False}
+                            },
+                            "elements": []
+                        }
+                    ]
+                },
+                # Right: Count badge
+                {
+                    "id": gen_id(),
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "isInner": False,
+                    "settings": {
+                        "text": str(c["count"]),
+                        "size": "xs",
+                        "background_color": COLOR_TAG_BG_BLUE,
+                        "button_text_color": COLOR_TAG_TEXT_BLUE,
+                        "border_radius": {"unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": True},
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {"unit": "px", "size": 11},
+                        "typography_font_weight": "700",
+                        "padding": {"unit": "px", "top": "2", "right": "8", "bottom": "2", "left": "8", "isLinked": False}
+                    },
+                    "elements": []
+                }
+            ]
+        })
 
-    html_cat = f"""
-<div style="background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 14px; padding: 18px; box-shadow: 0 4px 16px rgba(0, 45, 98, 0.04); font-family: 'Plus Jakarta Sans', sans-serif;">
-  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-    <span style="color: #007BFF; font-size: 16px;">📁</span>
-    <h4 style="margin: 0; font-size: 15px; font-weight: 800; color: #002D62;">Danh mục tin tức</h4>
-  </div>
-  <ul style="list-style: none; padding: 0; margin: 0;">
-    {items_html.strip()}
-  </ul>
-</div>
-"""
     return {
         "id": gen_id(),
-        "elType": "widget",
-        "widgetType": "html",
-        "isInner": False,
-        "settings": {"html": html_cat.strip()},
-        "elements": []
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "background_background": "classic",
+            "background_color": COLOR_TEXT_WHITE,
+            "border_border": "solid",
+            "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True},
+            "border_color": COLOR_BORDER_LIGHT,
+            "border_radius": {"unit": "px", "top": "14", "right": "14", "bottom": "14", "left": "14", "isLinked": True},
+            "padding": {"unit": "px", "top": "18", "right": "18", "bottom": "14", "left": "18", "isLinked": True}
+        },
+        "elements": [
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "heading",
+                "isInner": False,
+                "settings": {
+                    "title": "📁 Danh mục tin tức",
+                    "header_size": "h4",
+                    "title_color": COLOR_NAVY_TITLE,
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 15},
+                    "typography_font_weight": "800",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0", "isLinked": False}
+                },
+                "elements": []
+            }
+        ] + cat_rows
     }
 
 def build_sidebar_popular_posts_widget():
-    """Sidebar Widget 3: Bài viết nổi bật (4 bài mini hàng ngang)"""
+    """Sidebar 3: Bài viết nổi bật mini (Image + Heading widgets)"""
     pop_posts = [
         {
             "title": "Gói lộ trình tăng cường kỹ năng tiếng Anh – Bước đệm vững chắc cho tương lai",
@@ -783,75 +1072,342 @@ def build_sidebar_popular_posts_widget():
         }
     ]
 
-    items_html = ""
+    post_rows = []
     for p in pop_posts:
-        items_html += f"""
-    <div style="display: flex; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px dashed #F0F2F5;">
-      <img src="{p['thumb']}" alt="{p['title']}" style="width: 60px; height: 50px; border-radius: 8px; object-fit: cover; flex-shrink: 0;" />
-      <div style="flex: 1; min-width: 0;">
-        <a href="#" style="color: #002D62; font-size: 12.5px; font-weight: 700; line-height: 1.3; text-decoration: none; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 4px;">{p['title']}</a>
-        <div style="color: #6B7280; font-size: 11px; display: flex; align-items: center; gap: 4px;">
-          <span>🕒</span> {p['date']}
-        </div>
-      </div>
-    </div>
-"""
+        post_rows.append({
+            "id": gen_id(),
+            "elType": "container",
+            "isInner": True,
+            "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "align_items": "center",
+                "gap": {"unit": "px", "size": 12},
+                "padding": {"unit": "px", "top": "10", "right": "0", "bottom": "10", "left": "0", "isLinked": False},
+                "border_border": "dashed",
+                "border_width": {"unit": "px", "top": "0", "right": "0", "bottom": "1", "left": "0", "isLinked": False},
+                "border_color": "#F0F2F5"
+            },
+            "elements": [
+                # Thumbnail
+                {
+                    "id": gen_id(),
+                    "elType": "widget",
+                    "widgetType": "image",
+                    "isInner": False,
+                    "settings": {
+                        "image": {"url": p["thumb"], "id": ""},
+                        "image_size": "thumbnail",
+                        "width": {"unit": "px", "size": 60},
+                        "image_border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": True}
+                    },
+                    "elements": []
+                },
+                # Content
+                {
+                    "id": gen_id(),
+                    "elType": "container",
+                    "isInner": True,
+                    "settings": {
+                        "flex_grow": "1",
+                        "flex_direction": "column"
+                    },
+                    "elements": [
+                        {
+                            "id": gen_id(),
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "isInner": False,
+                            "settings": {
+                                "title": p["title"],
+                                "header_size": "h5",
+                                "title_color": COLOR_NAVY_TITLE,
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {"unit": "px", "size": 12.5},
+                                "typography_font_weight": "700",
+                                "typography_line_height": {"unit": "em", "size": 1.3},
+                                "link": {"url": "#", "is_external": False, "nofollow": False},
+                                "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "4", "left": "0", "isLinked": False}
+                            },
+                            "elements": []
+                        },
+                        {
+                            "id": gen_id(),
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "isInner": False,
+                            "settings": {
+                                "title": "🕒 " + p["date"],
+                                "header_size": "span",
+                                "title_color": COLOR_TEXT_MUTED,
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {"unit": "px", "size": 11}
+                            },
+                            "elements": []
+                        }
+                    ]
+                }
+            ]
+        })
 
-    html_pop = f"""
-<div style="background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 14px; padding: 18px; box-shadow: 0 4px 16px rgba(0, 45, 98, 0.04); font-family: 'Plus Jakarta Sans', sans-serif;">
-  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-    <span style="color: #007BFF; font-size: 16px;">📰</span>
-    <h4 style="margin: 0; font-size: 15px; font-weight: 800; color: #002D62;">Bài viết nổi bật</h4>
-  </div>
-  {items_html.strip()}
-</div>
-"""
     return {
         "id": gen_id(),
-        "elType": "widget",
-        "widgetType": "html",
-        "isInner": False,
-        "settings": {"html": html_pop.strip()},
-        "elements": []
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "background_background": "classic",
+            "background_color": COLOR_TEXT_WHITE,
+            "border_border": "solid",
+            "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True},
+            "border_color": COLOR_BORDER_LIGHT,
+            "border_radius": {"unit": "px", "top": "14", "right": "14", "bottom": "14", "left": "14", "isLinked": True},
+            "padding": {"unit": "px", "top": "18", "right": "18", "bottom": "14", "left": "18", "isLinked": True}
+        },
+        "elements": [
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "heading",
+                "isInner": False,
+                "settings": {
+                    "title": "📰 Bài viết nổi bật",
+                    "header_size": "h4",
+                    "title_color": COLOR_NAVY_TITLE,
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 15},
+                    "typography_font_weight": "800",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "6", "left": "0", "isLinked": False}
+                },
+                "elements": []
+            }
+        ] + post_rows
     }
 
 def build_sidebar_cta_banner():
-    """Sidebar Widget 4: Banner CTA Tuyển sinh (Cùng con tự tin chinh phục tiếng Anh)"""
-    html_cta = """
-<div style="position: relative; overflow: hidden; background: linear-gradient(135deg, #E6F3FF 0%, #CCE6FF 100%); border: 1px solid #B8DCFF; border-radius: 16px; padding: 22px 18px; box-shadow: 0 8px 24px rgba(0, 123, 255, 0.08); font-family: 'Plus Jakarta Sans', sans-serif;">
-  <div style="position: relative; z-index: 2; max-width: 60%;">
-    <h3 style="margin: 0 0 6px 0; font-size: 18px; font-weight: 800; color: #007BFF; line-height: 1.3; font-style: italic;">Cùng con tự tin chinh phục tiếng Anh</h3>
-    <p style="margin: 0 0 14px 0; font-size: 11.5px; color: #4B5563; font-weight: 500;">Kiến tạo tương lai vững chắc!</p>
-    <a href="#" style="display: inline-block; background: #007BFF; color: #FFFFFF; font-size: 12px; font-weight: 700; padding: 7px 16px; border-radius: 20px; text-decoration: none; box-shadow: 0 3px 10px rgba(0, 123, 255, 0.35);">Đăng ký ngay →</a>
-  </div>
-  <div style="position: absolute; right: 0; bottom: 0; width: 45%; max-height: 100%; display: flex; align-items: flex-end; justify-content: flex-end;">
-    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=400&auto=format&fit=crop" alt="Học viên Tiếng Anh Chị Trà" style="width: 110%; object-fit: contain; pointer-events: none;" />
-  </div>
-</div>
-"""
-    return {
+    """Sidebar 4: Banner CTA Tuyển sinh bằng Native Containers & Widgets"""
+    left_cta = {
         "id": gen_id(),
-        "elType": "widget",
-        "widgetType": "html",
-        "isInner": False,
-        "settings": {"html": html_cta.strip()},
-        "elements": []
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "width": {"unit": "%", "size": 60},
+            "flex_direction": "column",
+            "align_items": "flex-start",
+            "justify_content": "center",
+            "z_index": 2
+        },
+        "elements": [
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "heading",
+                "isInner": False,
+                "settings": {
+                    "title": "Cùng con tự tin chinh phục tiếng Anh",
+                    "header_size": "h4",
+                    "title_color": COLOR_PRIMARY_BLUE,
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "800",
+                    "typography_font_style": "italic",
+                    "typography_line_height": {"unit": "em", "size": 1.3},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "6", "left": "0", "isLinked": False}
+                },
+                "elements": []
+            },
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "heading",
+                "isInner": False,
+                "settings": {
+                    "title": "Kiến tạo tương lai vững chắc!",
+                    "header_size": "p",
+                    "title_color": COLOR_TEXT_BODY,
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 11.5},
+                    "typography_font_weight": "500",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "14", "left": "0", "isLinked": False}
+                },
+                "elements": []
+            },
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "button",
+                "isInner": False,
+                "settings": {
+                    "text": "Đăng ký ngay →",
+                    "link": {"url": "#", "is_external": False, "nofollow": False},
+                    "size": "xs",
+                    "background_color": COLOR_PRIMARY_BLUE,
+                    "button_text_color": COLOR_TEXT_WHITE,
+                    "border_radius": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": True},
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 12},
+                    "typography_font_weight": "700",
+                    "padding": {"unit": "px", "top": "7", "right": "16", "bottom": "7", "left": "16", "isLinked": False}
+                },
+                "elements": []
+            }
+        ]
     }
 
+    right_cta = {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "width": {"unit": "%", "size": 40},
+            "position": "absolute",
+            "_position": "absolute",
+            "_offset_orientation_h": "end",
+            "_offset_x": {"unit": "px", "size": 0},
+            "_offset_orientation_v": "end",
+            "_offset_y": {"unit": "px", "size": 0},
+            "z_index": 1
+        },
+        "elements": [
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "image",
+                "isInner": False,
+                "settings": {
+                    "image": {
+                        "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=400&auto=format&fit=crop",
+                        "id": ""
+                    },
+                    "image_size": "medium"
+                },
+                "elements": []
+            }
+        ]
+    }
+
+    return {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "content_width": "full",
+            "position": "relative",
+            "overflow": "hidden",
+            "flex_direction": "row",
+            "background_background": "gradient",
+            "background_color": "#E6F3FF",
+            "background_color_b": "#CCE6FF",
+            "background_gradient_type": "linear",
+            "background_gradient_angle": {"unit": "deg", "size": 135},
+            "border_border": "solid",
+            "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": True},
+            "border_color": "#B8DCFF",
+            "border_radius": {"unit": "px", "top": "16", "right": "16", "bottom": "16", "left": "16", "isLinked": True},
+            "padding": {"unit": "px", "top": "22", "right": "18", "bottom": "22", "left": "18", "isLinked": True}
+        },
+        "elements": [left_cta, right_cta]
+    }
+
+# ==============================================================================
+# SECTION 2: THÂN TRANG 2 CỘT TỔNG HỢP
+# ==============================================================================
+
 def build_section_2_main_body():
-    """
-    SECTION 2: THÂN TRANG 2 CỘT (Main Content + Sidebar)
-    - Boxed 1240px
-    - Desktop: Cột Trái 68%, Cột Phải 32%
-    - Mobile: Xếp dọc 1 cột (100% width)
-    """
     # 1. CỘT TRÁI (Main Content)
     featured_card, mobile_dots = build_featured_card()
-    heading_bar = build_heading_bar()
-    desktop_grid, mobile_list = build_posts_grid_container()
+
+    # Thanh tiêu đề "| TIN TỨC MỚI NHẤT" + "Xem tất cả →"
+    heading_bar = {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "justify_content": "space-between",
+            "align_items": "center",
+            "_margin": {"unit": "px", "top": "5", "right": "0", "bottom": "18", "left": "0", "isLinked": False}
+        },
+        "elements": [
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "heading",
+                "isInner": False,
+                "settings": {
+                    "title": "| TIN TỨC MỚI NHẤT",
+                    "header_size": "h3",
+                    "title_color": COLOR_NAVY_TITLE,
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "800"
+                },
+                "elements": []
+            },
+            {
+                "id": gen_id(),
+                "elType": "widget",
+                "widgetType": "heading",
+                "isInner": False,
+                "settings": {
+                    "title": "Xem tất cả →",
+                    "header_size": "h6",
+                    "title_color": COLOR_PRIMARY_BLUE,
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {"unit": "px", "size": 13},
+                    "typography_font_weight": "700",
+                    "link": {"url": "#", "is_external": False, "nofollow": False}
+                },
+                "elements": []
+            }
+        ]
+    }
+
+    # Lưới bài viết Desktop (3 cột Grid)
+    desktop_grid = {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "content_width": "full",
+            "container_type": "grid",
+            "grid_columns_grid": {"unit": "custom", "size": 3},
+            "grid_columns_grid_tablet": {"unit": "custom", "size": 2},
+            "grid_columns_grid_mobile": {"unit": "custom", "size": 1},
+            "grid_gap": {"unit": "px", "row": 20, "column": 20, "isLinked": True},
+            "hide_mobile": "hidden"
+        },
+        "elements": [build_desktop_post_card(p) for p in POSTS_DATA]
+    }
+
+    # Lưới bài viết Mobile (Horizontal List theo ảnh 2)
+    mobile_list = {
+        "id": gen_id(),
+        "elType": "container",
+        "isInner": True,
+        "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "hide_desktop": "hidden",
+            "hide_tablet": "hidden"
+        },
+        "elements": [build_mobile_horizontal_list_item(p) for p in POSTS_DATA[:3]]
+    }
+
+    # Cụm Phân trang
     pagination = build_pagination()
 
-    # Mobile CTA Banner xuất hiện ở cuối content trên mobile theo ảnh 2
+    # Mobile CTA Banner đặt ở cuối nội dung trên điện thoại
     mobile_cta = {
         "id": gen_id(),
         "elType": "container",
@@ -885,7 +1441,7 @@ def build_section_2_main_body():
         ]
     }
 
-    # 2. CỘT PHẢI (Sidebar Widgets - Ẩn trên mobile theo ảnh 2 vì mobile có bố cục riêng)
+    # 2. CỘT PHẢI (Sidebar Widgets - Ẩn trên mobile theo ảnh 2)
     right_column = {
         "id": gen_id(),
         "elType": "container",
@@ -895,7 +1451,7 @@ def build_section_2_main_body():
             "width_mobile": {"unit": "%", "size": 100},
             "flex_direction": "column",
             "gap": {"unit": "px", "size": 22},
-            "hide_mobile": "hidden"  # Ẩn sidebar trên mobile theo đúng thiết kế ảnh 2
+            "hide_mobile": "hidden"
         },
         "elements": [
             build_sidebar_search_widget(),
@@ -961,4 +1517,4 @@ if __name__ == "__main__":
     out_dir = os.path.dirname(os.path.abspath(__file__))
     page_data = build_danh_muc_bai_viet_json()
     save_and_zip(page_data, "danh-muc-bai-viet-elementor", out_dir)
-    print("\n[COMPLETED] Successfully generated Danh Muc Bai Viet Elementor JSON & ZIP!")
+    print("\n[COMPLETED] Successfully generated Danh Muc Bai Viet Elementor JSON & ZIP (100% Native Widgets)!")
