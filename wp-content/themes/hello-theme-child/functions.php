@@ -70,7 +70,7 @@ function tienganh_chitra_register_custom_post_types()
         'rewrite'            => array('slug' => 'giang-vien', 'with_front' => false),
     ));
 
-    // 2. Post Type: Chương Trình Đào Tạo / Khóa Học
+    // 2. Post Type: Chương Trình Đào Tạo / Khóa Học (Ẩn frontend archive & single page, quản lý nội bộ Admin)
     register_post_type('khoa_hoc', array(
         'labels' => array(
             'name'               => __('Khóa Học', 'tienganh-chitra'),
@@ -85,12 +85,17 @@ function tienganh_chitra_register_custom_post_types()
             'search_items'       => __('Tìm Kiếm Khóa Học', 'tienganh-chitra'),
             'not_found'          => __('Không tìm thấy khóa học nào', 'tienganh-chitra'),
         ),
-        'public'             => true,
-        'has_archive'        => true,
-        'show_in_rest'       => true,
+        'public'             => false, // Ẩn khỏi frontend
+        'show_ui'            => true,  // Vẫn hiển thị menu quản lý trong WP Admin
+        'show_in_menu'       => true,
+        'show_in_nav_menus'  => false,
+        'show_in_rest'       => true,  // Hỗ trợ Elementor query & REST API nội bộ
+        'publicly_queryable' => false, // Tắt URL chi tiết bài viết ngoài frontend
+        'exclude_from_search'=> true,  // Không xuất hiện trong kết quả tìm kiếm
+        'has_archive'        => false, // Tắt trang lưu trữ danh mục /khoa-hoc/
         'menu_icon'          => 'dashicons-welcome-learn-more',
         'supports'           => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
-        'rewrite'            => array('slug' => 'khoa-hoc', 'with_front' => false),
+        'rewrite'            => false, // Tắt URL rewrite /khoa-hoc/
     ));
 
     // 3. Post Type: Bảng Vàng Học Viên Xuất Sắc
@@ -302,3 +307,30 @@ function tienganh_chitra_custom_swiper_centered_script()
     </script>
     <?php
 }
+
+/**
+ * ============================================================================
+ * CHUYỂN HƯỚNG 301 TẤT CẢ CÁC ĐƯỜNG DẪN KHÓA HỌC VỀ TRANG CHỦ
+ * ============================================================================
+ */
+add_action('template_redirect', 'tienganh_chitra_redirect_khoa_hoc_pages');
+function tienganh_chitra_redirect_khoa_hoc_pages()
+{
+    // Nếu truy cập vào bài viết chi tiết hoặc lưu trữ của post type khoa_hoc
+    if (is_singular('khoa_hoc') || is_post_type_archive('khoa_hoc')) {
+        wp_safe_redirect(home_url(), 301);
+        exit;
+    }
+
+    // Bắt thêm trường hợp đường dẫn URL bắt đầu bằng /khoa-hoc/ (trừ khi có Trang tĩnh trùng slug)
+    $request_uri = isset($_SERVER['REQUEST_URI']) ? trim($_SERVER['REQUEST_URI'], '/') : '';
+    // Tách bỏ query params nếu có
+    $path_part = explode('?', $request_uri)[0];
+    if (preg_match('#^khoa-hoc(/.*)?$#i', $path_part)) {
+        if (!is_page('khoa-hoc')) {
+            wp_safe_redirect(home_url(), 301);
+            exit;
+        }
+    }
+}
+
